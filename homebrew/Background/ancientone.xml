@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Acolyte</name>
+		<update version="0.0.5">
+			<file name="background-acolyte.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
+		</update>
+	</info>
+	<element name="Ancient One" type="Background" source="Homebrew" id="ID_BACKGROUND_ANCIENT_ONE">
+		<description>
+			<html>&lt;p&gt;Long, long ago, you ventured into the world to play your part in history. However, for whatever reason, history has moved on, and you continue to exist. You do not age naturally, or contract common diseases, and have lived several lifetimes beyond your race's eldest. Were you blessed by a deity, to gather knowledge far beyond your years? Cursed by fate to watch everyone around you wither away from age and disease? Or mayhap a victim of your own magical experimentation? Regardless of the cause, your soul refuses to give up its claim to life, and gives you an ancient perspective on life.&lt;/p&gt;
+&lt;p&gt;Where some immortals are relatively young and rash, though, you are far older than your appearance may imply, and you've lived a far sight longer than much anyone alive. You've seen kingdoms rise and fall, history be made, and both good and evil waste away to the passage of time.&lt;/p&gt;
+&lt;p&gt;The details of your immortality are best left to you and your DM, but it's recommended to use the vanilla Boon of Immortality that prevents aging. Alternative methods could be a dark magic using phylacteries, or some sort of rebirth as a child elsewhere on death.&lt;/p&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Skill Proficiencies:&lt;/strong&gt; History, Insight&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt; Two of your choice&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment:&lt;/strong&gt; A set of traveller's clothes, a heavy cloak or robe, a small trinket from a past life that you always seem to find, and a pouch containing 15 gp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div element="ID_BACKGROUND_FEATURE_LIFETIMES_OF_EXPERIENCE" /&gt;</html>
+		</description>
+		<setters>
+			<set name="short">History, Insight, 2 Languages</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<select type="Language" name="Language (Acolyte)" supports="Standard||Exotic" number="2" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_LIFETIMES_OF_EXPERIENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">
+				<item id="1">I idolize a particular hero of my faith, and constantly refer to that person’s deeds and example.</item>
+				<item id="2">I can find common ground between the fiercest enemies, empathizing with them and always working toward peace.</item>
+				<item id="3">I see omens in every event and action. The gods try to speak to us, we just need to listen</item>
+				<item id="4">Nothing can shake my optimistic attitude.</item>
+				<item id="5">I quote (or misquote) sacred texts and proverbs in almost every situation.</item>
+				<item id="6">I am tolerant (or intolerant) of other faiths and respect (or condemn) the worship of other gods.</item>
+				<item id="7">I’ve enjoyed fine food, drink, and high society among my temple’s elite. Rough living grates on me.</item>
+				<item id="8">I’ve spent so long in the temple that I have little practical experience dealing with people in the outside world.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Tradition. The ancient traditions of worship and sacrifice must be preserved and upheld. (Lawful)</item>
+				<item id="2">Charity. I always try to help those in need, no matter what the personal cost. (Good)</item>
+				<item id="3">Change. We must help bring about the changes the gods are constantly working in the world. (Chaotic)</item>
+				<item id="4">Power. I hope to one day rise to the top of my faith’s religious hierarchy. (Lawful)</item>
+				<item id="5">Faith. I trust that my deity will guide my actions. I have faith that if I work hard, things will go well. (Lawful)</item>
+				<item id="6">Aspiration. I seek to prove myself worthy of my god’s favor by matching my actions against his or her teachings. (Any)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">I would die to recover an ancient relic of my faith that was lost long ago.</item>
+				<item id="2">I will someday get revenge on the corrupt temple hierarchy who branded me a heretic.</item>
+				<item id="3">I owe my life to the priest who took me in when my parents died.</item>
+				<item id="4">Everything I do is for the common people.</item>
+				<item id="5">I will do anything to protect the temple where I served.</item>
+				<item id="6">I seek to preserve a sacred text that my enemies consider heretical and seek to destroy.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">I judge others harshly, and myself even more severely.</item>
+				<item id="2">I put too much trust in those who wield power within my temple’s hierarchy.</item>
+				<item id="3">My piety sometimes leads me to blindly trust those that profess faith in my god.</item>
+				<item id="4">I am inflexible in my thinking.</item>
+				<item id="5">I am suspicious of strangers and expect the worst of them.</item>
+				<item id="6">Once I pick a goal, I become obsessed with it to the detriment of everything else in my life.</item>
+			</select>
+		</rules>
+	</element>
+	<element name="Feature: Lifetimes of Experience" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_LIFETIMES_OF_EXPERIENCE">
+		<supports>Background Feature</supports>
+		<description>
+			<html>&lt;p&gt;Ancient perspectives give one a broad range of knowledge and history to draw from, though they often cloud new ideas from being formed. You can often recall information about places that many characters have never ventured, or extrapolate based off similar events. Similarly, historical facts come naturally to you, and many a scholar or ruler values your counsel if you make it available.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shelter of the Faithful" />
+	</element>
+</elements>

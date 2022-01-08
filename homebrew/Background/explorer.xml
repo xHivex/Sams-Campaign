@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Acolyte</name>
+		<update version="0.0.5">
+			<file name="background-acolyte.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
+		</update>
+	</info>
+	<element name="Explorer" type="Background" source="Homebrew" id="ID_BACKGROUND_EXPLORER">
+		<description>
+			<html>&lt;p&gt;Venturing to places deemed too dangerous or too deeply shrouded in mystery for even the most experienced of scouts is what you do. Or, at least, it's what you used to do. The question remains: is that still who you are, or are you trying to distance yourself from your exploratory tendencies? What drove you to seek the unknown in the first place? A promise of immeasurable treasure? The fame and adoration of countless would-be adventurers?&lt;/p&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Skill Proficiencies:&lt;/strong&gt; Survival, Perception&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Languages:&lt;/strong&gt; Two of your choice&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool Proficiencies:&lt;/strong&gt; Cartographer's Tools, Navigator's Tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment:&lt;/strong&gt; A climber's kit, navigator's tools, a set of traveler's clothes, a belt pouch containing 10 gp, and a small telescope.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5&gt;SPECIALIZATION&lt;/h5&gt;
+&lt;p&gt;Explorers have few specializations. Most fall into the general idea of explorer, someone who goes into the wild and explores, but some have unique motives or goals. Here are some examples of explorer specialization.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td class="col-20"&gt;d6&lt;/td&gt;&lt;td&gt;Scam&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;Cartographer.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;Guide.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;Royal Explorer.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;Climber.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;Relic Hunter.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;Wilderness Investigator.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;div element="ID_BACKGROUND_FEATURE_EXPERIENCE" /&gt;</html>
+		</description>
+		<setters>
+			<set name="short">Survival, Perception, 2 Languages, Cartographer's Tools, Navigator's Tools</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<select type="Language" name="Language (Explorer)" supports="Standard||Exotic" number="2" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_EXPERIENCE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">
+				<item id="1">When I'm in the city, I'm quick-tempered and annoyed at everyone.</item>
+				<item id="2">I always expect everyone to be as good as me at exploration and travel.</item>
+				<item id="3">I jot down notes on everything I see in the wild.</item>
+				<item id="4">Even when I'm not exploring, I delve into alleys and climb the tallest buildings in the city so I can get a little of what I love.</item>
+				<item id="5">I don't really care about the beauty of the land, just the treasure hidden inside it.</item>
+				<item id="6">I take every chance I have to have fun or feel exhilarated.</item>
+				<item id="7">If I'm not exploring, I'm trading my relics and maps for whatever I can find.</item>
+				<item id="8">When I'm in the wild, I'm calm and respectful to everyone.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">People. I don't care for ideals, but for the people that help me with the thing I love. (Neutral)</item>
+				<item id="2">Nature. While surrounded by nature, I have seen wonderful things and have had moments of serenity. (Good)</item>
+				<item id="3">Live and Let Live. Exploration is dangerous, but I have accustomed myself to the laws of the wild. (Neutral)</item>
+				<item id="4">Greed. The ancient artifacts that can be traded for a hefty cost are all I want from the land. (Evil)</item>
+				<item id="5">Knowledge. Whenever I chart a new land or find a new thing, I feel more complete than I had before. (Lawful)</item>
+				<item id="6">Freedom. When I explore and discover new lands, only then do I feel truly free. (Chaotic)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">I began a life of exploration at a young age. However, this came at the cost of leaving my noble family..</item>
+				<item id="2">I found a dangerous relic of a fallen god on my travels, and must safeguard it for the rest of my life.</item>
+				<item id="3">I will do anything to protect the wilds that I have come to love more than any city.</item>
+				<item id="4">I left my companions to die when I could have sacrificed myself to save them. Now, I will only return to that life for something I truly believe in.</item>
+				<item id="5">I would rather die than retire, my job is my life.</item>
+				<item id="6">I get a blast of excitement whenever I discover something new.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">I'm greedy as a goblin.</item>
+				<item id="2">I act like I'm the most important member of the party.</item>
+				<item id="3">I get overly excited easily.</item>
+				<item id="4">Finding whatever I am looking for is more important than the lives of my friends.</item>
+				<item id="5">Don't tell me what I can't do.</item>
+				<item id="6">I fall in love very quickly.</item>
+			</select>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+	<element name="Feature: Experience" type="Background Feature" source="Player’s Handbook" id="ID_BACKGROUND_FEATURE_EXPERIENCE">
+		<supports>Background Feature</supports>
+		<description>
+			<html>&lt;p&gt;You always know how to find water, food, and can make a shelter if the land provides, you have advantage on checks to gauge the value of an item.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shelter of the Faithful" />
+	</element>
+</elements>

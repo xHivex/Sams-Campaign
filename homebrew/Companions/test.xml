@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Urchin</name>
+		<update version="0.0.5">
+			<file name="background-urchin.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core/players-handbook/backgrounds/background-urchin.xml" />
+		</update>
+	</info>
+	<element name="Sporemaster" type="Companion" source="Homebrew" id="ID_HOMEBREW_COMPANION_SPOREMASTER">
+		<description>
+			<html>&lt;p&gt;You grew up on the streets alone, orphaned, and poor. You had no one to watch over you or to provide for you, so you learned to provide for yourself. You fought fiercely over food and kept a constant watch out for other desperate souls who might steal from you. You slept on rooftops and in alleyways, exposed to the elements, and endured sickness without the advantage of medicine or a place to recuperate. You’ve survived despite all odds, and did so through cunning, strength, speed, or some combination of each.&lt;/p&gt;
+&lt;p class="indent"&gt;You begin your adventuring career with enough money to live modestly but securely for at least ten days. How did you come by that money? What allowed you to break free of your desperate circumstances and embark on a better life?&lt;/p&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Skill Proficiencies:&lt;/strong&gt; Sleight of Hand, Stealth&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Tool Proficiencies:&lt;/strong&gt; Disguise kit, thieves’ tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equipment:&lt;/strong&gt; A small knife, a map of the city you grew up in, a pet mouse, a token to remember your parents by, a set of common clothes, and a belt pouch containing 10 gp&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div element="ID_BACKGROUND_FEATURE_CITY_SECRETS" /&gt;
+&lt;h5&gt;SUGGESTED CHARACTERISTICS&lt;/h5&gt;
+&lt;p&gt;Urchins are shaped by lives of desperate poverty, for good and for ill. They tend to be driven either by a commitment to the people with whom they shared life on the street or by a burning desire to find a better life— and maybe get some payback on all the rich people who treated them badly.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name="Fungal Alchemy" type="Companion Trait" source="Player’s Handbook" id="ID_HOMEBREW_COMPANION_SPOREMASTER_FUNGAL_ALCHEMY">
+		<description>
+			<html>&lt;p&gt;Sporemasters have an innate understanding of alchemy, often using their spores as ingredients. They have proficiency in Alchemists' Supplies.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="City Secrets" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMIST’S_SUPPLIES" />
+		</rules>
+	</element>
+	<element name="Spores" type="Companion Action" source="Homebrew" id="ID_HOMEBREW_COMPANION_SPOREMASTER_SPORES">
+		<description>
+			<html>&lt;p&gt;As you level up, they gain access to more powerful spores. If the spore's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier. You can use each spore option once, and must complete a long rest before you do so again.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+	</element>
+</elements>
