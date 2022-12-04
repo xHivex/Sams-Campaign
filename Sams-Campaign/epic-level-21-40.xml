@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Level Expansion</name>
+		<description>Expanding levels to Epic 21-40</description>
+		<update version="0.01">
+				<file name="level-elements-21-40.xml" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements/volos-guide-to-monsters/epic-level-21-40.xml" />
+		</update>
+	</info>
+	
+<element name="21" type="Level" source="Internal" id="ID_LEVEL_21">
+        <setters>
+            <set name="Level">21</set>
+            <set name="Experience">410000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 21)" level="21" equirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_21" />         </rules>
+    </element>
+<element name="Multiclassing (Level 21)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_21" />
+
+<element name="22" type="Level" source="Internal" id="ID_LEVEL_22">
+        <setters>
+            <set name="Level">22</set>
+            <set name="Experience">470000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 22)" level="22" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_22" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 22)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_22" />
+
+<element name="23" type="Level" source="Internal" id="ID_LEVEL_23">
+        <setters>
+            <set name="Level">23</set>
+            <set name="Experience">535000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 23)" level="23" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_23" />
+       </rules>
+    </element>
+<element name="Multiclassing (Level 23)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_23" />
+
+<element name="24" type="Level" source="Internal" id="ID_LEVEL_24">
+        <setters>
+            <set name="Level">24</set>
+            <set name="Experience">605000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 24)" level="24" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_24" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 21)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_24" />
+
+<element name="25" type="Level" source="Internal" id="ID_LEVEL_25">
+        <setters>
+            <set name="Level">25</set>
+            <set name="Experience">680000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 25)" level="25" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_25" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 25)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_25" />
+
+<element name="26" type="Level" source="Internal" id="ID_LEVEL_26">
+        <setters>
+            <set name="Level">26</set>
+            <set name="Experience">760000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 26)" level="21" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_26" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 26)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_26" />
+
+<element name="27" type="Level" source="Internal" id="ID_LEVEL_27">
+        <setters>
+            <set name="Level">27</set>
+            <set name="Experience">845000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 27)" level="27" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_27" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 27)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_27" />
+ 
+<element name="28" type="Level" source="Internal" id="ID_LEVEL_28">
+        <setters>
+            <set name="Level">28</set>
+            <set name="Experience">940000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 28)" level="28" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_28" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 28)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_28" />
+
+<element name="29" type="Level" source="Internal" id="ID_LEVEL_29">
+        <setters>
+            <set name="Level">29</set>
+            <set name="Experience">1040000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 29)" level="29" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_29" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 29)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_29" />
+
+<element name="30" type="Level" source="Internal" id="ID_LEVEL_30">
+        <setters>
+            <set name="Level">30</set>
+            <set name="Experience">1145000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 30)" level="30" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_30" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 30)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_30" />
+
+<element name="31" type="Level" source="Internal" id="ID_LEVEL_31">
+        <setters>
+            <set name="Level">31</set>
+            <set name="Experience">1255000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 31)" level="31" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_31" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 31)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_31" />
+
+<element name="32" type="Level" source="Internal" id="ID_LEVEL_32">
+        <setters>
+            <set name="Level">32</set>
+            <set name="Experience">1370000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 32)" level="32" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_32" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 32)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_32" />
+
+<element name="33" type="Level" source="Internal" id="ID_LEVEL_33">
+        <setters>
+            <set name="Level">33</set>
+            <set name="Experience">1490000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 33)" level="33" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_33" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 33)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_33" />
+
+<element name="34" type="Level" source="Internal" id="ID_LEVEL_34">
+        <setters>
+            <set name="Level">34</set>
+            <set name="Experience">1615000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 34)" level="34" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_34" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 34)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_34" />
+
+<element name="35" type="Level" source="Internal" id="ID_LEVEL_35">
+        <setters>
+            <set name="Level">35</set>
+            <set name="Experience">1745000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 35)" level="35" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_35" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 35)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_35" />
+
+<element name="36" type="Level" source="Internal" id="ID_LEVEL_36">
+        <setters>
+            <set name="Level">36</set>
+            <set name="Experience">1880000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 36)" level="36" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_36" />
+       </rules>
+   </element>
+<element name="Multiclassing (Level 36)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_36" />
+
+<element name="37" type="Level" source="Internal" id="ID_LEVEL_37">
+        <setters>
+            <set name="Level">37</set>
+            <set name="Experience">2020000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 37)" level="37" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_37" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 37)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_37" />
+
+<element name="38" type="Level" source="Internal" id="ID_LEVEL_38">
+        <setters>
+            <set name="Level">38</set>
+            <set name="Experience">2165000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 38)" level="38" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_38" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 38)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_38" />
+
+<element name="39" type="Level" source="Internal" id="ID_LEVEL_39">
+        <setters>
+            <set name="Level">31</set>
+            <set name="Experience">2315000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 39)" level="39" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_39" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 39)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_39" />
+
+<element name="40" type="Level" source="Internal" id="ID_LEVEL_40">
+        <setters>
+            <set name="Level">40</set>
+            <set name="Experience">2470000</set>
+        </setters>
+        <rules>
+            <!--<stat name="Level" value="+1" />-->
+            <select type="Multiclass" name="Multiclass (Level 40)" level="40" requirements="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE&amp;&amp;ID_INTERNAL_MULTICLASS_LEVEL_40" />
+        </rules>
+    </element>
+<element name="Multiclassing (Level 40)" type="Grants" source="Internal" id="ID_INTERNAL_MULTICLASS_LEVEL_40" />
+
+</elements>

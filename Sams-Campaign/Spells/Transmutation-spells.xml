@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Transmutation-spells</name>
+		<update version="0.5.2">
+			<file name="Transmutation-spells.xml" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells/Transmutation-spells.xml" />
+		</update>
+	</info>
+	<element name="Aid" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_AID">
+		<supports>Cleric, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Your spell bolsters your allies with toughness and resolve. Choose up to three creatures within range. Each target’s hit point maximum and current hit points increase by 5 for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny strip of white cloth</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Animate Objects" type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_ANIMATE_OBJECTS">
+		<supports>Bard, Sorcerer, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Objects come to life at your command. Choose up to ten nonmagical objects within range that are not being worn or carried. Medium targets count as two objects, Large targets count as four objects, Huge targets count as eight objects. You can’t animate any object larger than Huge. Each target animates and becomes a creature under your control until the spell ends or until reduced to 0 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;As a bonus action, you can mentally command any creature you made with this spell if the creature is within 500 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one). You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.&lt;/p&gt;
+&lt;h5&gt;ANIMATED OBJECT STATISTICS&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Size&lt;/td&gt; &lt;td&gt;HP&lt;/td&gt; &lt;td&gt;AC&lt;/td&gt; &lt;td class="left"&gt;Attack&lt;/td&gt; &lt;td&gt;Str&lt;/td&gt; &lt;td&gt;Dex&lt;/td&gt; &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Tiny&lt;/td&gt; &lt;td&gt;20&lt;/td&gt; &lt;td&gt;18&lt;/td&gt; &lt;td class="left"&gt;+8 to hit, 1d4 + 4 damage&lt;/td&gt; &lt;td&gt;4&lt;/td&gt; &lt;td&gt;18&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Small&lt;/td&gt; &lt;td&gt;25&lt;/td&gt; &lt;td&gt;16&lt;/td&gt; &lt;td class="left"&gt;+6 to hit, 1d8 + 2 damage&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;td&gt;14&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Medium&lt;/td&gt; &lt;td&gt;40&lt;/td&gt; &lt;td&gt;13&lt;/td&gt; &lt;td class="left"&gt;+5 to hit, 2d6 + 1 damage&lt;/td&gt; &lt;td&gt;10&lt;/td&gt; &lt;td&gt;12&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Large&lt;/td&gt; &lt;td&gt;50&lt;/td&gt; &lt;td&gt;10&lt;/td&gt; &lt;td class="left"&gt;+6 to hit, 2d10 + 2 damage&lt;/td&gt; &lt;td&gt;14&lt;/td&gt; &lt;td&gt;10&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Huge&lt;/td&gt; &lt;td&gt;80&lt;/td&gt; &lt;td&gt;10&lt;/td&gt; &lt;td class="left"&gt;+8 to hit, 2d12 + 4 damage&lt;/td&gt; &lt;td&gt;18&lt;/td&gt; &lt;td&gt;6&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="indent"&gt;An animated object is a construct with AC, hit points, attacks, Strength, and Dexterity determine by its size. Its Constitution is 10 and its Intelligence and Wisdom are 3, and its Charisma is 1. Its speed is 30 feet; if the objects lack legs or other appendages it can use for locomotion, it instead has a flying speed of 30 feet and can hover. If the object is securely attached to a surface or larger object, such as a chain bolted to a wall, its speed is 0. It has blindsight with a radius of 30 feet and is blind beyond that distance. When the animated object drops to 0 hit points, it reverts to its original object form, and any remaining damage carries over to its original object form.&lt;/p&gt;
+&lt;p class="indent"&gt;If you command an object to attack, it can make a single melee attack against a creature within 5 feet of it. It makes a slam attack with an attack bonus and bludgeoning damage determine by its size. The DM might rule that a specific object inflicts slashing or piercing damage based on its form.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; If you cast this spell using a spell slot of 6th or higher, you can animate two additional objects for each slot level above 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
