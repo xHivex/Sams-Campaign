@@ -7,7 +7,7 @@
 		</update>
 	</info>
 	<files>
-		<file name="Necromancy-spells" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
+		<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 
 	</files>
 </index>
