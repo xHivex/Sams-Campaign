@@ -3,7 +3,7 @@
 	<info>
 		<name>Necromancy-spells</name>
 		<update version="0.1.0">
-			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
+			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 		</update>
 	</info>
 	<element name="Death Bolt" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_BOLT">
