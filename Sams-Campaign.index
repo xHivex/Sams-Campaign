@@ -9,14 +9,7 @@
 	</info>
 	<files>
 
-		<file name="Blessings.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Blessings.index" />
-		<file name="Classes.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Classes.index" />
-		<file name="Enchantments.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Enchantments.index" />
-		<file name="Items.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Items.index" />
-		<file name="Race.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Race.index" />
 		<file name="Spells.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells.index" />
-		<file name="SubClasses.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/SubClasses.index" />
-		<file name="Weapons.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Weapons.index" />
 		<file name="epic-level-21-40.xml" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/epic-level-21-40.xml" />
 	</files>
 </index>
