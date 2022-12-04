@@ -4,12 +4,12 @@
 		<name>Sams Campaign</name>
 		<description>Sams Campaign.</description>
 		<update version="0.1.0">
-			<file name="Sams-Campaign.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign.index" />
+			<file name="Sams-Campaign.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign.index" />
 		</update>
 	</info>
 	<files>
 
-		<file name="Spells.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells.index" />
-		<file name="epic-level-21-40.xml" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/epic-level-21-40.xml" />
+		<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
+		<file name="epic-level-21-40.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/epic-level-21-40.xml" />
 	</files>
 </index>
