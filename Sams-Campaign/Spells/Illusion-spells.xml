@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Illusion-spells</name>
+		<update version="0.1.0">
+			<file name="Illusion-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Illusion-spells.xml" />
+		</update>
+	</info>
+	<element name="Blue Death" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLUE_DEATH">
+		<supports>Bard, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You surround a creature in illusion magic to make them believe that they are in a life-threatening scenario. A creature you see within range must succeed a Intelligence saving throw or take 1d6 psychic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, they have disadvantage on the next Intelligence saving throw they make before the end of its next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shadow Mist" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHADOW_MIST">
+		<supports>Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;With a quick hand gesture, you create a mist infused with the gloom of the Shadowfell. A sphere of dark, inky-black mist appears centered on you and extends outward for 10 feet. &lt;/p&gt;
+&lt;p class="indent"&gt;Anything within the radius of the mist is dimmed, so that bright light becomes dim light, and dim light becomes darkness. The cloud can be displaced with a light breeze.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (10-foot sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Umbral Visage" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_UMBRAL_VISAGE">
+		<supports>Artificer, Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You meld with the shadows, allowing yourself to be practically unnoticeable in dim or dark light.&lt;/p&gt;
+&lt;p class="indent"&gt;As long as you remain within darkness or dim light, your movement speed is reduced by 10 feet and you gain advantage on Stealth checks.&lt;/p&gt;
+&lt;p class="indent"&gt;Entering an area of bright light ends this effect, and you may end this effect as an action or bonus action.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Amorphous Pixie" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AMORPHOUS_PIXIE">
+		<supports>Artificer, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You fling a cloud of glowing pixie dust at a target in range. Make a ranged spell attack, covering the target in glowing pixie dust on a hit, granting it disadvantage on Stealth checks and rendering it unable to benefit from being invisible.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, the target must make a Dexterity saving throw, becoming blinded on a failed save until the end of your next turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; The number of creatures you can target increases as you level, 5th level (2 creatures), 11th level (3 creatures), 17th level (4creatures).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A handful of any glowing or colored dust</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Coin Bag" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_COIN_BAG">
+		<supports>Cleric, Paladin, Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You grab an empty bag, fill it with rocks, and shake it until you hear the sound of coins, creating up to 2d100 illusory gold coins within this bag.&lt;/p&gt;
+&lt;p class="indent"&gt;This illusory gold holds up to basic physical and visual inspection; However, a creature can identify the coins as illusory with a successful Intelligence Investigation check contested against your spell save DC.&lt;/p&gt;
+&lt;p class="indent"&gt;At the end of the duration, the illusion expires of its own accord, and the coins reveal their true form as worthless gravel.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd or higher, you can create 2d100 additional illusory gold coins for every level above first. When you cast this spell using a spell slot of 3rd level or higher, you may instead create 2d20 illusory platinum coins in place of 2d100 gold coins.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A large quantity of small stones or gravel, a sack capable of containing said gravel</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Elonia's Glamour" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ELONIAS_GLAMOUR">
+		<supports>Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You subtly change the appearance of yourself or one other humanoid, making that person more or less attractive. This does not make that person look like someone else.&lt;/p&gt;
+&lt;p class="indent"&gt;Rather, for the positive version, makes the target’s eyes appear to sparkle, their skin clearer and smoother, their teeth straighter and whiter, and their hair thicker and more lustrous; or for the negative version, makes the person seem lackluster and unkempt.&lt;/p&gt;
+&lt;p class="indent"&gt;An unwilling target may make a Wisdom saving throw to resist. While the positive version of this spell is active, the target has advantage on all Charisma ability checks designed to illicit a positive reaction. While the negative version of this spell is active, the target has disadvantage on all Charisma ability checks.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">3 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of ruby dust and a pinch of chalk dust</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="False Tracks" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FALSE_TRACKS">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;For the duration of this spell, your footprints are those of a normal animal of your choice. If part of your clothes or hair get snagged on undergrowth, it will appear to be bits of animal fur.&lt;/p&gt;
+&lt;p class="indent"&gt;Dropped objects do not change their appearance. When the spell ends, your footprints and snagged clothing change resume their normal appearance.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hush" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HUSH">
+		<supports>Bard, Sorcerer, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature and imbue it with silence. For the duration, the target has advantage on Dexterity (Stealth) checks to avoid detection while moving.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher you can target one additional creature for each spell slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Invisibility to Undead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INVISIBILITY_TO_UNDEAD">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature. Until the spell ends, undead with an Intelligence of 6 or lower treat the affected creature as being invisible, and will not become hostile toward it until they see it.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell ends if the affected creature attacks or casts a spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the illusion affects the minds of smarter undead. The maximum Intelligence score this spell can affect increases by 2 for every slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">holy symbol</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Muffle " type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MUFFLE">
+		<supports>Artificer, Druid, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a willing creature or object and their countenance dims slightly and becomes silent: All sound made by the target or anything the target is wearing or carrying becomes silenced.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, the target has advantage on any Dexterity (Stealth) check made to hide or move silently.&lt;/p&gt;
+&lt;p&gt;While under the effects of this spell, the creature cannot audibly speak, and cannot complete the vocal components of spells. The affected creature can choose to end your concentration on this spell at any time.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a patch of black cloth</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spook " type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SPOOK">
+		<supports>Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You play upon the natural fears of an enemy. You target one creature in range. That creature perceives you as something inimical.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must succeed in a Wisdom saving throw or become frightened for the duration. At the end of each of their turns they can make a Wisdom saving throw. On a successful save, the spell ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Beastmask " type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BEASTMASK">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You or one willing creature is made to look, feel, sound, and smell exactly like a particular species of beast or monstrosity that has an Intelligence of 4 or lower—but only to other members of that species.&lt;/p&gt;
+&lt;p class="indent"&gt;Members of closely related species are also fooled; for instance, a dog mask will also fool wolves and death dogs, and a bear mask will also fool giant bears and owlbears. However this spell does not give you any ability to communicate with that animal.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">12 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a wooden mask carved to look like the animal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Circle of Privacy" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CIRCLE_OF_PRIVACY">
+		<supports>Druid, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;This spell allows you to discourage predators and trespassers from disturbing a campsite. You sprinkle salt in a circle around your camp while you cast this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, sounds and scents generated within the circle are muted. All Perception checks made to locate anything within the circle using hearing or smell are at disadvantage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 minute</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Self (20-foot diameter radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">hair from a skunk, a mouse's whisker, and a pound of salt</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dazzling Glare" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DAZZLING_GLARE">
+		<supports>Cleric, Paladin, Artificer, Druid, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You unleash an overwhelming flash of light. Choose any number of creatures within range.&lt;/p&gt;
+&lt;p class="indent"&gt;Each target that can see you must succeed on a Constitution saving throw or become blinded for 1 minute; a creature sensitive to sunlight makes this saving throw with disadvantage.&lt;/p&gt;
+&lt;p class="indent"&gt;If a target is concentrating, its concentration is also broken on a failed save. A blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leomund's Trap" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEOMUNDS_TRAP">
+		<supports>Artificer, Druid, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You place a false trap which is covered with an illusion to make it look like any sort of trap you like.&lt;/p&gt;
+&lt;p class="indent"&gt;Anyone searching for traps, either mundanely or magically, will find it. It has no actual effect, whether it is deliberately or accidentally sprung.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small mechanism, and a piece of iron pyrite and metal filings, which are consumed by the spell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Phantom Laughter" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PHANTOM_LAUGHTER">
+		<supports>Bard, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You fill the air with the sounds of malicious, insane laughter that overwhelm the senses of any who hear it.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature within the radius must succeed on a Wisdom saving throw or be frightened until the end of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target fails the saving throw by 5 or more, they are also paralyzed for this amount of time.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Quiet Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_QUIET_ARMOR">
+		<supports>Artificer, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Remove the stealth disadvantage of noisy armor by canceling the noise using an illusion of the waveform opposite of the noise. Creatures generally unaffected by illusion will still hear the armor.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration"> Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered graphite</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shadow Blink" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHADOW_BLINK">
+		<supports>Druid, Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You become shrouded in shadow, and gain the ability to directly meld with darkness. While within dim light or darkness, you gain a climbing speed equal to your walking speed for the spell's duration, and can walk on walls and ceilings as if they were floors.&lt;/p&gt;
+&lt;p class="indent"&gt;If you are standing in dim light or complete darkness, you may use 5ft of movement to teleport up to 60ft to an unoccupied space that you can see that is also shrouded in dim light or darkness.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, you may use an action to automatically succeed a stealth check while within dim light or darkness.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Conceal Item" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CONCEAL_ITEM">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You render a single item of Medium-size or smaller completely undetectable when you hide it on your person. Divination magic, as well as true seeing, can reveal the item's existence.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of any kind of gemstone dust</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fool's Speech" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FOOLS_SPEECH">
+		<supports>Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;You touch up to eight willing creatures. Creatures affected by this spell gain the ability to speak in a secret language that is incomprehensible gibberish to all other creatures.&lt;/p&gt;
+&lt;p class="indent"&gt;Fool's speech language is indecipherable even with language-translating magic such as comprehend languages or tongues, though such magic will be able to detect that fool's speech is being used.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 minute</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small bone whistle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="False Vision" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FALSE_VISION">
+		<supports>Druid, Bard, Ranger, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Cast upon becoming aware that you or something else within 30 feet of you are being magically spied upon, you create an illusory image or thoughts that will be detected instead.&lt;/p&gt;
+&lt;p class="indent"&gt;At the same time, you and everything else of your choice that is within that radius become invisible to the scrying method. This spell cannot be cast preemptively; it only functions after a divination spell has been cast on you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the ground dust of an emerald worth at least 100 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fool's Gold" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FOOLS_GOLD">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You touch a pile of up to 150 copper coins or an object made out of copper, brass, or bronze that weighs less than 1 pound, you turn them into gold.&lt;/p&gt;
+&lt;p class="indent"&gt;When the spell has expired, they revert back to normal. If one of these altered items is touched with a piece of iron, it has a 25 percent chance of instantly reverting back to normal.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, the resultant gold objects will not revert if touched with iron.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a powdered piece of iron pyrite</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Instant Audience" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INSTANT_AUDIENCE">
+		<supports>Bard, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You conjure an semi-real audience. Every minute for the next five minutes, 1d4 people will enter the area as if just coming in from the outside (they do not poof into existence).&lt;/p&gt;
+&lt;p class="indent"&gt;They appear to be a mix of people appropriate for the circumstances and location. When it’s appropriate, they will applaud, chit-chat, and eat available snacks.&lt;/p&gt;
+&lt;p class="indent"&gt;If it’s appropriate for the circumstances, they may flirt or act as bullies. They do not talk about themselves at all, as they have no history or true knowledge beyond trivia you yourself might know. Nor do they leave the area.&lt;/p&gt;
+&lt;p class="indent"&gt;When the spell’s duration ends, or you dismiss the spell, the audience members leave in the same way they came in.&lt;/p&gt;
+&lt;p class="indent"&gt;The members of the audience do not fight in any manner. They have an AC of 10 and 1 hp, and will instantly vanish if harmed in any manner.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">4 hours</set>
+			<set name="range">Self (60-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small collection of various items such as buttons and coins, and a live mouse, which vanishes for the duration of the spell but reappears, unharmed, when the spell is over</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shadow Blur" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHADOW_BLUR">
+		<supports>Druid, Sorcerer, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You can only cast this spell if you are in darkness, and ends if you leave the darkness.&lt;/p&gt;
+&lt;p class="indent"&gt;You shift into the shadows, becoming untouchable. For the duration of the spell, you cannot be targeted by attacks.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Zone of Silence" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ZONE_OF_SILENCE">
+		<supports>Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;When you cast this spell you create a sphere, centered on you, that has a 5 foot radius and protects against eavesdroppers.&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast zone of silence, you manipulate sound waves in your immediate vicinity so that those within the spell's area can converse normally, yet no one outside can hear your voices or any other noises from within, including certain spell effects that require a creature to hear them (such as suggestion).&lt;/p&gt;
+&lt;p class="indent"&gt;This effect is centered on you and moves with you. Anyone who enters the zone immediately becomes subject to its effects, but those who leave are no longer affected.&lt;/p&gt;
+&lt;p class="indent"&gt;A successful Insight check to read lips can still reveal what's said inside a zone of silence.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a 5th level spell slot or higher, add 1 hour to the duration of the spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 minute</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self (5ft radius centered on you)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Aura of Invisibility" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AURA_OF_INVISIBILITY">
+		<supports>Bard, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Magic wraps around you and your surrounding allies, hiding them from the view of others. Until the spell ends, the aura moves with you, centered on you.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature of your choice within range becomes invisible.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (15-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Harrowing Insanity" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HARROWING_INSANITY">
+		<supports>Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You haunt a creature with horrifying visions, trapping it in a fake realm of your own making. Touch a creature. It must succeed on a Wisdom saving throw or become trapped in illusory world.&lt;/p&gt;
+&lt;p class="indent"&gt;The world is mostly dark, and the creature has blindsight while in the hallucination, allowing it to sense the real world.&lt;/p&gt;
+&lt;p class="indent"&gt;You can choose to create a false image, sound, or both for the creature to see and hear. While hearing an illusory sound, the creature cannot hear anything else.&lt;/p&gt;
+&lt;p class="indent"&gt;An illusion can deal up to 3d10 Psychic damage each round.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 days</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">powdered glass worth at least 200 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Eclipse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ECLIPSE">
+		<supports>Cleric, Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You can create the massive image of a solar eclipse occurring directly overhead. Each creature within a 100-foot radius of you must make a Wisdom saving throw at the beginning of each of their turns.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, they ignore it. On a failed save, they look directly at it and become blinded for 1 minute. If they are already blinded, they don’t need to make the Wisdom saving throws, but can attempt to make a Constitution saving throw ending the effect on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;If the effect ends, either naturally or otherwise, they must continue to make Wisdom saving throws again as long as eclipse continues.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, all creatures in the radius must make a Dexterity saving throw or take 1d12 radiant or necrotic damage (your choice).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (100-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">1 ounce of stardust, powdered moon rock, or meteorite fragment</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

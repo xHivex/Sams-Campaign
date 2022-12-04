@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Divination-spells</name>
+		<update version="0.1.0">
+			<file name="Divination-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Divination-spells.xml" />
+		</update>
+	</info>
+	<element name="Death Sight" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_SIGHT">
+		<supports>Cleric, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature and give it an insight into its imminent death. While under the effects of this spell, a creature can add its proficiency bonus to its death saving throws.&lt;/p&gt;
+&lt;p class="indent"&gt;You cannot cast this spell on an incapacitated creature. If you cast this spell again, the effect ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of powdered bone</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Detect Arcane Residue" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DETECT_ARCANE_RESIDUE">
+		<supports>Cleric, Artificer, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;For the duration, you can sense residual trails of magic left by magic items or spells that were within 30 feet of your current location in the last 24 hours.&lt;/p&gt;
+&lt;p class="indent"&gt;The older the trail, the fainter it is, spells of higher levels or rarer magical items leave a stronger residue, but multiple weaker residues may have a similar effect.&lt;/p&gt;
+&lt;p class="indent"&gt;You are able to roughly tell how old the trail is, if it was created by a spell or a magical item and in which direction it travels, if any.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher you can detect older residues and trails, one week at 4th Level, a month at 6th Level, six months at 8th Level, one year at 9th Level&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Detect Aura" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DETECT_AURA">
+		<supports>Cleric, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt;For the duration, you can visibly see the strength of any creature you can see within 60 feet of you. A creature's aura gives you crude information about its challenge rating and hit dice.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; The size of a creature's aura tells you its strength. A creature's aura can be Weak (CR 1/2 or lower), Average (CR 1-4), Medium (CR 5-10), Strong (CR 11-16), or Very Strong (CR 17 or higher). A creature's aura appears larger, brighter, and more vibrant the stronger its aura is.&lt;/li&gt;
+&lt;li&gt; The color of a creature's aura tells you its toughness. A creature's aura can be White (3 or fewer hit dice), Yellow (4-9 hit dice), Orange (10-19 hit dice), or Red (20 or more hit dice).&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (60-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Empowerment" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIVINE_EMPOWERMENT">
+		<supports>Cleric, Paladin, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Imbued by the power of your god. As a part of the spell, you make a melee attack, armed or unarmed, if you hit, the opponent take the weapon damage + 1d4 damage, you choose between Fire, Radiant, Cold, Force, Poison, Acid, Lightning or Thunder.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Echolocate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ECHOLOCATE">
+		<supports>Artificer, Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You utter a bat-like screech into the surrounding area, audible to a range of 150 feet. Until the beginning of your next turn, you have blindsight within a 60-foot cone.&lt;/p&gt;
+&lt;p class="indent"&gt;This area of effect can't pass through walls or other blocking materials.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Enemy Insight" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ENEMY_INSIGHT">
+		<supports>Sorcerer, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Choose a creature that you can see within range. The target must make a Wisdom saving throw. On a failed save, you gain a general idea of the creature's combat capabilities as compared to your own. &lt;/p&gt;
+&lt;p class="indent"&gt;At the DM's discretion, you may learn about other pertinent capabilities. The target gains no inherent knowledge that you cast the spell, or that it was being targeted by your spell.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you cast this spell on a specific creature, regardless of the saving throw outcome, that creature becomes immune to your enemy insight spell for 24 hours.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Know Direction" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_KNOW_DIRECTION">
+		<supports>Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You instantly know the direction of north from your current position. The spell is effective in any environment in which "north" exists, but it may not work in extraplanar settings, or other locations without planetary magnetic poles.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a map and a crystal</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Arcane Mark" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARCANE_MARK">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Choose one creature or object. You establish a permanent link with the subject in your mind, and leave your sigil or mark upon it. At your option, the mark may be invisible, but any creature that can cast spells can always see the mark. Note that an unwilling creature cannot have this mark placed upon it.&lt;/p&gt;
+&lt;p class="indent"&gt;You can at any time spend an action to determine the direction and general distance of the subject, as well its physical condition. More information can be learned, depending upon the nature of the subject. If the subject is a coin, you know whose possession it's in. If a door, you know the last person to have touched it.&lt;/p&gt;
+&lt;p class="indent"&gt;If a living creature, you learn its current mental state (angry, frightened, happy, asleep, etc). More information may be available at the DM's discretion.&lt;/p&gt;
+&lt;p class="indent"&gt;You can mark a maximum number of subjects equal to 3 + your spellcaster ability modifier. You can as an action dismiss any mark you have placed regardless of distance.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Clear Thought" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CLEAR_THOUGHT">
+		<supports>Artificer, Druid, Bard, Wiard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature to bestow it pristine thought. The target has advantage on Intelligence checks for the duration of this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell ends prematurely if the target becomes distracted with a taxing mental or physical activity, such as casting a spell or engaging in combat.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a semitransparent crystal or piece of glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Detect Outsider" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DETECT_OUTSIDER">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;For the duration, you know if there is a creature which is not native to the plane you are in or an object that has been in a different plane in the last week within 30 feet of you.&lt;/p&gt;
+&lt;p class="indent"&gt;If you detect anything in this way, you can use your action to see a faint aura around any visible creature or object in the area that fulfills the conditions, and you learn the plane where it came from if you have visited it at least once before.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Detect Secrets" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DETECT_SECRETS">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You grant yourself magical perception that greatly enhances your ability to uncover hidden mysteries. Beginning on your next turn after casting this spell, secrets of all sorts become more discernible to you for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;The sudden rush of magical insight grants you an advantage on all Intelligence (Investigation) and Wisdom (Perception) checks made specifically to uncover physically hidden objects, details, or clues.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Discern" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DISCERN">
+		<supports>Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You focus on a creature in range that you can see, analyzing it. You become clearly aware of one damage vulnerability the creature has if any, and one damage immunity the creature has if any.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you learn one additional immunity or vulnerability for each level above 1st, as well as an equal number of damage resistances.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flower Requiem" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FLOWER_REQUIEM">
+		<supports>Ranger, Druid</supports>
+		<description>
+			<html>&lt;p&gt;A crown of withered flowers made out of black mist shows above the creature's head. To establish the flower, the caster has to roll 1d20.&lt;/p&gt;
+&lt;p class="indent"&gt;Until the spell ends, you deal additional 1d6 damage whenever you hit the creature with a weapon attack. If you attack with a ranged weapon, the damage changes to 1d8.&lt;/p&gt;
+&lt;p class="indent"&gt;When the spell ends (whether prematurely or not), the creature that the spell was cast upon will receive additional damage or short-term condition, depending on the flower that appeared.&lt;/p&gt;
+&lt;p class="indent"&gt;The flowers: 1. Buttercup - blindness (1 turn), 2-9. Morning Glory - 1d4 psychic damage, 10-19. Oleander - 1d4 necrotic damage 20. Gelsemium - paralysis (1 turn)&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher , you can maintain your Concentration on the spell for up to 8 hours. When you use a spell slot of 5th level or higher, you can maintain your Concentration on the spell for up to 24 hours. The time that certain conditions occur also lengthens (max. 3 turns with lv 5 spell slot.)&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration up to 1 hour</set>
+			<set name="range">100 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Fortune Shift" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FORTUNE_SHIFT">
+		<supports>Cleric, Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;When you or a creature you can see within range makes a skill check or saving throw, roll 1d4. Add or subtract the result from the total.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you can roll an additional 1d4 for each spell level above 1st, and add or subract the full result from the total.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Dust from a broken mirror piece</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Impart Knowledge" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_IMPART_KNOWLEDGE">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A way to quickly and silently communicate complex ideas. This spell allows you to communicate complex thoughts (such as maps, diagrams, explanatory images – which may move in a sequence to show a procedure – and the like) silently to a willing recipient upon touch.&lt;/p&gt;
+&lt;p class="indent"&gt;Uses for this spell include showing the target a creature's likeness to aid in recognition or a clear route to an unfamiliar place. If the recipient is not willing, this spell automatically fails.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Know Thy Foe" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_KNOW_THY_FOE">
+		<supports>Cleric, Paladin, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Choose one creature you can see within range. You learn which of the target's ability scores has the greatest value (the DM is not obligated to tell you the actual value).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pearl figurine</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Missile Lore" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MISSILE_LORE">
+		<supports>Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Touch a spent missile and sense where it came from, both the precise location from where shot, and race and group of the shooter.&lt;/p&gt;
+&lt;p class="indent"&gt;The caster senses both the direction the shooter was moving, and also the race, sub-race, tribe, city, village, and party as applicable, but only when these have a name.&lt;/p&gt;
+&lt;p class="indent"&gt;So for example if the shooter was part of an unnamed band of undead, the caster can tell what kind of undead but not what band it was.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell works with any size missile from flechette or blow dart to catapult stone or storm giant stone.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Morgrave's Clear Mind" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MORGRAVES_CLEAR_MIND">
+		<supports>Artificer, Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You embed a psychic mote in a creature's mind and force it to broadcast its thoughts to those nearby. A creature with immunity to psychic damage is not affected.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must make a Wisdom saving throw or suffer the effect until the end of your next turn. On a failure, the target subconsciously advertise their next moves to all creatures within 60 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;The target has disadvantage on all attacks against creatures that receive these telepathic warnings.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when the target forces a creature within 60 feet of it to make a Dexterity saving throw, that creature has advantage on the roll. A creature need not be intelligent to receive and understand the thoughts being broadcast to it.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 Round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a copper piece</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Penetrate Disguise" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PENETRATE_DISGUISE">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Within the spells duration, you have a bonus to the next Intelligence (Investigation) check you make to discern whether a creature is in a disguise.&lt;/p&gt;
+&lt;p class="indent"&gt;This extends to nonmagical applications such as a disguise kit or a Charisma (Deception) check; but not to magical illusions.&lt;/p&gt;
+&lt;p class="indent"&gt;The bonus to your Investigation check is +5.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you also determine if the subject is also the subject of a friends spell or other enchantment cantrip.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Scan" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCAN">
+		<supports>Artificer, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You observe the surrounding area, checking for certain things. Choose one type of thing, like a material(gold, adamantine), a specific creature type(abberations, humanoids), or otherwise.&lt;/p&gt;
+&lt;p class="indent"&gt;You release a 60 foot cone, originating from you, which scans the entire area. If the thing you chose is within the area, you instantly learn how many of them or how much of it there is, and their exact locations within the radius.&lt;/p&gt;
+&lt;p class="indent"&gt;While this cone goes through solid objects, it is blocked by 20 feet of dirt, 10 feet of wood, 2 feet of stone, or 1 inch of lead.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 2nd level or higher, the cone’s range increases by 30 feet for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60 foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">binoculars, a magnifying glsss, or similar objects</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="See Through" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SEE_THROUGH">
+		<supports>Cleric, Artificer, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a simple surface such as a door, a wall, or even a shield to see through it as if it was transparent. The target area can vary from 1 to 5 square feet, as chosen when the spell is cast.&lt;/p&gt;
+&lt;p class="indent"&gt;The surface appears to be nonexistent from the side of the caster, yet the other side remains completely normal and solid.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell can see through most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="True Glimpse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TRUE_GLIMPSE">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;For a few fleeting seconds, you can see what truly is. Until the end of your next turn, or for the next 10 seconds, you have truesight.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A glass or crystal lens worth at least 10gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Truer Strikes" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TRUER_STRIKES">
+		<supports>Cleric, Paladin, Ranger, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Point a finger at a creature within range. You gain better insight into the target's defenses. For the duration, you have advantage on the first attack roll you make against that target on your turn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Animal Conduit" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANIMAL_CONDUIT">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;A willing beast you touch becomes your conduit. For the duration, you can perceive the world through all of the beast's senses, including touch, sight, sound, and smell.&lt;/p&gt;
+&lt;p class="indent"&gt;You also gain the benefits of any special senses the beast has, such as tremorsense or darkvision.&lt;/p&gt;
+&lt;p class="indent"&gt;You continue to see through the beast's senses instead of your own until you use an action to switch back, or your concentration ends.&lt;/p&gt;
+&lt;p&gt;While you are using the beast's senses, you are blinded and deafened to your own surroundings. Your speed is reduced to 0 and you are effectively incapacitated; the only action you can take is to switch back to your own senses.&lt;/p&gt;
+&lt;p class="indent"&gt;You can still choose to end your concentration on this spell at any time, even while incapacitated by its effect.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Assay" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ASSAY">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a point on a solid surface and determine the mineral content of a 5-foot cube originating from that point.&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast this spell, choose up to two kinds of metals, ores, stones, or gems; you learn whether or not the chosen minerals exist within the spell's area, as well as their approximate amount, location, and worth, if present.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, you learn of two additional minerals for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a touchstone worth at least 1 sp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Bone Lore" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BONE_LORE">
+		<supports>Cleric, Paladin, Artificer, Druid, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Hold a piece of bone. The spell brings to your mind a brief summary of the significant events in the life of the creature it came from.&lt;/p&gt;
+&lt;p class="indent"&gt;The lore might consist of birth, death, major encounters, close relationships of the creature etc. The information obtained will also include relevant names.&lt;/p&gt;
+&lt;p class="indent"&gt;The information could be merely mundane, or it could include legends or secret events that the creature was an important part of.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">incense worth at least 10 gp, which the spell consumes, and four ivory items worth at least 10 gp each</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Commune With Death" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_COMMUNE_WITH_DEATH">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Choose a creature you can see within range that has 0 hit points, then make a DC 12 Charisma (Persuasion) check.&lt;/p&gt;
+&lt;p class="indent"&gt;On a success, you choose to cause the target to either regain a number of hit points equal to 1d8 plus your proficiency bonus, or to die instantly.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd, making a separate Charisma (Persuasion) check for each target.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="DeLiszt's Dirty Little Secret" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DELISZTS_DIRTY_LITTLE_SECRET">
+		<supports>Paladin, Bard, Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;While speaking to a creature, you may force them to blurt out something they’d rather stay unknown. They may make a Charisma saving throw, the spell failing on a success. If the spell fails, they know you tried to cast it, but if it doesn’t, they don’t notice they revealed the information.&lt;/p&gt;
+&lt;p class="indent"&gt;The information they reveal can take many forms. For example, if they have a secret identity, they may reveal what it is. They may grant the password for a certain lock, or give directions to a hidden location. The topic of the conversation may affect the contents of the secret revealed, but the content is overall left up to the DM.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">parchment, red ink</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Revelation" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIVINE_REVELATION">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Your link to the divine grants you unbeforeseen knowledge. When you cast this spell, you may attempt the skill check again, and do so with advantage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 reaction, when you fail a skill check</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Eyes of Fate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EYES_OF_FATE">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;After requesting assistance from the Lady of Fate, you temporarily have access to the deepest intentions and desires of all the people in this world.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration of the spell, you have advantage on Wisdom (Insight) checks.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Farsee" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FARSEE">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Foretell the results of an event within a 12 hour period. Roll a D20 and record the number rolled.&lt;/p&gt;
+&lt;p class="indent"&gt;At any point before the spell expires, you may declare that you will use this number to replace any attack, saving throw, or ability check that you, or a creature within 30ft of you that you can see, makes. This must be done before the roll is made.&lt;/p&gt;
+&lt;p class="indent"&gt;Once a foretold roll is used to replace another roll, or the spell reaches the end of its duration, it is consumed and cannot be used again.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level, roll an extra dice and record the result. You can now use and replace 2 future dice rolls.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">1 Hour ritual</set>
+			<set name="duration">12 hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hunting Trail" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HUNTING_TRAIL">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;The spell must be cast in an uncrowded area, such as a forest, a desert, or a quiet town.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell reveals luminous trails within 30 feet from the cast point that indicate the zones a creature has moved through 24 hours maximum, you can follow one of the trails beyond range, but only one. The luminous trail lasts 1 hour and only you see it. Leading you to its origin.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Projectile Sense" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PROJECTILE_SENSE">
+		<supports>Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;The creature you touch gains a modicum of protection from ranged attacks for the duration of this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures that the target can see at least half of have disadvantage on ranged weapon and spell attacks against the target.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sensory Field" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SENSORY_FIELD">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You tap into the world around you, granting you a perfect understanding of your surroundings.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain truesight out to 15 feet, and whenever a creature enters your reach, you may make a melee attack against them.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute.</set>
+			<set name="range">Self (15-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a crystal worth at least 1 gp, consumed upon casting</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Telepathic Message" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TELEPATHIC_MESSAGE">
+		<supports>Cleric, Artificer, Druid, Bard, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You concentrate on a single creature that you can see and send a telepathic message to it lasting for up to the duration.&lt;/p&gt;
+&lt;p class="indent"&gt; It must know at least one language and have an intelligence score of 10 or greater to be able to receive and understand the message.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Within sight</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Expose" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EXPOSE">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You choose a target creature within range and use your magic to bring to light its weaknesses. For 1 minute, or until you lose concentration, all attack rolls against the target creature require a minimum roll of 1 less to critically hit.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, a creature that would normally require a roll of 20 to critically hit would only need a roll of 19 or 20 to critically hit the chosen target while this spell is in effect.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fly Eye" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FLY_EYE">
+		<supports>Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You cover the space surrounding your head with invisible sensors that act as eyes. For the duration, you can see in 360 degrees around you, and you have advantage on any saving throws and skill checks that rely on the sense of sight.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures cannot sneak up on you without total cover or by magical means. You may be able to see into areas of cover as declared by the GM. Additionally, you can see past creatures within 30 feet of you as if they were not there.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a spectacle lens</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Scout" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCOUT">
+		<supports>Cleric, Druid, Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;You create a translucent visage of yourself within 5 feet of you, that last for 1 minute or until you lose concentration. You may see and hear everything the visage can, and on your turn, you may command the visage to move its movement speed as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;The visage can move through solid objects at a movement speed of 10 feet, which can not be increased in any way besides casting scout at a higher level.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th or higher, the movement speed of the visage created increases by 5 feet for each spell slot above 3rd used to cast this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (5 feet)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an opal</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Seeking Blade" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SEEKING_BLADE">
+		<supports>Ranger, Cleric, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You inscribe the name of a creature into one weapon or a piece of ammunition you touch. When used to attack that creature, the attack roll has advantage.&lt;/p&gt;
+&lt;p class="indent"&gt;If you know the true name of the target, this spell requires no material component.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small sculpture of the target worth at least 20 gp, consumed by the spell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Write Contract" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WRITE_CONTRACT">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Write a contract with any wording you choose. Specify at least one negative consequence that will affect any participants of the spell who break the contract. Specify the time limit of the spell, if applicable.&lt;/p&gt;
+&lt;p class="indent"&gt;The negative consequence cannot involve death unless cast with a 6th tier spell slot. The spell does not come into effect unless each participant signs their name or applies their own blood to the paper.&lt;/p&gt;
+&lt;p class="indent"&gt;The participant does not need to know or understand the actual contents of the paper, and any form of editing or obscuring the writing temporarily will not affect the contract in any way.&lt;/p&gt;
+&lt;p class="indent"&gt;If the contract is destroyed, it reappears in the caster's hand.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6 or higher, the chosen negative consequence can now be death, of any specification.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">One sheet of paper of any kind, ink, the blood or signature of all participants.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Healing Flame" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HEALING_FLAME">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You throw a bolt of fire that heals creatures. One creature within range heals 2d6 + 2 hit points, and they regain 1d4 hit points at the beginning of each of their turns.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, it initially heals an extra 1d6 + 1 hit points per slot level above 4th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Know the True Form" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_KNOW_THE_TRUE_FORM">
+		<supports>Cleric, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;One creature you touch gains the ability to see the original form of any creature that has changed its shape or had its shape changed by another effect, such as through shapeshifting, polymorphing, or transformation via lycanthropy. This does not grant the ability to see through illusions.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bone Telling" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BONE_TELLING">
+		<supports>Cleric, Druid, Bard, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You spend the ten minutes of the spell throwing your carved bones (which you must have in order to cast the spell) and reading what they tell.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose a creature or person you have at least heard the name of. The bones will allow you to learn details such as their alignment and race/species if you had not already known.&lt;/p&gt;
+&lt;p class="indent"&gt;With a successful DC 16 Intelligence (Investigation) check, you also learn all the languages they speak, all the damage and condition immunities they possess, and (to the DMs discretion) a basic description of what the choosen target is doing at the moment of casting the spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7 or higher, the cast time and duration reduce to 5 minutes instead.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Bones carved in the form of dice and/or coins</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Direct Strike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIRECT_STRIKE">
+		<supports>Cleric, Druid, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You gain insight into the defenses of a target in range, making it easier to land critical hits. For the duration, your weapon attacks against the target score a critical hit on a roll of 18–20.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of polished glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Locate Remains" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LOCATE_REMAINS">
+		<supports>Cleric, Druid, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Describe or name the creature you are searching for. You sense the direction to the creature's location, as long as that creature is within 1 mile of you.&lt;/p&gt;
+&lt;p class="indent"&gt;If the remains are being transported (whether they are being transported as cargo or moving as an undead creature), you know the direction and current speed at which it is moving.&lt;/p&gt;
+&lt;p class="indent"&gt;If the remains are scattered over an area, you will feel the dowsing rod pull in multiple directions, with the strongest of these pulls being in the direction of the largest amount of the remains. If you already know the location of a portion of remains (ie. if you already possess the thighbone of the targeted corpse), you may choose to rule it out when casting this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell can't locate the remains of a creature if it has been transmuted (whether by magical or nonmagical means) into another substance, such as stone or mud. It also cannot locate the remains if any thickness of lead, even a thin sheet, blocks a direct path between you and the object.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; You may cast this spell at 7th level or higher. For each additional level at which this spell is cast, the duration increases by 1 hour and the range increases by 1 mile.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a dowsing rod carved from bone, its handle wrapped in linen</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Foreseeing Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FORESEEING_SHIELD">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Upon casting this spell, the target gains 3 Foreseeing Shields which remain with them for the duration of the spell.&lt;/p&gt;
+&lt;p class="indent"&gt;When successfully hit by an attack, the target of this spell may use their reaction, expending a Foreseeing Shield in the process, causing the attack to miss instead.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 9th level, you may instead select three creatures within 10 feet of you to benefit from the effects of this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Divination</set>
+			<set name="time">1 hour</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a golden wire wrapped around the ear of the target during casting</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="A Comedy of Errors" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_A_COMEDY_OF_ERRORS">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;This spell requires you to spend an action every turn to maintain it. When you cast this spell you warp fate in a 30-foot cube within range. The ground within the cube counts as difficult terrain and all creatures within the cube gain the following disadvantages for as long as they remain inside:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; All targets gain disadvantage on all saving throws, ability checks, and attack rolls.&lt;/li&gt;
+&lt;li&gt; Any target that makes the dash action must roll a Dexterity saving throw or fall prone.&lt;/li&gt;
+&lt;li&gt; Any target that makes an attack roll and misses must roll a Strength saving throw or drop their weapon.&lt;/li&gt;
+&lt;li&gt; Any target that casts a spell and missed has the effect of that spell applied to themselves.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration 10 minutes</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Forbidden Knowledge of the Ancients" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FORBIDDEN_KNOWLEDGE_OF_THE_ANCIENTS">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You call upon the nature of horrid wizards long past, seeking both their guidance and power. For the duration, your Intelligence and Wisdom increase by 4, to a maximum of 24.&lt;/p&gt;
+&lt;p class="indent"&gt;However, after the spell ends, you gain two levels of exhaustion.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Divination</set>
+			<set name="time">1 minute</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A skull of a recently slain humanoid, consumed by the spell</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
