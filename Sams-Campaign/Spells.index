@@ -3,11 +3,11 @@
 	<info>
 		<name>spells</name>
 		<update version="0.0.1">
-			<file name="Spells.index" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells.index" />
+			<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
 		</update>
 	</info>
 	<files>
-		<file name="Necromancy-spells" url="https://raw.githubusercontent.com/ssassassinz/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
+		<file name="Necromancy-spells" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 
 	</files>
 </index>
