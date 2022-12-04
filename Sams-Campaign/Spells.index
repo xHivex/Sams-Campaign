@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>spells</name>
-		<update version="0.0.1">
+		<update version="0.1.0">
 			<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
 		</update>
 	</info>
