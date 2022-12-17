@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Conjuration-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Conjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Conjuration-spells.xml" />
 		</update>
 	</info>
@@ -1858,7 +1858,7 @@
 	<element name="Iron Maiden" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_IRON_MAIDEN">
 		<supports>Cleric, Warlock</supports>
 		<description>
-			<html>&lt;p&gt;You summon an iron maiden around one target Small or Medium. The target must succeed an Agility saving throw or the doors slam shut around them, dealing 7d8 piercing damage.&lt;/p&gt;
+			<html>&lt;p&gt;You summon an iron maiden around one target Small or Medium. The target must succeed an Dexterity saving throw or the doors slam shut around them, dealing 7d8 piercing damage.&lt;/p&gt;
 &lt;p class="indent"&gt;If the target has blood, they suffers an additional 2 piercing damage at the start of each turn, until it receives healing.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d8 for each slot level above 5th and you can use the spell on targets of Large size.&lt;/p&gt;</html>
 		</description>
