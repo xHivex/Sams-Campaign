@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -1586,28 +1586,6 @@
 			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
-			<set name="isConcentration">false</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-	<element name="Final Gambit" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FINAL_GAMBIT">
-		<supports>Cleric, Paladin, Druid, Bard, Sorcerer, Warlock, Wizard, Artificer, Ranger</supports>
-		<description>
-			<html>&lt;p&gt;This spell can only be cast when you only have one spell slot remaining. You release a final massive bolt of energy, draining from your inner reserves.&lt;/p&gt;
-&lt;p class="indent"&gt;Make a ranged spell attack, dealing 4d8 necrotic damage on a hit. After casting this spell, you gain a level of exhaustion, and cannot cast any more spells until you finish a long rest.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 2nd level or higher, you deal 2d8 extra damage for every level above 1st.&lt;/p&gt;</html>
-		</description>
-		<setters>
-			<set name="keywords" />
-			<set name="level">1</set>
-			<set name="school">Evocation</set>
-			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
-			<set name="range">120 feet</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">a broken spellcasting focus</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -4655,7 +4633,7 @@
 	<element name="Final Gambit" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FINAL_GAMBIT">
 		<supports>Druid, Sorcerer, Wizard, Artificer</supports>
 		<description>
-			<html>&lt;p&gt;his spell can only be cast when you only have one spell slot remaining. You release a final massive bolt of energy, draining from your inner reserves.&lt;/p&gt;
+			<html>&lt;p&gt;This spell can only be cast when you only have one spell slot remaining. You release a final massive bolt of energy, draining from your inner reserves.&lt;/p&gt;
 &lt;p class="indent"&gt;Make a ranged spell attack, dealing 4d8 necrotic damage on a hit. After casting this spell, you gain a level of exhaustion, and cannot cast any more spells until you finish a long rest.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 2nd level or higher, you deal 2d8 extra damage for every level above 1st.&lt;/p&gt;</html>
 		</description>
