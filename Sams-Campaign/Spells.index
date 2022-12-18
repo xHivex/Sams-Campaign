@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
 		</update>
 	</info>
@@ -14,6 +14,7 @@
 		<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		<file name="Illusion-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Illusion-spells.xml" />
 		<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
+		<file name="Transmutation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Transmutation-spells.xml" />
 
 	</files>
 </index>
