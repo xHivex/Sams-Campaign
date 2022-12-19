@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Conjuration-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Conjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Conjuration-spells.xml" />
 		</update>
 	</info>
@@ -519,7 +519,7 @@
 		</setters>
 	</element>
 	<element name="Summon Instrument" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SUMMON_INSTRUMENT">
-		<supports>Cleric, Paladin, Druid, Bard, Sorcerer, Wizard, Warlock, Artificer, Ranger</supports>
+		<supports>Bard</supports>
 		<description>
 			<html>&lt;p&gt;Conjure one handheld musical instrument. You summon one handheld musical instrument of your choice. This instrument appears either in your hands or at your feet as you decide.&lt;/p&gt;
 &lt;p class="indent"&gt;The instrument is typical for its type. You may only summon one instrument per casting, and it will only play for you.&lt;/p&gt;
