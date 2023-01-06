@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Necromancy-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 		</update>
 	</info>
@@ -2563,7 +2563,7 @@
 		<description>
 			<html>&lt;p&gt;A target creature within range must succeed on a Wisdom saving throw or become cursed for the duration of this spell. Choose a damage type.&lt;/p&gt;
 &lt;p class="indent"&gt;While cursed, the creature has vulnerability to the chosen damage type if it is not already vulnerable, resistant, or immune to it. If the creature is resistant to the damage type, it loses that resistance while cursed.&lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you can choose one additional damage type for each slot level above 4th.&lt;/p&gt;</html>
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, you can choose one additional damage type for each slot level above 5th.&lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="keywords" />
