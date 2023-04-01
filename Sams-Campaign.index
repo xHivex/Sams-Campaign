@@ -3,7 +3,7 @@
 	<info>
 		<name>Sams Campaign</name>
 		<description>Sams Campaign.</description>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Sams-Campaign.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign.index" />
 		</update>
 	</info>
@@ -11,5 +11,7 @@
 
 		<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
 		<file name="epic-level-21-40.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/epic-level-21-40.xml" />
+		<file name="Blessings.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings.index" />
+		<file name="Items.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items.index" />
 	</files>
 </index>
