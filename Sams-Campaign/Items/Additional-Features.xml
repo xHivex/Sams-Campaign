@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<element name="Expertise" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_EXPERTISE">
+		<description>
+			<html>Add expertise</html>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Class Feature" name="Expertise" supports="ID_INTERNAL_SUPPORT_EXPERTISE" />
+		</rules>
+	</element>
+	<element name="Proficiency" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_PROFICIENCY">
+		<description>
+			<html>Add expertise</html>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<stat name="proficiency" value="1" />
+		</rules>
+	</element>
+</elements>
