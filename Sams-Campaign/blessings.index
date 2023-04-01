@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Blessings</name>
+		<update version="0.1.0">
+			<file name="blessings.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/blessings.index" />
+		</update>
+	</info>
+	<files>
+		<file name="proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/blessings/proficiency-boost.xml" />
+	</files>
+</index>
