@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/blessings/proficiency-boost.xml" />
+		<file name="proficiencyboost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/proficiencyboost.xml" />
 	</files>
 </index>
