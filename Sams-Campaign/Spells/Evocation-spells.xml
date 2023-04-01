@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -266,7 +266,7 @@
 		<supports>Sorcerer, Wizard</supports>
 		<description>
 			<html>&lt;p&gt;With a flourish, you swipe your hand through the air to bring a slash of scorching heat into a creature you try to touch. Make a melee spell attack roll against the target. On a hit, the target takes 1d4 fire damage and 1d4 slashing damage.&lt;/p&gt;
-&lt;p class="indent"&gt;This spell's fire damage and slashing damage both increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). /p&gt;</html>
+&lt;p class="indent"&gt;This spell's fire damage and slashing damage both increase by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4). &lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="keywords" />
@@ -2103,7 +2103,7 @@
 	<element name="Crash and Burn" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRASH_AND_BURN">
 		<supports>Sorcerer, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;When you cast this spell choose a creature or point that you can see within range. You launch your self forward in a line to the point you selected with a blast of fire, each creature caught in the line must make a Dexterity saving throw or take 5d6 fire damage, half on save. Once you reach the point you selected, you take 2d4 Bludgeoning damage from the force of the blast.&lt;/p&gt;
+			<html>&lt;p&gt;When you cast this spell choose a creature or point that you can see within range. You launch your self forward in a line to the point you selected with a blast of fire, each creature caught in the line must make a Dexterity saving throw or take 3d6 fire damage, half on save. Once you reach the point you selected, you take 2d4 Bludgeoning damage from the force of the blast.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3 or higher the damage increases by 1d6, the range of the spell also increases by 10 feet for every 2 slots higher than 2. The damage you take increases by 1d4 for every spell slot above 2 used to cast this spell.&lt;/p&gt;</html>
 		</description>
 		<setters>
@@ -5925,6 +5925,29 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Screw That One Guy in Particular" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCREW_THAT_ONE_GUY_IN_PARTICULAR">
+		<supports>Cleric, Druid, Bard, Sorcerer, Warlock, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A bolt of lightning streaks from the sky to strike one creature within range. The creature is randomly determined by the DM.&lt;/p&gt;
+&lt;p class="indent"&gt;The creature must make a Dexterity saving throw, taking 3d10 lightning damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;If this spell is cast again by any spellcaster within 1 minute, the same creature is struck.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">420 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
