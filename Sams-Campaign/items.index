@@ -7,6 +7,6 @@
 		</update>
 	</info>
 	<files>
-		<file name="additional-features.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/items/additional-features.xml" />
+		<file name="additionalfeatures.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/items/additionalfeatures.xml" />
 	</files>
 </index>
