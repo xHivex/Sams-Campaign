@@ -1,0 +1,2152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Abjuration-spells</name>
+		<update version="0.1.0">
+			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
+		</update>
+	</info>
+	<element name="Elemental Aegis" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ELEMENTAL_AEGIS">
+		<supports>Cleric, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You protect a creature in range with a subtle magical ward. Choose one of the following damage types: acid, cold, fire, lightning, necrotic, radiant, or thunder.&lt;/p&gt;
+&lt;p class="indent"&gt;Until the end of your next turn, the target has resistance to damage of the chosen type.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Furious Charge" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FURIOUS_CHARGE">
+		<supports>Druid, Bard, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create a shield of force on your shoulder and ram into a creature you can reach. Make a melee spell attack against the target. On a hit, the target takes force damage equal to 1d4 + your Strength modifier, and if it is Medium or smaller must make a Strength saving throw. On a failed save, the target is pushed 10 feet directly away from you and knocked prone.&lt;/p&gt;
+&lt;p class="indent"&gt;You can instead cast this spell as a bonus action after you have used your action to dash, and have moved at least 10 feet straight towards the target of your attack.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Glyph Trap" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GLYPH_TRAP">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You cast a glowing pool of magic upon the ground by drawing a glyph with paint, or something that can mark a surface, that damages and hinders anyone who wanders through or is pushed into it.&lt;/p&gt;
+&lt;p&gt;Designate an unoccupied area to draw the glyph to receive the magical glyph which then hides the glyph from normal sight: anyone attempting to see the glyph must succeed on a Wisdom (Perception) check with a DC equal to your spell save DC (see invisibility, blindsight, and truesight detect it automatically)&lt;/p&gt;
+&lt;p class="indent"&gt;Anyone other than you who steps onto the glyph's area of effect must succeed on a Constitution saving throw or take 1d4 force damage.&lt;/p&gt;
+&lt;p&gt;The trap dissipates immediately after it deals damage but leaves behind the drawn glyph, now visible by everyone, and unable to be active again until the glyph is entirely removed, which takes about a minute. You can't have more active glyphs than your proficiency modifier.&lt;/p&gt;
+&lt;p class="indent"&gt; This spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a few droplets of ink or paint</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Haptic Counter" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HAPTIC_COUNTER">
+		<supports>Druid, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You focus on the energy kept within you and release it in a defensive manner. You can use your reaction to activate this spell after being damaged by an attack within range.&lt;/p&gt;
+&lt;p class="indent"&gt;You create a sphere of pure energy and launch it at the attacker. The attacking creature must make a Dexterity saving throw, taking 1d6 force damage upon a failure.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's force damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take in response to being damaged by a creature within range</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Minor Ward" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MINOR_WARD">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature to minutely increase its resistance to damage, The target gains 1 temporary hit point for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt; If you cast this spell multiple times, you can have up to three minor ward effects active at a time, and you can dismiss any one of them as an action.&lt;/p&gt;
+&lt;p class="indent"&gt;The amount of temporary hit points gained upon casting the spell increases to 2 at 5th level, 3 at 11th level, and 4 at 17th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Nature's Ward" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NATURES_WARD">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;You imbue a creature with protection against natural forces. Until the end of your next turn, the willing target you touch has resistance to cold, fire, and lightning damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Radiant Song" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RADIANT_SONG">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature and cause an eerie song to play, warding away danger, The creature you touch has advantage on saving throws until the start of your next turn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Anti-Evil-Protection" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANTI_EVIL_PROTECTION">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Creates an 30 feet cube magical barrier. Creatures with an CR of 1 or less that have an evil alignment can't pass through that barrier for the duration of the spell, however, they can attack it.&lt;/p&gt;
+&lt;p class="indent"&gt;When the barrier is attacked, you must make a saving throw for the spellcasting modifier used in casting this spell. The DC is either 10, or equal to half the damage dealt to cause this, whatever is higher. On a failure, this spell ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration"> Concentration, up to 10 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Armor of Othrys" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARMOR_OF_OTHRYS">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;The creature you touch glows with an aura that resembles moving spectral magma, creating an ablative shield. The target gains temporary hit points equal to 4 + your spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, if the target is hit with a melee attack whilst it has temporary hit points granted by this spell, the attacker takes 1d6 fire damage if it is within 5 feet.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the temporary hit points increase by 5 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a single flaming torch</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Armor of Prometheus" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARMOR_OF_PROMETHEUS">
+		<supports>Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A protective magical force surrounds you, manifesting as a spectral flame that covers you and your gear. You gain 5 temporary hit points for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;If a creature hits you with a melee attack while these temporary hit points remain, the creature takes 5 fire damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, both the temporary hit points and the fire damage increase by 5 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a source of fire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Armour of Jenova" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARMOUR_OF_JENOVA">
+		<supports>Paladin, Druid, Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;You summon a colourful aura of aberrant energy around you that harms creatures close to you. Whenever a creature or plant starts it's turn within 5 feet of you while this spell is active, they take 1d10 force, necrotic, or radiant damage (your choice).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 per spell slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sphere of glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blaze of Wrath" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLAZE_OF_WRATH">
+		<supports>Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Using all your might, you channel your energy into a single, powerful fiery punch. Make a melee spell attack against a creature. On a hit, it deals 2d6 fire damage and 2d6 bludgeoning damage, and the target is knocked 10 ft. back.&lt;/p&gt;
+&lt;p class="indent"&gt;However, the stress of this spell prevents further action. You cannot use this spell if you have moved, taken a bonus action, an action or attacked another creature. Likewise, after this spell is used, it ends your turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell at every level above 1st, it deals an additional 1d6. Whether this damage is given to the fire or the bludgeoning damage up to you, but you can only choose once.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 Turn</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Moon's Blessing" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_MOONS_BLESSING">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;When you cast this spell, you become illuminated by blood-red light from an unknown source above your head and add your Wisdom modifier to the damage you deal through either attacks with weapons or spells.&lt;/p&gt;
+&lt;p class="indent"&gt;Both effects last until you either lose concentration or the duration of the spell ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood and a drop of holy waterv</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Brand" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BRAND">
+		<supports>Artificer, Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You verbally identify one non-magic item within 5 feet of you marking with a magic sigil which binds it to your spirit. The sigil breaks if you cast the spell on another object, if you move more than 150ft away from the object or if the object moves onto a different plane of existence than you are.&lt;/p&gt;
+&lt;p class="indent"&gt;Any creature that attempts to move the object must make a wisdom saving throw or be physically unable to lift the item or remove it from your person.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell continues on the object even if it is taken with a save needing to be made every hour. If a creature fails this save, the item slips out of their hand falling straight down in their square. You can destroy the sigil at any time with no action required by you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Broken Ward" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BROKEN_WARD">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;Support your allies with a fragile barrier of force that hits back with splinters when struck by a melee attack. A creature within range that you can see gains 2d4 temporary hit points for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target is hit by a melee attack while these temporary hit points persist, the ward splinters and deals an amount of force damage to the attacker equal to the number of hit points it removed from this pool.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, add 1d4 temporary hit points for each spell slot above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Countertrip" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_COUNTERTRIP">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You interrupt a creature in the process of casting a cantrip. The creature's spell automatically fails, and has no effect.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Darius's Selfless Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARIUSS_SELFLESS_SHIELD">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;When a creature is about to be attacked, you put up an invisible barrier that protects them using a reaction. Until the start of your next turn, the target gains a +5 to their AC and cannot be damaged by the spell Magic Missile.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 Reaction</set>
+			<set name="duration">1 Round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Divine Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIVINE_ARMOR">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;When the divines themselves grant you their blessings, none shall ever harm those they protect. You touch a willing creature who isn't wearing armor, and a protective divine force surrounds it until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;The target's AC becomes 10 + its Dexterity modifier (minimum 0) + half your spellcasting ability modifier, rounded up. The spell ends if the target dons armor other than a shield or if you dismiss the spell as an action.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of a broken shield</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Earth Barrier" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EARTH_BARRIER">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;You call forth a pillar of earth and stone in an unoccupied, 5-foot cube within range when you would be hit by an attack. The barrier is immobile and has an AC of 10 and 27 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;The barrier can act as total cover to creatures adjacent to it. If this cover causes the attack to miss, the barrier takes the damage instead.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you are hit by an attack</set>
+			<set name="duration">1 minute</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Enhanced Durability" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ENHANCED_DURABILITY">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch one willing creature. For the next minute, the target has a bonus +2 to AC, and gains 4 temporary hit points.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the target gains an additional 10 temporary hit points for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">iron filings</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Etzel’s Bolstering Bands" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ETZELS_BOLSTERING_BANDS">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Upon casting the spell, an invisible brace made up of thin filaments of force appears against the caster’s skin. This brace nullifies any condition or effect that is of equal or lower level that weakens bones, and grants the following benefits;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Any fall damage taken is reduced by 10 points&lt;/li&gt;
+&lt;li&gt; You have a +1 on constitution saving throws&lt;/li&gt;
+&lt;li&gt; Your AC equals 11+Dexterity Modifier&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher reduce fall damage by another 10 points and add another +1 to constitution saving throws per additional spell level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">8 Hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small piece of bone wrapped in metal wire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Force Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FORCE_ARMOR">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a willing creature who isn't wearing armor, and a protective magical force surrounds it until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;The target's base AC becomes 13 + its Intelligence modifier. The spell ends if the target dons armor or if you dismiss the spell as an action.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; This spell’s base ac increases when cast at a higher level. With a 3rd level spell slot, the AC becomes 15 + its Intelligence modifier. With a 5th level slot the AC becomes 17 + its Intelligence modifier. With a 7th level slot, the AC becomes 19 + its Intelligence modifier. With a 9th level slot, the AC becomes 21 + its Intelligence modifier.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">8 Hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leomund's Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEOMUNDS_SHIELD">
+		<supports>Cleric,  Druid, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A shield that defends the user from harsh elements and the small inconveniences of life. When the spell is cast, an invisible bubble with a 5 foot diameter surrounds the caster, which protects them from minor threats and elemental harm, i.e. rain, fog clouds, dust storms, cold winds etc.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell also increases the caster's AC by 1 against nonmagical ranged attacks, such as thrown stones or arrows, This spell is dispelled when hit by elements of high mass, such as tidal waves or catapulted stone.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2 or higher, the diameter of the bubble increases by 5 feet for each slot level above 1st, to a maximum of 20 feet.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leonardo's Imploding Shell" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEONARDOS_IMPLODING_SHELL">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A creature in range you can see is encased in a purple sphere of armor, granting it a +2 bonus to its AC. At the start of your next turn, the shield implodes. The target loses the extra AC and the implosion deals 3d6 + 1 force damage to the target.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st. When you cast this spell using a spell slot of 3rd level or higher, the bonus to AC increases by 1 for every two slot levels above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small purple feather</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Magical Deflect" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MAGICAL_DEFLECT">
+		<supports>Bard, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You weave a magical barrier, which soaks up most of the effort from spells. Until the start of your next turn, you take 7 less damage from spells, after resistance and vunerability.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 2nd level or higher, the damage reduction increases by 7 for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mana Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MANA_SHIELD">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create a protective sphere of magical force around a willing creature you can see within range. The targeted creature gains temporary hit points equal to 1d10 + your spellcasting modifier. &lt;/p&gt;
+&lt;p class="indent"&gt;If the targeted creature would take an amount of damage that exceeds their current temporary hit points, they instead lose all temporary hit points and take no damage, and the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the spell grants an additional 1d10 temporary hit points for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pearl worth at least 100 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Obscured Garden" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_OBSCURED_GARDEN">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;You throw dust and leaves in the air, creating a large roving whirlwind, 10 feet wide. On your turn, you may use your bonus action to move the whirlwind up to 20ft.&lt;/p&gt;
+&lt;p class="indent"&gt;When a creature first touches the whirlwind, or when it begins its turn inside it, it must make a Dexterity saving throw, taking 2d4 slashing damage on a failure.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of dust, a handful of leaves, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Paradoxal Grotto" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PARADOXAL_GROTTO">
+		<supports>Druid</supports>
+		<description>
+			<html>&lt;p&gt;The player casts vines onto the ground which burrow into the earth. When a creature is harmed when in the range of the spell by any action made by the caster, the damage taken is converted into an equal amount of hitponts which heal the caster.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bundle of vines, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protective Barrier" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PROTECTIVE_BARRIER">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a wall of force in range measuring five feet tall, one foot thick, and ten feet long for allies to take cover behind. The wall is opaque from one side, of any color you choose. The wall has an AC of 15, 30 hit points, and resistance to piercing and slashing damage from nonmagical weapons.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the height and length of the wall both increase by 5 ft. for each slot level above 1st. When you use a spell slot of 4th level or higher, the duration becomes 1 hour, the spell doesn't require concentration, and the wall's hit point total increases to 50.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a halfbrick</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protector's Mark" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PROTECTORS_MARK">
+		<supports>Cleric, Paladin, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You choose a creature you can see within range and mystically mark a ward upon it. Until the spell ends, you reduce the damage the targeted creature takes by 1d6, but you take an amount of damage equal to the damage taken by the marked creature minus 1d6 (minimum of 1).&lt;/p&gt;
+&lt;p class="indent"&gt;The damage dealt to you is the same damage type dealt to the marked creature. If the marked creature drops to 0 hit points while this spell is in effect but not killed outright, you may move the mark to another creature within range. &lt;/p&gt;
+&lt;p class="indent"&gt;Alternatively, you may cause the marked creature reduced to 0 hit points to be stabilized, ending the spell. If the caster falls unconscious, the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, roll an additional 1d6 per spell slot used when rolling for reducing the damage of your marked creature and the damage you take when your marked creature takes damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a lucky trinket representing a god</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rune Strike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RUNE_STRIKE">
+		<supports>Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Make a melee attack against the creature that dealt damage to you. Add your charisma modifier to the attack roll and the damage of that attack.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher the damage increases by 1d12 for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when a creature within your reach deals damage to you</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Suppress Pain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SUPPRESS_PAIN">
+		<supports>Cleric, Paladin, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You dull the pain of a creature’s wounds and help it tolerate further punishment. The creature regains 1d6 hit points and also gains temporary hit points equal to your spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt; This spell has no effect on undead or constructs.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d6 and the number of temporary hit points increase by 1 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Arcane Defense" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARCANE_DEFENSE">
+		<supports>Artificer, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;The spell creates a magical ward of arcane energy around a willing creature. Until the spell ends, the creature has resistance against bludgeoning, piercing, or slashing damage. You choose the damage type.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 75 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Booming Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BOOMING_SHIELD">
+		<supports>Cleric, Paladin, Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You touch one willing creature and a spectral chest plate manifests on its body, which surges with electricity.&lt;/p&gt;
+&lt;p class="indent"&gt;While this spell is active, the creature gains +1 to its AC. In addition, when it is hit with a melee weapon attack, all creatures within 5 feet must make a successful Constitution save or be pushed 5 feet away from the creature and be knocked prone. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Curing Mist" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CURING_MIST">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You emit a pulse of soothing mist out to a distance of 10ft. This mist removes either the blinded, deafened, paralyzed, stunned, or poisoned condition from any creatures you choose within its radius of effect.&lt;/p&gt;
+&lt;p class="indent"&gt;Alternatively, instead of removing a debilitating condition, you may use this spell to cure diseases from afflicted creatures. Each creature in your area of effect may make a Constitution saving throw contested against a DC of 30 minus your spell save DC, ending any diseases it has on a success.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the area of effect extends 5ft further for every level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Holy water worth at least 25 gp, which this spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Defiant Overflow" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEFIANT_OVERFLOW">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You begin to well with defensive energy for 1 minute. The next time you would restore hit points to any number of creatures while under this effect, you also grant the targets temporary hit points equal to the number of hit points restored.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Denial" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DENIAL">
+		<supports>Cleric, Paladin, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You recount the tale of the goddess of tears fighting to delay the inevitable, while you try to hang onto your own life for a few more fleeting moments, expressed as a glowing orb of light within you that shields you from a deadly blow. The next time you would drop to 0 or fewer hit points due to taking damage, you drop to 1 hit point instead, then the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;Denial can only save you from so much, and offers no protection against effects that would kill you instantly.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Fall Control" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FALL_CONTROL">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You enchant the feet of yourself and any number of creatures you see within range with deep blue mist. While a creature is under the effects of this spell, it is immune to any and all damage suffered from falling, landing harmlessly with a soundless blue poof.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell doesn't change how quickly or slowly an affected creature falls.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an old shoe worth at least 1 sp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Galvanize" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GALVANIZE">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You heal a target creature for a number of hit points equal to 2d6 + your spellcasting ability modifier, and grant them a number of temporary hit points equal to the healed amount for up to 1 minute.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the heel amount increases by 1d6 for each spell slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hallowed Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HALLOWED_ARMOR">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You make a prayer for protection in battle and divine energy covers your body, creating armor of holy energy to defend you. The armor can look however you want.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, your base AC is 14 + your spellcasting ability modifier, you have resistance to necrotic damage, and you can cast this spell again as a bonus action to extend the duration. The spell ends if you don armor or dismiss it as a bonus action. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the spell's duration increases by 1 hour for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">4 hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Healing Wall" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HEALING_WALL">
+		<supports>Cleric, Paladin, Bard</supports>
+		<description>
+			<html>&lt;p&gt; A light golden dome radiates from your chest, empowering allies around you.&lt;/p&gt;
+&lt;p class="indent"&gt; Up to five creatures within 15-feet of you gain a number of temporary hitpoints equal to your level + your spellcasting ability modifier.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (15-foot sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sprig of rosemary</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leonardo's Pulsing Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEONARDOS_PULSING_SHIELD">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You cause force energy to radiate from yourself, causing you to gain a +2 bonus to AC for the duration. The energy pulsates from you and lashes around.&lt;/p&gt;
+&lt;p class="indent"&gt; Up to two creatures of your choice within 15 feet of you gain a +1 bonus to AC while they remain in range. During your turn, you can change which two creatures gain this benefit. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (15-foot sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of cured leather</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Leonardo's Splinter Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEONARDOS_SPLINTER_ARMOR">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a willing creature and a protective magical force surrounds it until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt; The target gains +1 AC and any successful melee attack made against the target causes the shell to splinter, dealing 1d6 force damage to the attacker. The spell ends if you dismiss the spell as a bonus action.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of cured leather</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lesser Reflection" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LESSER_REFLECTION">
+		<supports>Cleric, Paladin, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt; When you are targeted by an effect, caused by a creature, that forces you to make a saving throw, you can use your reaction to cast this spell.&lt;/p&gt;
+&lt;p class="indent"&gt; You automatically fail the saving throw, but the creature that targeted you with the effect must make a Wisdom saving throw against your Spell Save DC. On a failure, they are subjected to the same effect that you were subjected to. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Light of Blinding" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIGHT_OF_BLINDING">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You create a uncomfortably bright flash of light. Each creature in a 15-foot-radius sphere centered on you must make a Dexterity saving throw. A creature is blinded for the duration on a failed save.&lt;/p&gt;
+&lt;p class="indent"&gt;At the end of each of an affected creature's turns, it can make a Constitution saving throw. On a success, the spell ends on that creature.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (15-foot-radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Merrow's Song" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MERROWS_SONG">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You unleash the voice of the great singers of the ocean. Any creatures of your choice within a 15 ft. cone must attempt a Charisma saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt; On a failure, they take 1d4 thunder damage and 1d4 psychic damage, and are stunned until the end of your next turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d4 and the range increases by 5 ft. for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (15 foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Redistribute Impact" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REDISTRIBUTE_IMPACT">
+		<supports>Paladin, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;As you strike the ground, you transfer the kinetic energy into the surrounding area.&lt;/p&gt;
+&lt;p class="indent"&gt; You take no falling damage, and everyone within 10 feet of you must make a Constitution saving throw, or take half of the damage(rounded down) you would have taken from falling as thunder damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, when you would take falling damage.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (10-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shield of Honor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHIELD_OF_HONOR">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt; You trace a sigil on an adjacent creature’s body, creating the glowing outline of a shield that protects them from injury. The creature gains 10 temporary hit points for the duration.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the number of temporary hit points gained increases by 5 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Zone of Sweet Air" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ZONE_OF_SWEET_AIR">
+		<supports>Cleric, Paladin, Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You create an invisible magical zone that eliminates noxious airs in a 15-foot radius sphere centered on a point of your choice within range.&lt;/p&gt;
+&lt;p class="indent"&gt; All poisonous or otherwise damaging gases of natural or magical origin, except those created by breath weapons, are blocked by this spell and cannot enter the zone. Fresh air passes into the zone without hindrance. If any fumes are present when the spell was cast, or are created inside the area of protection, they are instantaneously purged from it. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silk handkerchief</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Anti-Fireball" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANTI_FIREBALL">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt; A dark streak flashes from your pointing finger to a point you choose within range then blossoms with a soft hum into an implosion of mist.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature in a 20-foot radius gain temporary shield to fire damage equal to 10d6 fire damage until the start of your next turn. &lt;/p&gt;
+&lt;p class="indent"&gt; The mist spreads around corners. It douses flames in the area and prevents igniting of flammable objects in the area until the start of your next turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the damage shield increases by 2d6 for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, when something casts Fireball</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">200 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny ball of mud or clay</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Armor of Avernus" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ARMOR_OF_AVERNUS">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt; You touch a willing creature, and a protective layer of force surrounds them. Their armor class increases by 2 for the duration, and any creature that hits them with a melee attack takes fire damage equal to 3d4 + your spellcasting ability modifier. You may dismiss this spell as an action.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d4 for each slot level above 3rd&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A vial of blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Combat Avatar" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_COMBAT_AVATAR">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a glowing avatar of force around yourself, protecting you from harm. You gain 30 temporary hit points for the duration. While you have these hit points, you gain the following benefits.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Your Strength and Constitution scores are considered to be 16 (+3) unless they are already higher.&lt;/li&gt;
+&lt;li&gt; You are considered to be equipped with a force weapon, which you may choose the appearance of. You may make a melee spell attack with it as an action. It deals 2d8 force damage on a successful hit.&lt;/li&gt;
+&lt;li&gt; Your Armor Class increases by 2 for the duration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, you gain an extra 10 temporary hit points for each spell level above third. Additionally, when you cast this spell using a spell slot of 5th or 6th level, your force weapon deals 3d8 damage on a hit. If cast using a 7th, 8th, or 9th level spell slot, your force weapon deals 4d8 damage on a hit.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dome of Light" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DOME_OF_LIGHT">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt; You conjure a dome of light that surrounds you in a protective radiant barrier.&lt;/p&gt;
+&lt;p class="indent"&gt; You summon an orb of light that expands to a 10-foot radius around you and remains for the duration. You and each creature you choose gains a +2 bonus to AC against spell attacks and to saving throws against spells while inside the dome. &lt;/p&gt;
+&lt;p class="indent"&gt; Each creature you choose that enters or starts their turn in the dome must make a Constitution saving throw equal to the casters spell DC. The creatures take 4d8 radiant damage on a failed save and half that on a successful one.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the radiant damage increases by 1d8 for every spell slot above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (10-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Halo" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HALO">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Choose a target you can see within range. A halo will appear floating a few inches above their head.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Upon dropping to 0 hit points the halo begins to shine brighter, imposing disadvantage on any attacks made against the target.&lt;/li&gt;
+&lt;li&gt; The warming light immediately grants the creature one successful death save, and grants advantage on death saving throws. Upon becoming stable, the halo bursts, healing the target a number of hit points equal to 1d8 + their Constitution modifier, ending the spell.&lt;/li&gt;
+&lt;li&gt; If enough damage is dealt to instantly kill the target, the halo will take the brunt of the force instead. It shatters, ending the spell and leaving the target with 0 hit points.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher it will grant an additional 1d8 hit points upon ending for each level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of a holy symbol wrapped in a cloth soaked in holy water</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Leonardo's Projected Force" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LEONARDOS_PROJECTED_FORCE">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create four balls of force that circle your person. As a bonus action on each of your turns for the duration, you can hurl one of the balls at a creature or object in range at which point it disappears. Make a ranged spell attack against the target. On a hit, the target takes 2d6 + 1 force damage.&lt;/p&gt;
+&lt;p class="indent"&gt; If you are attacked in melee whilst there are balls circling you, the attacker must make a Dexterity save or be hit by one of the balls for 2d6 + 1 damage. The ball then disappears.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, you create one additional ball for each slot level above 3rd.
+
+&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Warrior’s Blessing" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WARRIORS_BLESSING">
+		<supports>Paladin, Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;For the duration, the willing creature you touch has resistance to one damage type of your choice: bludgeoning, piercing, or slashing.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Null Bolt" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NULL_BOLT">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A blast of pure energy emanates from your palm, firing out a lance of negatively-charged magical energy. Make a ranged spell attack against the target creature. On a hit, the creature takes 3d8 force damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Any spell of 2nd level or lower on the target automatically ends. If the spell effect is permanent, it is disabled for 10 minutes. For each spell of 3rd level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the damage of the spell increases by 1d8 per additional spell level. You also automatically end the effects of a spell on the target if the spell's level is less than the level of the spell slot you used.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a rod of onyx, metal, or glass</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Pincushion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AID_2">
+		<supports>Cleric, Artificer, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You weave a magical barrier around yourself, specifically made to catch and return projectiles. When you are targeted by a ranged weapon attack, it automatically hits, but deals 5d6 less damage. If the damage would be reduced to 0, it is impaled upon the barrier, and stays there until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt; When the spell does end, you can return fire with the projectiles you absorbed. You make a ranged spell attack with a range of 50 feet for each impaled object, dealing 2d4 bludgeoning damage on a hit. Based on the type of projectile, this damage type can change(for example, a light hammer thrown by this spell would deal bludgeoning damage). &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 4th level or higher, the damage is reduced by 2d6, and the returned damage is increased by 1d4, for every level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">concentration, up to one minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rejuvenation" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REJUVENATION">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Rejuvenation washes over the caster or ally with slight natural healing energies that take on the appearance of spectral raindrops and leaves.&lt;/p&gt;
+&lt;p class="indent"&gt; Choose a creature within range. At the start of each of their turns, the creature regains 3d4 hit points. The healing does not work if the creature is unconscious. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, it heals an extra 1d4 hit points for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a leaf, root, mushroom or twig</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Stasis" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_STASIS">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to put an attacking creature or projectile near you into stasis.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Creature.&lt;/i&gt;&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt; If you target a creature, that creature must succeed on a Wisdom saving throw. On a failed save the creature's attack misses and its turn immediately ends as it enters stasis. A creature in stasis is stunned, immune to all damage, and cannot be affected by other spells until the start of its next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;The creature appears bound by chains that seemingly disappear after the it is freed from its stasis. When the stasis ends, the creature uses its action to make an attack against the space that you were in when you cast the spell, regardless of whether you are there or not. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Projectile.&lt;/i&gt;&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt; If you target a projectile, make an ability check using your spellcasting ability. The DC equals 10 for non-spell attacks, and 10 + the spell’s level for spell attacks. On a success, the projectile enter stasis until the start of the turn it was launched in. A projectile in stasis cannot be moved and is immune to all damage. &lt;/p&gt;
+&lt;p class="indent"&gt; The projectile appears bound by chains that seemingly disappear after the it’s bound. When the stasis ends, the projectile continues onward, potentially missing targets that moved out its path. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when a projectile moves within 15 feet of you or when you’re targeted by a melee attack</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Tidecaller's Blessing" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TIDECALLERS_BLESSING">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt; You imbue an ally's weapon with strong frost energy. You bless the target, causing their weapon attacks to deal an extra 1d8 cold damage per hit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher you can target one more creature per 2 levels above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Syncopate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SYNCOPATE">
+		<supports>Cleric, Paladin, Artificer, Sorcerer, Wizard, Warlock, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Instead of directly stopping a spell, you weaken it’s effectiveness. If this spell has multiple targets, the amount of targets are reduced by 2 to a minimum of 1.&lt;/p&gt;
+&lt;p class="indent"&gt; If it uses non-d20 dice(I.e damage or healing), they are reduced by 3, to a minimum of one. If none of the following applies, creatures simply have advantage against the spells effects.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 4th level or higher, the amount of targets and die reduction increases by 2, for every level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 Reaction, which you take when you see a creature within 60 feet of you casting a spell</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Wolfsbane" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WOLFSBANE">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Whenever creature uses a spell or effect that would change its form, that creature must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt; On a failure, the creature does not change shape and takes 4d6 psychic damage. The target’s action is wasted, and if the shapechanging feature has limited uses, one use is also wasted.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you may take when another creature uses a spell or effect to change its shape.</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">90 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of animal fur</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Alice's Chaos Recall" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ALICES_CHAOS_RECALL">
+		<supports>Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;The gemstone used in casting melts and congeals into a field of energy around a recently-teleported creature, warping space around it as you attempt to reverse the magic used. The target must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt; On a failed save, the target takes 5d6 force damage and is forcibly sent back to the space it was transported from; if the space is on another plane, this spell fails. On a successful save, the target takes half as much damage and appears as normal. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; If you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th. Using a spell slot of 6th level or higher also allows you to force the target to return across planes.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you see a creature appear in a space within range via teleportation or planar travel</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gemstone worth at least 25 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Aura of Embers" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AURA_OF_EMBERS">
+		<supports>Paladin</supports>
+		<description>
+			<html>&lt;p&gt; You radiate an aura of comforting warmth out to a range of 30 feet, and for the duration this aura moves with you, centered on you. Your body glows with dim light out to a range of 30 feet. You and every nonhostile creature in this range has resistance to cold damage and can comfortably endure even the coldest of climates.&lt;/p&gt;
+&lt;p class="indent"&gt;Within the duration, you can use your action to kindle a small and controlled flame on a flammable, unattended object in range, you can complete a short rest without breaking concentration on this spell. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 8 hours</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Defender of Life" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEFENDER_OF_LIFE">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt; You radiate a field of protective magic out to a range of 15 feet, which preserves life. This area moves with you, centered on you. You and every nonhostile creature in range can't have its hit point maximum reduced, has resistance to necrotic damage, and has advantage on saving throws against both curses and disease.&lt;/p&gt;
+&lt;p class="indent"&gt; Any living, nonhostile creature in this area that begins its turn with 0 hit points regains 1 hit point at the start of its turn. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (15-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dimensional Anchor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIMENSIONAL_ANCHOR">
+		<supports>Cleric, Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt; A green ray springs from your outstretched hand at a creature or object you can see within range. You must make a ranged spell attack to hit the target. This ray automatically hits objects that are not being worn or carried.&lt;/p&gt;
+&lt;p class="indent"&gt; On a hit, the target is unable to be affected by teleportation spells (such as dimension door and teleport), plane shifting, astral travel and ethereal travel. &lt;/p&gt;
+&lt;p&gt;A dimensional anchor does not interfere with the movement of creatures already in ethreal or astral form when the spell is cast, nor does it block the ability to see into other planes of existence or affect them.&lt;/p&gt;
+&lt;p class="indent"&gt; Also, dimensional anchor does not prevent summoned creatures from disappearing at the end of a summoning spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a 5th level spell slot, change the duration to 10 minutes. When you cast this spell using a 6th level spell slot, change the duration to 1 hour. When you cast this spell using a 7th level spell slot, change the duration to 4 hours. When you cast this spell using an 8th level spell slot, change the duration to 8 hours. When you cast this spell using a 9th level spell slot, change the duration to 24 hours.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Elemental Blessing Rune" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ELEMENTAL_BLESSING_RUNE">
+		<supports>Artificer, Druid, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You choose a willing creature within range and bless them with an elemental rune.&lt;/p&gt;
+&lt;p class="indent"&gt;You choose a damage type from fire, cold, thunder, acid, lightning, or poison and grant the creature resistance to all damage of that type for the duration of the spell.&lt;/p&gt;
+&lt;p class="indent"&gt; In addition, the affected creature deals an 1d4 damage of the selected damage type with successful melee attacks. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level, the duration increases by 12 seconds and the damage increases by 2d4. When you cast this spell using a spell slot of 8th level, the duration increases by 24 seconds, the damage increases by 3d4 and the caster can change the damage type of this blessing at will on their turn, but only once per turn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration"> Concentration, up to 10 minutes</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">stone with an elemental rune on it or drawing the symbol of the rune in sand/air</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Heavy Mage Armor" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HEAVY_MAGE_ARMOR">
+		<supports>Artificer, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt; You touch a willing creature, and they are protected by overlapping plates of rigid magical force.&lt;/p&gt;
+&lt;p class="indent"&gt;That creature has an AC of 16 until they don armor, the spell ends, you dismiss it, or it is successfully dispelled. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th or 7th level, the AC granted by the spell equals 18. When you cast this spell using a spell slot of 8th level or higher, the AC granted by the spell equals 20.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a steel amulet</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Limited Spell Immunity" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIMITED_SPELL_IMMUNITY">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;The warded creature is immune to the effects of one specified spell that you have prepared or know of. The spells must be of 4th level or lower.&lt;/p&gt;
+&lt;p class="indent"&gt; The warded creature is unaffected by the specified spell. Limited Spell immunity protects against spells, spell-like effects of magic items, and innate spell-like abilities of creatures. &lt;/p&gt;
+&lt;p class="indent"&gt;It does not protect against attacks such as breath weapons or gaze attacks. A creature that is unwilling makes a Wisdom saving throw against your spell DC. A successful save negates this spell. &lt;/p&gt;
+&lt;p&gt;Only a particular spell can be protected against, not a certain domain or school of spells or a group of spells that are similar in effect.&lt;/p&gt;
+&lt;p class="indent"&gt; A creature can have only one limited spell immunity spell in effect on it at a time.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th or higher, you can choose 1 additional spell that the target is warded from. When using a 8th or higher spell slot, you can choose 2 additional spells that the target is warded from.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a divine focus</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Maxwell's Marvelous Mantle" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MAXWELLS_MARVELOUS_MANTLE">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A willing creature you touch is surrounded by a shimmering ethereal mantle that places a protective barrier between it and the elements. For the duration of the spell, they gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; The creature gains a +1 bonus to its armor class.&lt;/li&gt;
+&lt;li&gt; The creature automatically succeeds on saving throws made against the effects of extreme cold and extreme heat.&lt;/li&gt;
+&lt;li&gt; The creature and any objects it is wearing or carrying are kept magically dry and unsoiled by substances such as blood, dirt, grease, grime, mud, or oil.&lt;/li&gt;
+&lt;li&gt; Choose one damage type from acid, cold, fire, lightning, or thunder, or two from nonmagical bludgeoning, piercing, or slashing. The creature gains resistance to damage of that type.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you may choose one additional damage type to grant resistance to for each spell slot above 4th. Alternatively, you can choose to target one additional creature for each slot level above 4th. The creatures must be touching when you target them.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">a small silver hood worth 50 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Positive Energy Aura" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POSITIVE_ENERGY_AURA">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You project an aura of positive energy that makes healing more effective&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, if a creature within 30 feet of you regains hit points, they gain an additional hit points equal to 1d8 + your spellcasting ability modifier. The regained hit points must have been the result of an instantaneous effect (such as a spell, potion or regeneration; but not a long or short rest). &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th or higher, the healing increases by 1d8 for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Prayer of Protection" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PRAYER_OF_PROTECTION">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt; Choose up to six willing creatures within range. For the duration, each creature you choose gains a +2 bonus to its AC.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Prayer of Strength" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PRAYER_OF_STRENGTH">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt; Choose up to six willing creatures within range. For the duration, each creature you choose deals 2d6 additional damage whenever it hits with a melee attack.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sun Ward" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SUN_WARD">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt; You call upon the life-giving power of the sun to protect yourself. For the spell's duration, you shed bright light in a 30-foot radius and dim light for an additional 30 feet, and you have resistance to both cold and necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;If the light created by this spell overlaps with an area of darkness created by a spell of 3rd level or lower, the spell that created the darkness is dispelled. &lt;/p&gt;
+&lt;p class="indent"&gt; The first time during the spell's duration that you would drop to 0 hit points as a result of taking damage, you instead drop to 1 hit point, and the spell ends. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Web of Alarms" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WEB_OF_ALARMS">
+		<supports>Artificer, Druid, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Designate up to 6 spheres of 10 foot radius, all of which must be within range of you and each other..&lt;/p&gt;
+&lt;p class="indent"&gt; Until the spell ends, you are alerted whenever any creature touches or enters the designated areas. The alarm emits a sound of your choice that can only be heard by you. &lt;/p&gt;
+&lt;p class="indent"&gt; You or one of these must be within 1 mile to hear the alarms. When you cast the spell, you can designate up to two additional creatures in range who can hear the alarm just as you can.&lt;/p&gt;
+&lt;p&gt; If you are within 150 feet of a one of these spheres, you can use your action to gaze through an an intangible eye in the center of any of the spheres.&lt;/p&gt;
+&lt;p class="indent"&gt; You can see and hear anything within the sphere, and up to 5 feet beyond it. Anything beyond this radius appears as a black void, and any sound emitted beyond this range is inaudible.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute per alarm</set>
+			<set name="duration">8 hours</set>
+			<set name="range">300 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a tiny bell and a piece of fine silver wire</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Aspect Of the Fallen One" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ASPECT_OF_THE_FALLEN_ONE">
+		<supports>Warlock</supports>
+		<description>
+			<html>&lt;p&gt; You call upon the power of a fallen angel, bolstering your body with dark energy. Until the spell ends, black winds swirls across your body, and you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; A pair of black astral wings appears behind you, giving you a flying speed of 60ft.&lt;/li&gt;
+&lt;li&gt; You are enhanced with the vigor of a fiend. You have resistance to fire damage.&lt;/li&gt;
+&lt;li&gt; Black armor encases your body. Your armor class is 13 + your spellcasting ability modifier, unless your armor class is already higher.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cerg's Icy Gambit" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CERGS_ICY_GAMBIT">
+		<supports>Cleric, Paladin, Artificer, Druid, Bard, Sorcerer, Wizard, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt; You conjure an unstable barrier of incredibly tough ice around your body. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; After casting the spell, you gain 2d10 + 5 temporary hit points. If you take damage to these temporary hit points, you do not need to make concentration checks. These temporary hit points disappear after the spell ends.&lt;/li&gt;
+&lt;li&gt; While under the effects of this spell, you have an Armor Class equal to 14 + your Dexterity modifier if it is not already higher, and you have resistance to nonmagical bludgeoning, piercing, and slashing damage.&lt;/li&gt;
+&lt;li&gt; As a bonus action, you can cause the ice from the barrier to lash out at a creature within 15 feet. Make a ranged spell attack, on a hit, it deals 1d8 cold damage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If this spell ends any way other than the duration ending, it deals 8d6 cold damage to you, as the barrier collapses around your body. This damage ignores any temporary hit points you currently have.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, you gain an additional 1d10 temporary hit points when you cast the spell for every level above 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration"> Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Circle of Magic Resistance" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CIRCLE_OF_MAGIC_RESISTANCE">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You create a 15-foot radius sphere of protective energy centered on you, shielding yourself and nonhostile creatures in this area from the effects of harmful spells. &lt;/p&gt;
+&lt;p class="indent"&gt; A benefiting creature in the affected area has advantage on saving throws against spells and other magic effects; and has resistance to damage from spells which don't afford a saving throw to halve the damage.&lt;/p&gt;
+&lt;p class="indent"&gt; The area of this spell is normally stationary, and remains where it is when you cast it. On each of your turns, you can use a bonus action to move the affected area to be centered on you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (15-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hallowed Ground" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HALLOWED_GROUND">
+		<supports>Cleric, Paladin, Druid, Warlock, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;A sickening green energy radiates from you, distorting and diffusing magical energy within 30 feet of you. Until the spell ends, the sphere moves with you, centered on you.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, each friendly creature in the area(including you) has advantage on saving throws against spells and other magical effects. &lt;/p&gt;
+&lt;p class="indent"&gt; Additionally, when an affected creature succeeds on a saving throw made against a spell or magical effect that allows it to make a saving throw to take only half damage, it instead takes no damage if it succeeds on a saving throw. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Energy Immunity" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ENERGY_IMMUNITY">
+		<supports>Cleric, Druid, Sorcerer, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt; Choose one of the following: Acid, cold, fire, lightning, or thunder. For the duration, the willing creature you touch has immunity to damage of this type.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flesh Mending" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FLESH_MENDING">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You call upon your restorative powers and help wounds close and knit itself allowing for proper healing and avoidance of any permanent damage. This may also help with mending bones.&lt;/p&gt;
+&lt;p&gt;This spell may also help regrow limbs slowly, depending on the severity of the damage, the process may take anywhere from minutes, hours, days or weeks. If a limb is in the process of being regrown or healed it'll take a few sessions for it to grow back completely. &lt;/p&gt;
+&lt;p class="indent"&gt;This may be done as light work during long rests, but may only focus on this task alone and nothing else. If the limb is hurt in any way while still in the process of being healed, the spell ends and permanent damage may still occur to the limb. &lt;/p&gt;
+&lt;p class="indent"&gt; This spell only works on organic living creatures.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 Minute to 8 Hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Spell Focus or Holy Symbol</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Forceful Smite" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FORCEFUL_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<html>&lt;p&gt;The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 5d10 force damage to the target.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, if this attack reduces the target to 50 hit points or fewer, it is stunned. The stunned target must make a Constitution saving throw at the end of each of its turns. On a successful save, the effect ends. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Helotry" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HELOTRY">
+		<supports>Artificer, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;By maintaining touch with an ally, they are able to cast your spells (using your spell slots and spellcasting modifier). They must use their own components but if you have a focus it can be used.&lt;/p&gt;
+&lt;p class="indent"&gt; The caster can continue to act normally after casting this spell. When either the caster or receiver is disrupted by any interaction that would break a concentration, this spell's effects end.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, this spell can target 2 more allies per level above 5th (Touch range can chain)&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hindering Light" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HINDERING_LIGHT">
+		<supports>Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt;When this spell is cast, a beam of light shines down in front of you, allowing you to stop a creature from altering your mind or body with a spell.&lt;/p&gt;
+&lt;p class="indent"&gt; If it is casting a spell that would affect only you and the spell doesn't deal damage or cause you to die, the spell fails and has no effect. &lt;/p&gt;
+&lt;p class="indent"&gt;For example, the charm person spell fits this criteria, but the grease, fireball, and power word kill spells do not. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when you see a creature within 60 feet of you casting a spell</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Iron Flesh" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_IRON_FLESH">
+		<supports>Cleric, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;This spell turns your flesh to an iron-like substance for protection. For the duration, you have resistance to nonmagical bludgeoning, piercing and slashing damage.&lt;/p&gt;
+&lt;p class="indent"&gt; In addition, your AC can't be less than 18, regardless of what armor you are wearing. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">iron statue of yourself worth at least 100 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Antimagic Blast" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANTIMAGIC_BLAST">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You fire a bolt of antimagic at an enemy. Make a ranged spell attack against a creature within range. On a hit, that creature must make a saving throw of their spellcasting ability score, taking 3d10 psychic damage on a failed save,&lt;/p&gt;
+&lt;p class="indent"&gt; or half as much on a successful save (If they have multiple spellcasting ability scores they may choose one, if they have no spellcasting ability scores they automatically succeed their saving throw). &lt;/p&gt;
+&lt;p class="indent"&gt; Additionally, if they fail their saving throw they become unable to cast spells of 6th level or lower for the duration. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th or higher it deals 1d10 more damage for each slot level above 6th, and the creature can't cast spells of this spell's level or less.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pinch of powdered iron or iron filings</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flounder" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FLOUNDER">
+		<supports>Cleric, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt; You retroactively imbue a target creature with rejuvenating energy for up to 1 minute. During this time, if the target creature would be put below 1 hit point, they instead get put to 1 hit point, and consume this energy, healing them for 10d6 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt; If the target isn't reduced below 1 hit point for the full duration, the spell ends, healing them for half as many hit points instead. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 8th level or higher, the heal amount is increased to 15d6 hit points instead.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sheet of paper or parchment</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Light of Courage" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIGHT_OF_COURAGE">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You empower your holy symbol in celestial light which causes undead creatures to wither in pain before it.&lt;/p&gt;
+&lt;p class="indent"&gt; Whenever an undead creature fails its saving throw against your Channel Divinity: Turn Undead, it takes 11d8 Radiant damage. In addition, undead creatures have disadvantage against attack rolls made against you.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, the damage increases by 1d8 Radiant damage for every level above 6th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 Minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">The symbol of your god</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Resist Annihilation" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RESIST_ANNIHILATION">
+		<supports>Cleric, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You prevent one creature or corpse that you touch from turning to dust. For the duration, if the target would be disintegrated, atomized, or turned to dust because of spells or other magical effects, it doesn't. If the spell was cast on a creature, it lasts even after the creature's death.&lt;/p&gt;
+&lt;p class="indent"&gt; This spell is vulnerable to dispel magic and antimagic field.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Until dispelled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a palm-sized disc of adamantine worth at least 300gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rockform" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ROCKFORM">
+		<supports>Druid, Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt; You move earth from within 5 feet of you around yourself like a body suit, giving you a thick layer of malleable protective earth. This protective suit grants you a number of effects for the duration of the spell:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; You gain 2d6 + 30 temporary hit points.&lt;/li&gt;
+&lt;li&gt; You become resistant to bludgeoning, piercing, and slashing damage.&lt;/li&gt;
+&lt;li&gt; As long as you are standing on solid ground made from some kind of stone, dirt, or sand, you can't be pushed by external sources and you can't be knocked prone or stunned.&lt;/li&gt;
+&lt;li&gt; If you would take damage greater than your current temporary hit points, the rock armor shatters. You instead take no damage, lose all your temporary hit points, and the spell ends.&lt;/li&gt;
+&lt;li&gt; You cannot take the Dash or Dodge actions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you lose all of your temporary hit points before the end of the duration, the spell ends. The earth surrounding you collapses to the ground when the spell ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an amount of dirt, sand, or stone equal to your own weight</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dimensional Lock" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIMENSIONAL_LOCK">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create a shimmering emerald barrier that completely blocks extradimensional travel./p&gt;
+&lt;p class="indent"&gt;Forms of movement barred include: astral projection, dimension door, etherealness, gate, maze, plane shift, teleport, and similar spells or spell-like abilities. Once dimensional lock is in place, extradimensional travel to or from the area is not possible.&lt;/p&gt;
+&lt;p&gt; This spell does not interfere with the movement of creatures already in ethereal or astral form when the spell is cast, nor does it block extradimensional perception or attacks.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell also does not prevent summoned creatures from disappearing at the end of a summoning spell's duration.u &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a 8th level spell slot, change the duration to 1 hour. When you cast this spell using a 9th level spell slot, change the duration to 8 hours.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">300 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small emerald worth at least 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Repulsion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REPULSION">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;An invisible, mobile field surrounds you and prevents creatures from approaching within a 30 foot radius of you. Any creature within or entering the field must attempt a Wisdom save.&lt;/p&gt;
+&lt;p class="indent"&gt; If it fails, it becomes unable to move toward you as long as you maintain concentration. On a successful save, they are unaffected. Repelled creatures’ actions are not otherwise restricted. &lt;/p&gt;
+&lt;p&gt;They can fight other creatures and can cast spells and attack you with ranged weapons. If you move closer to an affected creature, nothing happens. (The creature is not forced back.)&lt;/p&gt;
+&lt;p class="indent"&gt; The creature is free to make melee attacks against you if you come within reach. If a repelled creature moves away from you and then tries to turn back toward you, it cannot move any closer if it is still within the spell’s area.&lt;/p&gt;
+&lt;p&gt; Creatures that are repelled for the first time by this spell are under the spell effect until the effect is removed by Greater Restoration or similar magic of 5th level or higher.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour.</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pair of small iron bars attached to two small canine statuettes, one black and one white, the whole array worth 50 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Protection from Spells" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PROTECTION_FROM_SPELLS">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt; You raise an aura of magical protection around a number of creatures you choose less than or equal to your spellcasting ability modifier (minimum 1).&lt;/p&gt;
+&lt;p class="indent"&gt; For the duration, each affected creature has advantage on saving throws against magic and magical effects, and has resistance against damage from magical sources. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a diamond worth at least 500 gp, crushed and sprinkled on each target</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vacuum Zone" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VACUUM_ZONE">
+		<supports>Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You manipulate the air around you to create a vacuum, where there is no air. You create a 60 feet radius sphere, centered on a point within range. This sphere of influence has the following effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; All gases are hedged out of the area and cannot enter it.&lt;/li&gt;
+&lt;li&gt; A creature that doesn't hold its breath while in the area will begin to suffocate.&lt;/li&gt;
+&lt;li&gt; All sound is muted. Creatures are considered deafened, can't speak, and can't cast spells with verbal components.&lt;/li&gt;
+&lt;li&gt; Spells and other effects that depend on sound or hearing are suppressed.&lt;/li&gt;
+&lt;li&gt; All thunder damage in the area is negated.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Word Exile" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POWER_WORD_EXILE">
+		<supports>Cleric, Sorcerer, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You speak a word of power that can banish a creature within range from this plane of existence. If the target has 50 Hit Points or fewer, it's banished from your current plane of existence, disappearing with a faint popping noise.&lt;/p&gt;
+&lt;p class="indent"&gt; If the target is native to a different plane of existence than the one you’re on, it returns to its home plane. If the target is native to the current plane of existence, it is banished to a random one. &lt;/p&gt;
+&lt;p class="indent"&gt; A creature banished by this spell cannot return to the current plane of existence before 1000 years have passed by any means short of a wish.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spell Mastery" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SPELL_MASTERY">
+		<supports>Bard, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt; Asserting your mastery over magic, you take control over all bard, sorcerer, warlock, and wizard spells cast within range..&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, whenever such a spell is cast and you are aware of the spell, you can use your reaction to attempt to control it. &lt;/p&gt;
+&lt;p class="indent"&gt;To do so, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you can produce one of the following effects. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Backlash.&lt;/i&gt;&lt;/b&gt; The spell fails and has no effect, and the caster of the spell takes 8d10 force damage which cannot be reduced or ignored by any means.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Change Target.&lt;/i&gt;&lt;/b&gt; You change the target of the spell. If the spell affects a point or an area, you can change the target to any other point or viable area within range. If the spell affects a creature or a number of creatures, you can choose which creatures they effect. Creatures are treated as friendly or hostile for the purposes of the spell with respect to you, rather than to the caster.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Derange Spell.&lt;/i&gt;&lt;/b&gt; The spell fails and has no effect, and a wild magic surge occurs. Roll a d6: On a 1-3, the surge affects you. On a 4-6, the surge affects the spell's original caster.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, which you take when a creature within 120 feet of you casts a bard, sorcerer, warlock, or wizard spell</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (120-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>

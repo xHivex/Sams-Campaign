@@ -1,0 +1,2958 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Necromancy-spells</name>
+		<update version="0.1.1">
+			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
+		</update>
+	</info>
+	<element name="Death Bolt" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_BOLT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You hurl a dark ball at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dark Exchange" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_EXCHANGE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch an injured, willing creature, concentrate on the wound as the sinew magically stitches close wounds, graft overs burns and otherwise closes and protects the injured creature.&lt;/p&gt;
+&lt;p class="indent"&gt;Their hit point maximum is reduced by 1d4, then they regain hit points equal to twice that amount. Hit point maximums reduced in this way are recovered after a long rest.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of dried sinew</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Lust" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_LUST">
+		<supports>Cleric, Paladin, Artificer, Ranger, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You feel your blood leave your body and increase the power of your weapon attack. Your weapon is surrounded by a bloody aura.&lt;/p&gt;
+&lt;p class="indent"&gt;You sacrifice hit points to deal extra damage on your melee or ranged attack (this can include spells as long as you have to roll to hit). For every 5 hit points, your attack deals an additional 1d6 force damage&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the caster's blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Nightwalk" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NIGHTWALK">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You are briefly shrouded by a silver and red mist, and teleport onto a creature up to 30 feet away. They take 1d4 necrotic damage, and you regain hp equal to the damage dealt. The creature is then displaced to your original location.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage of this spell increases by 1d4 per slot level above 1st, and the range increases by 10 feet.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Wrath" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WRATH">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You point your finger, and dark energy washes over a target you can see within range. The target must make a Constitution saving throw, taking 4d6 necrotic damage on a failed save, or half as much damage on a successful save.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the target takes an additional 2d6 necrotic damage for every spell level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death’s March" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATHS_MARCH">
+		<supports>Cleric, Paladin, Bard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You release a war cry in necromonger, which bolsters your allies with toughness and resolve. Choose up to three creatures within range. Their damage reduction increases by 3 for the duration&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the damage reduction bonus is increased by 3 for every level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Raise Ghoul" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RAISE_GHOUL">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You can raise a ghoul giving life to corpse of any small or medium sized creature. The ghoul is mindless, and cannot act if you are unconscious or otherwise unable to take actions.&lt;/p&gt;
+&lt;p class="indent"&gt;The ghoul will perform any command you give it to the best of it’s ability, even sacrificing itself, until you give it another command.&lt;/p&gt;
+&lt;p class="indent"&gt;In combat, the ghoul always acts during your turn, either before or after your actions as you choose. After 1 minute the ghoul will fall apart and turn to dust, You can only have one ghoul active at any given time by this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a bit of rotted flesh</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Corpse Explosion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CORPSE_EXPLOSION">
+		<supports>Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;As you snap your finger, a dead creature within range explodes with necrotic energy. Each creature in a 15-foot-radius sphere centered on the dead creature must make a Dexterity saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;A target takes 2d8 necrotic damage on a failed save, or half as much damage on a successful one. If you reduce a creature to 0 hit points with this spell, the creature explodes, repeating the same effect as this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, a target’s hit points increase by an additional 5 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mana Siphon" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MANA_SIPHON">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You raise your hand, projecting your open palm forward, sucking the reserves of mana from inside your enemy. Force the target to make a saving throw using its Spellcasting ability.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the target loses a number of spell slots equal to 1d4, and you regain the same amount. You can't regain more spell slots than your maximum using this feature, and the spell slot must be of 2nd-level or lower.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Conjure Wraith" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CONJURE_WRAITH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Target one empty space within range, and pour the ashes out of the pouch. One minute later, a wraith will appear to serve the caster. Roll 1d20, and add your Spellcasting modifier. If you roll higher than 15 total, the wraith will serve you. If you fail, the wraith will explode, dealing 1d6 force damage to anything within 30 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;The wraith can target any corpse that has been dead for under 1 minute and create a specter, that will follow your orders. Both the specter and the wraith roll for initiative individually. The DM has statistics on both creatures. If the wraith is destroyed and a specter remains, it explodes, dealing 1d6 force damage to anything within 30 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4 or higher, the wraith can create one additional specter, per spell slot used.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 minute</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small pouch of ashes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Elixir of Life" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ELIXIR_OF_LIFE">
+		<supports>Cleric, Paladin, Artificer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You fill a vessel with a potent draught of healing. Any creature who consumes said elixir regains 10d6 hit points and has advantage on saving throws against poisons or diseases for 1d6 hours thereafter. The elixir loses potency after you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A crushed ruby worth 500 gp, which this spell consumes, and a small vessel worth at least 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Jumpstart" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_JUMPSTART">
+		<supports>Cleric, Paladin, Artificer, Druid, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You point your finger at a willing creature within range and compel it to die instantly, channeling the energies of both light and dark simultaneously.&lt;/p&gt;
+&lt;p class="indent"&gt;At the beginning of your next turn, that creature is forcibly brought back from the dead, regaining all of its hit points. The act of dunking a soul into the ethereal and yanking it back it, unsurprisingly, is very traumatizing, and inflicts a level of exhaustion on the affected creature.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell has no effect on undead or constructs.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you may target one additional creature for every two levels above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dark Transformation" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_TRANSFORMATION">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You infuse a creature within range with power, transforming it into an unstoppable monstrosity for the duration of the spell. Its size category increases by one, its strength increases to 20, its current and maximum hit points are doubled, and its attacks deal an extra 4d6 necrotic damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small piece of ebony or ivory carved into a skull worth at least 200 gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Grip of Death" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GRIP_OF_DEATH">
+		<supports>Warlock, Wizard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;A living creature within range that you can see is sundered with life-sapping agony. The target must make a Constitution saving throw. It takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;A Large, Medium, or Small humanoid killed by this spell rises at the start of your next turn as a Zombie that is permanently under your command, following your verbal orders to the best of its ability.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bloodtap" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOODTAP">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You tap into the latent energy inside every being. You take necrotic damage equal to four times your level. This damage cannot be reduced or negated in any way.&lt;/p&gt;
+&lt;p class="indent"&gt;You may cast another spell on the same turn as this spell. Until the end of your turn, any spells cast by you deal maximum damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Essence Siphon" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ESSENCE_SIPHON">
+		<supports>Cleric, Druid, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You tear a creature's vitality from their body, and use it to bolster your own. Make a ranged spell attack against the target. On a hit, the target takes 14d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Waves of Exhaustion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WAVES_OF_EXHAUSTION">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You raise your hands and thrust them forward, violently flinging foul rays of energy from your fingertips.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature in a 60-foot cone must make a Constitution saving throw. On a failed save, a creature suffers one level of exhaustion; on a failure of 5 or more, it gains two levels of exhaustion instead.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (60-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Eviscerate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EVISCERATE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You attack the heart(s) of a creature that you can see within range. If the creature has a functioning cardiovascular system, it must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, it has disadvantage on all ability checks and saving throws (except for saving throws against this spell), its speed is halved, and it takes 5d10 necrotic damage. On a successful save, it takes 5d10 necrotic damage and the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature taking necrotic damage from this spell must make a new saving throw on each of its turns. If it successfully saves against this spell three times, the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;If it fails its saves three times, its heart(s) are bloodily out from its body, killing it instantly. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Undead Dragon" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_UNDEAD_DRAGON">
+		<supports>Cleric, Wizard, Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;This spell creates an undead servant from the corpse of a dragon. Choose a pile of dragon bones or a dragon's corpse within range. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature. (Sam has the stat block)&lt;/p&gt;
+&lt;p class="indent"&gt;On each of your turns, you can use a bonus action to mentally command the dragon you made with this spell if the dragon is within 60 feet of you.&lt;/p&gt;
+&lt;p class="indent"&gt;You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor.&lt;/p&gt;
+&lt;p class="indent"&gt;If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.&lt;/p&gt;
+&lt;p class="indent"&gt;The creature is under your control for 24 hours, after which it stops obeying any command you've given it. To maintain control of the creature for another 24 hours, you must cast this spell on the creature again before the current 24-hour period ends.&lt;/p&gt;
+&lt;p class="indent"&gt;You cannot simultaneously control another creatures with any spells (such as with dominate monster, conjure elemental, or animate dead) without losing control of the undead dragon&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of dragon blood, a dragon's scale, and the bone of a dragon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Bind" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_BIND">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You sacrifice your own vitality to hurt your enemies. Target a creature within range. Each time you take damage, the target makes a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failure, they take the same amount of damage. On a success, the spell ends. Taking damage does not trigger a concentration check for this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Blade" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_BLADE">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You create a blade out of your own blood to use as a weapon.&lt;/p&gt;
+&lt;p class="indent"&gt;You lose hit points equal to 1d6 plus your spellcasting ability modifier, and create your choice of a dagger, shortsword, or longsword that is made up of your own blood in your free hand.&lt;/p&gt;
+&lt;p class="indent"&gt;The weapon is magical, and you can use your spellcasting ability for the attack and damage rolls of melee attacks using that weapon. When the spell ends, the weapon becomes just a puddle of blood. The spell ends if you let go of the weapon.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Transfer" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_TRANSFER">
+		<supports>Cleric, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You sacrifice some of your health to mend another creatures injuries.You take 1d6 necrotic damage, and one creature that you touch regains a number of hit points equal to half of the necrotic damage you take.&lt;/p&gt;
+&lt;p class="indent"&gt;The damage that you recieve from this spell increases by 1d6 when you reach 5th level(2d6 Damage); 11th level(3d6 damage); 17th level(4d6 Damage).
+
+&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Inflict Minor Wounds" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INFLICT_MINOR_WOUNDS">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;Make a melee spell attack against a creature you can reach. On a hit, the target takes 1d12 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's damage increases by 1d12 when you reach 5th level (2d12), 11th level (3d12), and 17th level (4d12).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Raise Ally" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_BOLT_2_2_2_2_2">
+		<supports>Bard, Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You touch a living creature that has 0 hit points and infuse it with unstable necrotic energies to restore them to 1 hit point. At the end of the spell's duration, the creature immediately takes 1 point of necrotic damage. If the creature is already unconscious when the spell ends, it instead immediately suffers one failed death saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;You can choose to instead end the spell and absorb the shock of the necrotic energies fading, in which case the original target does not lose any hitpoints and you instead take 1d4 necrotic damage from the strain of infusing your own vitality into the target.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell has no effect on undead or constructs.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute.</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shadowstrike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHADOWSTRIKE">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You reach into the void to enhance your next attack with necrotic energy.&lt;/p&gt;
+&lt;p class="indent"&gt;As part of the action used to cast this spell, you must make an attack with your weapon against one creature within the spell's range, otherwise the spell fails. On a hit, the target suffers the weapon attack's normal effects, and the target takes extra necrotic damage equal to your spellcasting modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell’s damage increases by 1d8 when you reach 5th level (1d8 + your spellcasting modifier), 11th level (2d8 + your spellcasting modifier), and 17th level (3d8 + your spellcasting modifier).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a weapon</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Shrieking Skull" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SHRIEKING_SKULL">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;The skull in your hand begins to sing a beautiful hymnal of your choice. All characters who begin their turn within 30 feet of the shrieking skull, including you, have to make a Wisdom saving throw. &lt;/p&gt;
+&lt;p class="indent"&gt;On a failure, they suffer 1d3 (psychic) damage. At the end of your turn, if you moved while carrying the Shrieking Skull, the damage of the spell increases by +1d3 (up to a maximum of 4d3).&lt;/p&gt;
+&lt;p class="indent"&gt;If you let go of the skull or if the skull is pulled out of your grasp with a successful grapple check, then the skull turns to dust, and concentration is lost. Damage from this spell can cause you to lose concentration on this spell.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell’s damage increases to 1d4 when you reach 5th level, to 1d6 at 11th level, and to 1d8 at 17th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">5 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a humanoid skull</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Soul Drain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SOUL_DRAIN">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Your hands sap health from others to bolster yourself. Make a melee spell attack against a creature you can touch. On a hit, the target takes 1d4 necrotic damage, and you gain temporary hit points equal to the damage dealt.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell's damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Spectral Scythe" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SPECTRAL_SCYTHE">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;While gripping a staff with both hands, you can use one action to create a blade of necrotic energy in the shape of a reaper's scythe at the end of the staff.&lt;/p&gt;
+&lt;p class="indent"&gt;The blade does 1d6 necrotic damage in addition to the regular damage of the staff, and so long as you are proficient with the staff, you are proficient with this weapon.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell ends if you let go of the staff or if you recast this spell&lt;/p&gt;
+&lt;p class="indent"&gt;The spell’s damage increases by 1d6 when you reach 5th level(2d6), 11th level(3d6), and 17th level(4d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Indefinite</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a staff or pole of some sort</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sustain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SUSTAIN">
+		<supports>Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You choose a living creature within range that you can see at 0 hit points. They automatically succeed on their next death saving throw. This spell has no effect on undead or constructs&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Tear" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TEAR">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You cause the matter of a creature or object that you touch to split apart. Make a melee spell attack against the target. On a hit, the target takes 2d6 slashing damage.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's damage increases by 2d6 when you reach 5th level (4d6), 11th level (6d6), and 17th level (8d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vicious Rant" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VICIOUS_RANT">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You lace your words with withering magic and aggressively rant at a creature or object in range. The target must succeed on a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the target takes 1d8 necrotic damage. If the target is a creature, it also has disadvantage on the first ranged spell attack roll it makes before the end of its next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Agony Warp" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AGONY_WARP">
+		<supports>Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A weird black mass springs towards two creatures of your choice, each creature must make a Constitution saving throw,&lt;/p&gt;
+&lt;p class="indent"&gt;if one of the targets fails, they either take disadvantage on all attack rolls until they succeed the constitution saving throw, or they take 2d6 necrotic damage, you can not use the same effect for both targets&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast this spell using a spell slot of 2nd level or higher, you increase the amount of necrotic damage done by 1d6&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Animate Shadow" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANIMATE_SHADOW">
+		<supports>Bard, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You bring to life the shadow of a creature you can see within range. The target must make a Wisdom saving throw: On a failed save, their shadow animates into a malevolent attacker.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration of the spell, the shadow stays attached to the target, sharing its space and constantly assailing the target, granting advantage on all attacks against it.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, the shadow deals 1d6 necrotic damage at the beginning of each of the target's turns. At the end of each turn, the target can attempt a Wisdom saving throw to dispel the shadow and end the effect.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration"> 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of coal and a candle</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Tentacles" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_TENTACLES">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You target a creature within range that has just received bludgeoning, piercing, necrotic or slashing damage and manipulate the blood that spills out of its wound, creating blood tentacles that lash out in every direction.&lt;/p&gt;
+&lt;p class="indent"&gt;Any creature within 10 feet of the target must make a dexterity saving throw or take 2d8 slashing damage. Creatures that don't have blood cannot be targeted by this spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher the damage increases in 1d8 for every spell slot level above first.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Reaction, which you take when a creature takes physical or necrotic damage</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bloodsurge" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOODSURGE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature, and transfer your life force to it. You take necrotic damage equal to 1d10 plus your spellcasting ability modifier, which can't be negated or reduced in any way. The target gains hit points equal to the amount of life lost this way, and temporary hit points equal to half that amount.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you take 1d10 additional necrotic damage and the target gains that many additional hit points for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Bodysnatch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BODYSNATCH">
+		<supports>Bard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;This spell allows the user to touch a corpse and turn it into a disguise. Once the disguise is worn, the wearer becomes functionally identical in appearance to how the deceased appeared in life, unless the corpse is older than 1 day at which point the disguise will show signs of decay and not hold up under inspection.&lt;/p&gt;
+&lt;p class="indent"&gt;The disguise can also only be worn by wearers of the same size class. After 24 hours, the disguise will return to being a corpse and be too worn out to be used as a disguise again.&lt;/p&gt;
+&lt;p class="indent"&gt;Should you fail to act as the deceased realistically, a creature can use its action to inspect your appearance and must succeed on an Intelligence (Investigation) check against your spell save DC.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; For every spell slot level past 1st level, you can use this spell on a creature one size category or higher than you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 day</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Curse Water" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CURSE_WATER">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;This spell imbues a flask (1 pint) of water with negative energy, turning it into unholy water. Unholy water damages celestials the way holy water damages undead and fiends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">powdered silver worth at least 25 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dark Bead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_BEAD">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create three small black beads that seem to sap away the light around them. Each bead targets a creature of your choice that you can see within range. The targets must succeed on a Dexterity saving throw or take 1d6 necrotic damage per bead on a failed save, or half as much on a success.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more bead for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dark Orb" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_ORB">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You create a dark orb in a point of space that you can see within range. It is Large size, with a diameter of ten feet. When you cast this spell, all creatures whose space is occupied by the dark orb must make a Constitution saving throw, taking 2d8 necrotic damage on a failed save, or half as much on a successful save.&lt;/p&gt;
+&lt;p class="indent"&gt;As an action on your following turns until this spell ends, you can move the dark orb up to 30 ft, but no more than 120 feet away from you.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the dark orb deals an additional 1d8 necrotic damage for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Blossom" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_BLOSSOM">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You invoke the power of the Shadowfell, and darkness wreathes your body as you assault everything nearby.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell may only be used if you are below half of your maximum Hit Points. You assault all creatures within 10ft, who each make a Constitution Saving Throw.&lt;/p&gt;
+&lt;p class="indent"&gt;They take 4d8 necrotic damage, which is halved on a successful save. Using this spell is tiring, and you will lose 10% of your maximum Hit Points after the spell has taken effect.&lt;/p&gt;
+&lt;p class="indent"&gt;If the backlash damage of this spell would make you drop below 1 hp, you simply fail to cast the spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2 or higher, the damage increases by 1d8 for each spell slot above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Coil" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_COIL">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A blast of unholy energy snakes its way toward a creature within range, attempting to constrict it.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must succeed on a Strength saving throw or be restrained for the duration. A creature that starts its turn restrained in this manner takes 2d6 necrotic damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the duration is extended an additional round for every two spell levels above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Grip" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_GRIP">
+		<supports>Sorcerer, Warlock, Wizard, Artificer, Bard, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You seize the essence of a creature in range and pull it towards you. The target must make a Strength saving throw. If it fails, it is pulled up to 40 feet directly towards you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">40 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Touch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_TOUCH">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature and attempt to end its life instantly. It must make a Constitution saving throw, taking 10 necrotic damage on a failure.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell automatically fails if it targets a creature with more than 10 hit points.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, it deals an additional 1d10 necrotic damage for every level above 1st. In addition, the threshold for spell failure increases by 10 hit points for every level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Deathwatch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATHWATCH">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Using the foul sight granted by the powers of unlife, you can determine the condition of creatures near death within the spell's range. You instantly know whether each creature within the area is dead, fragile (alive and wounded, with 3 or fewer hit points left), fighting off death (alive with 4 or more hit points), undead, or neither alive nor dead (such as a construct).&lt;/p&gt;
+&lt;p class="indent"&gt;Deathwatch sees through any spell or ability that allows creatures to feign death. The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Drain Smite" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DRAIN_SMITE">
+		<supports>Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You imbue your weapon with your faith so that it leaches life from your target. The next time you hit a creature with a melee weapon attack during the spell's duration, life energy is sapped from the target.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must succeed on a constitution saving throw or take an additional 1d12 necrotic damage, or half as much damage on a success, and you regain hit points equal to the necrotic damage dealt.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d12 for every two slot levels above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Flame of Life" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FLAME_OF_LIFE">
+		<supports>Sorcerer, Warlock, Cleric, Druid, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You revitalize a creature by creating fire within your palm and planting it within their core. The creature regains hit points equal to 1 plus your spellcasting modifier, and loses a level of exhaustion.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell can affect constructs and undead, but cannot affect plants.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Freezing Clutch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FREEZING_CLUTCH">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;After touching an object that is not being carried or worn, you place a curse on it that harvests the cold regrets of a creature that you've killed.&lt;/p&gt;
+&lt;p class="indent"&gt;The next creature that attempts to pick up the object must succeed on a Wisdom saving throw or be grabbed by a ghastly transparent claw manifesting from the object.&lt;/p&gt;
+&lt;p class="indent"&gt;The claw deals 2d4 cold damage and 1d4 necrotic damage when this happens. If the Wisdom save succeeds, no necrotic damage is dealt, the cold damage dealt is halved, and the claw manifests only to slap whoever picks up the object.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">4 hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the finger of a creature you've killed</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Frostburn" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FROSTBURN">
+		<supports>Cleric, Paladin, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A blast of frost shoots out when laying your hand upon a creature, the targeted creature must make a Constitution saving throw, taking 1d12 cold damage on a failed save and half as much on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;If used against a creature with resistance to cold damage, it deals no damage and when used against a creature with immunity to cold damage, it heals them instead.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the amount of damage dealt by the spell increases by 1d12 cold damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hand of the Dead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HAND_OF_THE_DEAD">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You cause 2 skeletal limbs to come out of the ground to grasp a target within range. The targets must make a strength Save or become restrained for the duration. The targets can use a action to attempt to break out of the hand which on success the limb would break.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When casting this spell at 2nd of higher, the amount of targets increase by 1 per level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Heart Strike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HEART_STRIKE">
+		<supports>Sorcerer, Warlock, Ranger, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You infuse a weapon you touch with death energy, causing it to seek out vital points and weaknesses in your foes.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, your melee weapon attacks will ignore any resistance or damage reduction (but not immunity) that the target has.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Inflict Positive Energy" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INFLICT_POSITIVE_ENERGY">
+		<supports>Sorcerer, Warlock, Wizard, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;Channeling the raw, unfettered potency of the positive energy plane, you inflict grievous harm upon a creature's life force. Make a melee spell attack against a creature you can reach, dealing 5d4 radiant damage on a hit.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature that dies outright from this damage becomes disintegrated. Evil creatures do not benefit from resistance or immunity to damage dealt by this spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 2d4 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Laughing Skull" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LAUGHING_SKULL">
+		<supports>Cleric, Warlock, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You reanimate a fraction of life from one human skull. The skull’s eyes glow red and it starts laughing and jumping uncontrollably, it can be heard from at least 100 feet in open spaces, and double that distance in enclosed ones.&lt;/p&gt;
+&lt;p class="indent"&gt;It’s voice may sound similar to how it sounded in life, but, besides that the reanimated skull shares nothing in common with it’s past self. The skull is considered an undead, has an AC of 15, 5 HP and no movement speed (can only hop or hoover in its own space). Any creature other than you that can see or hear the skull are affected by the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the creature is frightened, it is also frightened by the skull.&lt;/li&gt;
+&lt;li&gt;Have disadvantage on Constitution saving throws to maintain concentration on a spell.&lt;/li&gt;
+&lt;li&gt;If it tries to take a short rest, it must first succeed in a wisdom saving throw. On a failed save, the creature cannot take a short rest while hearing a laughing skull for the next 24 hours. On a success, the creature is immune to these effects for the next 24 hours.&lt;/li&gt;
+&lt;li&gt;If it tries to take a long rest, it must succeed in a wisdom saving throw. On a failed save, the creature spent the full duration of a long rest with insomnia, and can’t receive any benefits from this rest, it gains a level of exhaustion and has nightmares for the next 1d6 days. On a success, the creature is immune to these effects for the next 24 hours.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When you cast this spell, any Laughing skulls previously created by you that are still alive is destroyed. As an action, You may touch a living Laughing skull and either make it rest, turning it indistinguishable from a normal skull and ceasing all it’s effects, or awaken it, making it return to its original state.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; Given that you have enough human skulls, When you cast this spell using a spell slot of 2nd level or higher you create one extra skull for every spell slot level above first.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 Minutes</set>
+			<set name="duration">up to 8 hours or until dispeled</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">human skulls, chalk and magical mushrooms</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Lesser Animate Dead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LESSER_ANIMATE_DEAD">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Druid, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;This spell creates a temporary undead servant. Choose a pile of bones or a corpse. Your spell imbues the target with a foul mimicry of life, raising it as an undead creature.&lt;/p&gt;
+&lt;p class="indent"&gt;The target becomes a skeleton if you chose bones or a zombie if you chose a corpse (the GM has the creature's game statistics). A skeleton or zombie zombie remains for 1 minute. When this time expires, the creature is destroyed.&lt;/p&gt;
+&lt;p&gt;On each of your turns, you can use a bonus action to mentally command any creature you made with this spell if the creature is within 60 feet of you (if you control multiple creatures, you can command any or all of them at the same time, issuing the same command to each one).&lt;/p&gt;
+&lt;p class="indent"&gt;You decide what action the creature will take and where it will move during its next turn, or you can issue a general command, such as to guard a particular chamber or corridor. If you issue no commands, the creature only defends itself against hostile creatures. Once given an order, the creature continues to follow it until its task is complete.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you animate two additional undead creatures for each slot above 1st. Each of the creatures must come from a different corpse or pile of bones. These undead also last for the same duration as they normally would.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of blood, a piece of flesh, and a pinch of bone dust</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Life Sap" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIFE_SAP">
+		<supports>Sorcerer, Warlock, Wizard, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Choose a creature that you can see within range. That creature must succeed on a Constitution saving throw or take an amount of necrotic damage equal to 1d4 + your spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;You can then choose another creature in range. That creature gains a number of temporary hit points equal to the damage taken by the original creature.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell has no effect on undead or constructs.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the necrotic damage increases by 1d4 per slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A drop of blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Nauseate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NAUSEATE">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to cause a creature that you can see in range to have its vision distorted and to feel a terrible stomachache. They must succeed on a Constitution saving throw or be poisoned for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;While poisoned in this way, a creature also has disadvantage on saving throws and attack rolls against the creature have advantage. An affected creature can repeat the save at the end of each of its turns and each time it takes damage (without the disadvantage), ending the effect on itself on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures that do not need to eat or that do not have a functioning biological stomach are immune to this effect.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you can choose one additional creature for each slot level above 1st. The creatures must be within 30 feet of each other when you target them.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of dung, decayed flesh, or some other disgusting item</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Palpitate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PALPITATE">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You pull at the life force inside of a creature setting their heart out of rhythm. The target creature makes a constitution saving throw and if they fail take 3d4 necrotic damage and have their movement halved until the end of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;If they pass they only take half damage and their movement is unaffected. Undead, constructs, elementals and creatures that do not posses a beating heart are immune to this spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher the spell does 1d4 more damage and if the spell slot used exceeds 4th level the creature is stunned instead of losing movement speed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Skull Goblet" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_BOLT_2_2_2_2_2_2_2_2_2_2_2_2">
+		<supports>Artificer</supports>
+		<description>
+			<html>&lt;p&gt;Create a goblet out of a skull that will detect a poison drink and tell its creator about it. The goblet detects all common poisons and 90% of all uncommon and rare poisons.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Creation:&lt;/i&gt;&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;The creator must immolate 100 gp of various possible poisons during the creation of the goblet. The immolated poisons must include the poisons to be detected. During the creation process the caster must roll DC 10 Wisdom or be poisoned and the attempt to create the goblet fails.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Use:&lt;/i&gt;&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;If liquid is poured into the goblet that contains poison, the skull will tell the creator about it. If a poison is introduced that was not part of the goblet's creation, the drinker must make a DC 10 Charisma roll. If the roll fails, the goblet will say nothing. The goblet will only talk to its creator. If the creator is not present the goblet remains silent.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, you may use 1000 gp worth of poisons. The goblet will then detect 99% of uncommon and rare poisons. When you cast this spell using a spell slot of 3rd level or higher, the goblet will tell the drinker about the poison even if you are not present.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 day</set>
+			<set name="duration">1 year</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a skull and 100 gp of immolated poison</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Transfer Pain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TRANSFER_PAIN">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to syphon the life from a creature you touch. Make a melee spell attack against the target. On a hit, the target takes necrotic damage equal to 1d8 plus your spellcasting modifier, and a creature within 10 feet of the target regains hit points equal to half of the damage dealt, rounded down.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Venomous Ray" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VENOMOUS_RAY">
+		<supports>Sorcerer, Warlock, Wizard, Druid</supports>
+		<description>
+			<html>&lt;p&gt;Make a ranged spell attack against a creature within range. A venomous ray or fang lashes out to infect the target creature, dealing 1d4 piercing damage and 3d4 poison damage on a hit. A hit creature must succeed on a Constitution saving throw or be poisoned until the end of your next turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a slot of 2nd level or higher, the poison damage increases by 2d4 for each slot level above 1st.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Virulent Necrostrike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VIRULENT_NECROSTRIKE">
+		<supports>Cleric, Warlock, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;The first time you hit with a melee weapon attack during this spell’s duration, your weapon flares with a sickly green energy, and the attack deals an extra 1d4 poison damage and 1d4 necrotic damage. &lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, if the target is a creature, it must make a Constitution saving throw or have disadvantage on Strength checks and saving throws until the spell ends and reduce its AC by 1 until the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Black Storm" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLACK_STORM">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You release a cacophony of negative energy that erupts from a point of your choice within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature takes 2d6 necrotic and 2d6 thunder damage and is knocked prone on a failed save. On a successful save, the creature takes half as much damage and isn't knocked prone.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the necrotic damage or the thunder damage (your choice) increases by 1d6 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Boil" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_BOIL">
+		<supports>Sorcerer, Warlock, Wizard, Artificer, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You cause the blood of nearby enemies to boil. All creatures within 20 feet must make a Constitution saving throw. Each target takes 2d6 fire damage, or half on a successful save. Creatures without blood are immune to this spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">20 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Lance" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_LANCE">
+		<supports>Warlock, Wizard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;Siphoning power from your own lifeforce, you conjure a devastating lance of blood-red energy and fire it at an enemy within range. You lose 1d6 hit points, and make a ranged spell attack against the target. On a hit, the target takes 4d6 necrotic damage, plus necrotic damage equal to triple the damage you took.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the damage taken and damage dealt each increase by 1d6 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A small amount of your own blood</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bone Shield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BONE_SHIELD">
+		<supports>Sorcerer, Warlock, Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You create six bones that spin and float around you. Each with an innate will to block attacks for you. Each time you are attacked, the bones will block, and be destroyed; this happens even if an attack roll would miss you.&lt;/p&gt;
+&lt;p class="indent"&gt;As long as at least one bone remains, you have resistance against slashing, bludgeoning, and piercing damage. Whenever an attack that deals one of those types of damage hits you, one bone is destroyed. If an attack that is blocked is a critical, it instead breaks 2 bones.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, 10 minutes</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">six shards of bone</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Critterkill" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRITTERKILL">
+		<supports>Sorcerer, Warlock, Wizard, Bard</supports>
+		<description>
+			<html>&lt;p&gt;You whisper a word of power that compels all creatures of a challenge rating of 0 within range to die instantly.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of hubris</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Draw Blood" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DRAW_BLOOD">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You point at a wounded creature that you can see within range and command its blood to surge forth.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target's current hit points are equal to or less than half of its maximum hit points, it must make a Constitution saving throw. On a failed save, the target takes 3d10 necrotic damage as blood sprays from its wounds, or half as much damage on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell fails and is wasted if the target has more than half of its maximum hit points, or if the target does not have blood or an equivalent vital fluid.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1d10 for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Frigid Darkness" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FRIGID_DARKNESS">
+		<supports>Sorcerer, Warlock, Wizard, Druid</supports>
+		<description>
+			<html>&lt;p&gt;A sphere of darkness shoots out towards the target, make a ranged spell attack, on a hit, the target takes 1d10 cold damage and 1d10 necrotic damage and has its base walk speed reduced by 5 feet until the target either spends 1 round next to a source of heat, casts a spell which deals fire damage, or is the target of a spell which deals fire damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Lingering Poison" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LINGERING_POISON">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You slowly rot the insides of a creature in range. The target must succeed on a Constitution saving throw or take 1d8 poison damage, plus an additional 1d8 poison damage at the end of each of its turns for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;After initial damage is dealt, this spell ends if the target has or gains any effect which ends the poisoned condition or grants advantage on saves against poison, such as lesser restoration or an applied antitoxin.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, the initial and lingering damage both increase by 1d8 for every three levels above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration"> Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Raise Mount" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RAISE_MOUNT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;The pile of bones or corpse is engulfed in black flames; the smoke forming the body of the risen mount. You decide the mount's appearance though regardless the mount retains a look of undeath indicating its undead nature.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The risen mount is a Large creature that uses the statistics of the warhorse though it is an undead instead of a beast.&lt;/li&gt;
+&lt;li&gt;Your mount responds to verbal commands and can understand any language that you speak.&lt;/li&gt;
+&lt;li&gt;When your mount drops to 0 hit points, it disappears, leaving behind no physical form. You can also dismiss your mount at any time as an action, causing it to disappear in a plume of black smoke. In either case, casting this spell again heals your risen mount, restoring it to its hit point maximum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, you can instead choose to have your risen mount use the statistics of a Pegasus.&lt;/p&gt;
+&lt;p class="indent"&gt;If you cast this spell using a spell slot of 6th level or higher, you can instead choose to have your risen mount use the statics of a Nightmare.&lt;/p&gt;
+&lt;p class="indent"&gt;You may cast this spell, using a spell slot of 4th level, on an already risen mount (from this spell) to have it change forms. Doing so restores the mount to its hit point maximum.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">the corpse of a large creature or one large pile of bones, which the spell consumes.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Remove Breath" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REMOVE_BREATH">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You pull the wind right out of the lungs of a creature within range, causing them to choke. It must make a Constitution saving throw. On a failure, it fails to hold its breath and begins to suffocate, taking 2d6 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Unless interrupted by some means of intervention, such as by casting the remove breath spell again or choking the creature, the target will be able to breathe again at the start of its next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell has no effect on creatures that do not need to breathe, such as most undead or constructs; It also has no effect on creatures that do not breathe air, such as fish.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Revitalize" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REVITALIZE">
+		<supports>Bard, Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You touch a creature that has died within the last round. That creature returns to life with 1 hit point, and suffer 1 level of exhaustion. This spell can’t return to life a creature that has died of old age, nor can it restore any missing body parts.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth at least 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Withering Ray" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WITHERING_RAY">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create three rays of necromantic energy and hurl them at targets within range. You can hurl them at one target or several.&lt;/p&gt;
+&lt;p class="indent"&gt;Make a ranged spell attack for each ray. On a hit, the target takes 2d6 necrotic damage. If this damage reduces an organic target to 0 hit points, it dies instantly and withers into a husk. Inorganic targets such as constructs (except wood or flesh constructs) do not wither but are not immune to this spell's damage.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell automatically causes up to a 10-foot cube of nonmagical plants, excluding plant creatures, to wither on a hit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Animal Resurrection" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANIMAL_RESURRECTION">
+		<supports>Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a beast that has died within the last 24 hours, and that creature returns to life with 1 hit point. This spell can't return to life a beast that has died of old age, cannot restore missing body parts, and has no effect on a creature other than a beast with a Challenge Rating (or level) of 2 or lower.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, you can increase the Challenge Rating of the beast this can affect by 2 for each spell slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamonds worth at least 300 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Black Flame" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLACK_FLAME">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Your body is wreathed in dark flames and your eyes glow with a fiendish light as you raise a hand to strike down your target. Make a melee spell attack against a creature you can reach. On a hit, the target takes 4d10 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature killed by this spell explodes in a burst of meaty chunks and dark flames. You may throw the body of your target up to 10 feet in a direction of your choice before it explodes.&lt;/p&gt;
+&lt;p class="indent"&gt;All creatures within 5 feet of the target must make a Dexterity saving throw, taking 2d10 necrotic damage on a failed save, or half as much on a successful one.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When this spell is cast using a spell slot of 4th level or higher, the damage of the initial attack and explosion increases by 1d10 damage for each spell slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bleeding Strike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLEEDING_STRIKE">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;When another creature strikes you with a melee weapon attack, you use your reaction to cast this spell. Your blood lunges towards that creature, and deals 2d6 piercing damage, then latches on.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, the creature must make a Constitution saving throw at the start of each of its turns. On a success, the spell ends. On a failure, the creature takes 2d6 necrotic damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th or higher, increase the piercing damage by 1d6 for every spell slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 reaction, which you take in response to being damaged by a melee weapon attack</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">10 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bloody Sacrifice" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOODY_SACRIFICE">
+		<supports>Cleric, Warlock, Druid, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You point your finger at a corpse or undead within range and cause it to explode in a burst of vile energy which harms your enemies but heals your allies. Choose one corpse or undead creature with a CR of 1/4 or lower that you can see within range.&lt;/p&gt;
+&lt;p class="indent"&gt;If you choose an undead, it must succeed on a Constitution saving throw or be affected by the spell. An undead that you control automatically fails the save.&lt;/p&gt;
+&lt;p class="indent"&gt;The target then begins to balloon and bloat in size and explode in a 30-foot radius. Each non-undead hostile creature in that area must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, a creature takes 4d6 + your spellcasting ability modifier necrotic damage. On a successful save, a creature takes half as much damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Each allied or undead creature in that area instead regains a number of hit points equal to 4d6 + your spellcasting ability modifier.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher this spell deals an additional 1d6 necrotic damage and heals an additional 1d6 hit points.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Crippling Darkness" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRIPPLING_DARKNESS">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can’t see through this darkness, and nonmagical light can’t illuminate it.&lt;/p&gt;
+&lt;p class="indent"&gt;When a creature ends its turn inside the spell's area, that creature must make a Constitution saving throw. The creature gains one level of exhaustion on a failed save.&lt;/p&gt;
+&lt;p class="indent"&gt;This level of exhaustion is removed if the creature ends its turn outside the spell's area. A creature that is affected by this exhaustion cannot gain further levels of exhaustion this way.&lt;/p&gt;
+&lt;p class="indent"&gt;If any of this spell’s area overlaps with an area of light created by a spell of 3rd level or lower, the spell that created the light is dispelled.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, a creature can gain one additional level of exhaustion from this spell for each slot level above 3rd.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature that ends its turn inside the spell's area must make additional Constitution saving throws and gains one level of exhaustion for each failure, up to the maximum number depending on the slot level used. If the creature ends its turn outside the spell's area, all their levels of exhaustion gained from this spell are removed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Bat fur and a pinch of dirt</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dark Transport" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_TRANSPORT">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You briefly turn into a flurry of ravens, a dark mist, or similar foreboding phenomena before reappearing somewhere else in range. You teleport up to 60 feet to an unoccupied space you can see, forming a 10 foot wide line behind you.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures that you designate in the line must succeed on a Constitution saving throw or take 3d10 necrotic damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d10 for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death Cloud" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_CLOUD">
+		<supports>Sorcerer, Warlock, Wizard, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You fill the lungs of your foes with the stench of death. Upon casting this spell, a cube of horrid black or crimson gas appears, originating from the point you select.&lt;/p&gt;
+&lt;p class="indent"&gt;When a creature enters this area for the first time or ends their turn there, they must make a Constitution saving throw or take 9d6 necrotic damage and fall prone as their senses are overtaken by the toxic vapors.&lt;/p&gt;
+&lt;p class="indent"&gt;This damage is reduced by half and the creature does not fall prone if they pass this saving throw.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher the damage of this spell increases by 3d6 necrotic damage for every spell slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet (15-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pouch of bone meal and a dried bundle of wolfsbane</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Deathtouch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATHTOUCH">
+		<supports>Paladin, Warlock, Wizard, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;Your being is filled with necrotic energy, extending to your physical touch and your attacks for the duration. Whenever a creature touches you or hits you with a melee attack, it must make a Constitution saving throw or take 1d6 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you hit a creature with an attack, it takes an additional 4d6 necrotic damage (ignoring the touch damage mentioned previously).&lt;/p&gt;
+&lt;p class="indent"&gt;If you cause a creature to be reduced to 0 or fewer hit points with this spell, it automatically fails one death saving throw. If you hit a creature that is already at 0 or fewer hit points with this spell, it dies.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a shrunken head</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death’s Caress" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATHS_CARESS">
+		<supports>Sorcerer, Warlock, Wizard, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Unholy energy radiates from you in an aura with a 30-foot radius, enveloping all friendly creatures within range. Until the spell ends, the aura moves with you, centered on you.&lt;/p&gt;
+&lt;p class="indent"&gt;While in the aura, each non-hostile creature (including you) deals an extra 1d4 necrotic energy when it hits with a melee attack.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Decaying Ground" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DECAYING_GROUND">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You launch a blast of necrotic energy at a point within range you can see, causing the ground there to become decayed and infused with necrotic energy. All the ground within a 20-foot radius of the point becomes difficult terrain for the duration of the spell.&lt;/p&gt;
+&lt;p class="indent"&gt;When a creature moves into or within the area it takes 1d4 necrotic damage and 1d4 poison damage for every 5 feet it travels. Any creature that can’t see the area at the time of the casting must make a Perception check against your spell save DC to recognize it as hazardous.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Desolation Aura" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DESOLATION_AURA">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;Deteriorating energy radiates from you in an aura with a 30-foot radius, making armor brittle and wearing down living things. Until the spell ends, the aura moves with you, centered on you. &lt;/p&gt;
+&lt;p class="indent"&gt;You can use a bonus action to make a ranged spell attack against a creature within the aura. On a hit, the target takes 4d6 necrotic damage, and it suffers a -2 penalty to its AC until the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="False Death" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_FALSE_DEATH">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;One living, willing creature you can see within range that has current hit points equal to or less than your spellcasting modifier has their hit points lowered to 0. &lt;/p&gt;
+&lt;p class="indent"&gt;This spell cannot affect a creature that has less than 1 hit point. The target appears as a corpse but is stable.&lt;/p&gt;
+&lt;p class="indent"&gt;The affected creature can hear everything within 30 feet of it, can feel vibrations within 5 feet of it, but cannot see. At the end of the affected target's turn, it can make a Constitution saving throw to awaken itself.&lt;/p&gt;
+&lt;p class="indent"&gt;You can end the spell early at any time (no action required), which will also awaken the affected creature. Once awoken, the creature regains 1 hit point.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of poison or a symbol of a Death Deity</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Psyche Drain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PSYCHE_DRAIN">
+		<supports>Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to siphon life force from a sentient creature to slightly heal your wounds. Make a melee spell attack against a creature within your reach.&lt;/p&gt;
+&lt;p class="indent"&gt;On a hit, the target takes 6d4 psychic damage, and the target of this spell must succeed on an Intelligence saving throw. On a failed save, you regain hit points equal to one-quarter the amount of psychic damage dealt, rounded up.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4 level or higher, the damage increases by 2d4 for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Rigor Mortis" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RIGOR_MORTIS">
+		<supports>Bard, Cleric, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch an undead creature, which falls prone. For the duration, the target is incapacitated, can't move or speak, and automatically fails Strength and Dexterity saving throws.&lt;/p&gt;
+&lt;p class="indent"&gt;Each time the target takes damage, it makes a Wisdom saving throw against the spell; if this saving throw succeeds, the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the duration increases by 1 hour for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration"> Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of graveyard dust or a twig from a cemetery tree</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Sapping Smite" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SAPPING_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<html>&lt;p&gt;The next time you hit a creature with a weapon attack before this spell ends, your weapon crackles with force, and the attack deals an extra 3d8 necrotic damage to the target.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, the target must succeed on a Constitution saving throw or all his weapon attacks using Strength deal only half damage until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;At the end of each of the target’s turns, it can make a Constitution saving throw against the spell. On a success, the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the extra damage increases by 1d8 for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Scarecrow" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCARECROW">
+		<supports>Druid, Ranger, Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A scarecrow appears for the duration in an unoccupied space of your choice that you can see within range. The scarecrow is a Large object, and has an AC of 15 and 20 hit points. It lasts until it is destroyed, or until the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;This scarecrow is imbued with fear magic that seeps into the surrounding area.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature that moves to a space within 60 feet of the scarecrow or begins its turn there must make a Wisdom saving throw, becoming frightened of the scarecrow until it is destroyed. This has no effect on undead or constructs.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a miniature scarecrow made from hay and cloth with two buttons for eyes worth 10 gold</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Strangulate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_STRANGULATE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;An invisible hand of death grabs a creature’s throat and begins strangling them. The target makes a Constitution saving throw. If it fails, the target is restrained and can’t speak or breathe.&lt;/p&gt;
+&lt;p class="indent"&gt;On each subsequent turn, you may use your action to continue the spell. If you do, the creature takes 1d8 necrotic damage and makes a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, or if you don’t use your action to continue the spell, the effect ends.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Agonizing Smite" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AGONIZING_SMITE">
+		<supports>Paladin</supports>
+		<description>
+			<html>&lt;p&gt;The next time you hit a creature with a melee weapon attack before this spell ends, the weapon sends waves of excruciating pain through the creature's body, and the attack deals an extra 5d8 necrotic damage to the target.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, the target must make a Constitution saving throw. On a failed save, it falls prone and takes 1d8 necrotic damage at the start of its next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the target takes half as much damage and doesn't fall prone.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Anesthesia" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANESTHESIA">
+		<supports>Cleric, Warlock, Bard</supports>
+		<description>
+			<html>&lt;p&gt;When you cast this spell at a creature, they fall under the effect of an extremely powerful anesthetic, completely blocking their sense of pain.&lt;/p&gt;
+&lt;p class="indent"&gt;If a creature affected by this spell falls below 0 hit points, they don't fall unconscious.&lt;/p&gt;
+&lt;p class="indent"&gt;They can keep going as normal, with a special pool of hit points equal to your spell ability modifier x 5. After these hit points end, the spell ends and the creature falls unconscious.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target is stabilized after falling they take 1 level of exhaustion.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th or higher the hit point pool the target gains, increases by 5 for each spell level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Anpumose's Amazing Arid Assault" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANPUMOSES_AMAZING_ARID_ASSAULT">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;A blast of sand emerges to form a cone of death. Each creature in a 120-foot cone must make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature takes 4d8 necrotic damage on a failed save and must make a second Constitution saving throw, gaining a level of exhaustion on a second failed saved, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher the damage increases by 1d8 for each slot level above 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self (120 foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pouch of sand</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Awaken Undead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AWAKEN_UNDEAD">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You perform some very visceral surgery on a Medium or smaller undead to spontaneously generate a new soul within it.&lt;/p&gt;
+&lt;p class="indent"&gt;The creature must have an Intelligence score of 6 or less, or no Intelligence score. It gains an Intelligence score of 10 and learns one language that you know.&lt;/p&gt;
+&lt;p class="indent"&gt;Its Wisdom and Charisma scores also increase to 10 if they are not already 10 or higher.&lt;/p&gt;
+&lt;p class="indent"&gt;The DM chooses statistics appropriate for the awakened undead, such as the statistics for a skeleton or zombie, except with changes as previously noted.&lt;/p&gt;
+&lt;p&gt;he awakened creature is charmed by you for 1 week, or until you or your companions do anything harmful to it.&lt;/p&gt;
+&lt;p class="indent"&gt;When the charmed condition ends, the awakened creature chooses whether or not to remain friendly to you, depending how it was treated while it was charmed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an amethyst worth at least 100 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Blood Rain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BLOOD_RAIN">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;A red, bloodlike fluid rains down in a 20-foot radius, 60-foot high cylinder within range.&lt;/p&gt;
+&lt;p class="indent"&gt;Creatures other than you which begin their turn in the target area or enter it on their turn must succeed on a Constitution saving throw or take 3d8 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Allies of yours regain 2d8 hit points when they start their turn in the cylinder, instead of taking damage.&lt;/p&gt;
+&lt;p class="indent"&gt;While concentrating on this spell, you can use your action to move the pillar up to 20 feet in any direction.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, the damage and healing both increase by 1d8 for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of blood from any sapient creature, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dalamar's Antilife Dome" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DALAMARS_ANTILIFE_DOME">
+		<supports>Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You create a dome of energy around yourself that is physically painful for creatures to stay in for too long.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature that starts their turn in the sphere other than yourself must make a Constitution saving throw. They take 6d6 necrotic damage on a failed save, or half as much on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, creatures in the sphere have their movement speed halved until they exit the sphere.&lt;/p&gt;
+&lt;p class="indent"&gt;You may select up to 9 creatures other than you to be immune to the effects of the sphere.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self (10-foot radius sphere)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Dareun's Overexertion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DAREUNS_OVEREXERTION">
+		<supports>Sorcerer, Warlock, Wizard, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Lifting one object in each hand, a small circuit of energy forms between the two, increasing in size as the target exerts themselves.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose one creature within range, they must make a Constitution saving throw with a DC of 10.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failure, the target takes no damage, however, on a success, the target takes an amount of d8s of necrotic damage equal to the amount the creature succeeded by.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, reduce the DC by 2 for every level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">15 Feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">two objects of the same weight</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death March" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATH_MARCH">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You empower yourself and nearby allies with shadow magic, with the life-draining force of death. A 30-foot radius of effect moves with you, centered on you, for the duration of the spell. You and every friendly creature within this radius gains the following benefits while it remains within the radius:&lt;/p&gt;
+&lt;p class="indent"&gt;Deals an extra 1d6 necrotic damage on a hit with any weapon attack&lt;/p&gt;
+&lt;p class="indent"&gt;Has resistance to necrotic damage and poison damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level, the extra damage increases to 2d6&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Harmfield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HARMFIELD">
+		<supports>Sorcerer, Cleric, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You are surrounded by rings of glowing yellow light that oscillate in a cylindrical pattern around you, shedding bright light in a 10-foot radius and dim light for another 10 feet. You can end the spell early by using a bonus action to dismiss it..&lt;/p&gt;
+&lt;p class="indent"&gt;Any creature that enters the spell's area of effect or starts their turn there takes 2d10 necrotic damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th or 6th level, the damage increases to 3d10. When you cast this spell using a spell slot of 7th or 8th level, the damage increases to 4d10. When you cast this spell using a spell slot of 9th level, the damage increases to 5d10.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Hell’s Gaze" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HELLS_GAZE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Your very gaze releases life-disrupting energy. You create a 30 foot cone. Any creature that enters the area or starts their turn within it must make a Constitution saving throw, or take 2d10 necrotic damage, half as much on a successful save.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failure, they are also blinded. At the end of their turn, they may reattempt the save, ending the blindness on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, you may use an action to change the direction of the beam.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, this spell deals an additional 1d10 necrotic damage for every level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute.</set>
+			<set name="range">Self (30 Feet cone)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A crystallized medusa eye</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Life Drain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIFE_DRAIN">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Artificer, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to drain the life out of a creature within range.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must make a Constitution saving throw at the start of each of its turns, taking 4d6 necrotic damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target successfully saves three times against this spell, it ends early.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Necrotic Breath" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NECROTIC_BREATH">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You consume a chunk of rotting meat causing you to exhale a deadly black mist of negative energy causing a creature you see within range to inhale it forcing them to make a Constitution saving throw dealing 4d10 necrotic damage on a failing roll or half as much on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;If the spell kills the target and they failed their con saving throw you can choose to raise them as a skeleton or zombie under your control otherwise their body but not their possessions crumble to dust.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you target a plant creature or a magical plant, it makes the saving throw with disadvantage.&lt;/li&gt;
+&lt;li&gt;If you target a nonmagical plant that isn't a creature, such as a tree or a shrub, it doesn't make a saving throw, it simply withers and dies.&lt;/li&gt;
+&lt;li&gt;If you target an undead it heals them 4d10 hp.&lt;/li&gt;
+&lt;li&gt;If you target a creature that can not or does not need to breathe they automatically succeed on their Constitution saving throw and they take no damage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you add 1d10 of necrotic damage and you may choose 1 additional creature to affect for every spell slot above 4th level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">5-foot sphere around the caster</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a piece of rotting meat or flesh</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Necrotic Reconstruction" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_NECROTIC_RECONSTRUCTION">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You strike forward, attempting to break the target's skin with the diamond. Choose one non-construct or undead within range, and make a touch spell attack against them.&lt;/p&gt;
+&lt;p class="indent"&gt;On a hit, they take 4d8 necrotic damage. On a hit, if the target dies within the duration of the spell, they are immediately resurrected as an undead.&lt;/p&gt;
+&lt;p class="indent"&gt;They are charmed by you, and when the spell ends, the body immediately disintegrates.&lt;/p&gt;
+&lt;p class="indent"&gt;The target's hitpoints become 8d8, their Intelligence, Wisdom, and Charisma become 3, and they lose all of their features, but otherwise they are unchanged.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 5th level or higher, the target's hitpoints when revived are increased by 1d8 for every level above 4th&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A diamond worth at least 50 gp, which turns into coal when the spell is cast</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Soul Tide" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SOUL_TIDE">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You release a swarm of souls from below you, each swirling into a target. Make four ranged spell attacks in total against any targets you can see in range, dealing 3d4 necrotic damage on a hit.&lt;/p&gt;
+&lt;p class="indent"&gt;After making all of these attacks, you may make two more attacks for every creature reduced to 0 hitpoints by these attacks.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When cast at 5th level or higher, you initially make one extra attack for every level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Soul-Stealing Fist" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SOUL_STEALING_FIST">
+		<supports>Sorcerer, Warlock, Wizard, Paladin, Artificer, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You infuse your fist with necrotic energy. Make a melee spell attack against a creature you can touch.&lt;/p&gt;
+&lt;p class="indent"&gt;On a hit, the target takes 3d6 necrotic damage and you gain temporary hit points equal to half the damage dealt (rounded down).&lt;/p&gt;
+&lt;p class="indent"&gt;A creature which was hit and took damage must succeed on a Wisdom saving throw or be stunned until the start of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature that resists necrotic damage has advantage on this save.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d6 for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Undead Manual Work Force" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_UNDEAD_MANUAL_WORK_FORCE">
+		<supports>Cleric, Warlock, Wizard, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You place the incense upon the body’s forehead and burn it, holding your hand on its chest and speaking incantations,&lt;/p&gt;
+&lt;p class="indent"&gt;after 10 minutes of doing this, it will raise as an undead under your control (you can decide between a skeleton and zombie), it contains the same stats as the undead it just became.&lt;/p&gt;
+&lt;p class="indent"&gt;However, this undead cannot attack and cannot speak and is completely incapable of complicated behaviour such as craftsmanship,&lt;/p&gt;
+&lt;p class="indent"&gt;it only understands basic word in the language(s) it once knew. The telepathic link is only of 30ft in range.&lt;/p&gt;
+&lt;p class="indent"&gt;This undead is extremely proficient in manual labour tasks such as hauling and mining or farming but lacks the skills to create other items using those.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you animate three additional undead creatures for each slot level above 4th. Each of the creatures must come from a different corpse or pile of bones.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">1 year</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">small or medium humanoid corpse, Incense worth 5gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Undead Artisans" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_UNDEAD_ARTISANS">
+		<supports>Cleric, Warlock, Wizard, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You place the incense upon the body’s forehead and burn it, holding your hand on its chest and speaking incantations,&lt;/p&gt;
+&lt;p class="indent"&gt;after 10 minutes of doing this, it will raise as an undead under your control (you can decide between a skeleton and zombie), it contains the same stats as the undead it just became.&lt;/p&gt;
+&lt;p class="indent"&gt;However, this undead cannot attack and cannot speak and is completely incapable of manual labour,&lt;/p&gt;
+&lt;p class="indent"&gt;it only understands basic word in the language(s) it once knew. The telepathic link is only of 30ft in range.&lt;/p&gt;
+&lt;p class="indent"&gt;It is extremely proficient in making tools or weapons or even works of art but lacks the key skill of moving items making it require and outside source to move the materials and the products&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, you animate three additional undead creatures for each slot level above 5th. Each of the creatures must come from a different corpse or pile of bones.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">1 year</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">small or medium humanoid corpse, Incense worth 5gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Defibrillate" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEFIBRILLATE">
+		<supports>Cleric, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Using your two weapons, you touch a creature within 5 of you that has died within the last minute and send a reviving jolt through their body.&lt;/p&gt;
+&lt;p class="indent"&gt;The target returns to life with 1 hit point and becomes conscious. It has disadvantage on all saving throws until the end of its long rest.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">two bludgeoning weapons made of conductive material</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Enlighten Undead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ENLIGHTEN_UNDEAD">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You touch an undead creature. Its Intelligence score increases by 1d8 + your spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;It regains any features, abilities, feats, traits, and proficiencies it had in life. It understands and can speak the languages it knew in life and learns one that you know.&lt;/p&gt;
+&lt;p class="indent"&gt;As well, its alignment changes either to what it was in life or to be the same as yours, your choice.&lt;/p&gt;
+&lt;p class="indent"&gt;You can allow it to regain its memories, personality, and soul or give it a personality of your choice. In any case, it becomes sentient.&lt;/p&gt;
+&lt;p class="indent"&gt;You cannot cast this spell more than once on the same creature.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Ghoul Touch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GHOUL_TOUCH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a living creature to imbue a minor magical strain of undeath, paralyzing it.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must succeed on a Constitution saving throw or become paralyzed for the spell's duration. Constructs and undead automatically succeed on this saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature paralyzed with this spell exudes a terrible stench that effectively nauseates all other creature within proximity.&lt;/p&gt;
+&lt;p class="indent"&gt;During the spell's duration, when a creature first enters or starts its turn within 5 feet of the paralyzed creature, it must succeed on a Constitution saving throw or become poisoned until the start of its next turn. Constructs and undead automatically succeed on this saving throw.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small scrap of cloth, wrapped around your hand when you touch the target</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Inflict Exhaustion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INFLICT_EXHAUSTION">
+		<supports>Sorcerer, Warlock, Wizard, Bard, Druid</supports>
+		<description>
+			<html>&lt;p&gt;Make a melee spell attack against a creature. If you hit, their speed is halved for the duration of the spell and they must make a Constitution saving throw or gain a level of exhaustion.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mass Inflict Wounds" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MASS_INFLICT_WOUNDS">
+		<supports>Cleric, Paladin, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;A wave of negative energy washes out from a point you choose within range.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature within a 30-foot radius of that point must make a Constitution saving throw, taking 8d8 necrotic damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, this spell's damage increases by 1d8 for every level after 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Phoenix's Rebirth" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PHOENIXS_REBIRTH">
+		<supports>Artificer, Cleric, Paladin, Druid</supports>
+		<description>
+			<html>&lt;p&gt;One creature within range is imbued with the revitalization of a phoenix. They either lose one condition of your choice, lose one disease of your choice, regain 30 hit points, or lose 1 level of exhaustion.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, any creatures within 5 ft. must attempt a Dexterity saving throw, taking 1d10 fire damage on a failure, or half as much on a success.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Redemption" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_REDEMPTION">
+		<supports>Artificer, Cleric, Paladin, Druid, Bard</supports>
+		<description>
+			<html>&lt;p&gt;Restores an undead creature to life, curing all diseases and healing all injuries. The creature remains comatose for 48 hours before awakening.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">one diamond worth at least 500 gold</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Unnerve" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_UNNERVE">
+		<supports>Sorcerer, Warlock, Wizard, Artificer, Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;As you touch a willing target, you rip every single nerve ending out of their body, completely removing their ability to feel pain. For the duration, they cannot take damage from anything but a critical hit.&lt;/p&gt;
+&lt;p class="indent"&gt;However, after the spell ends, all of the target's nerves shoot back into their body, causing excruciating pain.&lt;/p&gt;
+&lt;p class="indent"&gt;They must make a DC 30 Constitution saving throw, or be paralyzed for the next 8 hours, as they writhe and scream in pain. On a success, they are only paralyzed for one hour.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vampiric Cloak" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VAMPIRIC_CLOAK">
+		<supports>Sorcerer, Warlock, Wizard, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;You wrap yourself in a cloak of life-transferring energy. Whenever a creature hits you with a melee attack, they take 3d6 necrotic damage and you regain hit points equal to half the amount of damage dealt.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d6 for each slot level higher than 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Amplify Damage" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AMPLIFY_DAMAGE">
+		<supports>Cleric, Warlock, Artificer, Cleric, Paladin, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A target creature within range must succeed on a Wisdom saving throw or become cursed for the duration of this spell. Choose a damage type.&lt;/p&gt;
+&lt;p class="indent"&gt;While cursed, the creature has vulnerability to the chosen damage type if it is not already vulnerable, resistant, or immune to it. If the creature is resistant to the damage type, it loses that resistance while cursed.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, you can choose one additional damage type for each slot level above 5th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Chain Pain" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CHAIN_PAIN">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;A dark lightning bolt leaps from your finger towards the target, inducing pain and leaping towards another nearby creature. A creature that you target with this spell make a Constitution saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the targets take 5d6 necrotic damage and is stunned until the end of your next turn. The bolt then leaps to a second creature of your choice within 10 feet of the target, which must then succeed on the same save and suffer the same effects, though the bolt cannot travel to a third creature.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the target takes half as much damage and the bolt doesn't leap to another target.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, increase the necrotic damage dealt by 2d6 for each slot level above 6th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">50 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Death's Touch" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DEATHS_TOUCH">
+		<supports>Warlock, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You touch one enemy creature within 5ft of you. You speak an ancient ritual in your mother dialect and offer the components to your deity.&lt;/p&gt;
+&lt;p class="indent"&gt;The target creature must succeed on a DC Constitution Saving Throw.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature fails the saving throw, it must take 10d8 necrotic damage and have that amount added to your hit points as temporary hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature succeeds the saving throw, it must take half of the 10d8 damage rolled and it's damage is not added to you for temporary hit points.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of level 7 or higher, increase damage dice by 1d8 for each spell level.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Powdered diamond worth at least 500gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Life Transfer" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIFE_TRANSFER">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;ou choose two creatures within range, one of whom must be willing and have more than 30 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;That creature takes 5d6 necrotic damage, and another creature that you can see within range regains hit points equal to 5 + the damage dealt.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, the healing becomes (Levels above 6th * 5) + 5 + the damage dealt.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">150 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a chunk of obsidian, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Mind Kill" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MIND_KILL">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;The target must make an Intelligence saving throw, or take 5d12 psychic damage, and become incapacitated for the duration of the spell.&lt;/p&gt;
+&lt;p class="indent"&gt;Targets also become affected by confusion; re-roll if you get above a 6. Undead and constructs are immune to this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A drop of blood, and rubies worth at least 250 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Vampiric Aura" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VAMPIRIC_AURA">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;Life-draining energy radiates from you in an aura with a 30-foot radius. Until the spell ends, the aura moves with you, centered on you.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use a bonus action to make a ranged spell attack against a creature within the aura. On a hit, the target takes 6d6 necrotic damage, and you regain hit points equal to half the amount of necrotic damage dealt.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">Self (30-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Viktor's Brand Of Undeath" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VIKTORS_BRAND_OF_UNDEATH">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You focus your necrotic energies to brand yourself with the mark of undeath. All of your vital systems are bypassed whilst this spell is in effect, and you become undead.&lt;/p&gt;
+&lt;p class="indent"&gt;You are immune to the poisoned, paralyzed, disease, stunned, sleep and death effects. Additionally, you cannot be subjected to critical hits, nonlethal damage, ability drains, energy drains, fatigue or exhaustion.&lt;/p&gt;
+&lt;p class="indent"&gt;You are immune to any effect that requires a Constitution save, and do not need to breathe, eat or sleep.&lt;/p&gt;
+&lt;p class="indent"&gt;In return, you cannot heal (unless damaged by necrotic or poison damage or gain life via negative energy, such as life drain from vampiric touch),&lt;/p&gt;
+&lt;p class="indent"&gt;are affected by spells that affect undead creatures, are instantly destroyed if reduced to zero health, and have disadvantage on all Charisma rolls whilst the spell is in effect. Ending this spell requires an action.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">multiple small shells</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Water Sucker" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WATER_SUCKER">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;Drain water from a creature or object you can touch. As the water drains out of the creature or object, it must make a Constitution saving throw, taking 10d10 necrotic damage on a failed save, or half as much damage on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;Plant creatures and water-based elementals have disadvantage on this save. A nonmagical plant takes maximum damage from this spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a pinch of sand and salt</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Control Undead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CONTROL_UNDEAD">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You target an undead creature in range. The creature must make a wisdom saving throw; It has disadvantage on this saving throw if its Intelligence score is 10 or less, and it automatically fails if its intelligence score is 5 or less.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the target is brought under your mental control.&lt;/p&gt;
+&lt;p&gt;While an undead is under the control of this spell, and within 1 mile of you, you may telepathically issue commands to it which they follow to the best of their ability. If no commands are given, it will defend itself against hostile creatures.&lt;/p&gt;
+&lt;p class="indent"&gt;During combat, the undead rolls for its own initiative. You decide what actions it takes and where it may move.&lt;/p&gt;
+&lt;p class="indent"&gt;Undead controlled by this spell cannot be freed by means other than a necromancy wizard's Command Undead feature, or another spellcaster casting control undead or other appropriate spell of 7th level or higher.&lt;/p&gt;
+&lt;p&gt;This spell has no effect on creatures with legendary actions.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell ends at the end of the duration, or when the undead is destroyed, or when control of it is taken away.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using an 8th level spell slot, the duration increases to 1 year.&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast this spell using a 9th level spell slot, the spell lasts until dispelled or countered, or until the undead is destroyed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">30 days</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Greater Harmfield" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GREATER_HARMFIELD">
+		<supports>Sorcerer, Cleric, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You are surrounded by rings of glowing yellow light that oscillate in a cylindrical pattern around you, shedding bright light in a 10-foot radius and dim light for another 10 feet. You can end the spell early by using an action to dismiss it.&lt;/p&gt;
+&lt;p class="indent"&gt;A creature that enters the area of the spell for the first time on its turn or starts its turn within the radius of the spell takes 4d10 necrotic damage, as the rings of light disrupt the life force of whatever touches them.&lt;/p&gt;
+&lt;p&gt;On each of your turns, you can choose to attempt to pull any number of creatures within 60 feet of you towards you.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature you choose must make a Strength saving throw, or be pulled 15 feet towards you by a magical force. Whether a creature succeeds or fails on this save, until the end of your next turn it must expend 4 feet of movement to move 1 foot away from you.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; The damage of this spell increases by 1d10 for each spell slot level above 7th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">10 minutes</set>
+			<set name="range">Self (5-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Mass Death Ward" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_MASS_DEATH_WARD">
+		<supports>Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You grant several creatures a measure of protection against death.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose up to 8 creatures within range that you can see. The first time a target would drop to 0 hit points as a result of taking damage, that target instead drops to 1 hit point, and the spell ends for that creature.&lt;/p&gt;
+&lt;p class="indent"&gt;If the spell is still in effect when a target is subjected to an effect that would kill it instantaneously without dealing damage, that effect is instead negated against the target, and the spell ends for that creature.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Resurrect Skeleton" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RESURRECT_SKELETON">
+		<supports>Bard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You touch the full skeleton of a dead creature that has been dead for no more than a century, that didn't die of old age. If its soul is free and willing, the target returns to life with all its hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell neutralizes any poisons and cures normal diseases afflicting the creature when it died.&lt;/p&gt;
+&lt;p class="indent"&gt;It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to casting the spell, they afflict the target on its return to life. This spell closes all mortal wounds, restores any missing body parts and returns all flesh to the skeleton.&lt;/p&gt;
+&lt;p&gt;Coming back from the dead is an ordeal. The target takes a −4 penalty to all attack rolls, saving throws, and ability checks. Every time the target finishes a long rest, the penalty is reduced by 1 until it disappears.&lt;/p&gt;
+&lt;p&gt;Casting this spell to restore life to a creature that has been dead for one year or longer taxes you greatly. Until you finish a long rest, you can't cast spells again, and you have disadvantage on all attack rolls, ability checks, and saving throws.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a diamond worth at least 1,000 gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Withering Destruction" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WITHERING_DESTRUCTION">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a bolt of dark energy that leaps at a creature or object within range. The target must make a Constitution saving throw, taking 9d10 necrotic damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 8th level or higher, increase the damage by 1d10 for each slot level above 7th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a withered flower, a piece of obsidian worth at least 50 gp, and an amethyst worth at least 100 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Horrific Vicissitude" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_HORRIFIC_VICISSITUDE">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;You slice open your palm, suffering 1d4 slashing damage and then touch the wound to a nearby creature, transmitting deathly energy through your own blood.&lt;/p&gt;
+&lt;p class="indent"&gt;The target makes a Constitution saving throw. On a failure, they suffer 10d8+20 necrotic damage and you regain 5d8+10 hitpoints.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">obsidian dagger worth 200 gold</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Word Bleed" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POWER_WORD_BLEED">
+		<supports>Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You speak a word of power that causes the blood of one creature you can see within range to burst forth.&lt;/p&gt;
+&lt;p class="indent"&gt;If the target has 100 hit points or fewer, it is subject to massive bleeding, taking half its current hit points in damage up to a maximum of 50. Otherwise, the spell has no effect on it.&lt;/p&gt;
+&lt;p class="indent"&gt;A target is also unaffected if it is immune to being charmed, is undead or a construct, or has no substance in its body that is the equivalent of “blood” (for instance the Warforged ‘blood-like’ fluid).&lt;/p&gt;
+&lt;p&gt;While the target is affected by bleeding, any terrain around it in a radius of 5 feet becomes difficult terrain at the end of the target's turn due to the growing pool of blood.&lt;/p&gt;
+&lt;p class="indent"&gt;The target also has disadvantage on attack rolls and ability checks, and saves.&lt;/p&gt;
+&lt;p class="indent"&gt;Finally, if the target tries to cast a spell, it must first succeed on a Constitution saving throw, or the casting fails and the spell is wasted.&lt;/p&gt;
+&lt;p&gt;A target suffering from bleeding (or any creature within touch range of the target) can, on its turn, take an action to stanch the bleeding wound by succeeding on a Wisdom (Medicine) check against your spell save DC.&lt;/p&gt;
+&lt;p class="indent"&gt;The wound also closes if the target receives magical healing of 6th level or higher.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Walk of the Dead" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_WALK_OF_THE_DEAD">
+		<supports>Sorcerer, Warlock, Wizard, Cleric, Druid</supports>
+		<description>
+			<html>&lt;p&gt;By crushing the skull of the humanoid and the bone of the undead creature and mixing it with the poison, you create a disgusting gelatinous concoction that you then consume.&lt;/p&gt;
+&lt;p class="indent"&gt;This causes a horrific transformation as your body dies and becomes undead.&lt;/p&gt;
+&lt;p class="indent"&gt;Your skin becomes pale and taught and your eyes appear lifeless as you become indistinguishable from a zombie. For the duration, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You are considered undead.&lt;/li&gt;
+&lt;li&gt;At the start of your turn, you regain 10 hit points. If you take acid, fire, or radiant damage, this trait doesn't function at the start of your next turn.&lt;/p&gt;
+&lt;li&gt;You are immune to necrotic and poison damage.&lt;/li&gt;
+&lt;li&gt;You are immune to the poisoned and exhaustion conditions.&lt;/li&gt;
+&lt;li&gt;If damage reduces you to 0 hit points, you must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, you drop to 1 hit point instead.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 9th level, the spell lasts for 24 hours.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent">The skull of a humanoid creature, the bone of an undead creature, and a powerful poison worth at least 1,000 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Soul Strike" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SOUL_STRIKE">
+		<supports>Sorcerer, Warlock, Wizard, Cleric</supports>
+		<description>
+			<html>&lt;p&gt;You assault the soul of a creature within range, attempting to rend it from the body and disperse it into the ether.&lt;/p&gt;
+&lt;p class="indent"&gt;Make a ranged spell attack against the target. On a hit, the target takes 16d12 necrotic damage. This spell has no effect on undead or constructs.&lt;/p&gt;
+&lt;p&gt;A creature killed by this spell can be restored to life only by means of a true resurrection spell or a wish spell.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">120 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a black gemstone worth at least 1,000 gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+</elements>
