@@ -11,7 +11,7 @@
 
 		<file name="Spells.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells.index" />
 		<file name="epic-level-21-40.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/epic-level-21-40.xml" />
-		<file name="Blessings.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings.index" />
-		<file name="Items.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items.index" />
+		<file name="blessings.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/blessings.index" />
+		<file name="items.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/items.index" />
 	</files>
 </index>
