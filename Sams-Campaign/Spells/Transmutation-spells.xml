@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Transmutation-spells</name>
-		<update version="0.5.2">
+		<update version="0.1.0">
 			<file name="Transmutation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Transmutation-spells.xml" />
 		</update>
 	</info>
