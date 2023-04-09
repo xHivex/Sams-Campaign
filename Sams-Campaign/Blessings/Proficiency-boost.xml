@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Proficiency Boost</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Proficiency-boost.xml" />
 		</update>
 	</info>
@@ -18,6 +18,12 @@
 		</setters>
 		<rules>
 			<stat name="ac" value="proficiency" level="1" />
+			<stat name="strength:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+			<stat name="dexterity:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+			<stat name="constitution:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+			<stat name="intelligence:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
+			<stat name="wisdom:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+			<stat name="charisma:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
 			<stat name="proficiency" value="1" level="1" />
 			<stat name="proficiency" value="1" level="2" />
 			<stat name="proficiency" value="1" level="3" />
