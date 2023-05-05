@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<update version="0.1.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
+		</update>
+	</info>
+	<element name="Aegis Protector" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_AEGIS_PROTECTOR">
+		<requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: Proficiency with shields&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You can create an impenetrable defense with your shield.&lt;/p&gt;
+&lt;p&gt;When you or a creature within 5 feet takes damage while you are wielding a shield, you can use your reaction to reduce that damage by 2d10. Once you use this feature, you can not use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="1/Short Rest">
+			<description>When you or a creature within 5 feet takes damage while you are wielding a shield, you can use your reaction to reduce that damage by 2d10. Once you use this feature, you can not use it again until you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Agile Evader" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_AGILE_EVADER">
+		<prerequisite>Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:13]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: Dexterity 13 or higher&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You have become very hard to hit due to the training of your reflexes and speed. You have the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When a creature would move within 5 feet of you, as a reaction you may dodge out of the way, moving 10 feet into an unoccupied space. Movement done this way does not trigger opportunity attacks. Once you use this feature, you can not use it again until you finish a long rest.&lt;/li&gt;
+&lt;li&gt;As a bonus action, you may take the dodge action. Once you use this feature, you can not use it again until you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When a creature would move within 5 feet of you, as a reaction you may dodge out of the way, moving 10 feet into an unoccupied space. Movement done this way does not trigger opportunity attacks. Once you use this feature, you can not use it again until you finish a long rest.
+			As a bonus action, you may take the dodge action. Once you use this feature, you can not use it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Ancient Touch" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ANCIENT_TOUCH">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You have learned techniques to enhance your spells with a range of touch or self, gaining the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Treat spells with a range of 'Self' as if they had a range of 'Touch' instead. This means you can cast spells with a range of self on other creatures within your reach.&lt;/li&gt;
+&lt;li&gt;When you cast a spell with a range of touch or self, and if your other hand is empty, you may twinncast the spell on to another creature within 5 feet of you as a bonus action. When using this feature you have disadvantage on constitution saving throws to maintain concentration.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Treat spells with a range of 'Self' as if they had a range of 'Touch' instead. This means you can cast spells with a range of self on other creatures within your reach.
+			When you cast a spell with a range of touch or self, and if your other hand is empty, you may twinncast the spell on to another creature within 5 feet of you as a bonus action. When using this feature you have disadvantage on constitution saving throws to maintain concentration.</description>
+		</sheet>
+	</element>
+	<element name="Arcana Infused" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ARCANA_INFUSED">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Your blood flows with an abundance of magical energy, allowing you to access a well of magical power:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After finishing a long rest, roll 1d4. You then gain a temporary spell slot of equal value to the number rolled for that day.&lt;/li&gt;
+&lt;li&gt;After finishing a short rest, you can regain a combination of spell slots equal to your spellcasting ability modifier (Minimum of 0). You may use this feature again after finishing a long rest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may not gain a spell slot with this ability that you would not normally be able to cast with.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>After finishing a long rest, roll 1d4. You then gain a temporary spell slot of equal value to the number rolled for that day.
+			After finishing a short rest, you can regain a combination of spell slots equal to your spellcasting ability modifier (Minimum of 0). You may use this feature again after finishing a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Armor Master" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ARMOR_MASTER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 13 or higher&lt;/p&gt;
+&lt;p&gt;This feat grants the character the ability to wear armor more comfortably, relying on their Strength to help lighten the load.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;While wearing armor, you gain a +1 bonus to your AC.&lt;/li&gt;
+&lt;li&gt;You treat armor you wear as weighing half as much as it truly does.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="ac:armored:armor" value="1" />
+		</rules>
+	</element>
+	<element name="Artifact Master" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ARTIFACT_MASTER">
+		<description>
+			<html>&lt;p&gt;You have absorbed so much magic that you have shattered the limits of enchantments.:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Intelligence, Wisdom or Charisma increase by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You can attune to up to four magic items at once.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Artifact Master" display="false" />
+		<rules>
+			<stat name="attunement:max" value="1" />
+			<select type="Feat Feature" name="Ability Score Increase(Artifact Master)" supports="Feat Ability Artifact Master" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_ARTIFACT_MASTER_INTELLIGENCE">
+		<supports>Feat Ability Artifact Master</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Intelligence by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Artifact Master" display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_ARTIFACT_MASTER_WISDOM">
+		<supports>Feat Ability Artifact Master</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Wisdom by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Artifact Master" display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_ARTIFACT_MASTER_CHARISMA">
+		<supports>Feat Ability Artifact Master</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Charisma by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Artifact Master" display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Battle Focused" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BATTLE_FOCUSED">
+		<prerequisite>Constitution 13 or higher</prerequisite>
+		<requirements>[con:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 13 or higher&lt;/p&gt;
+&lt;p&gt;To you, the ebb and flow of combat is second nature. You are the leaf on the rippling water, and your mind is free to focus on what it will:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can add your Constitution modifier to your initiative rolls.&lt;/li&gt;
+&lt;li&gt;You have advantage on Constitution saving throws you make to maintain your concentration.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You have advantage on Constitution saving throws you make to maintain your concentration.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Battle Planner" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BATTLE_PLANNER">
+		<description>
+			<html>&lt;p&gt;You always plan your every combat and prepare for what you will face. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a +2 bonus to initiative.&lt;/li&gt;
+&lt;li&gt;Before the combat starts, you gain a free turn, during which you can only move and use a bonus action. After you complete this turn, the combat resumes as normal. You can't gain this free turn when you are surprised.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Before the combat starts, you gain a free turn, during which you can only move and use a bonus action. After you complete this turn, the combat resumes as normal. You can't gain this free turn when you are surprised.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="2" />
+		</rules>
+	</element>
+	<element name="Battlemage" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BATTLEMAGE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You've learned to empower your spells, drawing every bit of power you can from the Weave. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before you make a spell attack roll for a cantrip, you can choose to take a -5 penalty on the attack roll. If the attack hits, you add +10 damage to the spell’s damage.&lt;/li&gt;
+&lt;li&gt;Before you cast a spell that requires a saving throw to avoid damage, you can choose to lower the spell’s saving throw DC by an amount up to your proficiency bonus. If a target fails the saving throw to avoid damage, they receive an additional 1 point of damage per damage dice of the spell for every 2 that the DC is lowered by.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Before you make a spell attack roll for a cantrip, you can choose to take a -5 penalty on the attack roll. If the attack hits, you add +10 damage to the spell’s damage.
+			Before you cast a spell that requires a saving throw to avoid damage, you can choose to lower the spell’s saving throw DC by an amount up to your proficiency bonus. If a target fails the saving throw to avoid damage, they receive an additional 1 point of damage per damage dice of the spell for every 2 that the DC is lowered by.</description>
+		</sheet>
+	</element>
+	<element name="Beyond Limits" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BEYOND_LIMITS">
+		<prerequisite>Constitution 13 or higher</prerequisite>
+		<requirements>[con:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 13 or higher&lt;/p&gt;
+&lt;p&gt;You can push beyond your normal limits for a brief moment. On your turn, you can take an additional action. Once you do so, you can't do it again until you finish a long rest, unless you choose to suffer 1 level of exhaustion after taking the action to do so again.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can push beyond your normal limits for a brief moment. On your turn, you can take an additional action. Once you do so, you can't do it again until you finish a long rest, unless you choose to suffer 1 level of exhaustion after taking the action to do so again.</description>
+		</sheet>
+	</element>
+	<element name="Big Game Hunter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BIG_GAME_HUNTER">
+		<prerequisite>Dexterity or Wisdom 13 or higher</prerequisite>
+		<requirements>[dex:13]||[wis:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity or Wisdom 13 or higher&lt;/p&gt;
+&lt;p&gt;Growing up a slayer of many things, you yearn to test your skills against the mightiest of beasts you might find in the world’s wild places:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Gain advantage on Perception rolls while examining Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes or their corpses.&lt;/li&gt;
+&lt;li&gt;Gain advantage on attack rolls against Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes.&lt;/li&gt;
+&lt;li&gt;If you score a critical hit on Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes, triple your damage dice instead of doubling them.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Gain advantage on Perception rolls while examining Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes or their corpses.
+			Gain advantage on attack rolls against Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes.
+If you score a critical hit on Beasts, Dragons, and Monstrosities of the Large, Huge, or Gargantuan sizes, triple your damage dice instead of doubling them.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="5" />
+		</rules>
+	</element>
+	<element name="Counter Striker" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_COUNTER_STRIKER">
+		<description>
+			<html>&lt;p&gt;You excel at reacting to your opponent's attacks.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Dexterity score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Whenever you are hit by a melee attack, as a reaction, you may immediately make a melee attack against the attacker.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="6/Short Rest">
+			<description>Whenever you are hit by a melee attack, as a reaction, you may immediately make a melee attack against the attacker.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Destroyer" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_DESTROYER">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 13 or higher&lt;/p&gt;
+&lt;p&gt;You are extremely good at breaking things. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Strength score increase in 1, up to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Your melee weapon attacks using Strength cause double damage to objects and structures.&lt;/li&gt;
+&lt;li&gt;You have advantage on Strength checks made to break objects.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Your melee weapon attacks using Strength cause double damage to objects and structures.
+			You have advantage on Strength checks made to break objects.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+		</rules>
+	</element>
+	<element name="Dominator" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_DOMINATOR">
+		<description>
+			<html>&lt;p&gt;The battlefield is no place for cowards, and you dominating presence prove this very fact:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain proficiency in Intimidation.&lt;/li&gt;
+&lt;li&gt;As a bonus action, you can make your presence more dominating. Until the end of your next turn, if a creature makes a saving throw against being frightened by you, that creature has disadvantage on that roll. You can use this feature once, and regain all uses after you finish a short or long rest.&lt;/li&gt;
+&lt;li&gt;Whenever you attack a creature that is frightened of you, you gain advantage on that attack roll.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>As a bonus action, you can make your presence more dominating. Until the end of your next turn, if a creature makes a saving throw against being frightened by you, that creature has disadvantage on that roll. You can use this feature once, and regain all uses after you finish a short or long rest.
+			Whenever you attack a creature that is frightened of you, you gain advantage on that attack roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+		</rules>
+	</element>
+	<element name="Dumb Survivor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_DUMB_SURVIVOR">
+		<description>
+			<html>&lt;p&gt;Your effort and lack of reasoning allow you to gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Constitution score by 3, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Decrease your Intelligence score by 2.&lt;/li&gt;
+&lt;li&gt;Decrease your Wisdom score by 1.&lt;/li&gt;
+&lt;li&gt;You earn 2 dumb points: you can spend 1 dumb point when you are reduced to 0 hit points (but cannot used if you die), you can drop to 1 hit point instead. You regain all the dumb points when you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="2/Long Rest">
+			<description>You earn 2 dumb points: you can spend 1 dumb point when you are reduced to 0 hit points (but cannot used if you die), you can drop to 1 hit point instead. You regain all the dumb points when you finish a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="2" />
+			<stat name="intelligence" value="-2" />
+			<stat name="wisdom" value="-1" />
+		</rules>
+	</element>
+	<element name="Effective Communicator" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_EFFECTIVE_COMMUNICATOR">
+		<prerequisite>Charisma 13 or higher</prerequisite>
+		<requirements>[cha:13]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: Charisma 13 or higher&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Your skill at communicating with your teammates provides an additional layer of preparedness against the many threats that ail you. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain +1 to your Charisma ability score.&lt;/li&gt;
+&lt;li&gt;Whenever you or a friendly creature within 20 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="6/Long Rest">
+			<description>Whenever you or a friendly creature within 20 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Elitist" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ELITIST">
+		<description>
+			<html>&lt;p&gt;You are disgusted by those clearly weaker than you. You hate that they'd challenge you, so now you'll eliminate them quicker. You deal an extra damage die to creatures with a CR less than 1/2 of your character level, and 2 extra damage dice if their CR is less than 1/4 of your level.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You deal an extra damage die to creatures with a CR less than 1/2 of your character level, and 2 extra damage dice if their CR is less than 1/4 of your level.</description>
+		</sheet>
+	</element>
+	<element name="Endurant" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ENDURANT">
+		<description>
+			<html>&lt;p&gt;Hardy and resilient, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Constitution score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;As a bonus action, you can spend one hit die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You can spend one hit die to heal yourself. Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+		</rules>
+	</element>
+	<element name="Essence Theft" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ESSENCE_THEFT">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You can use your necromantic powers to steal the essence of creatures.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reduce a hostile creature to 0 hit points with necrotic damage, you gain temporary hit points equal to your spellcasting ability modifier + your character level (minimum of 1).&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you reduce a hostile creature to 0 hit points with necrotic damage, you gain temporary hit points equal to your spellcasting ability modifier + your character level.</description>
+		</sheet>
+	</element>
+	<element name="Exploding Critical" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_EXPLODING_CRITICAL">
+		<prerequisite>Strength 13 or higher</prerequisite>
+		<requirements>[str:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 13 or higher&lt;/p&gt;
+&lt;p&gt;Your strikes hit so hard that they compress air and then explode it upon impact, warping the very energies around it. You can roll one additional damage die when determining the extra damage for a critical hit with a melee attack. This deals force damage instead of the weapon's damage type.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can roll one additional damage die when determining the extra damage for a critical hit with a melee attack. This deals force damage instead of the weapon's damage type.</description>
+		</sheet>
+	</element>
+	<element name="Diplomatic Immunity" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_DIPLOMATIC_IMMUNITY">
+		<prerequisite>Charisma 16 or higher</prerequisite>
+		<requirements>[cha:16]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: Charisma 16 or higher&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You’ve learned the fine art of using your social skills to extricate and insulate yourself in tricky situations, even while facing outright hostile negotiation partners.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Learn 1 new language.&lt;/li&gt;
+&lt;li&gt;You may use Charisma for Intelligence or Wisdom saving throws. You can use this trait 6 times per long rest.&lt;/li&gt;
+&lt;li&gt;Gain advantage on Charisma skill checks if the target can understand your language. You can use this trait 6 times per long rest.&lt;/li&gt;
+&lt;li&gt;Whenever you succeed on a Charisma saving throw or skill check, gain temporary hit points equal to 1d6 + your Charisma modifier.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="6/Long Rest">
+			<description>You may use Charisma for Intelligence or Wisdom saving throws.
+			Gain advantage on Charisma skill checks if the target can understand your language.
+Whenever you succeed on a Charisma saving throw or skill check, gain temporary hit points equal to 1d6 + your Charisma modifier.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Diplomatic Immunity)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Fighting Mage" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_FIGHTING_MAGE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;When one needs to defend his life with metal and arcana, he is called a fighting mage. This feat gives you the ability to attack and cast at the same time. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you use your action to cast a cantrip, you can make a weapon attack using your bonus action.&lt;/li&gt;
+&lt;li&gt;When you use your action to cast a spell of 1st-level or higher, you can make a weapon attack using your bonus action. Once you use this ability, you can't do it again until you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When you use your action to cast a cantrip, you can make a weapon attack using your bonus action.
+			When you use your action to cast a spell of 1st-level or higher, you can make a weapon attack using your bonus action. Once you use this ability, you can't do it again until you finish a long rest.</description>
+		</sheet>
+	</element>
+	<element name="Finisher" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_FINISHER">
+		<description>
+			<html>&lt;p&gt;You are an inspiration on the battlefield, bolstering the resolve of your allies with each foe you fell. You can use this trait 6 times per long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you reduce a creature to 0 hit points, you can grant an ally you can see you a number of temporary hit points equal to twice the Challenge Rating of that creature (minimum of 1).&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature has class levels instead of a Challenge Rating (such as a fellow PC), you provide temporary hit points equal to that creature's level.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="6/Long Rest">
+			<description>Whenever you reduce a creature to 0 hit points, you can grant an ally you can see you a number of temporary hit points equal to twice the Challenge Rating of that creature (minimum of 1).
+			If the creature has class levels instead of a Challenge Rating, you provide temporary hit points equal to that creature's level.</description>
+		</sheet>
+	</element>
+	<element name="Focused Disruptor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_FOCUSED_DISRUPTOR">
+		<description>
+			<html>&lt;p&gt;You have learned how to maintain your concentration and in doing so have learned how to keep others from concentrating. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You do not have to make concentration saves if you take an amount of damage equal to or less than your character level.&lt;/li&gt;
+&lt;li&gt;You gain advantage on saves made to maintain concentration (as if on a concentration spell).&lt;/li&gt;
+&lt;li&gt;When you damage a creature that is concentrating (as if on a concentration spell), they have disadvantage on their saving throw to maintain concentration.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You do not have to make concentration saves if you take an amount of damage equal to or less than your character level.
+			You gain advantage on saves made to maintain concentration
+When you damage a creature that is concentrating, they have disadvantage on their saving throw to maintain concentration.</description>
+		</sheet>
+	</element>
+	<element name="Fortunate" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_FORTUNATE">
+		<description>
+			<html>&lt;p&gt;You have some sort of luck that seems to protect you from the worst outcomes (only the worst, though).&lt;/p&gt;
+&lt;p class="indent"&gt;Once per long rest, when you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="Glass Cannon" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_GLASS_CANNON">
+		<prerequisite>Strength 13 or Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:13]||[str:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 13 or Dexterity 13 or higher&lt;/p&gt;
+&lt;p&gt;You are fragile but powerful. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Once in each of your turns when you deal damage to a creature, you can use your bonus action and roll a d10. You lose an amount of hit points equal to the number rolled, an increase the damage dealt by the same amount. If your damage affect multiple targets, you must choose only one to take the additional damage.&lt;/li&gt;
+&lt;li&gt;You can choose to have vulnerability to all types of damage until the start of your next turn. Doing so will increase the damage of all your attacks against targets within 20 feet on the current turn by 5. On a critical hit, you deal 10 additional damage, instead of 5.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Once in each of your turns when you deal damage to a creature, you can use your bonus action and roll a d10. You lose an amount of hit points equal to the number rolled, an increase the damage dealt by the same amount. If your damage affect multiple targets, you must choose only one to take the additional damage.
+			You can choose to have vulnerability to all types of damage until the start of your next turn. Doing so will increase the damage of all your attacks against targets within 20 feet on the current turn by 5. On a critical hit, you deal 10 additional damage, instead of 5.</description>
+		</sheet>
+	</element>
+	<element name="Greater Toughness" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_GREATER_TOUGHNESS">
+		<prerequisite>Constitution Score 16 or higher and the Tough Feat</prerequisite>
+		<requirements>[con:16],ID_PHB_FEAT_TOUGH</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution Score 16 or higher and the Tough Feat&lt;/p&gt;
+&lt;p&gt;Your body had become stronger, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Constitution Ability Score increases by 1.&lt;/li&gt;
+&lt;li&gt;You gain Proficiency in Constitution Saving Throws.&lt;/li&gt;
+&lt;li&gt;Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by {{Greater-Toughness:hp}}.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<stat name="Greater-Toughness:hp" value="level" />
+			<stat name="hp" value="Greater-Toughness:hp" />
+			<stat name="Greater-Toughness:hp" value="level" />
+		</rules>
+	</element>
+	<element name="Gruesome Combatant" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_GRUESOME_COMBATANT">
+		<prerequisite>Strength or Charisma score of 16 or higher</prerequisite>
+		<requirements>[str:16]||[cha:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength or Charisma score of 15 or higher&lt;/p&gt;
+&lt;p&gt;You use your skills in combat to put fear into the hearts of those that oppose you.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase either your Strength or Charisma by 1&lt;/li&gt;
+&lt;li&gt;When you score a critical hit on an attack against a target, you may use a bonus action to attempt to frighten all enemies within 15 feet that can see you. Enemies who reach these requirements must make a WIS save (DC 8 + your proficiency bonus + the ability score increased). Upon a failure they become frightened for 1 minute. The frightened targets can attempt this saving throw at the end of their turns, ending the effect on a success.&lt;/li&gt;
+
+&lt;/ul&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase(Gruesome Combatant)" supports="Gruesome Combatant Feat" />
+		</rules>
+	</element>
+	<element name="Strength" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_GRUESOME_COMBATANT_STRENGTH">
+		<supports>Gruesome Combatant Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Strength by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Gruesome Combatant">
+			<description>When you score a critical hit on an attack against a target, you may use a bonus action to attempt to frighten all enemies within 15 feet that can see you. Enemies who reach these requirements must make a WIS save {{Gruesome-Combatant-strength:dc}}. Upon a failure they become frightened for 1 minute. The frightened targets can attempt this saving throw at the end of their turns, ending the effect on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="1" />
+			<stat name="Gruesome-Combatant-strength:dc" value="8" />
+			<stat name="Gruesome-Combatant-strength:dc" value="proficiency" />
+			<stat name="Gruesome-Combatant-strength:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_GRUESOME_COMBATANT_CHARISMA">
+		<supports>Gruesome Combatant Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Charisma by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Gruesome Combatant">
+			<description>When you score a critical hit on an attack against a target, you may use a bonus action to attempt to frighten all enemies within 15 feet that can see you. Enemies who reach these requirements must make a WIS save {{Gruesome-Combatant-charisma:dc}}. Upon a failure they become frightened for 1 minute. The frightened targets can attempt this saving throw at the end of their turns, ending the effect on a success.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="Gruesome-Combatant-charisma:dc" value="8" />
+			<stat name="Gruesome-Combatant-charisma:dc" value="proficiency" />
+			<stat name="Gruesome-Combatant-charisma:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Resolved Fighter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_RESOLVED_FIGHTER">
+		<description>
+			<html>&lt;p&gt;Thanks to your willpower, your body can surpass its limits, allowing you to survive adversity.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When your drop below half of your hit point maximum, you gain temporary hit points equal to your level for 1 minute. You regain use of this feature after you finish a short or long rest.&lt;/li&gt;
+&lt;li&gt;When you are below a quarter of your hit point maximum, you gain a +1 bonus to your AC.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When your drop below half of your hit point maximum, you gain temporary hit points equal to your level for 1 minute. You regain use of this feature after you finish a short or long rest.
+			When you are below a quarter of your hit point maximum, you gain a +1 bonus to your AC.</description>
+		</sheet>
+	</element>
+	<element name="Hawk's Aim" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HAWKS_AIM">
+		<prerequisite>Dexterity of 13 or higher</prerequisite>
+		<requirements>[dex:13]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: Dexterity 13 or higher&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You spot your opponents weak spots with ease.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain +1 to your Dexterity score to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Your attack rolls with ranged weapons gain a +2 bonus to attack rolls and a +1 bonus to damage rolls.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Your attack rolls with ranged weapons gain a +2 bonus to attack rolls and a +1 bonus to damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	<element name="Headman's Chop" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HEADMANS_CHOP">
+		<description>
+			<html>&lt;p&gt;You are particularly effective at finishing off those that fall to the ground. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When a creature falls prone while within your reach, they provoke an opportunity attack from you.&lt;/li&gt;
+&lt;li&gt;When you have advantage on an attack roll against a prone creature, you can reroll one of the dice once.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When a creature falls prone while within your reach, they provoke an opportunity attack from you.
+			When you have advantage on an attack roll against a prone creature, you can reroll one of the dice once.</description>
+		</sheet>
+	</element>
+	<element name="Healing Factor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HEALING_FACTOR">
+		<prerequisite>Constitution Score 14or higher</prerequisite>
+		<requirements>[con:14]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution Score 15 or higher&lt;/p&gt;
+&lt;p&gt;Due to your extreme durability you can recuperate small amounts of health.&lt;/p&gt;
+&lt;p class="indent"&gt;On your turn, you can use a bonus action to regain hit points equal to 1d10 + 10. Once you use this feature, you may not do so again until you complete a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>On your turn, you can use a bonus action to regain hit points equal to 1d10 + 10. Once you use this feature, you may not do so again until you complete a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Hearty Soul" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HEARTY_SOUL">
+		<description>
+			<html>&lt;p&gt;You have become accustomed to long adventures and tough fights.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Constitution score increases by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Your hit point maximum increases by an amount equal to your level, and it increases by 1 every time you gain a level.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Your hit points maximum increases by {{Hearty-Soul:hp}}.</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="Hearty-Soul:hp" value="level" />
+			<stat name="hp" value="Hearty-Soul:hp" />
+		</rules>
+	</element>
+	<element name="Heavy Critical" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HEAVY_CRITICAL">
+		<description>
+			<html>&lt;p&gt;You have studied how to better use the weight and mass of your weapon to land more powerful critical hits. While wielding a weapon with the heavy property, any critical hit you land deals triple the damage dice instead of double.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>While wielding a weapon with the heavy property, any critical hit you land deals triple the damage dice instead of double.</description>
+		</sheet>
+	</element>
+	<element name="Herculean Blow" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HERCULEAN_BLOW">
+		<description>
+			<html>&lt;p&gt;You can exert yourself to the utmost, turning a successful melee attack into an automatic critical hit. The effort leaves you drained however, giving all adjacent enemies advantage to attack rolls against you until the end of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;You may do so three times, regaining all expended uses of this feat when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="3/Long Rest">
+			<description>You can exert yourself to the utmost, turning a successful melee attack into an automatic critical hit. The effort leaves you drained however, giving all adjacent enemies advantage to attack rolls against you until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="High Constitution" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HIGH_CONSTITUTION">
+		<prerequisite>Constitution Score 15 or higher</prerequisite>
+		<requirements>[con:15]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution Score 15 or higher&lt;/p&gt;
+&lt;p&gt;You have trained your body to more effectively resist poison, the cold, and similar phenomena. When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Constitution saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Horde Fighter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HORDE_FIGHTER">
+		<description>
+			<html>&lt;p&gt;You are able to go head first into combat and tear enemies to pieces. Once on your turn, when you reduce an enemy creature with at least a CR 1/4 to 0 hit points with a melee weapon attack, you can make a number of additional attacks up to your Strength modifier to any creature within 5 feet of you.&lt;/p&gt;
+&lt;p class="indent"&gt;You may do so six times, regaining all expended uses of this feat when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="6/Long Rest">
+			<description>Once on your turn, when you reduce an enemy creature with at least a CR 1/4 to 0 hit points with a melee weapon attack, you can make a number of additional attacks equal to {{strength:modifier}}</description>
+		</sheet>
+	</element>
+	<element name="Hyperprocessing" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HYPERPROCESSING">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution&lt;/p&gt;
+&lt;p&gt;You have adopted a particular method of magical focus that allows you to control the energy of multiple spells at once.&lt;/p&gt;
+&lt;p class="indent"&gt;When you are concentrating on a spell, casting another spell that requires concentration does not break your concentration on the previous spell.&lt;/p&gt;
+&lt;p class="indent"&gt;However, you have disadvantage on Constitution saving throws to maintain concentration on spells while doing so. You may only maintain concentration on two spells in this way.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you are concentrating on a spell, casting another spell that requires concentration does not break your concentration on the previous spell.
+			However, you have disadvantage on Constitution saving throws to maintain concentration on spells while doing so. You may only maintain concentration on two spells in this way.</description>
+		</sheet>
+	</element>
+	<element name="Imperturbable" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_IMPERTURBABLE">
+		<prerequisite>The ability to cast at least one spell and Constitution Score 20</prerequisite>
+		<requirements>[type:spell],[con:20]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast spells, constitution of 20.&lt;/p&gt;
+&lt;p&gt;You have trained your mind to be completely detached from pain while channeling a spell.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Damage that doesn't knock you unconscius doesn't interrupt your concentration.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Damage that doesn't knock you unconscius doesn't interrupt your concentration.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase(Imperturbable)" supports="Imperturbable-feat" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_IMPERTURBABLE_INTELLIGENCE">
+		<supports>Imperturbable-feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Intelligence by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Imperturbable" display="false" />
+		<rules>
+			<stat name="intelligence" value="1" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_IMPERTURBABLE_WISDOM">
+		<supports>Imperturbable-feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Wisdom by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Imperturbable" display="false" />
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_IMPERTURBABLE_CHARISMA">
+		<supports>Imperturbable-feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Charisma by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Imperturbable" display="false" />
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Iron Skin" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_IRON_SKIN">
+		<prerequisite>Constitution Score 15 or higher</prerequisite>
+		<requirements>[con:15]</requirements>
+		<description>
+			<html>&lt;p&gt;Your skin is especially tough, making you more durable.&lt;/p&gt;
+&lt;p class="indent"&gt;When you roll initiative, you gain temporary hit points equal to your level plus your Constitution modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you roll initiative, you gain temporary hit points equal to {{Iron-Skin-Feat:hp}}.</description>
+		</sheet>
+		<rules>
+			<stat name="Iron-Skin-Feat:hp" value="level" />
+			<stat name="Iron-Skin-Feat:hp" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Lethal Duelist" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_LETHAL_DUELIST">
+		<prerequisite>Strength or Dexterity 13 or higher</prerequisite>
+		<requirements>[dex:13]||[str:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength or Dexterity 13 or higher&lt;/p&gt;
+&lt;p&gt;You are a an unparalleled master of fighting with a single weapon, honing the lethality of your strikes by targeting enemy weak spots almost as if it was second nature.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before you make an attack with a single handed melee weapon you are proficient with, if you are not wielding another weapon or a shield, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.&lt;/li&gt;
+&lt;li&gt;Whenever you score a critical hit with a one handed melee weapon you are proficient with, if you are not wielding another weapon or shield, you may use your bonus action to make another melee attack with that weapon against the same target.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Before you make an attack with a single handed melee weapon you are proficient with, if you are not wielding another weapon or a shield, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage.
+			Whenever you score a critical hit with a one handed melee weapon you are proficient with, if you are not wielding another weapon or shield, you may use your bonus action to make another melee attack with that weapon against the same target.</description>
+		</sheet>
+	</element>
+	<element name="Light Feet" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_LIGHT_FEET">
+		<prerequisite>Dexterity 16 or higher</prerequisite>
+		<requirements>[dex:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 13 or higher&lt;/p&gt;
+&lt;p&gt;You're quick and nimble when you need to be.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Dexterity score increases by 1.&lt;/li&gt;
+&lt;li&gt;Your speed increases by 10 feet.&lt;/li&gt;
+&lt;li&gt;If you move at least 10 feet on your turn, your AC increases by 1 until the start of your next turn.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>If you move at least 40 feet on your turn, your AC increases by 1 until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed:misc" value="10" />
+			<stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	<element name="Master Attacker" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_MASTER_ATTACKER">
+		<description>
+			<html>&lt;p&gt;With this feat, you become better at attacking with martial weapons. You can use a bonus action to give yourself a +3 bonus to the attack's damage and a +3 bonus to the attack roll. You regain the ability to use this trait after a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You can use a bonus action to give yourself a +3 bonus to the attack's damage and a +3 bonus to the attack roll.</description>
+		</sheet>
+	</element>
+	<element name="Multi-Tasker" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_MULTI_TASKER">
+		<description>
+			<html>&lt;p&gt;Some simple tasks have become so familiar to you that you can perform two of them simultaneously. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase one ability score of your choice by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;On your turn, you can take two bonus actions instead of one. You cannot perform the same bonus action twice on the same turn.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>On your turn, you can take two bonus actions instead of one. You cannot perform the same bonus action twice on the same turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase, Multi-Tasker" supports="Feat" />
+		</rules>
+	</element>
+	<element name="Multi-Caster" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_MULTI_CASTER">
+		<prerequisite>The ability to cast at least one spell and Intelligence, Wisdom or Charisma 16 or higher</prerequisite>
+		<requirements>[type:spell],[int:16]||[wis:16]||[cha:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell and Intelligence, Wisdom or Charisma 16 or higher&lt;/p&gt;
+&lt;p&gt;You have greater control over spells and the power with which they can be cast. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When casting a spell that requires a somatic component with a casting time of one action, you may cast a second spell as a bonus action. The second spell must be at least one less level than the first one. You cannot cast a third spell in the same turn.&lt;/li&gt;
+&lt;li&gt;You gain an additional reaction each round that may only be used to cast a spell with a casting time of 1 reaction.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When casting a spell that requires a somatic component with a casting time of one action, you may cast a second spell as a bonus action. The second spell must be at least one less level than the first one. You cannot cast a third spell in the same turn
+			You gain an additional reaction each round that may only be used to cast a spell with a casting time of 1 reaction.</description>
+		</sheet>
+	</element>
+	<element name="Prepared" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PREPARED">
+		<prerequisite>Wisdom 13 or higher</prerequisite>
+		<requirements>[wis:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Wisdom 13 or higher&lt;/p&gt;
+&lt;p&gt;Your battle experience has given you the gift of impressive foresight.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Wisdom increases by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You can now perform the Ready action with either an action or bonus action.&lt;/li&gt;
+&lt;li&gt;Performing the Ready action no longer consumes your reaction.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You can now perform the Ready action with either an action or bonus action.
+			Performing the Ready action no longer consumes your reaction.</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+		</rules>
+	</element>
+	<element name="Prodigy Fighter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PRODIGY_FIGHTER">
+		<prerequisite>Strength or Dexterity 13 or higher</prerequisite>
+		<requirements>[str:13]||[dex:13]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength or Dexterity 13 or higher&lt;/p&gt;
+&lt;p&gt;Whenever you hit a creature with an attack, you gain 1 charge, up to a maximum of 6 charges. Whenever you are hit by an attack, you lose a charge.&lt;/p&gt;
+&lt;p class="indent"&gt;As a reaction when you miss an attack roll or are hit by one, you can spend the charges and add to the result of the attack or to your AC, turning the miss into a hit (or vice-versa). You may do so six times, regaining all expended uses of this feat when you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="6/Short Rest">
+			<description>Whenever you hit a creature with an attack, you gain 1 charge, up to a maximum of 6 charges. Whenever you are hit by an attack, you lose a charge.
+			As a reaction when you miss an attack roll or are hit by one, you can spend the charges and add to the result of the attack or to your AC, turning the miss into a hit (or vice-versa). You may do so six times, regaining all expended uses of this feat when you finish  a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Proficient Aggressor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PROFICIENT_AGGRESSOR">
+		<prerequisite>Dexterity 16 or higher</prerequisite>
+		<requirements>[dex:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 16 or higher&lt;/p&gt;
+&lt;p&gt;You are proficient in combat and have trained for difficult encounters. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a +2 bonus to initiative.&lt;/li&gt;
+&lt;li&gt;Once per short or long rest, you may roll a Dexterity (Acrobatics) check or save to avoid damage. You take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.&lt;/li&gt;
+&lt;li&gt;Once per long rest, during your turn you may change one successful attack into a critical. May not be used on counter attacks.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Once per short or long rest, you may roll a Dexterity (Acrobatics) check or save to avoid damage. You take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.
+			Once per long rest, during your turn you may change one successful attack into a critical. May not be used on counter attacks.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="2" />
+		</rules>
+	</element>
+	<element name="Protector" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PROTECTOR">
+		<description>
+			<html>&lt;p&gt;You are a dedicated protector of your allies. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can use your reaction to force an attack targeted at a creature within 5 feet of you to target you instead.&lt;/li&gt;
+&lt;li&gt;When you hit a creature within 5 feet with a melee attack, you can mark that creature. Until the end of that creature's turn, any attack made by that creature against a target other than you have disadvantage.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You can use your reaction to force an attack targeted at a creature within 5 feet of you to target you instead.
+			When you hit a creature within 5 feet with a melee attack, you can mark that creature. Until the end of that creature's turn, any attack made by that creature against a target other than you have disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Punisher" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PUNISHER">
+		<prerequisite>Strength of 20</prerequisite>
+		<requirements>[str:20]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength of 20&lt;/p&gt;
+&lt;p&gt;Your phenomenal strength has granted you the power to crush foes with your heavy weapons.&lt;/p&gt;
+&lt;p class="indent"&gt;When using a weapon with the heavy property against a prone opponent, the attack is automatically critical.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, the range for critical hits when using heavy weapons is now 19-20. If already 19-20 it is now 18-20.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When using a weapon with the heavy property against a prone opponent, the attack is automatically critical.
+			Additionally, the range for critical hits when using heavy weapons is now 19-20. If already 19-20 it is now 18-20.</description>
+		</sheet>
+	</element>
+	<element name="Petty" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PETTY">
+		<prerequisite>Charisma 16 or higher</prerequisite>
+		<requirements>[cha:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Charisma 16 or higher&lt;/p&gt;
+&lt;p&gt;You are sick of your foes assuming they're better than you, and have turned to petty insults as a result. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Charisma score increases by 1, up to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You learn Vicious Mockery (if you do not already know it). Charisma is your spellcasting modifier for this spell.&lt;/li&gt;
+&lt;li&gt;When a creature within Vicious Mockery's range fails its attack roll or ability check, you may cast Vicious Mockery on them as a reaction once per round.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When a creature within Vicious Mockery's range fails its attack roll or ability check, you may cast Vicious Mockery on them as a reaction once per round.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Perceptive" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PERCEPTIVE">
+		<prerequisite>Proficiency in Perception</prerequisite>
+		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Proficiency in Perception&lt;/p&gt;
+&lt;p&gt;Your ability to perceive the world around you is beyond what most could imagine., you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain expertise in Perception checks and add your proficiency bonus to your passive perception.&lt;/li&gt;
+&lt;li&gt;Once per long rest, if you fail a perception check, you can reroll it and you must take the second roll.&lt;/li&gt;
+&lt;li&gt;While blinded or you otherwise can't see, once per long rest you can use an action to gain blindsight for 30 feet for up to 1 hour or until you can see again, whichever comes first. This feature is deactivated if you are Deafened, and cannot be activated while Deafened.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Once per long rest, if you fail a perception check, you can reroll it and you must take the second roll.
+			While blinded or you otherwise can't see, once per long rest you can use an action to gain blindsight for 30 feet for up to 1 hour or until you can see again, whichever comes first. This feature is deactivated if you are Deafened, and cannot be activated while Deafened.</description>
+		</sheet>
+		<rules>
+			<stat name="perception:passive" value="proficiency" />
+			<grant type="Proficiency" id="ID_EXPERTISE_SKILL_PERCEPTION" />
+		</rules>
+	</element>
+	<element name="Piercing Vocabulary" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PIERCING_VOCABULARY">
+		<description>
+			<html>&lt;p&gt;When people say 'Sticks and stones may break my bones, but words will never hurt me', they've clearly never heard your words.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Charisma score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You can use the vicious mockery cantrip at will.&lt;/li&gt;
+&lt;li&gt;When you deal damage with vicious mockery, you may add your Charisma modifier to the damage roll.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>When you deal damage with vicious mockery, you may add {{charisma:modifier}} to the damage roll.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Power Nap" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_POWER_NAP">
+		<prerequisite>Constitution 16 or higher</prerequisite>
+		<requirements>[con:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 16 or higher&lt;/p&gt;
+&lt;p&gt;A good nap is far more beneficial to you than most. When you finish a short or long rest you gain a number of temporary hit points equal to twice your character level + you Constitution modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you finish a short or long rest you gain a number of temporary hit points equal to {{Power-Nap:hp}}</description>
+		</sheet>
+		<rules>
+			<stat name="Power-Nap:hp" value="level" />
+			<stat name="Power-Nap:hp" value="level" />
+			<stat name="Power-Nap:hp" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Reaction Master" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_REACTION_MASTER">
+		<prerequisite>Dexterity 18 or higher</prerequisite>
+		<requirements>[dex:18]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 16 or higher&lt;/p&gt;
+&lt;p&gt;Through intense training, you have learnt to unthinkingly react to many things at once even in the midst of combat.&lt;/p&gt;
+&lt;p class="indent"&gt;You may take a number of reactions equal to your dexterity modifier (min 1) per round.&lt;/p&gt;
+&lt;p class="indent"&gt;This feat cannot be used to cast the same reaction magic more than once, such as shield.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You may take a number of reactions equal to {{dexterity:modifier}} per round.
+This feat cannot be used to cast the same reaction magic more than once.</description>
+		</sheet>
+	</element>
+	<element name="Reckless Mage" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_RECKLESS_MAGE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
+&lt;p&gt;You don't really care if your spells hit your allies along with your enemies.&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast a spell that deals damage, the save DC and the damage per die of the spell increases by one for every friendly creature caught in the area.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you cast a spell that deals damage, the save DC and the damage per die of the spell increases by one for every friendly creature caught in the area.</description>
+		</sheet>
+	</element>
+	<element name="Relentless Assault" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_RELENTLESS_ASSAULT">
+		<description>
+			<html>&lt;p&gt;For every weapon attack you make against an enemy, you gain 1 charge, to a maximum of 5. You may spend 5 charges to make one additional attack when you take the attack action. You lose all charges at the end of combat.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>For every weapon attack you make against an enemy, you gain 1 charge, to a maximum of 5. You may spend 5 charges to make one additional attack when you take the attack action. You lose all charges at the end of combat.</description>
+		</sheet>
+	</element>
+	<element name="Self Healing" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_SELF_HEALING">
+		<prerequisite>Constitution 16 or higher</prerequisite>
+		<requirements>[con:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 16 or higher&lt;/p&gt;
+&lt;p&gt;You are a monster of your own right and it takes a lot more to put you down. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At the start of your turn, you can use your action to regain a number of hit points equal to your level + your Constitution modifier. You can use this feature once, being unable to use it again until you finish a short rest or a long rest.&lt;/li&gt;
+&lt;li&gt;When reduced to 0 hit points, you can use your reaction and spend 1 hit die to be reduced to 1 hit point instead. You can't use this ability again until you complete a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can use your action to regain a number of hit points equal to {{Self-Healing:hp}}
+When reduced to 0 hit points, you can use your reaction and spend 1 hit die to be reduced to 1 hit point instead.</description>
+		</sheet>
+		<rules>
+			<stat name="{{Self-Healing:hp}}" value="level" />
+			<stat name="{{Self-Healing:hp}}" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Stealthy" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_STEALTHY">
+		<prerequisite>Dexterity 15 or higher</prerequisite>
+		<requirements>[dex:15]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 15 or higher&lt;/p&gt;
+&lt;p&gt;You have mastered the art of Stealth. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You increase your Dexterity by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;While hidden you add +2 to attack and damage rolls.&lt;/li&gt;
+&lt;li&gt;You choose either the Nondetection spell or the Pass without Trace spell. You can now cast that spell once between each long rest without using any spell slots or components.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>While hidden you add +2 to attack and damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<select type="Spell" name="Spell, Stealthy" supports="ID_PHB_SPELL_NONDETECTION,ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
+		</rules>
+	</element>
+	<element name="Strong Fighter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_STRONG_FIGHTER">
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 13 or higher&lt;/p&gt;
+&lt;p&gt;You are war.... you are strength.... you are Death!!!&lt;/p&gt;
+&lt;p class="indent"&gt;You deal twice your Strength modifier per weapon attack that uses Strength, and you deal an amount of extra damage equal to your Strength modifier whenever you use Dexterity for your weapon attacks.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You deal twice your Strength modifier per weapon attack that uses Strength, and you deal an amount of extra damage equal to your Strength modifier whenever you use Dexterity for your weapon attacks.</description>
+		</sheet>
+	</element>
+	<element name="Support Caster" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_SUPPORT_CASTER">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
+&lt;p&gt;You're always prepared for the next danger.&lt;/p&gt;
+&lt;p class="indent"&gt;On your first turn each combat, you may cast two spells in a single action. Both spells must have a cast time of 1 Action, a duration of Instantaneous, and at least one spell needs to target only willing creatures.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You may cast two spells in a single action. Both spells must have a cast time of 1 Action, a duration of Instantaneous, and at least one spell needs to target only willing creatures.</description>
+		</sheet>
+	</element>
+	<element name="Survivor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_SURVIVOR">
+		<prerequisite>Constitution 16 or higher</prerequisite>
+		<requirements>[con:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 16 or higher&lt;/p&gt;
+&lt;p&gt;You have been backed into a corner, you can either hold your ground and fight your way out or die a coward. You gain the following benefits:&lt;/p&gt;
+&lt;p class="indent"&gt;When you are reduced to 20 hit points or less, for the next minute, all damage you take is reduced by half your level rounded down + your Constitution modifier (minimum 1 reduction, minimum 1 damage taken). You may do so again after finishing a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>When you are reduced to 20 hit points or less, for the next minute, all damage you take is reduced by {{Survivor:hp}} (minimum 1 damage taken).</description>
+		</sheet>
+		<rules>
+			<stat name="Survivor:hp" value="level:half" />
+			<stat name="Survivor:hp" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Tank" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_TANK">
+		<prerequisite>Constitution 18 or higher</prerequisite>
+		<requirements>[con:18]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 18 or higher&lt;/p&gt;
+&lt;p&gt;You have honed your body to exceed it's own limits for brief periods of time. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have can a maximum number of charges equal to your Constitution modifier. After you finish a long rest, your current number of charges becomes this maximum.&lt;/li&gt;
+&lt;li&gt;If you would gain temporary hit points while you currently have temporary hit points, you may expend a charge, and add to the temporary hit points previously held.&lt;/li&gt;
+&lt;li&gt;You lose all your temporary hit points after completing a short or long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="{{constitution:modifier}}/Long Rest">
+			<description>If you would gain temporary hit points while you currently have temporary hit points, you may expend a charge, and add to the temporary hit points previously held.</description>
+		</sheet>
+	</element>
+	<element name="Magical Technician" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_MAGICAL_TECHNICIAN">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You have superior arcane knowledge of one of your lower level spells, and you aren't afraid to flaunt it.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Choose one spell that is not a cantrip, is 3rd level or below, and lets you roll a die (e.g. magic missile). The die for that spell is increased by 1 size.&lt;/li&gt;
+&lt;li&gt;The Dice must be used for a spell's damage or healing.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Thrifty Caster" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_THRIFTY_CASTER">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Your knowledge of spells allows you to cast spells without materials, granting you the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You can cast spells without material components if the combined cost of the materials is less than 250 gp.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You can cast spells without material components if the combined cost of the materials is less than 250 gp.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Ability Score Increase (Thrifty Caster)" requirements="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Ultimate Durability" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ULTIMATE_DURABILITY">
+		<prerequisite>Constitution 16 or higher</prerequisite>
+		<requirements>[con:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution 16 or higher&lt;/p&gt;
+&lt;p&gt;You have become so hardy that you are able to harden yourself in everyway, whether it be your reflexes, mind or even your resolve. You gain the following benefit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you make a Strength, Dexterity, Intelligence, Wisdom or Charisma save, you can choose to add your Constitution modifier to the roll. You can use this feat 3 times, and your regain all uses of this feature after you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="3/Long Rest">
+			<description>When you make a Strength, Dexterity, Intelligence, Wisdom or Charisma save, you can choose to add {{constitution:modifier}} to the roll.</description>
+		</sheet>
+	</element>
+	<element name="Ultimate Intellect" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ULTIMATE_INTELLECT">
+		<prerequisite>Intelligence 16 or higher</prerequisite>
+		<requirements>[int:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Intelligence 16 or higher&lt;/p&gt;
+&lt;p&gt;You have learned to strengthen your shortcomings through your mind, making yourself a barrier of intellect. You gain the following benefit:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you make a Strength, Dexterity, Constitution, Wisdom or Charisma save, you can choose to add your Intelligence modifier to the roll. You can use this feat 3 times, and your regain all uses of this feature after you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>When you make a Strength, Dexterity, Constitution, Wisdom or Charisma save, you can choose to add {{intelligence:modifier}} to the roll.</description>
+		</sheet>
+	</element>
+	<element name="Unusually Nimble" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_UNUSUALLY_NIMBLE">
+		<description>
+			<html>&lt;p&gt;You have trained to be quick on your feet. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Dexterity score increases by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Your speed increases by 5 feet.&lt;/li&gt;
+&lt;li&gt;Whenever you take the Dodge action, you also gain the benefits of the Dash action.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you take the Dodge action, you also gain the benefits of the Dash action.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<stat name="innate speed:misc" value="5" />
+			<stat name="innate speed:climb:misc" value="5" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="5" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="5" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="5" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+	<element name="Vengeance Striker" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_VENGEANCE_STRIKER">
+		<description>
+			<html>&lt;p&gt;Whenever you take bludgeoning, piercing, or slashing damage from a melee attack, you can use your reaction to attempt to reflect it.&lt;/p&gt;
+&lt;p class="indent"&gt;Make a melee attack roll against the attacker. On a hit, you deal your weapon's damage plus half of the damage you took.&lt;/p&gt;
+&lt;p class="indent"&gt;You may do so a number of times equal to your Constitution modifier, regaining all expended uses after finishing a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction" usage="{{constitution:modifier}}/Long Rest">
+			<description>Whenever you take bludgeoning, piercing, or slashing damage from a melee attack, you can use your reaction to attempt to reflect it.
+Make a melee attack roll against the attacker. On a hit, you deal your weapon's damage plus half of the damage you took.</description>
+		</sheet>
+	</element>
+	<element name="Vicious Spell" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_VICIOUS_SPELL">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
+&lt;p&gt;Through dedicated drill and training you've honed your magical attacks to the point where they are all but irresistible.&lt;/p&gt;
+&lt;p class="indent"&gt;Three times per day, you may cast a vicious spell; saving throws against this spell are at disadvantage. You regain spent uses of this feat after a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="3/Long Rest">
+			<description>You may cast a vicious spell, saving throws against this spell are at disadvantage.</description>
+		</sheet>
+	</element>
+	<element name="Visionary" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_VISIONARY">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
+&lt;p&gt;Each time you make a weapon attack against an enemy, you gain a charge, up to a maximum of 10. You lose all charges upon completing a short or long rest. You may expend 10 charges to gain knowledge about one of the following aspects of a creature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Resistances the creature has.&lt;/li&gt;
+&lt;li&gt;Immunities the creature has.&lt;/li&gt;
+&lt;li&gt;Damage types the creature can inflict with weapons they possess, and spells they can cast.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You must finish a short or long rest before you can gain knowledge in this way again.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>Each time you make a weapon attack against an enemy, you gain a charge, up to a maximum of 10. You may expend 10 charges to gain knowledge about one of the following aspects of a creature: 
+Resistances the creature has, Immunities the creature has or Damage types the creature can inflict with weapons they possess, and spells they can cast.</description>
+		</sheet>
+	</element>
+	<element name="Vital Striker" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_VITAL_STRIKER">
+		<prerequisite>Dexterity 15 or higher</prerequisite>
+		<requirements>[dex:15]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 15 or higher&lt;/p&gt;
+&lt;p&gt;You are trained to strike an enemy where it hurts, causing more than just an ordinary wound.&lt;/p&gt;
+&lt;p class="indent"&gt;Before you make an attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, add 1d6 to the attack's damage and impose one of the following effects of your choice on that target:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Until the start of your next turn, the next attack roll against the target has advantage.&lt;/li&gt;
+&lt;li&gt;The target has disadvantage on the next attack roll it makes before the end of its next turn.&lt;/li&gt;
+&lt;li&gt;The target's speed is reduced by half until the end of it's next turn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may do so six times, regaining all expended uses of this feat when you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="6/Short Rest">
+			<description>Before you make an attack with a weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, add 1d6 to the attack's damage and impose one of the following effects of your choice on that target:
+Until the start of your next turn, the next attack roll against the target has advantage, The target has disadvantage on the next attack roll it makes before the end of its next turn or The target's speed is reduced by half until the end of it's next turn.</description>
+		</sheet>
+	</element>
+	<element name="Warded" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_WARDED">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You have a physical or magical barrier of vitality that keeps you up on your feet. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Wisdom, Intelligence, or Charisma score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You can’t be surprised while you are conscious.&lt;/li&gt;
+&lt;li&gt;Other creatures don’t gain advantage on attack rolls against you as a result of being unseen by you.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you finish a short or long rest, you gain temporary hit points equal to your character level plus the ability modifier of the chosen ability.</description>
+		</sheet>
+		<rules>
+			<select type="Feat Feature" name="Ability Score Increase (Warded)" supports="Warded-Feat" />
+		</rules>
+	</element>
+	<element name="Constitution" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_WARDED_CONSTITUTION">
+		<supports>Warded-Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Constitution by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you finish a short or long rest, you gain temporary hit points equal to {{Warded-constitution}}</description>
+		</sheet>
+		<rules>
+			<stat name="constitution" value="1" />
+			<stat name="Warded-constitution" value="level" />
+			<stat name="Warded-constitution" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_WARDED_INTELLIGENCE">
+		<supports>Warded-Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Intelligence by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you finish a short or long rest, you gain temporary hit points equal to {{Warded-intelligence}}</description>
+		</sheet>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<stat name="Warded-intelligence" value="level" />
+			<stat name="Warded-intelligence" value="intelligence:modifier" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_WARDED_WISDOM">
+		<supports>Warded-Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Wisdom by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you finish a short or long rest, you gain temporary hit points equal to {{Warded-wisdom}}</description>
+		</sheet>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<stat name="Warded-wisdom" value="level" />
+			<stat name="Warded-wisdom" value="wisdom:modifier" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_WARDED_CHARISMA">
+		<supports>Warded-Feat</supports>
+		<description>
+			<html>&lt;p&gt;Increase your Charisma by 1, to a maximum of 20.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you finish a short or long rest, you gain temporary hit points equal to {{Warded-charisma}}</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="Warded-charisma" value="level" />
+			<stat name="Warded-charisma" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Warpath" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_WARPATH">
+		<prerequisite>Strength 15 or higher</prerequisite>
+		<requirements>[str:15]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 15 or higher&lt;/p&gt;
+&lt;p&gt;You have learned how to carve through hordes of enemies with ease.&lt;/p&gt;
+&lt;p class="indent"&gt;As a bonus action, you can now make a number of extra melee attacks equal to half the amount of enemies within your weapon's reach of you, each to a different enemy.&lt;/p&gt;
+&lt;p class="indent"&gt;You may do this a number of times equal to half your Constitution modifier, rounded down, before needing to complete a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="{{constitution:modifier}}/Long Rest">
+			<description>You can now make a number of extra melee attacks equal to half the amount of enemies within your weapon's reach of you, each to a different enemy.</description>
+		</sheet>
+	</element>
+	<element name="Watchful Eye" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_WATCHFUL_EYE">
+		<requirements>ID_PROFICIENCY_SKILL_PERCEPTION, [dex:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Proficiency in Perception and Dexterity 16 or higher&lt;/p&gt;
+&lt;p&gt;You have uncanny aim&lt;/p&gt;
+&lt;p class="indent"&gt;When you have advantage on an attack roll, you roll three d20's instead of two, and use the highest of the three rolls.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you have advantage on an attack roll, you roll three d20's instead of two, and use the highest of the three rolls.</description>
+		</sheet>
+	</element>
+	<element name="Well Concentrated" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_WELL_CONCENTRATED">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Through continuous practice, you have become able to hold onto your concentration significantly easier. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a +5 bonus to concentration checks.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You gain a +5 bonus to concentration checks.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Mergence" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_ARCANE_MERGENCE">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Due to the constant practice of magic, you have become attuned to the arcane arts., you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;You have proficiency with Intelligence (Arcana) checks.&lt;/li&gt;
+&lt;li&gt;You are able to attune to one extra magical item.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="attunement:max" value="1" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Arcane Mergence)" supports="ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+		</rules>
+	</element>
+	<element name="Cantrip Collector" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_CANTRIP_COLLECTOR">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
+&lt;p&gt;Your time in the presence of wizards has allowed you to learn the following four cantrips - Mage Hand, Mending, Message and Prestidigitation.&lt;/p&gt;
+&lt;p class="indent"&gt;These spells do not count against your number of spells known.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+			<grant type="Spell" id="ID_PHB_SPELL_MENDING" />
+			<grant type="Spell" id="ID_PHB_SPELL_MESSAGE" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+		</rules>
+	</element>
+	<element name="Paranoid" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_PARANOID">
+		<prerequisite>Wisdom 16 or higher</prerequisite>
+		<requirements>[wis:16]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Wisdom 16 or higher&lt;/p&gt;
+&lt;p&gt;You have become so paranoid from your ally's lack of initiative and learned to always keep your eyes on that damn thief., you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a +5 bonus to initiative.&lt;/li&gt;
+&lt;li&gt;You gain advantage on insight against Charisma (Deception), (Persuasion) or Dexterity (Sleight of Hand) checks.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>You gain advantage on resisted Wisdom checks against Charisma (Deception), (Persuasion) or Dexterity (Sleight of Hand) checks.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="5" />
+		</rules>
+	</element>
+	<element name="Capitalist" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_CAPITALIST">
+		<description>
+			<html>&lt;p&gt;You have mastered the art of selling and buying goods, granting you the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your Charisma score increases by 1, to a maximum of 20.&lt;/li&gt;
+&lt;li&gt;Whenever you make a Persuasion check to haggle down the price of an item or to sell an item for a higher price, roll a d6 and add the number rolled to the total ability check.&lt;/li&gt;
+&lt;li&gt;If you run a business as a downtime activity, you may roll a d20 and add the number to the total monthly profits of the business, in gold.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you make a Persuasion check to haggle down the price of an item or to sell an item for a higher price, roll a d6 and add the number rolled to the total ability check.
+			If you run a business as a downtime activity, you may roll a d20 and add the number to the total monthly profits of the business, in gold.</description>
+		</sheet>
+		<rules>
+			<stat name="charisma" value="1" />
+		</rules>
+	</element>
+	<element name="Expert" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_EXPERT">
+		<description>
+			<html>&lt;p&gt;You become an expert with the skills of your choice.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose two skills or tools you are proficient with. When you make a check with one of these chosen proficiencies, you may add double your proficiency bonus instead of your normal proficiency bonus.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Expertise (Expert)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" number="2" />
+		</rules>
+	</element>
+	<element name="Optimist" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_OPTIMIST">
+		<description>
+			<html>&lt;p&gt;You never surrender - after all, there are moments when you are successful, right?&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you fail any roll, you gain +1 to next rolls. This bonus stacks. After you succeed in a test, the bonus from this feat is reduced to 0.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you fail any roll, you gain +1 to next rolls. This bonus stacks. After you succeed in a test, the bonus from this feat is reduced to 0.</description>
+		</sheet>
+	</element>
+	<element name="Bountiful Critical" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_BOUNTIFUL_CRITICAL">
+		<description>
+			<html>&lt;p&gt;Satisfaction is one hell of a drug, and when you get a perfect swing on an enemies vital point you cant help but feel invigorated to keep on fighting.&lt;/p&gt;
+&lt;p class="indent"&gt;You land a critical hit with a melee attack on a roll of 19 or 20, instead of just 20. Additionally, when you score a critical hit on a hostile creature you gain an amount of hit points equal to the number of dice you rolled.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You land a critical hit with a melee attack on a roll of 19 or 20, instead of just 20. Additionally, when you score a critical hit on a hostile creature you gain an amount of hit points equal to the number of dice you rolled.</description>
+		</sheet>
+	</element>
+	<element name="Critical Caster" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_CRITICAL_CASTER">
+		<prerequisite>The ability to cast at least one spell</prerequisite>
+		<requirements>[type:spell]</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;i&gt;Prerequisite: The ability to cast at least one spell&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;You have a deadly aim with your spells, pinpointing the weak spots of your targets. You gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your spell attacks score a critical hit on a roll of 19 or 20.&lt;/li&gt;
+&lt;li&gt;You can use your bonus action to look for weak spots on your enemies. Make a Wisdom (Insight) check, with a DC equal to the targets AC. On a success, you gain advantage on your next spell attack against that creature. Doing this requires concentration, as if you were concentrating on a spell.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Your spell attacks score a critical hit on a roll of 19 or 20.
+			You can use your bonus action to look for weak spots on your enemies. Make a Wisdom (Insight) check, with a DC equal to the targets AC. On a success, you gain advantage on your next spell attack against that creature. Doing this requires concentration, as if you were concentrating on a spell.</description>
+		</sheet>
+	</element>
+	<element name="Far Critical" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_FAR_CRITICAL">
+		<prerequisite>Dexterity 14 or higher</prerequisite>
+		<requirements>[dex:14]</requirements>
+		<description>
+			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 14 or higher&lt;/p&gt;
+&lt;p&gt;You have mastered hitting your opponents in their weakest point from afar. You score a critical hit with ranged weapons on a roll of 19 or 20.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you score a critical hit with a ranged weapon, you may roll one additional damage die.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You score a critical hit with ranged weapons on a roll of 19 or 20.
+			Additionally, when you score a critical hit with a ranged weapon, you may roll one additional damage die.</description>
+		</sheet>
+	</element>
+</elements>
