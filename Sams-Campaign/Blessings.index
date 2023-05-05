@@ -8,5 +8,6 @@
 	</info>
 	<files>
 		<file name="Proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Proficiency-boost.xml" />
+		<file name="Gift-of-the-precursor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Gift-of-the-precursor.xml" />
 	</files>
 </index>
