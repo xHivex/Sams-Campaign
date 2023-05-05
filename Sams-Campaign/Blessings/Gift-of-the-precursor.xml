@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Gift-of-the-precursor</name>
+		<update version="0.0.2">
+			<file name="Gift-of-the-precursor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Gift-of-the-precursor.xml" />
+		</update>
+	</info>
+	<element name="Gift of the Precursor" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_GIFT_OF_THE_PRECURSOR">
+		<description>
+			<html>&lt;p&gt;You have received the gift of the Precursor and as ancient power flows into you, your maximum attuned items increases by 3, you gain +1 to wisdom saving thows and your HP increases by 42&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="attunement:max" value="3" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="hp" value="42" />
+		</rules>
+	</element>
+</elements>
