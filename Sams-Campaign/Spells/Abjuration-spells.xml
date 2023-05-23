@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Abjuration-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
 		</update>
 	</info>
@@ -2009,7 +2009,7 @@
 	<element name="Dimensional Lock" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DIMENSIONAL_LOCK">
 		<supports>Cleric, Sorcerer, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;You create a shimmering emerald barrier that completely blocks extradimensional travel./p&gt;
+			<html>&lt;p&gt;You create a shimmering emerald barrier that completely blocks extradimensional travel.&lt;/p&gt;
 &lt;p class="indent"&gt;Forms of movement barred include: astral projection, dimension door, etherealness, gate, maze, plane shift, teleport, and similar spells or spell-like abilities. Once dimensional lock is in place, extradimensional travel to or from the area is not possible.&lt;/p&gt;
 &lt;p&gt; This spell does not interfere with the movement of creatures already in ethereal or astral form when the spell is cast, nor does it block extradimensional perception or attacks.&lt;/p&gt;
 &lt;p class="indent"&gt;This spell also does not prevent summoned creatures from disappearing at the end of a summoning spell's duration.u &lt;/p&gt;
