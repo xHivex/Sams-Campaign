@@ -3,7 +3,7 @@
 	<info>
 		<name>Sams Campaign</name>
 		<description>Sams Campaign.</description>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Sams-Campaign.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign.index" />
 		</update>
 	</info>
