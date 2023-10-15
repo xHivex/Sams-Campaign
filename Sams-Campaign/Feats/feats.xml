@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -713,7 +713,7 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 &lt;ul&gt;
 &lt;li&gt;Your Dexterity score increases by 1.&lt;/li&gt;
 &lt;li&gt;Your speed increases by 10 feet.&lt;/li&gt;
-&lt;li&gt;If you move at least 10 feet on your turn, your AC increases by 1 until the start of your next turn.&lt;/li&gt;
+&lt;li&gt;If you move at least 40 feet on your turn, your AC increases by 1 until the start of your next turn.&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
 		<sheet>
