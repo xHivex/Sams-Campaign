@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -813,7 +813,7 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 &lt;/ul&gt;</html>
 		</description>
 		<sheet usage="1/Short Rest">
-			<description>Once per short or long rest, you may roll a Dexterity (Acrobatics) check or save to avoid damage. You take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.
+			<description>When attacked you can take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.
 			Once per long rest, during your turn you may change one successful attack into a critical. May not be used on counter attacks.</description>
 		</sheet>
 		<rules>
