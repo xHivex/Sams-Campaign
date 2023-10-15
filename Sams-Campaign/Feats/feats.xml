@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -808,7 +808,7 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 &lt;p&gt;You are proficient in combat and have trained for difficult encounters. You gain the following benefits:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;You gain a +2 bonus to initiative.&lt;/li&gt;
-&lt;li&gt;Once per short or long rest, you may roll a Dexterity (Acrobatics) check or save to avoid damage. You take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.&lt;/li&gt;
+&lt;li&gt;Once per short or long rest, When attacked you can take half damage and counter attack instead. Roll your standard attack one time, succeeds or fails as normal.&lt;/li&gt;
 &lt;li&gt;Once per long rest, during your turn you may change one successful attack into a critical. May not be used on counter attacks.&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
