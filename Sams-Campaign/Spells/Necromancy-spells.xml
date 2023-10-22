@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Necromancy-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 		</update>
 	</info>
@@ -265,7 +265,7 @@
 	<element name="Dark Transformation" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DARK_TRANSFORMATION">
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;You infuse a creature within range with power, transforming it into an unstoppable monstrosity for the duration of the spell. Its size category increases by one, its strength increases to 20, its current and maximum hit points are doubled, and its attacks deal an extra 4d6 necrotic damage.&lt;/p&gt;</html>
+			<html>&lt;p&gt;You infuse a creature within range with power, transforming it into an unstoppable monstrosity for the duration of the spell. Its size category increases by one, its strength increases to 20, its current and maximum hit points are doubled, and its melee attacks deal an extra 4d6 necrotic damage.&lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="keywords" />
