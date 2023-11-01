@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -615,7 +615,7 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 		<prerequisite>The ability to cast at least one spell</prerequisite>
 		<requirements>[type:spell]</requirements>
 		<description>
-			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution&lt;/p&gt;
+			<html>&lt;p class="flavor"&gt;Prerequisite: The ability to cast at least one spell&lt;/p&gt;
 &lt;p&gt;You have adopted a particular method of magical focus that allows you to control the energy of multiple spells at once.&lt;/p&gt;
 &lt;p class="indent"&gt;When you are concentrating on a spell, casting another spell that requires concentration does not break your concentration on the previous spell.&lt;/p&gt;
 &lt;p class="indent"&gt;However, you have disadvantage on Constitution saving throws to maintain concentration on spells while doing so. You may only maintain concentration on two spells in this way.&lt;/p&gt;</html>
