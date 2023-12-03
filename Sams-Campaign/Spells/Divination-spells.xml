@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Divination-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Divination-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Divination-spells.xml" />
 		</update>
 	</info>
@@ -55,7 +55,7 @@
 		<description>
 			<html>&lt;p&gt;For the duration, you can visibly see the strength of any creature you can see within 60 feet of you. A creature's aura gives you crude information about its challenge rating and hit dice.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt; The size of a creature's aura tells you its strength. A creature's aura can be Weak (CR 1/2 or lower), Average (CR 1-4), Medium (CR 5-10), Strong (CR 11-16), Very Strong (CR 78-24), or Extremely Strong (CR 25 or higher). A creature's aura appears larger, brighter, and more vibrant the stronger its aura is.&lt;/li&gt;
+&lt;li&gt; The size of a creature's aura tells you its strength. A creature's aura can be Weak (CR 1/2 or lower), Average (CR 1-4), Medium (CR 5-10), Strong (CR 11-16), Very Strong (CR 17-24), or Extremely Strong (CR 25 or higher). A creature's aura appears larger, brighter, and more vibrant the stronger its aura is.&lt;/li&gt;
 &lt;li&gt; The color of a creature's aura tells you its toughness. A creature's aura can be White (3 or fewer hit dice), Yellow (4-9 hit dice), Orange (10-19 hit dice), Red (20-29 hit dice), or Black (30 or more hit dice).&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
