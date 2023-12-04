@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Enchantment-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Enchantment-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Enchantment-spells.xml" />
 		</update>
 	</info>
@@ -644,7 +644,7 @@
 	<element name="Ventriloquist" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VENTRILOQUIST">
 		<supports>Bard, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;orce any creature you can see to make Wisdom saving throw. If they fail, whatever short phrase you speak will come from their mouths as if they were the ones to say it.&lt;/p&gt;
+			<html>&lt;p&gt;Force any creature you can see to make Wisdom saving throw. If they fail, whatever short phrase you speak will come from their mouths as if they were the ones to say it.&lt;/p&gt;
 &lt;p class="indent"&gt;The affected creature will be aware of this but will not know its cause unless they are proficient in Arcana. You cannot force a creature to speak in a language that you yourself do not know how to speak.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 2nd level or higher, the range increases by 15 ft, up to a maximum of 120 ft at 5th level.&lt;/p&gt;</html>
 		</description>
