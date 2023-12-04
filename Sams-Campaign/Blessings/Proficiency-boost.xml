@@ -17,7 +17,7 @@
 			<set name="slot">gift</set>
 		</setters>
 		<rules>
-			<stat name="ac" value="proficiency:half" level="1" />
+			<stat name="ac" value="proficiency:half" level="20" />
 			<stat name="strength:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
 			<stat name="dexterity:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
 			<stat name="constitution:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
