@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Necromancy-spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 		</update>
 	</info>
