@@ -2630,7 +2630,7 @@
 	<element name="Life Transfer" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LIFE_TRANSFER">
 		<supports>Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;ou choose two creatures within range, one of whom must be willing and have more than 30 hit points.&lt;/p&gt;
+			<html>&lt;p&gt;You choose two creatures within range, one of whom must be willing and have more than 30 hit points.&lt;/p&gt;
 &lt;p class="indent"&gt;That creature takes 5d6 necrotic damage, and another creature that you can see within range regains hit points equal to 5 + the damage dealt.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, the healing becomes (Levels above 6th * 5) + 5 + the damage dealt.&lt;/p&gt;</html>
 		</description>
