@@ -95,7 +95,7 @@
 	<element name="Proficiency Choice" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PROFICIENCY_CHOICE">
 		<supports>Custom Class 1</supports>
 		<description>
-			<html>&lt;p&gt;Your hit points maximum increases by an amount equal to twice your level when you gain this feature. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.&lt;/p&gt;
+			<html>&lt;p&gt;You learn 3 new armor and/or martial weapons proficiencies &lt;/p&gt;
 &lt;p class="indent"&gt;You may only pick this feature at level 1&lt;/p&gt;</html>
 		</description>
 		<sheet display="false" />
