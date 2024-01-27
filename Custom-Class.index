@@ -23,5 +23,6 @@
 		<file name="sorcerer.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/sorcerer.xml" />
 		<file name="warlock.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/warlock.xml" />
 		<file name="wizard.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/wizard.xml" />
+		<file name="artificer.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/artificer.xml" />
 	</files>
 </index>
