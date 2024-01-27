@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Fighter</name>
+		<update version="0.1.0">
+			<file name="fighter.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/fighter.xml" />
+		</update>
+	</info>
+	<element name=".3rd Level Improved Critical" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_IMPROVED_CRITICAL">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning when you choose this archetype at 3rd level, your weapon attacks score a critical hit on a roll of 19 or 20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Improved Critical">
+			<description level="3">Your weapon attacks score a critical hit on a roll of 19 or 20.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Combat Superiority" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_COMBAT_SUPERIORITY">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you learn maneuvers that are fueled by special dice called superiority dice.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Maneuvers.&lt;/em&gt;&lt;/strong&gt; You learn three maneuvers of your choice, which are detailed under “Maneuvers” below. Many maneuvers enhance an attack in some way. You can use only one maneuver per attack. You learn two additional maneuvers of your choice at 7th, 10th, and 15th level. Each time you learn new maneuvers, you can also replace one maneuver you know with a different one.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Superiority Dice.&lt;/em&gt;&lt;/strong&gt; You have four superiority dice, which are d8s. A superiority die is expended when you use it. You regain all of your expended superiority dice when you finish a short or long rest. You gain another superiority die at 7th level and one more at 15th level.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Saving Throws.&lt;/em&gt;&lt;/strong&gt; Some of your maneuvers require your target to make a saving throw to resist the maneuver’s effects. The saving throw DC is calculated as follows:&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Maneuver save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).&lt;/p&gt;
+&lt;/center&gt;</html>
+		</description>
+		<sheet alt="Combat Superiority">
+			<description level="3">You learn maneuvers that are fueled by special dice called superiority dice. You have {{superiority dice:amount}} superiority dice which are d{{superiority dice:size}}s. DC {{superiority dice:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="superiority dice:amount" value="4" level="3" />
+			<stat name="superiority dice:amount" value="1" level="7" />
+			<stat name="superiority dice:amount" value="1" level="15" />
+			<stat name="superiority dice:size" value="8" bonus="size" level="3" />
+			<stat name="superiority dice:dc" value="8" level="3" />
+			<stat name="superiority dice:dc" value="proficiency" level="3" />
+			<stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability" level="3" />
+			<stat name="superiority dice:dc:ability" value="dexterity:modifier" bonus="ability" level="3" />
+			<stat name="superiority dice:dc" value="superiority dice:dc:ability" level="3" />
+			<select type="Archetype Feature" name="Combat Superiority (Level 3)" supports="Maneuver,Battle Master" level="3" number="3" />
+			<select type="Archetype Feature" name="Combat Superiority (Level 7)" supports="Maneuver,Battle Master" level="7" number="2" />
+			<select type="Archetype Feature" name="Combat Superiority (Level 10)" supports="Maneuver,Battle Master" level="10" number="2" />
+			<select type="Archetype Feature" name="Combat Superiority (Level 15)" supports="Maneuver,Battle Master" level="15" number="2" />
+		</rules>
+	</element>
+	<element name=".3rd Level Rune Carver" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_RUNE_CARVER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can use magic runes to enhance your gear. You learn two runes of your choice, from among the runes described below, and each time you gain a level in this class, you can replace one rune you know with a different one from this feature. When you reach certain levels in this class, you learn additional runes, as shown in the Runes Known table.&lt;/p&gt;
+&lt;h5 class="caption"&gt;Runes Known&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td&gt;Fighter Level&lt;/td&gt;&lt;td&gt;Number of Runes&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;3rd&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;7th&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;10th&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;15th&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="indent"&gt;Whenever you finish a long rest, you can touch a number of objects equal to the number of runes you know, and you inscribe a different rune onto each of the objects. To be eligible, an object must be a weapon, suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. Your rune remains on an object until you finish a long rest, and an object can bear only one of your runes at a time.&lt;/p&gt;
+&lt;p class="indent"&gt;The following runes are available to you when you learn a rune. If a rune has a level requirement, you must be at least that level in this class to learn the rune. If a rune requires a saving throw, your Rune Magic save DC equals 8 + your proficiency bonus + your Constitution modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Cloud Rune.&lt;/em&gt;&lt;/strong&gt; This rune emulates the deceptive magic used by some cloud giants. While wearing or carrying an object inscribed with this rune, you have advantage on Dexterity (Sleight of Hand) checks and Charisma (Deception) checks.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you or a creature you can see within 30 feet of you is hit by an attack roll, you can use your reaction to invoke the rune and choose a different creature within 30 feet of you, other than the attacker. The chosen creature becomes the target of the attack, using the same roll. This magic can transfer the attack’s effects regardless of the attack’s range. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Fire Rune.&lt;/em&gt;&lt;/strong&gt; This rune’s magic channels the masterful craftsmanship of great smiths. While wearing or carrying an object inscribed with this rune, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you hit a creature with an attack using a weapon, you can invoke the rune to summon fiery shackles: the target takes an extra 2d6 fire damage, and it must succeed on a Strength saving throw or be restrained for 1 minute. While restrained by the shackles, the target takes 2d6 fire damage at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, banishing the shackles on a success. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Frost Rune.&lt;/em&gt;&lt;/strong&gt; This rune’s magic evokes the might of those who survive in the wintry wilderness, such as frost giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (Animal Handling) checks and Charisma (Intimidation) checks.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you can invoke the rune as a bonus action to increase your sturdiness. For 10 minutes, you gain a +2 bonus to all ability checks and saving throws that use Strength or Constitution. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Stone Rune.&lt;/em&gt;&lt;/strong&gt; This rune’s magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have advantage on Wisdom (Insight) checks, and you have darkvision out to a range of 120 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when a creature you can see ends its turn within 30 feet of you, you can use your reaction to invoke the rune and force the creature to make a Wisdom saving throw. Unless the save succeeds, the creature is charmed by you for 1 minute. While charmed in this way, the creature has a speed of 0 and is incapacitated, descending into a dreamy stupor. The creature repeats the saving throw at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Hill Rune (7th Level or Higher).&lt;/em&gt;&lt;/strong&gt; This rune’s magic bestows a resilience reminiscent of a hill giant. While wearing or carrying an object that bears this rune, you have advantage on saving throws against being poisoned, and you have resistance against poison damage.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you can invoke the rune as a bonus action, gaining resistance to bludgeoning, piercing, and slashing damage for 1 minute. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Storm Rune (7th Level or Higher).&lt;/em&gt;&lt;/strong&gt; Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have advantage on Intelligence (Arcana) checks, and you can’t be surprised as long as you aren’t incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you can invoke the rune as a bonus action to enter a prophetic state for 1 minute or until you’re incapacitated. Until the state ends, when you or another creature you can see within 60 feet of you makes an attack roll, a saving throw, or an ability check, you can use your reaction to cause the roll to have advantage or disadvantage. Once you invoke this rune, you can’t do so again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rune Carver">
+			<description level="3">Whenever you finish a long rest, you can touch {{rune knight:runes:count}} objects, and you inscribe a different rune onto each of the objects. To be eligible, an object must be a weapon, suit of armor, a shield, a piece of jewelry, or something else you can wear or hold in a hand. Your rune remains on an object until you finish a long rest, and an object can bear only one of your runes at a time.
+			Your Rune Magic saving throw DC is {{rune knight:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="rune knight:runes:count" value="2" bonus="base" level="3" />
+			<stat name="rune knight:runes:count" value="3" bonus="base" level="7" />
+			<stat name="rune knight:runes:count" value="4" bonus="base" level="10" />
+			<stat name="rune knight:runes:count" value="5" bonus="base" level="15" />
+			<stat name="rune knight:dc" value="8" level="3" />
+			<stat name="rune knight:dc" value="proficiency" level="3" />
+			<stat name="rune knight:dc" value="constitution:modifier" level="3" />
+			<select type="Archetype Feature" name="Rune, Rune Carver" supports="Rune Knight Rune" level="3" number="2" />
+			<select type="Archetype Feature" name="Rune, Rune Carver" supports="Rune Knight Rune" level="7" />
+			<select type="Archetype Feature" name="Rune, Rune Carver" supports="Rune Knight Rune" level="10" />
+			<select type="Archetype Feature" name="Rune, Rune Carver" supports="Rune Knight Rune" level="15" />
+			<stat name="rune knight rune:usage" value="1" bonus="base" level="3" />
+			<stat name="rune knight rune:usage" value="2" bonus="base" level="15" />
+		</rules>
+	</element>
+	<element name=".3rd Level Giant’s Might" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_GIANTS_MIGHT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You have learned how to imbue yourself with the might of giants. As a bonus action, you magically gain the following benefits, which last for 1 minute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn’t change.&lt;/li&gt;
+&lt;li&gt;You have advantage on Strength checks and Strength saving throws.&lt;/li&gt;
+&lt;li&gt;Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra 1d6 damage to a target on a hit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Giant’s Might" action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description level="3">You magically gain the following benefits, which last for 1 minute: 
+
+			• If you are smaller than Large, you become Large, along with anything you are wearing. If you lack the room to become Large, your size doesn’t change. 
+
+			• You have advantage on Strength checks and Strength saving throws. 
+
+			• Once on each of your turns, one of your attacks with a weapon or an unarmed strike can deal an extra 1d{{giants might:dice:size}} damage to a target on a hit.</description>
+		</sheet>
+		<rules>
+			<stat name="giants might:dice:size" value="6" bonus="base" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Arcane Shot" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_ARCANE_SHOT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you learn to unleash special magical effects with some of your shots. When you gain this feature, you learn two Arcane Shot options of your choice.&lt;/p&gt;
+&lt;p class="indent"&gt;Once per turn when you fire an arrow from a shortbow or longbow as part of the Attack action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn’t involve an attack roll. You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain an additional Arcane Shot option of your choice when you reach certain levels in this class: 7th, 10th, 15th, and 18th level. Each option also improves when you become an 18th—level fighter.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Arcane Shot" usage="2/Short Rest">
+			<description level="3">Once per turn, you can use one of your Arcane Shot options as part of the Attack action.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Arcane Shot (level 3)" supports="Arcane Shot,Arcane Archer" level="3" number="2" />
+			<select type="Archetype Feature" name="Arcane Shot (level 7)" supports="Arcane Shot,Arcane Archer" level="7" />
+			<select type="Archetype Feature" name="Arcane Shot (level 10)" supports="Arcane Shot,Arcane Archer" level="10" />
+			<select type="Archetype Feature" name="Arcane Shot (level 15)" supports="Arcane Shot,Arcane Archer" level="15" />
+			<select type="Archetype Feature" name="Arcane Shot (level 18)" supports="Arcane Shot,Arcane Archer" level="18" />
+			<stat name="arcane shot:dc" value="8" bonus="base" level="3" />
+			<stat name="arcane shot:dc" value="proficiency" bonus="proficiency" level="3" />
+			<stat name="arcane shot:dc" value="intelligence:modifier" bonus="ability" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Manifest Echo" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_MANIFEST_ECHO">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can use a bonus action to magically manifest an echo of yourself in an unoccupied space you can see within 15 feet of you. This echo is a magical, translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another echo, or until you’re incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;Your echo has AC 14 + your proficiency bonus, 1 hit point, and immunity to all conditions. If it has to make a saving throw, it uses your saving throw bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction (no action required). If your echo is ever more than 30 feet away from you at the end of your turn, it is destroyed.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use the echo in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As a bonus action, you can teleport, magically swapping places with your echo at a cost of 15 feet of your movement, regardless of the distance between the two of you.&lt;/li&gt;
+&lt;li&gt;When you take the attack action on your turn, any attack you make with that action can originate from your space or the echo’s space. You make this choice for each attack.&lt;/li&gt;
+&lt;li&gt;When a creature that you can see within 5 feet of your echo moves at least 5 feet away from it, you can use your reaction to make an opportunity attack against that creature as if you were in the echo’s space.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Manifest Echo" action="Bonus Action">
+			<description level="3">You can magically manifest an echo of yourself in an unoccupied space you can see within 15 feet of you. This echo is a magical, translucent, gray image of you that lasts until it is destroyed, until you dismiss it as a bonus action, until you manifest another echo, or until you’re incapacitated.
+			Your echo has {{manifest echo:ac}} AC, 1 hit point, and immunity to all conditions. If it has to make a save, it uses your save bonus for the roll. It is the same size as you, and it occupies its space. On your turn, you can mentally command the echo to move up to 30 feet in any direction. If your echo is ever more than 30 feet away from you at the end of your turn, it is destroyed.
+			As a bonus action, you can teleport, magically swapping places with your echo at a cost of 15 feet of your movement, regardless of the distance between the two of you.
+			When you take the attack action on your turn, any attack you make with that action can originate from your space or the echo’s space. You make this choice for each attack.
+			When a creature that you can see within 5 feet of your echo moves at least 5 feet away from it, you can use your reaction to make an opportunity attack against that creature as if you were in the echo’s space.</description>
+		</sheet>
+		<rules>
+			<stat name="manifest echo:ac" value="14" level="3" />
+			<stat name="manifest echo:ac" value="proficiency" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Unleash Incarnation" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_UNLEASH_INCARNATION">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can heighten your echo’s fury. Whenever you take the Attack action, you can make one additional melee attack from the echo’s position.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unleash Incarnation" usage="{{unleash incarnation:usage}}/Long Rest">
+			<description level="3">Whenever you take the Attack action, you can make one additional melee attack from the echo’s position.</description>
+		</sheet>
+		<rules>
+			<stat name="unleash incarnation:usage" value="1" bonus="base" level="3" />
+			<stat name="unleash incarnation:usage" value="constitution:modifier" bonus="base" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Psionic Power" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_PSIONIC_POWER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Psi Warrior feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.&lt;/p&gt;
+&lt;p class="indent"&gt;Some of your powers expend the Psionic Energy die they use, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).&lt;/p&gt;
+&lt;p class="indent"&gt;The powers below use your Psionic Energy dice.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Protective Field.&lt;/em&gt;&lt;/strong&gt; When you or another creature you can see within 30 feet of you takes damage, you can use your reaction to expend one Psionic Energy die, roll the die, and reduce the damage taken by the number rolled plus your Intelligence modifier (minimum reduction of 1), as you create a momentary shield of telekinetic force.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Psionic Strike.&lt;/em&gt;&lt;/strong&gt; You can propel your weapons with psionic force. Once on each of your turns, immediately after you hit a target within 30 feet of you with an attack and deal damage to it with a weapon, you can expend one Psionic Energy die, rolling it and dealing force damage to the target equal to the number rolled plus your Intelligence modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Telekinetic Movement.&lt;/em&gt;&lt;/strong&gt; You can move an object or a creature with your mind. As an action, you target one loose object that is Large or smaller or one willing creature, other than yourself. If you can see the target and it is within 30 feet of you, you can move it up to 30 feet to an unoccupied space you can see. Alternatively, if it is a Tiny object, you can move it to or from your hand. Either way, you can move the target horizontally, vertically, or both. Once you take this action, you can’t do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Psionic Power" usage="{{psionic power:dice:amount}}d{{psionic power:dice:size}}/Long Rest">
+			<description level="3">This energy is represented by your Psionic Energy dice, which are each a d{{psionic power:dice:size}}. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic power:dice:size" value="6" bonus="base" level="3" />
+			<stat name="psionic power:dice:size" value="8" bonus="base" level="5" />
+			<stat name="psionic power:dice:size" value="10" bonus="base" level="11" />
+			<stat name="psionic power:dice:size" value="12" bonus="base" level="17" />
+			<stat name="psi warrior psionic power:proficiency" value="proficiency" level="3" />
+			<stat name="psi warrior psionic power:proficiency" value="proficiency" level="3" />
+			<stat name="psionic power:dice:amount" value="psi warrior psionic power:proficiency" bonus="base" level="3" />
+			<stat name="psionic power:dc" value="8" bonus="base" level="3" />
+			<stat name="psionic power:dc" value="proficiency" bonus="proficiency" level="3" />
+			<stat name="psionic power:dc" value="intelligence:modifier" bonus="ability" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PROTECTIVE_FIELD" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_PSIONIC_STRIKE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PSI_WARRIOR_PSIONIC_POWER_TELEKINETIC_MOVEMENT" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Rallying Cry" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_RALLYING_CRY">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you learn how to inspire your allies to fight on past their injuries.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains hit points equal to your fighter level, provided that the creature can see or hear you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rallying Cry">
+			<description level="3">When you use your Second Wind feature, you can choose up to three creatures within 60 feet of you that are allied with you. Each one regains {{level:fighter}} hp, provided that the creature can see or hear you.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Weapon Bond" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_WEAPON_BOND">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.&lt;/p&gt;
+&lt;p class="indent"&gt;You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Weapon Bond">
+			<description level="3">You perform a ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.
+			Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.
+			You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Born to the Saddle" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_BORN_TO_THE_SADDLE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Born to the Saddle">
+			<description level="3">You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount for no more than 10ft, you land on your feet. Mounting and dismounting a creature costs you only 5ft of movement.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Unwavering Mark" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_UNWAVERING_MARK">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can menace your foes, foiling their attacks and punishing them for harming others. When you hit a creature with a melee weapon attack, you can mark the creature until the end of your next turn. This effect ends early if you are incapacitated or you die, or if someone else marks the creature.&lt;/p&gt;
+&lt;p class="indent"&gt;While it is within 5 feet of you, a creature marked by you has disadvantage on any attack roll that doesn’t target you.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, if a creature marked by you deals damage to anyone other than you, you can make a special melee weapon attack against the marked creature as a bonus action on your next turn. You have advantage on the attack roll, and if it hits, the attacks weapon deals extra damage to the target equal to half your fighter level. Regardless of the number of creatures you mark, you can make this special attack a number of times equal to your Strength modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unwavering Mark">
+			<description level="3">When you hit a creature with a melee weapon attack, mark it until the end of your next turn. While it is within 5ft of you, it has disadvantage on attack rolls that don’t target you. If it does deal damage to anyone other than you, you can make a special melee weapon attack as a bonus action on your next turn. You have advantage on this attack, and if it hits, it deals an extra {{level:fighter:half}} damage. You can use this special attack a number of times equal to {{unwavering mark:usage}}, and you regain uses after a long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="unwavering mark:usage" value="1" bonus="base" level="3" />
+			<stat name="unwavering mark:usage" value="strength:modifier" bonus="base" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Fighting Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_FIGHTING_SPIRIT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, your intensity in battle can shield you and help you strike true. As a bonus action on your turn, you can give yourself advantage on weapon attack rolls until the end of the current turn. When you do so, you also gain 5 temporary hit points. The number of temporary hit points increases when you reach certain levels in this class, increasing to 10 at 10th level and 15 at 15th level.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature three times, and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fighting Spirit" action="Bonus Action" usage="3/Long Rest">
+			<description level="3">Give yourself advantage on attack rolls until the end of the turn. You also gain {{fighting-spirit:temphp}} temporary HP.</description>
+		</sheet>
+		<rules>
+			<stat name="fighting-spirit:temphp" value="5" level="3" />
+			<stat name="fighting-spirit:temphp" value="5" level="10" />
+			<stat name="fighting-spirit:temphp" value="5" level="15" />
+		</rules>
+	</element>
+	<element name=".7th Level Remarkable Athlete" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_REMARKABLE_ATHLETE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, you can add half your proficiency bonus (round up) to any Strength, Dexterity, or Constitution check you make that doesn’t already use your proficiency bonus.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you make a running long jump, the distance you can cover increases by a number of feet equal to your Strength modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Remarkable Athlete">
+			<description level="7">When you make a running long jump, the distance you can cover increases by {{strength:modifier}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="acrobatics:misc" value="proficiency:half:up" level="7" requirements="!ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<stat name="athletics:misc" value="proficiency:half:up" level="7" requirements="!ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<stat name="sleight of hand:misc" value="proficiency:half:up" level="7" requirements="!ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<stat name="stealth:misc" value="proficiency:half:up" level="7" requirements="!ID_PROFICIENCY_SKILL_STEALTH" />
+		</rules>
+	</element>
+	<element name=".7th Level Echo Avatar" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_ECHO_AVATAR">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;7th-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can temporary transfer your consciousness to your echo. As an action, you can see through your echo’s eyes and hear trough its ears. During this time, you are deafened and blinded. You can sustain this effect for up to 10 minutes, and you can end it at any time (requires no action). While your echo is being used in this way, it can be up to 1,000 feet away from you without being destroyed.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Echo Avatar" action="Action">
+			<description level="7">You can see through your echo’s eyes and hear trough its ears. During this time, you are deafened and blinded. You can sustain this effect for up to 10 minutes, and you can end it at any time. While your echo is being used in this way, it can be up to 1,000 feet away from you without being destroyed.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Elegant Courtier" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_ELEGANT_COURTIER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, your discipline and attention to detail allow you to excel in social situations. Whenever you make a Charisma (Persuasion) check, you gain a bonus to the check equal to your Wisdom modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;Your self-control also causes you to gain proficiency in Wisdom saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Charisma saving throws (your choice).&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="persuasion:misc" value="wisdom:modifier" level="7" />
+			<select type="Proficiency" name="Saving Throw Proficiency (Samurai)" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" level="7" default="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name=".7th Level Runic Shield" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_RUNIC_SHIELD">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;7th-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an attack roll, you can use your reaction to force the attacker to reroll the d20 and use the new roll.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Runic Shield" action="Reaction" usage="{{proficiency}}/Long Rest">
+			<description level="7">When another creature you can see within 60 feet of you is hit by an attack roll, you can force the attacker to reroll the d20 and use the new roll.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Warding Maneuver" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_WARDING_MANEUVER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 7th level, you learn to fend off strikes directed at you, your mount, or other creatures nearby. If you or a creature you can see within 5 feet of you is hit by an attack, you can roll 1d8 as a reaction if you’re wielding a melee weapon or a shield. Roll the die, and add the number rolled to the target’s AC against that attack. If the attack still hits, the target has resistance against the attack’s damage.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Constitution modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Warding Maneuver" action="Reaction" usage="{{warding maneuver:usage}}/Long Rest">
+			<description level="7">If you or a creature you can see within 5ft is hit by an attack, and you are wielding a melee weapon or shield, roll 1d8 and add the number rolled to its AC. If the attack still hits, it has resistance against the attack’s damage.</description>
+		</sheet>
+		<rules>
+			<stat name="warding maneuver:usage" value="1" bonus="base" level="7" />
+			<stat name="warding maneuver:usage" value="constitution:modifier" bonus="base" level="7" />
+		</rules>
+	</element>
+	<element name=".7th Level Telekinetic Adept" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_TELEKINETIC_ADEPT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;7th-level Psi Warrior feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You have mastered new ways to use your telekinetic abilities, detailed below.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Psi-Powered Leap.&lt;/em&gt;&lt;/strong&gt; As a bonus action, you can propel your body with your mind. You gain a flying speed equal to twice your walking speed until the end of the current turn. Once you take this bonus action, you can’t do so again until you finish a short or long rest, unless you expend a Psionic Energy die to take it again.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Telekinetic Thrust.&lt;/em&gt;&lt;/strong&gt; When you deal damage to a target with your Psionic Strike, you can force the target to make a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Intelligence modifier. If the save fails, you can knock the target prone or move it up to 10 feet in any direction horizontally.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Telekinetic Adept" display="false">
+			<description>You have mastered new ways to use your telekinetic abilities.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_PSI_POWERED_LEAP" level="7" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PSI_WARRIOR_TELEKINETIC_ADEPT_TELEKINETIC_THRUST" level="7" />
+		</rules>
+	</element>
+	<element name=".7th Level Royal Envoy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_ROYAL_ENVOY">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;A Purple Dragon knight serves as an envoy of the Cormyrean crown. Knights of high standing are expected to conduct themselves with grace.&lt;/p&gt;
+&lt;p class="indent"&gt;At 7th level, you gain proficiency in the Persuasion skill. If you are already proficient in it, you gain proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.&lt;/p&gt;
+&lt;p class="indent"&gt;Your proficiency bonus is doubled for any ability check you make that uses Persuasion. You receive this benefit regardless of the skill proficiency you gain from this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Royal Envoy" display="false">
+			<description>A Purple Dragon knight serves as an envoy of the Cormyrean crown. Knights of high standing are expected to conduct themselves with grace</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Royal Envoy" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_PERFORMANCE|ID_PROFICIENCY_SKILL_PERSUASION" level="7" default="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<stat name="persuasion:proficiency" value="proficiency" bonus="double" level="7" requirements="ID_PROFICIENCY_SKILL_PERSUASION" />
+		</rules>
+	</element>
+	<element name=".7th Level War Magic" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_WAR_MAGIC">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="War Magic" action="Bonus Action">
+			<description level="7">When you use your action to cast a cantrip, you can make one weapon attack.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Know Your Enemy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_KNOW_YOUR_ENEMY">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Strength score&lt;/li&gt;
+&lt;li&gt;Dexterity score&lt;/li&gt;
+&lt;li&gt;Constitution score&lt;/li&gt;
+&lt;li&gt;Armor Class&lt;/li&gt;
+&lt;li&gt;Current hit points&lt;/li&gt;
+&lt;li&gt;Total class levels (if any)&lt;/li&gt;
+&lt;li&gt;Fighter class levels (if any)&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Know Your Enemy">
+			<description level="7">Spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Magic Arrow" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_MAGIC_ARROW">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 7th level, you gain the ability to infuse arrows with magic. Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage. The magic fades from the arrow immediately after it hits or misses its target.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Magic Arrow">
+			<description level="7">Your shortbow or longbow attacks are considered magical.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Great Stature" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_GREAT_STATURE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The magic of your runes permanently alters you. When you gain this feature, roll 3d4. You grow a number of inches in height equal to the roll.&lt;/p&gt;
+&lt;p class="indent"&gt;Moreover, the extra damage you deal with your Giant’s Might feature increases to 1d8.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Great Stature">
+			<description level="13">When you gain this feature, roll 3d4. You grow a number of inches in height equal to the roll.</description>
+		</sheet>
+		<rules>
+			<stat name="giants might:dice:size" value="8" bonus="base" level="10" />
+		</rules>
+	</element>
+	<element name="10th Level Guarded Mind" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_GUARDED_MIND">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Psi Warrior feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The psionic energy flowing through you has bolstered your mind. You have resistance to psychic damage. Moreover, if you start your turn charmed or frightened, you can expend a Psionic Energy die and end every effect on yourself subjecting you to those conditions.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Guarded Mind">
+			<description level="10">If you start your turn charmed or frightened, you can expend a Psionic Energy die and end every effect on yourself subjecting you to those conditions.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" level="10" />
+		</rules>
+	</element>
+	<element name="10th Level Additional Fighting Style" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_ADDITIONAL_FIGHTING_STYLE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you can choose a second option from the Fighting Style class feature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Additional Fighting Style">
+			<description level="10">You adopt a second style of fighting as your specialty.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Additional Fighting Style" supports="Fighting Style, Fighter" level="10" />
+		</rules>
+	</element>
+	<element name="10th Level Shadow Martyr" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_SHADOW_MARTYR">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the attack roll is made, you can use your reaction to teleport the echo to an unoccupied space withing 5 feet of the targeted creature. The attack roll that triggered the reaction is instead made against your echo.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shadow Martyr" action="Reaction" usage="1/Short Rest">
+			<description level="10">You can make your echo throw itself in front of an attack directed at another creature that you can see. Before the attack roll is made, you can teleport the echo to an unoccupied space withing 5 feet of the targeted creature. The attack roll that triggered the reaction is instead made against your echo.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Hold the Line" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_HOLD_THE_LINE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you become a master of locking down your enemies. Creatures provoke an opportunity attack from you when they move 5 feet or more while within your reach, and if you hit a creature with an opportunity attack, the target’s speed is reduced to 0 until the end of the current turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hold the Line">
+			<description level="10">You can make opportunity attack if creature moves 5ft or more while within your reach. If you hit with that attack, its speed is reduced to 0 until the end of the current turn.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Inspiring Surge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_INSPIRING_SURGE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, when you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.&lt;/p&gt;
+&lt;p class="indent"&gt;Starting at 18th level, you can choose two allies within 60 feet of you, rather than one.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Inspiring Surge">
+			<description level="10">When you use your Action Surge feature, you can choose one creature within 60 feet of you that is allied with you. That creature can make one melee or ranged weapon attack with its reaction, provided that it can see or hear you.</description>
+			<description level="18">When you use your Action Surge feature, you can choose two creatures within 60 feet of you that are allied with you. Those creatures can make one melee or ranged weapon attack with their reaction, provided that they can see or hear you.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Tireless Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_TIRELESS_SPIRIT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, when you roll initiative and have no uses of Fighting Spirit remaining, you regain one use.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Tireless Spirit">
+			<description level="10">When rolling initiative with no more Fighting Spirit left, regain 1 use.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Curving Shot" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_CURVING_SHOT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 7th level, you learn how to direct an errant arrow toward a new target. When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original target.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Curving Shot" action="Bonus Action">
+			<description level="10">When missing with an arrow, reroll the attack against a different target within 60ft of the original.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Eldritch Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_ELDRITCH_STRIKE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you learn how to make your weapon strikes undercut a creature’s resistance to your spells. When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Eldritch Strike">
+			<description level="10">When you hit a creature with a weapon attack, that creature has disadvantage on the next saving throw it makes against a spell you cast before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Improved Combat Superiority" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_IMPROVED_COMBAT_SUPERIORITY">
+		<supports>Custom Class Martial Archetype</supports>
+		<requirements>ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_COMBAT_SUPERIORITY</requirements>
+		<description>
+			<html>&lt;p&gt;At 10th level, your superiority dice turn into d10s. At 18th level, they turn into d12s.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Improved Combat Superiority">
+			<description level="10">Your superiority dice turn into d10s.</description>
+			<description level="18">Your superiority dice turn into d12s.</description>
+		</sheet>
+		<rules>
+			<stat name="superiority dice:size" value="10" bonus="size" level="10" />
+			<stat name="superiority dice:size" value="12" bonus="size" level="18" />
+		</rules>
+	</element>
+	<element name="15th Level Rapid Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_RAPID_STRIKE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, you learn to trade accuracy for swift strikes. If you take the Attack action on your turn and have advantage on an attack roll against one of the targets, you can forgo the advantage for that roll to make an additional weapon attack against that target, as part of the same action. You can do so no more than once per turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rapid Strike" usage="1/Turn">
+			<description level="15">When attacking with advantage, you can forgo the advantage to gain an additional attack against your target as part of the same Attack action.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Superior Critical" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_SUPERIOR_CRITICAL">
+		<supports>Custom Class Martial Archetype</supports>
+		<requirements>ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_IMPROVED_CRITICAL</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, your weapon attacks score a critical hit on a roll of 18–20.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Superior Critical">
+			<description level="15">Your weapon attacks score a critical hit on a roll of 18–20.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Master of Runes" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_MASTER_OF_RUNES">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can invoke each rune you know from your Rune Carver feature twice, rather than once, and you regain all expended uses when you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Master of Runes">
+			<description level="15">You can invoke each rune you know from your Rune Carver feature twice, rather than once, and you regain all expended uses when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Bulwark of Force" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_BULWARK_OF_FORCE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Psi Warrior feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can shield yourself and others with telekinetic force. As a bonus action, you can choose creatures, which can include you, that you can see within 30 feet of you, up to a number of creatures equal to your Intelligence modifier (minimum of one creature). Each of the chosen creatures is protected by half cover for 1 minute or until you’re incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you take this bonus action, you can’t do so again until you finish a long rest, unless you spend a Psionic Energy die to take it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Bulwark of Force" action="Bonus Action" usage="1/Long Rest">
+			<description level="15">You can choose creatures, which can include you, that you can see within 30 feet of you, up to {{bulwark of force:creatures}} creatures. Each of the chosen creatures is protected by half cover for 1 minute or until you’re incapacitated. You can spend a Psionic Energy die to take the bonus action again.</description>
+		</sheet>
+		<rules>
+			<stat name="bulwark of force:creatures" value="1" bonus="base" level="15" />
+			<stat name="bulwark of force:creatures" value="intelligence:modifier" bonus="base" level="15" />
+		</rules>
+	</element>
+	<element name="15th Level Reclaim Potential" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_RECLAIM_POTENTIAL">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You’ve learned to absorb the fleeting magic of your echo. When an echo of yours is destroyed by taking damage, you can gain a number of temporary hit points equal to 2d6 + your Constitution modifier, provided you don’t already have temporary hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Constitution modifier (a minimum of once). You regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Reclaim Potential" usage="{{reclaim potential:usage}}/Long Rest">
+			<description level="15">When an echo of yours is destroyed by taking damage, you can gain 2d6+{{constitution:modifier}} temporary hp, provided you don’t already have temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="reclaim potential:usage" value="1" bonus="base" level="15" />
+			<stat name="reclaim potential:usage" value="constitution:modifier" bonus="base" level="15" />
+		</rules>
+	</element>
+	<element name="15th Level Arcane Charge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_ARCANE_CHARGE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 15th level, you gain the ability to teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Arcane Charge">
+			<description level="15">You can teleport up to 30 feet to an unoccupied space you can see when you use your Action Surge. You can teleport before or after the additional action.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Ever-ready Shot" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_EVER_READY_SHOT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, your magical archery is available whenever battle starts. If you roll initiative and have no uses of Arcane Shot remaining, you regain one use of it.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ever-ready Shot">
+			<description level="15">When you roll initiative and have no uses of Arcane Shot remaining, you regain 1 use of it.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Ferocious Charger" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_FEROCIOUS_CHARGER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, you can run down your foes, whether you’re mounted or not. If you move at least 10 feet in a straight line right before attacking a creature and you hit it with the attack, that target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone. You can use this feature only once on each of your turns.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ferocious Charger" usage="1/Round">
+			<description level="15">If you move at least 10ft in a straight line before attacking a creature and hit it, it must succeed on a DC{{ferocious charger:dc}} Strength saving throw or is knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="ferocious charger:dc" value="8" bonus="base" level="15" />
+			<stat name="ferocious charger:dc" value="proficiency" bonus="proficiency" level="15" />
+			<stat name="ferocious charger:dc" value="strength:modifier" bonus="ability" level="15" />
+		</rules>
+	</element>
+	<element name="15th Level Bulwark" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_BULWARK">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 15th level, you can extend the benefit of your Indomitable feature to an ally. When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Bulwark">
+			<description level="15">When you decide to use Indomitable to reroll an Intelligence, a Wisdom, or a Charisma saving throw and you aren't incapacitated, you can choose one ally within 60 feet of you that also failed its saving throw against the same effect. If that creature can see or hear you, it can reroll its saving throw and must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Relentless" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_RELENTLESS">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Relentless">
+			<description level="15">When you roll initiative and have no superiority dice remaining, you regain 1 superiority die.</description>
+		</sheet>
+	</element>
+	<element name="18th Level Telekinetic Master" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_TELEKINETIC_MASTER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;18th-level Psi Warrior feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your ability to move creatures and objects with your mind is matched by few. You can cast the &lt;em&gt;telekinesis&lt;/em&gt; spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you cast the spell with this feature, you can’t do so again until you finish a long rest, unless you expend a Psionic Energy die to cast it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Telekinetic Master" usage="1/Long Rest">
+			<description level="18">You can cast the telekinesis spell, requiring no components, and your spellcasting ability for the spell is Intelligence. On each of your turns while you concentrate on the spell, including the turn when you cast it, you can make one attack with a weapon as a bonus action. You can expend a Psionic Energy die to cast the spell again.</description>
+		</sheet>
+	</element>
+	<element name="18th Level Runic Juggernaut" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_RUNIC_JUGGERNAUT">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;18th-level Rune Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You learn to amplify your rune-powered transformation. As a result, the extra damage you deal with the Giant’s Might feature increases to 1d10. Moreover, when you use that feature, your size can increase to Huge, and while you are that size, your reach increases by 5 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Runic Juggernaut">
+			<description level="18">When you use Giant’s Might, your size can increase to Huge, and while you are that size, your reach increases by 5 feet.</description>
+		</sheet>
+		<rules>
+			<stat name="giants might:dice:size" value="10" bonus="base" level="18" />
+		</rules>
+	</element>
+	<element name="18th Level Legion of One" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_LEGION_OF_ONE">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;18th-level Echo Knight feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can use a bonus action to create two echoes with your Manifest Echo feature, and these echoes can coexist. If you try to create a third echo, the previous two echoes are destroyed. Anything you can do from one echo’s position can be done from the other’s instead.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you roll initiative and have no uses of your Unleash Incarnation feature left, you regain one use of that feature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Legion of One" action="Bonus Action">
+			<description level="18">You can create two echoes with your Manifest Echo feature, and these echoes can coexist. If you try to create a third echo, the previous two echoes are destroyed. Anything you can do from one echo’s position can be done from the other’s instead.
+			When you roll initiative and have no uses of your Unleash Incarnation feature left, you regain one use of that feature.</description>
+		</sheet>
+	</element>
+	<element name="18th Level Strength Before Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_STRENGTH_BEFORE_DEATH">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 18th level, your fighting spirit can delay the grasp of death. If you take damage that reduces you to 0 hit points and doesn’t kill you outright, you can use your reaction to delay falling unconscious, and you can immediately take an extra turn, interrupting the current turn. While you have 0 hit points during that extra turn, taking damage causes death saving throw failures as normal, and three death saving throw failures can still kill you. When the extra turn ends, you fall unconscious if you still have 0 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Strength Before Death" action="Reaction" usage="1/Long Rest">
+			<description level="18">When you would normally be knocked unconscious, take an extra turn instead, interrupting the current turn. Taking damage causes death saves as normal, and when the extra turn ends you fall unconscious with 0HP.</description>
+		</sheet>
+	</element>
+	<element name="18th Level Survivor" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_SURVIVOR">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don’t gain this benefit if you have 0 hit points.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Survivor">
+			<description level="18">At the start of each of your turns, you regain {{survivor:hp}} hp if you have no more than half of your hp left. You don’t gain this benefit if you have 0 hp.</description>
+		</sheet>
+		<rules>
+			<stat name="survivor:hp" value="5" level="18" />
+			<stat name="survivor:hp" value="constitution:modifier" level="18" />
+		</rules>
+	</element>
+	<element name="18th Level Vigilant Defender" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_VIGILANT_DEFENDER">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 18th level, you respond to danger with extraordinary vigilance. In combat, you get a special reaction that you can take once on every creature’s turn, except your turn. You can use this special reaction only to make an opportunity attack, and you can’t use it on the same turn that you take your normal reaction.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Vigilant Defender" usage="1/Turn">
+			<description level="18">You can use special reaction to make an opportunity attack, you can’t use it on the same turn that you take your normal reaction.</description>
+		</sheet>
+	</element>
+	<element name="18th Level Improved War Magic" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_18TH_LEVEL_IMPROVED_WAR_MAGIC">
+		<supports>Custom Class Martial Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 18th level, when you use your action to cast a spell, you can make one weapon attack as a bonus action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Improved War Magic">
+			<description level="18">When you use your action to cast a spell, you can make one weapon attack as a bonus action.</description>
+		</sheet>
+	</element>
+</elements>

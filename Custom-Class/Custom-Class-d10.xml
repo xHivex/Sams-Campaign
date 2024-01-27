@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Custom Class d10</name>
+		<update version="0.1.0">
+			<file name="Custom-Class-d10.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d10.xml" />
+		</update>
+	</info>
+	<element name="Custom Class Heavy" type="Class" source="Custom Class" id="ID_CUCL_CLASS_CUSTOM_CLASS_HEAVY">
+		<description>
+			<html>&lt;p&gt;A camp of bandits sits at their makeshift fire on the side of the path, late at night. Suddenly, a figure appears behind one of the bandits with a purple haze in the air and stabs him through heart while covering his mouth before warping out of existence.&lt;/p&gt;
+&lt;p class="indent"&gt;Now on alert, the bandits stand, but before they can make any further moves, the figure appears in the center of the camp and unleashes a series of precise blows, seeming to teleport from one enemy to the next. In a few blinks of the eye, the bandits are dead with a single blow to each of their bodies, the battle ended.&lt;/p&gt;
+&lt;p class="indent"&gt;And not a soul moves within the makeshift camp, the figure that killed the bandits already long gone only leaving a purple haze and bodies in its wake.&lt;/p&gt;
+
+&lt;h5&gt;HIT POINTS&lt;/h5&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Hit Dice:&lt;/strong&gt; 1d10 per level&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hit Points at 1st Level:&lt;/strong&gt; 10 + your Constitution modifier&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hit Points at Higher Levels:&lt;/strong&gt; 1d10 + your Constitution modifier per level after 1st&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 class="caption"&gt;Custom Class&lt;/h5&gt;
+&lt;table class="class-features"&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td class="col-5"&gt;Level&lt;/td&gt;&lt;td class="col-15"&gt;Number of Features choices&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt; 1st&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 2nd&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 3rd&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 4th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 5th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 6th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 7th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 8th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 9th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;10th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;11th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;12th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;13th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;14th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;15th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;17th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;18th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="short">A true custom class, who knows what your destiny awaits</set>
+			<set name="hd">d10</set>
+		</setters>
+		<sheet display="false">
+			<description>A master of teleporting combat, skilled with warping around the battlefield.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Custom Class)" supports="Skill||Tool" level="1" number="4" />
+			<select type="Proficiency" name="Saving Throw Proficiency (Custom Class)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" level="1" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 1" level="1" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 2" level="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 3" level="3" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 4" level="4" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 5" level="5" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 6" level="6" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 7" level="7" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 8" level="8" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 9" level="9" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 10" level="10" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 11" level="11" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 12" level="12" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 13" level="13" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 14" level="14" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 15" level="15" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 16" level="16" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 17" level="17" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 18" level="18" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 19" level="19" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 20" level="20" />
+		</rules>
+	</element>
+	<element name="Health Boost" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_HEALTH_BOOST">
+		<supports>Custom Class 1</supports>
+		<description>
+			<html>&lt;p&gt;Your hit points maximum increases by an amount equal to twice your level when you gain this feature. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;You may only pick this feature at level 1&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="Health_Boost:hp" value="level" />
+			<stat name="Health_Boost:hp" value="level" />
+			<stat name="hp" value="Health_Boost:hp" />
+		</rules>
+	</element>
+	<element name="Proficiency Choice" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PROFICIENCY_CHOICE">
+		<supports>Custom Class 1</supports>
+		<description>
+			<html>&lt;p&gt;Your hit points maximum increases by an amount equal to twice your level when you gain this feature. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;You may only pick this feature at level 1&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Proficiency Choice" supports="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS|ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS|ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" number="3" />
+		</rules>
+	</element>
+	<element name="Subclass Specialisation" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SUBCLASS_SPECIALISATION">
+		<supports>Custom Class 1,Custom Class 2,Custom Class 3</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Custom Class Subclass" supports="Custom Class Subclass" level="1" />
+		</rules>
+	</element>
+	<element name="Otherworldly Patron" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_OTHERWORLDLY_PATRON">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;At 1st level, you have struck a bargain with an otherworldly being of your choice.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Otherworldly Patron" supports="Custom Class Otherworldly Patron" level="1" />
+		</rules>
+	</element>
+	<element name="Sacred Oath" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_SACRED_OATH">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;When you reach 3rd level, you swear the oath that binds you as a paladin forever. Up to this time you have been in a preparatory stage, committed to the path but not yet sworn to it. Now you choose the Oath of Devotion, the Oath of the Ancients, or the Oath of Vengeance, all detailed at the end of the class description.&lt;/p&gt;
+&lt;p class="indent"&gt;Your choice grants you features at 3rd level and again at 7th, 15th, and 20th level. Those features include oath spells and the Channel Divinity feature.&lt;/p&gt;
+&lt;h5 class="caption"&gt;OATH SPELLS&lt;/h5&gt;
+&lt;p&gt;Each oath has a list of associated spells. You gain access to these spells at the levels specified in the oath description. Once you gain access to an oath spell, you always have it prepared. Oath spells don’t count against the number of spells you can prepare each day.&lt;/p&gt;
+&lt;p class="indent"&gt;If you gain an oath spell that doesn’t appear on the paladin spell list, the spell is nonetheless a paladin spell for you.&lt;/p&gt;
+&lt;h5 class="caption"&gt;CHANNEL DIVINITY&lt;/h5&gt;
+&lt;p&gt;Your oath allows you to channel divine energy to fuel magical effects. Each Channel Divinity option provided by your oath explains how to use it.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use your Channel Divinity, you choose which option to use. You must then finish a short or long rest to use your Channel Divinity again.&lt;/p&gt;
+&lt;p class="indent"&gt;Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your paladin spell save DC.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Sacred Oath" supports="Custom Class Sacred Oath" level="3" number="2" />
+			<stat name="channel divinity:count" value="1" bonus="base" level="1" />
+			<select type="Archetype Feature" name="Sacred Oath" supports="Custom Class Sacred Oath" level="7" />
+			<select type="Archetype Feature" name="Sacred Oath" supports="Custom Class Sacred Oath" level="15" />
+			<select type="Archetype Feature" name="Sacred Oath" supports="Custom Class Sacred Oath" level="20" />
+		</rules>
+	</element>
+	<element name="Primal Path" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_PRIMAL_PATH">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose a path that shapes the nature of your rage. Choose the Path of the Berserker or the Path of the Totem Warrior, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 6th, 10th, and 14th levels.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Primal Path" supports="Custom Class Primal Path" level="3" number="2" />
+			<select type="Archetype Feature" name="Primal Path" supports="Custom Class Primal Path" level="6" />
+			<select type="Archetype Feature" name="Primal Path" supports="Custom Class Primal Path" level="10" />
+			<select type="Archetype Feature" name="Primal Path" supports="Custom Class Primal Path" level="14" />
+		</rules>
+	</element>
+	<element name="Bard College" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_BARD_COLLEGE">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you delve into the advanced techniques of a bard college of your choice, such as the College of Lore. Your choice grants you features at 3rd level and again at 6th and 14th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Bard College" supports="Custom Class Bard College" level="3" number="2" />
+			<select type="Archetype Feature" name="Bard College" supports="Custom Class Bard College" level="6" />
+			<select type="Archetype Feature" name="Bard College" supports="Custom Class Bard College" level="14" />
+		</rules>
+	</element>
+	<element name="Druid Circle" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_DRUID_CIRCLE">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;At 2nd level, you choose to identify with a circle of druids: the Circle of the Land or the Circle of the Moon, both detailed at the end of the class description. Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Druid Circle" supports="Custom Class Druid Circle" level="2" number="2" />
+			<select type="Archetype Feature" name="Druid Circle" supports="Custom Class Druid Circle" level="6" />
+			<select type="Archetype Feature" name="Druid Circle" supports="Custom Class Druid Circle" level="10" />
+			<select type="Archetype Feature" name="Druid Circle" supports="Custom Class Druid Circle" level="14" />
+		</rules>
+	</element>
+	<element name="Divine Domain" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_DIVINE_DOMAIN">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;Choose one domain related to your deity: Knowledge, Life, Light, Nature, Tempest, Trickery, or War. Each domain is detailed at the end of the class description, and each one provides examples of gods associated with it. Your choice grants you domain spells and other features when you choose it at 1st level. It also grants you additional ways to use Channel Divinity when you gain that feature at 2nd level, and additional benefits at 6th, 8th, and 17th levels.&lt;/p&gt;
+&lt;h5 class="caption"&gt;DOMAIN SPELLS&lt;/h5&gt;
+&lt;p&gt;Each domain has a list of spells—its domain spells—that you gain at the cleric levels noted in the domain description. Once you gain a domain spell, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day.&lt;/p&gt;
+&lt;p class="indent"&gt;If you have a domain spell that doesn’t appear on the cleric spell list, the spell is nonetheless a cleric spell for you.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Divine Domain" supports="Custom Class Divine Domain" level="1" number="2" />
+			<select type="Archetype Feature" name="Divine Domain" supports="Custom Class Divine Domain" level="6" />
+			<select type="Archetype Feature" name="Divine Domain" supports="Custom Class Divine Domain" level="8" />
+			<select type="Archetype Feature" name="Divine Domain" supports="Custom Class Divine Domain" level="17" />
+		</rules>
+	</element>
+	<element name="Martial Archetype" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_MARTIAL_ARCHETYPE">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Martial Archetype" supports="Custom Class Martial Archetype" level="3" number="2" />
+			<select type="Archetype Feature" name="Martial Archetype" supports="Custom Class Martial Archetype" level="7" />
+			<select type="Archetype Feature" name="Martial Archetype" supports="Custom Class Martial Archetype" level="10" />
+			<select type="Archetype Feature" name="Martial Archetype" supports="Custom Class Martial Archetype" level="15" />
+			<select type="Archetype Feature" name="Martial Archetype" supports="Custom Class Martial Archetype" level="18" />
+		</rules>
+	</element>
+	<element name="Monastic Tradition" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_MONASTIC_TRADITION">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 3rd level, you commit yourself to a monastic tradition, such as the Way of the Open Hand. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Monastic Tradition" supports="Custom Class Monastic Tradition" level="3" number="2" />
+			<select type="Archetype Feature" name="Monastic Tradition" supports="Custom Class Monastic Tradition" level="6" />
+			<select type="Archetype Feature" name="Monastic Tradition" supports="Custom Class Monastic Tradition" level="11" />
+			<select type="Archetype Feature" name="Monastic Tradition" supports="Custom Class Monastic Tradition" level="17" />
+		</rules>
+	</element>
+	<element name="Ranger Archetype" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_RANGER_ARCHETYPE">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate: Hunter or Beast Master, both detailed at the end of the class description. Your choice grants you features at 3rd level and again at 7th, 11th, and 15th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Ranger Archetype" supports="Custom Class Ranger Archetype" level="3" number="2" />
+			<select type="Archetype Feature" name="Ranger Archetype" supports="Custom Class Ranger Archetype" level="7" />
+			<select type="Archetype Feature" name="Ranger Archetype" supports="Custom Class Ranger Archetype" level="11" />
+			<select type="Archetype Feature" name="Ranger Archetype" supports="Custom Class Ranger Archetype" level="15" />
+		</rules>
+	</element>
+	<element name="Roguish Archetype" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_ROGUISH_ARCHETYPE">
+		<supports>Custom Class Subclass</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose an archetype that you emulate in the exercise of your rogue abilities. The Thief archetype is detailed here; see the Player’s Handbook for other archetypes. Your choice grants you features at 3rd level and then again at 9th, 13th, and 17th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Roguish Archetype" supports="Custom Class Roguish Archetype" level="3" number="2" />
+			<select type="Archetype Feature" name="Roguish Archetype" supports="Custom Class Roguish Archetype" level="9" />
+			<select type="Archetype Feature" name="Roguish Archetype" supports="Custom Class Roguish Archetype" level="13" />
+			<select type="Archetype Feature" name="Roguish Archetype" supports="Custom Class Roguish Archetype" level="17" />
+		</rules>
+	</element>
+	<element name="Sorcerous Origin" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_SORCEROUS_ORIGIN">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline or Wild Magic, both detailed at the end of the class description.&lt;/p&gt;
+&lt;p class="indent"&gt;Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Sorcerous Origin" supports="Custom Class Sorcerous Origin" level="1" number="2" />
+			<select type="Archetype Feature" name="Sorcerous Origin" supports="Custom Class Sorcerous Origin" level="6" />
+			<select type="Archetype Feature" name="Sorcerous Origin" supports="Custom Class Sorcerous Origin" level="14" />
+			<select type="Archetype Feature" name="Sorcerous Origin" supports="Custom Class Sorcerous Origin" level="18" />
+		</rules>
+	</element>
+	<element name="Arcane Tradition" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_ARCANE_TRADITION">
+		<supports>Custom Class Subclass</supports>
+		<prerequisite>Spellcasting</prerequisite>
+		<requirements>ID_CUCL_CLASS_FEATURE_SPELLCASTING</requirements>
+		<description>
+			<html>&lt;p&gt;The study of wizardry is ancient, stretching back to the earliest mortal discoveries of magic. It is firmly established in fantasy gaming worlds, with various traditions dedicated to its complex study.&lt;/p&gt;
+&lt;p class="indent"&gt;The most common arcane traditions in the multiverse revolve around the schools of magic. Wizards through the ages have cataloged thousands of spells, grouping them into eight categories called schools. In some places, these traditions are literally schools. In other institutions, the schools are more like academic departments, with rival faculties competing for students and funding. Even wizards who train apprentices in the solitude of their own towers use the division of magic into schools as a learning device, since the spells of each school require mastery of different techniques.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reach 2nd level, you choose an arcane tradition, shaping your practice of magic through one of eight schools, such as Evocation.&lt;/p&gt;
+&lt;p class="indent"&gt;Your choice grants you features at 2nd level and again at 6th, 10th, and 14th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Arcane Tradition" supports="Custom Class Arcane Tradition" level="2" number="2" />
+			<select type="Archetype Feature" name="Arcane Tradition" supports="Custom Class Arcane Tradition" level="6" />
+			<select type="Archetype Feature" name="Arcane Tradition" supports="Custom Class Arcane Tradition" level="10" />
+			<select type="Archetype Feature" name="Arcane Tradition" supports="Custom Class Arcane Tradition" level="14" />
+		</rules>
+	</element>
+	<element name="Secondary Subclass Specialisation" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SECONDARY_SUBCLASS_SPECIALISATION">
+		<supports>Custom Class 4,Custom Class 5,Custom Class 6,Custom Class 7,Custom Class 8</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_SUBCLASS_SPECIALISATION</requirements>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Custom Class Secondary Subclass" supports="Custom Class Subclass" level="1" />
+		</rules>
+	</element>
+</elements>

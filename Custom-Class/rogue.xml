@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Rogue</name>
+		<update version="0.1.0">
+			<file name="rogue.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/rogue.xml" />
+		</update>
+	</info>
+	<element name=".3rd Level Assassinate" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_ASSASSINATE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you are at your deadliest when you get the drop on your enemies. You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Assassinate">
+			<description level="3">You have advantage on attack rolls against any creature that hasn’t taken a turn in the combat yet. In addition, any hit you score against a creature that is surprised is a critical hit.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Infiltration Expertise" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_INFILTRATION_EXPERTISE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, you can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else. For example, you might acquire appropriate clothing, letters of introduction, and officiallooking certification to establish yourself as a member of a trading house from a remote city so you can insinuate yourself into the company of other wealthy merchants.&lt;/p&gt;
+&lt;p&gt;Thereafter, if you adopt the new identity as a disguise, other creatures believe you to be that person until given an obvious reason not to.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Infiltration Expertise">
+			<description level="9">You can unfailingly create false identities for yourself. You must spend seven days and 25 gp to establish the history, profession, and affiliations for an identity. You can’t establish an identity that belongs to someone else.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Imposter" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_IMPOSTER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 13th level, you gain the ability to unerringly mimic another person’s speech, writing, and behavior. You must spend at least three hours studying these three components of the person’s behavior, listening to speech, examining handwriting, and observing mannerisms.&lt;/p&gt;
+&lt;p&gt;Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Charisma (Deception) check you make to avoid detection.&lt;/p&gt;</html>
+		</description>
+		<sheet alt=" Imposter">
+			<description level="13">You gain the ability to unerringly mimic another person’s speech, writing, and behavior. Your ruse is indiscernible to the casual observer. If a wary creature suspects something is amiss, you have advantage on any Deception check you make to avoid detection.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Death Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_DEATH_STRIKE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 17th level, you become a master of instant death. When you attack and hit a creature that is surprised, it must make a Constitution saving throw (DC 8 + your Dexterity modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Death Strike">
+			<description level="17">When you attack and hit a creature that is surprised, it must make a DC{{death strike:dc}} Constitution save. On a failed save, double the damage of your attack against the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="death strike:dc" value="8" level="17" />
+			<stat name="death strike:dc" value="proficiency" level="17" />
+			<stat name="death strike:dc" value="dexterity:modifier" level="17" />
+		</rules>
+	</element>
+	<element name=".3rd Level Skirmisher" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_SKIRMISHER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you are difficult to pin down during a fight. You can move up to half your speed as a reaction when an enemy ends its turn within 5 feet of you. This movement doesn’t provoke opportunity attacks.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Skirmisher" action="Reaction">
+			<description level="3">Move up to half your speed when an enemy ends its turn within 5ft. This doesn't provoke opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Survivalist" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_SURVIVALIST">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you gain proficiency in the Nature and Survival skills if you don’t already have it. Your proficiency bonus is doubled for any ability check you make that uses either of those proficiencies.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" level="3" />
+			<stat name="nature:proficiency" value="proficiency" bonus="double" level="3" />
+			<stat name="survival:proficiency" value="proficiency" bonus="double" level="3" />
+		</rules>
+	</element>
+	<element name=".9th Level Superior Mobility" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_SUPERIOR_MOBILITY">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 9th level, your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Superior Mobility">
+			<description level="9">Your walking speed increases by 10 feet. If you have a climbing or swimming speed, this increase applies to that speed as well.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:misc" value="10" level="9" />
+			<stat name="innate speed:climb:misc" value="10" level="9" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:swim:misc" value="10" level="9" requirements="[innate speed:swim:1]" />
+		</rules>
+	</element>
+	<element name="13th Level Ambush Master" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_AMBUSH_MASTER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 13th level, you excel at leading ambushes and acting first in a fight.&lt;/p&gt;
+&lt;p class="indent"&gt;You have advantage on initiative rolls. In addition, the first creature you hit during the first round of a combat becomes easier for you and others to strike; attack rolls against that target have advantage until the start of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ambush Master">
+			<description level="13">You gain advantage on initiative. The first creature you hit during the first round of combat becomes easier to hit. Attacks against it have advantage until the start of your next turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" level="13" />
+		</rules>
+	</element>
+	<element name="17th Level Sudden Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_SUDDEN_STRIKE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 17th level, you can strike with deadly speed. If you take the Attack action on your turn, you can make one additional attack as a bonus action. This attack can benefit from your Sneak Attack even if you have already used it this turn, but you can’t use your Sneak Attack against the same target more than once in a turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Sudden Strike" action="Bonus Action">
+			<description level="17">If you take the Attack action, make one additional attack. This attack can gain Sneak Attack even if you already used it this turn, but not on the same target.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Psionic Power" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_PSIONIC_POWER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Soulknife feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below.&lt;/p&gt;
+&lt;p class="indent"&gt;Some of your powers expend the Psionic Energy die they use, as specified in a power’s description, and you can’t use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).&lt;/p&gt;
+&lt;p class="indent"&gt;The powers below use your Psionic Energy dice.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Psi-Bolstered Knack.&lt;/em&gt;&lt;/strong&gt; When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Psychic Whispers.&lt;/em&gt;&lt;/strong&gt; You can establish telepathic communication between yourself and others—perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can’t use this telepathy if it can’t speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don’t need to speak a common language to understand each other.&lt;/p&gt;
+&lt;p&gt;The first time you use this power after each long rest, you don’t expend the Psionic Energy die. All other times you use the power, you expend the die.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Psionic Power" usage="{{psionic power:dice:amount}}d{{psionic power:dice:size}}/Long Rest">
+			<description level="3">This energy is represented by your Psionic Energy dice, which are each a d{{psionic power:dice:size}}. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can’t do so again until you finish a short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic power:dice:size" value="6" bonus="base" level="3" />
+			<stat name="psionic power:dice:size" value="8" bonus="base" level="5" />
+			<stat name="psionic power:dice:size" value="10" bonus="base" level="11" />
+			<stat name="psionic power:dice:size" value="12" bonus="base" level="17" />
+			<stat name="soul knife psionic power:proficiency" value="proficiency" level="3" />
+			<stat name="soul knife psionic power:proficiency" value="proficiency" level="3" />
+			<stat name="psionic power:dice:amount" value="soul knife psionic power:proficiency" bonus="base" level="3" />
+			<stat name="psionic power:dc" value="8" bonus="base" level="3" />
+			<stat name="psionic power:dc" value="proficiency" bonus="proficiency" level="3" />
+			<stat name="psionic power:dc" value="intelligence:modifier" bonus="ability" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_SOULKNIFE_PSIONIC_POWER_PSI_BOLSTERED_KNACK" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_SOULKNIFE_PSIONIC_POWER_PSYCHIC_WHISPERS" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Psychic Blades" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_PSYCHIC_BLADES">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Soulknife feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.&lt;/p&gt;
+&lt;p class="indent"&gt;After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Psychic Blades">
+			<description level="3">Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.
+			After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Soul Blades" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_SOUL_BLADES">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;9th-level Soulknife feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Homing Strikes.&lt;/em&gt;&lt;/strong&gt; If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Psychic Teleportation.&lt;/em&gt;&lt;/strong&gt; As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Soul Blades">
+			<description level="9">Your Psychic Blades are now an expression of your psi-suffused soul.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_SOULKNIFE_SOUL_BLADES_HOMING_STRIKES" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_SOULKNIFE_SOUL_BLADES_PSYCHIC_TELEPORTATION" level="20" />
+		</rules>
+	</element>
+	<element name="13th Level Psychic Veil" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_PSYCHIC_VEIL">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;13th-level Soulknife feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Psychic Veil" action="Action" usage="1/Long Rest">
+			<description level="13">You can magically become invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect. This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.
+			You can expend a Psionic Energy die to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Rend Mind" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_REND_MIND">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;17th-level Soulknife feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can sweep your Psychic Blades directly through a creature’s mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rend Mind" usage="1/Long Rest">
+			<description level="17">When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a DC{{rend mind:dc}} Wisdom save. If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+			You can expend three Psionic Energy dice to use this feature again.</description>
+		</sheet>
+		<rules>
+			<stat name="rend mind:dc" value="8" level="17" />
+			<stat name="rend mind:dc" value="proficiency" level="17" />
+			<stat name="rend mind:dc" value="dexterity:modifier" level="17" />
+		</rules>
+	</element>
+	<element name=".3rd Level Fancy Footwork" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_FANCY_FOOTWORK">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you learn how to land a strike and then slip away without reprisal. During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fancy Footwork">
+			<description level="3">During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Rakish Audacity" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_RAKISH_AUDACITY">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, your unmistakable confidence propels you into battle. You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;You also gain an additional way to use your Sneak Attack; you don’t need advantage on your attack roll to use Sneak Attack against a creature if you are within 5 feet of it, no other creatures are within 5 feet of you, and you don’t have disadvantage on the attack roll. All the other rules for Sneak Attack still apply to you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rakish Audacity">
+			<description level="3">You don't need advantage on your attack roll to use your Sneak Attack if you are within 5 feet of the target, no other creatures are within 5 feet of you, and you don’t have disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="charisma:modifier" level="3" />
+		</rules>
+	</element>
+	<element name=".9th Level Panache" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_PANACHE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 9th level, your charm becomes extraordinarily beguiling. As an action, you can make a Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language.&lt;/p&gt;
+&lt;p class="indent"&gt;If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart.&lt;/p&gt;
+&lt;p class="indent"&gt;If you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Panache" action="Action">
+			<description level="9">You can make a Persuasion check contested by a creature's Insight check. If you succeed on the check and the creature is hostile to you, it has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you. This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 60 feet apart. If you succeed on the check and the creature isn't hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Elegant Maneuver" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_ELEGANT_MANEUVER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 13th level, you can use a bonus action on your turn to gain advantage on the next Dexterity (Acrobatics) or Strength (Athletics) check you make during the same turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Elegant Maneuver" action="Bonus Action">
+			<description level="13">You can gain advantage on the next Acrobatics or Athletics check you make during the same turn.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Master Duelist" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_MASTER_DUELIST">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 17th level, your mastery of the blade lets you turn failure into success in combat. If you miss with an attack roll, you can roll it again with advantage. Once you do so, you can't use this feature again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Master Duelist" usage="1/Short Rest">
+			<description level="17">If you miss with an attack roll, you can roll it again with advantage.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Master of Intrigue" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_MASTER_OF_INTRIGUE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you gain proficiency with the disguise kit, the forgery kit, and one gaming set of your choice. You also learn two languages of your choice.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, you can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Master of Intrigue">
+			<description level="3">You can unerringly mimic the speech patterns and accent of a creature that you hear speak for at least 1 minute, allowing you to pass yourself off as a native speaker of a particular land, provided that you know the language.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" level="3" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" level="3" />
+			<select type="Proficiency" name="Gaming Set (Master of Intrigue)" supports="Gaming Set" />
+			<select type="Language" name="Language (Master of Intrigue)" supports="Standard||Exotic||Secret" number="2" />
+		</rules>
+	</element>
+	<element name=".3rd Level Master of Tactics" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_MASTER_OF_TACTICS">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Master of Tactics">
+			<description level="3">You can use the Help action as a bonus action. Additionally, when you use the Help action to aid an ally in attacking a creature, the target of that attack can be within 30 feet of you, rather than 5 feet of you, if the target can see or hear you.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Insightful Manipulator" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_INSIGHTFUL_MANIPULATOR">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, if you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own. The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Intelligence score&lt;/li&gt;
+&lt;li&gt;Wisdom score&lt;/li&gt;
+&lt;li&gt;Charisma score&lt;/li&gt;
+&lt;li&gt;Class levels (if any)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the DM's option, you might also realize you know a piece of the creature's history or one of its personality traits, if it has any.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Insightful Manipulator">
+			<description level="9">If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn following information about it: Intelligence, Wisdom, Charisma scores, and Class levels (if any).</description>
+		</sheet>
+	</element>
+	<element name="13th Level Misdirection" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_MISDIRECTION">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 13th level, you can sometimes cause another creature to suffer an attack meant for you. When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can use your reaction to have the attack target that creature instead of you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Misdirection" action="Reaction">
+			<description level="13">When you are targeted by an attack while a creature within 5 feet of you is granting you cover against that attack, you can have the attack target that creature instead of you.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Soul of Deceit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_SOUL_OF_DECEIT">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 17th level, your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Charisma (Deception) check contested by the mind reader's Wisdom (Insight) check.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, no matter what you say, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Soul of Deceit">
+			<description level="17">Your thoughts can't be read by telepathy or other means, unless you allow it. You can present false thoughts by making a Deception check contested by the mind reader's Insight check. Additionally, magic that would determine if you are telling the truth indicates you are being truthful, if you so choose, and you can't be compelled to tell the truth by magic.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Whispers of the Dead" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_WHISPERS_OF_THE_DEAD">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Phantom feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Echoes of those who have died cling to you. Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Whispers of the Dead">
+			<description level="3">Whenever you finish a short or long rest, you can choose one skill or tool proficiency that you lack and gain it, as a ghostly presence shares its knowledge with you. You lose this proficiency when you use this feature to choose a different proficiency that you lack.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Proficiency, Whispers of the Dead" supports="Skill||Tool" level="3" optional="true" />
+		</rules>
+	</element>
+	<element name=".3rd Level Wails from the Grave" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_WAILS_FROM_THE_GRAVE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Phantom feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As you nudge someone closer to the grave, you can channel the power of death to harm someone else as well. Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), and the second creature takes necrotic damage equal to the roll’s total, as wails of the dead sound around them for a moment.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Wails from the Grave" usage="{{proficiency}}/Long Rest">
+			<description level="3">Immediately after you deal your Sneak Attack damage to a creature on your turn, you can target a second creature that you can see within 30 feet of the first creature. The second creature takes {{wails from the grave:count}}d{{sneak-attack:die}} necrotic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="wails from the grave:count" value="1" bonus="base" level="3" />
+			<stat name="wails from the grave:count" value="2" bonus="base" level="5" />
+			<stat name="wails from the grave:count" value="3" bonus="base" level="9" />
+			<stat name="wails from the grave:count" value="4" bonus="base" level="13" />
+			<stat name="wails from the grave:count" value="5" bonus="base" level="17" />
+		</rules>
+	</element>
+	<element name=".9th Level Tokens of the Departed" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_TOKENS_OF_THE_DEPARTED">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;9th-level Phantom feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When a life ends in your presence, you’re able to snatch a token from the departing soul, a sliver of its life essence that takes physical form; as a reaction when a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. The DM determines the trinket’s form or has you roll on the Trinkets table in the Player’s Handbook to generate it.&lt;/p&gt;
+&lt;p class="indent"&gt;You can have a maximum number of soul trinkets equal to your proficiency bonus, and you can’t create one while at your maximum.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use soul trinkets in the following ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;While a soul trinket is on your person, you have advantage on death saving throws and Constitution saving throws, for your vitality is enhanced by the life essence within the object&lt;/li&gt;
+&lt;li&gt;When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that’s on your person and then immediately use Wails from the Grave, without expending a use of that feature.&lt;/li&gt;
+&lt;li&gt;As an action, you can destroy one of your soul trinkets, no matter where it’s located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you and answers in a language it knew in life. It’s under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Tokens of the Departed" action="Reaction">
+			<description level="9">When a creature you can see dies within 30 feet of you, you can open your free hand and cause a Tiny trinket to appear there, a soul trinket. You can have {{proficiency}} soul trinkets, and you can’t create one while at your maximum. You can use soul trinkets in the following ways: 
+
+			• While a soul trinket is on your person, you have advantage on death saves and Constitution saves, for your vitality is enhanced by the life essence within the object. 
+
+			• When you deal Sneak Attack damage on your turn, you can destroy one of your soul trinkets that’s on your person and then immediately use Wails from the Grave, without expending a use of that feature. 
+
+			• As an action, you can destroy one of your soul trinkets, no matter where it’s located. When you do so, you can ask the spirit associated with the trinket one question. The spirit appears to you and answers in a language it knew in life. It’s under no obligation to be truthful, and it answers as concisely as possible, eager to be free. The spirit knows only what it knew in life, as determined by the DM.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Ghost Walk" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_GHOST_WALK">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;13th-level Phantom feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can phase partially into the realm of the dead, becoming like a ghost. As a bonus action, you assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object.&lt;/p&gt;
+&lt;p class="indent"&gt;You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ghost Walk" action="Bonus Action">
+			<description level="13">You assume a spectral form. While in this form, you have a flying speed of 10 feet, you can hover, and attack rolls have disadvantage against you. You can also move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or object.
+			You stay in this form for 10 minutes or until you end it as a bonus action. To use this feature again, you must finish a long rest or destroy one of your soul trinkets as part of the bonus action you use to activate Ghost Walk.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Death’s Friend" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_DEATHS_FRIEND">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;17th-level Phantom feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your association with death has become so close that you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When you use your Wails from the Grave, you can deal the necrotic damage to both the first and second creature.&lt;/li&gt;
+&lt;li&gt;At the end of the long rest, a soul trinket appears in your hand if you don’t have any soul trinkets, as the spirits of the dead are drawn to you.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Death’s Friend">
+			<description level="17">When you use your Wails from the Grave, you can deal the necrotic damage to both the first and second creature.
+			At the end of the long rest, a soul trinket appears in your hand if you don’t have any soul trinkets, as the spirits of the dead are drawn to you.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Ear for Deceit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_EAR_FOR_DECEIT">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you develop a talent for picking out lies. Whenever you make a Wisdom (Insight) check to determine whether a creature is lying, treat a roll of 7 or lower on the d20 as an 8.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ear for Deceit">
+			<description level="3">Whenever you make an Insight check to determine a lie, treat a roll of 7 or lower as an 8.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Eye for Detail" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_EYE_FOR_DETAIL">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use a bonus action to make a Wisdom (Perception) check to spot a hidden creature or object or to make an Intelligence (Investigation) check to uncover or decipher clues.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Eye for Detail" action="Bonus Action">
+			<description level="3">Make a Perception check to spot a hidden creature or object, or make an Investigation check to uncover or decipher clues.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Insightful Fighting" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_INSIGHTFUL_FIGHTING">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you gain the ability to decipher an opponent's tactics and develop a counter to them. As a bonus action, you can make a Wisdom (Insight) check against a creature you can see that isn’t incapacitated, contested by the target’s Charisma (Deception) check. If you succeed, you can use your Sneak Attack against that target even if you don’t have advantage on the attack roll, but not if you have disadvantage on it.&lt;/p&gt;
+&lt;p class="indent"&gt;This benefit lasts for 1 minute or until you successfully use this feature against a different target.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Insightful Fighting" action="Bonus Action">
+			<description level="3">Make an Insight check against a creature you can see that isn’t incapacitated, contested by the target’s Deception check. On a success you can use your Sneak Attack against it, even if you don't have advantage, but not if you have disadvantage. This benefit lasts for 1 minute or until you successfully use this feature against a different target.</description>
+			<description level="17">Make an Insight check against a creature you can see that isn’t incapacitated, contested by the target’s Deception check. On a success you can use your Sneak Attack against it that deals extra 3d6 damage, even if you don't have advantage, but not if you have disadvantage. This benefit lasts for 1 minute or until you successfully use this feature against a different target.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Steady Eye" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_STEADY_EYE">
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, you have advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Steady Eye">
+			<description level="9">Advantage on Perception or Investigation checks if you move no more than half your speed on the same turn.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Unerring Eye" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_UNERRING_EYE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 13th level, your senses are almost impossible to foil. As an action, you sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30 feet of you, provided you aren’t blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unerring Eye" action="Action" usage="{{unerring eye:usage}}/Long Rest">
+			<description level="13">Sense the presence of illusions, shapechangers not in their original form, and other magic designed to deceive the senses within 30ft of you, provided you aren’t blinded or deafened. You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.</description>
+		</sheet>
+		<rules>
+			<stat name="unerring eye:usage" value="1" bonus="base" level="13" />
+			<stat name="unerring eye:usage" value="wisdom:modifier" bonus="base" level="13" />
+		</rules>
+	</element>
+	<element name="17th Level Eye for Weakness" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_EYE_FOR_WEAKNESS">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you learn to exploit a creature’s weaknesses by carefully studying its tactics and movement. While your Insightful Fighting feature applies to a creature, your Sneak Attack damage against that creature increases by 3d6.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Eye for Weakness">
+			<description level="17">Your Insightful Fighting feature gives you an extra 3d6 damage to your Sneak Attack on the target of your Insight.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Fast Hands" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_FAST_HANDS">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use the bonus action granted by your Cunning Action to make a Dexterity (Sleight of Hand) check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fast Hands" action="Bonus Action">
+			<description level="3">You can make a Sleight of Hand check, use your thieves’ tools to disarm a trap or open a lock, or take the Use an Object action.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Second-Story Work" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_SECOND_STORY_WORK">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this archetype at 3rd level, you gain the ability to climb faster than normal; climbing no longer costs you extra movement.&lt;/p&gt;
+&lt;p&gt;In addition, when you make a running jump, the distance you cover increases by a number of feet equal to your Dexterity modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Second-Story Work">
+			<description level="3">Climbing no longer costs you extra movement. When you make a running jump, the distance you cover increases by {{dexterity:modifier}} feet.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Supreme Sneak" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_SUPREME_SNEAK">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, you have advantage on a Dexterity (Stealth) check if you move no more than half your speed on the same turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Supreme Sneak">
+			<description level="9">You have advantage on a Stealth check if you move no more than half your speed on the same turn.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Use Magic Device" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_USE_MAGIC_DEVICE">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;By 13th level, you have learned enough about the workings of magic that you can improvise the use of items even when they are not intended for you. You ignore all class, race, and level requirements on the use of magic items.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Use Magic Device">
+			<description level="13">You ignore all class, race, and level requirements on the use of magic items.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Thief’s Reflexes" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_THIEFS_REFLEXES">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 17th level, you have become adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Thief’s Reflexes">
+			<description level="17">You can take two turns during the first round of any combat. You take your first turn at your normal initiative and your second turn at your initiative minus 10. You can’t use this feature when you are surprised.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Mage Hand Legerdemain" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_MAGE_HAND_LEGERDEMAIN">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, when you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can stow one object the hand is holding in a container worn or carried by another creature.&lt;/li&gt;
+&lt;li&gt;You can retrieve an object in a container worn or carried by another creature.&lt;/li&gt;
+&lt;li&gt;You can use thieves’ tools to pick locks and disarm traps at range.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can perform one of these tasks without being noticed by a creature if you succeed on a Dexterity (Sleight of Hand) check contested by the creature’s Wisdom (Perception) check.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you can use the bonus action granted by your Cunning Action to control the hand.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Mage Hand Legerdemain">
+			<description level="3">When you cast mage hand, you can make the spectral hand invisible, and you can perform the following additional tasks with it: 
+			You can stow one object the hand is holding in a container worn or carried by another creature, retrieve an object in a container worn or carried by another creature, or use thieves’ tools to pick locks and disarm traps at range.
+			You can perform one of these tasks without being noticed by a creature if you succeed on a Sleight of Hand check contested by the creature’s Perception check. In addition, you can use the bonus action granted by your Cunning Action to control the hand.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" level="3" />
+		</rules>
+	</element>
+	<element name=".9th Level Magical Ambush" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_9TH_LEVEL_MAGICAL_AMBUSH">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, if you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Magical Ambush">
+			<description level="9">If you are hidden from a creature when you cast a spell on it, the creature has disadvantage on any saving throw it makes against the spell this turn.</description>
+		</sheet>
+	</element>
+	<element name="13th Level Versatile Trickster" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_13TH_LEVEL_VERSATILE_TRICKSTER">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 13th level, you gain the ability to distract targets with your mage hand. As a bonus action on your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Versatile Trickster" action="Bonus Action">
+			<description level="13">On your turn, you can designate a creature within 5 feet of the spectral hand created by the spell. Doing so gives you advantage on attack rolls against that creature until the end of the turn.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Spell Thief" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_SPELL_THIEF">
+		<supports>Custom Class Roguish Archetype</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you gain the ability to magically steal the knowledge of how to cast a spell from another spellcaster.&lt;/p&gt;
+&lt;p class="indent"&gt;Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can use your reaction to force the creature to make a saving throw with its spellcasting ability modifier. The DC equals your spell save DC. On a failed save, you negate the spell’s effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast (it doesn’t need to be a wizard spell). For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Spell Thief" action="Reaction" usage="1/Long Rest">
+			<description level="17">Immediately after a creature casts a spell that targets you or includes you in its area of effect, you can force the creature to make a DC{{spellcasting:dc:int}} saving throw with its spellcasting ability modifier. On a failed save, you negate the spell’s effect against you, and you steal the knowledge of the spell if it is at least 1st level and of a level you can cast. For the next 8 hours, you know the spell and can cast it using your spell slots. The creature can’t cast that spell until the 8 hours have passed.</description>
+		</sheet>
+	</element>
+</elements>

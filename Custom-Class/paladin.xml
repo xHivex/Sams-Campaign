@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Paladin</name>
+		<update version="0.1.0">
+			<file name="paladin.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/paladin.xml" />
+		</update>
+	</info>
+	<element name="Channel Divinity" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;When you take this oath at 3rd level, you gain the following two Channel Divinity options.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Nature’s Wrath.&lt;/i&gt;&lt;/b&gt; You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Turn the Faithless.&lt;/i&gt;&lt;/b&gt; You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.&lt;/p&gt;
+&lt;p class="indent"&gt;A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Channel Divinity" supports="Custom Class Channel Divinity" level="1" number="2" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Nature’s Wrath" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_NATURES_WRATH">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to invoke primeval forces to ensnare a foe. As an action, you can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Nature’s Wrath" action="Action" usage="Channel Divinity">
+			<description>You can cause spectral vines to spring up and reach for a creature within 10 feet of you that you can see. The creature must succeed on a Strength or Dexterity saving throw (its choice) or be restrained. While restrained by the vines, the creature repeats the saving throw at the end of each of its turns. On a success, it frees itself and the vines vanish.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Control Undead" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_CONTROL_UNDEAD">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As an action, the paladin targets one undead creature he or she can see within 30 feet of him or her. The target must make a Wisdom saving throw. On a failed save, the target must obey the paladin's commands for the next 24 hours, or until the paladin uses this Channel Divinity option again. An undead whose challenge rating is equal to or greater than the paladin's level is immune to this effect.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Control Undead" action="Action" usage="Channel Divinity">
+			<description>You target one undead creature you can see within 30 feet. The target must make a Wisdom saving throw. On a failed save, the target must obey your commands for the next 24 hours, or until you use this Channel Divinity option again. An undead whose challenge rating is equal to or greater than {{level:paladin}} is immune to this effect.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn the Faithless" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_TURN_THE_FAITHLESS">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to utter ancient words that are painful for fey and fiends to hear. As an action, you present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.&lt;/p&gt;
+&lt;p class="indent"&gt;A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Turn the Faithless" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol, and each fey or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.
+			If the creature’s true form is concealed by an illusion, shapeshifting, or other effect, that form is revealed while it is turned.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Dreadful Aspect" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_DREADFUL_ASPECT">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As an action, the paladin channels the darkest emotions and focuses them into a burst of magical menace. Each creature of the paladin's choice within 30 feet of the paladin must make a Wisdom saving throw if it can see the paladin. On a failed save, the target is frightened of the paladin for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from the paladin, it can attempt another Wisdom saving throw to end the effect on it.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Dreadful Aspect" action="Action" usage="Channel Divinity">
+			<description>Each creature of your choice within 30 feet of you must make a Wisdom saving throw if it can see you. On a failed save, the target is frightened of you for 1 minute. If a creature frightened by this effect ends its turn more than 30 feet away from you, it can attempt another Wisdom saving throw to end the effect on it.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Abjure Enemy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_ABJURE_ENEMY">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As an action, you present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.&lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Abjure Enemy" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol and speak a prayer of denunciation, using your Channel Divinity. Choose one creature within 60 feet of you that you can see. That creature must make a Wisdom saving throw, unless it is immune to being frightened. Fiends and undead have disadvantage on this saving throw.
+			On a failed save, the creature is frightened for 1 minute or until it takes any damage. While frightened, the creature’s speed is 0, and it can’t benefit from any bonus to its speed.
+			On a successful save, the creature’s speed is halved for 1 minute or until the creature takes any damage.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Vow of Enmity" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_VOW_OF_ENMITY">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As a bonus action, you can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Vow of Enmity" action="Bonus Action" usage="Channel Divinity">
+			<description>You can utter a vow of enmity against a creature you can see within 10 feet of you, using your Channel Divinity. You gain advantage on attack rolls against the creature for 1 minute or until it drops to 0 hit points or falls unconscious.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Sacred Weapon" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_SACRED_WEAPON">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As an action, you can imbue one weapon that you are holding with positive energy, using your Channel Divinity. For 1 minute, you add your Charisma modifier to attack rolls made with that weapon (with a minimum bonus of +1). The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.&lt;/p&gt;
+&lt;p class="indent"&gt;You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Sacred Weapon" action="Action" usage="Channel Divinity">
+			<description>For 1 minute, you add +{{charisma:modifier}} to attack rolls made with that weapon. The weapon also emits bright light in a 20-foot radius and dim light 20 feet beyond that. If the weapon is not already magical, it becomes magical for the duration.
+			You can end this effect on your turn as part of any other action. If you are no longer holding or carrying this weapon, or if you fall unconscious, this effect ends.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn the Unholy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_TURN_THE_UNHOLY">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As an action, you present your holy symbol and speak a prayer censuring fiends and undead, using your Channel Divinity. Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.&lt;/p&gt;
+&lt;p class="indent"&gt;A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Turn the Unholy" action="Action" usage="Channel Divinity">
+			<description>Each fiend or undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes damage.
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Conquering Presence" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_CONQUERING_PRESENCE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to exude a terrifying presence. As an action, you force each creature of your choice that you can see within 30 feet of you to make a Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Conquering Presence" action="Action" usage="Channel Divinity">
+			<description>You force each creature of your choice that you can see within 30 feet of you to make a DC{{spellcasting:dc:cha}} Wisdom saving throw. On a failed save, a creature becomes frightened of you for 1 minute. The frightened creature can repeat this saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Guided Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_GUIDED_STRIKE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to strike with supernatural accuracy. When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll. You make this choice after you see the roll, but before the DM says whether the attack hits or misses.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Guided Strike" usage="Channel Divinity">
+			<description>When you make an attack roll, you can use your Channel Divinity to gain a +10 bonus to the roll.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Watcher’s Will" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_WATCHERS_WILL">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to invest your presence with the warding power of your faith. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 2 minutes, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Watcher’s Will" action="Action" usage="Channel Divinity">
+			<description>You can choose {{watchers will:creatures}} creatures you can see within 30 feet of you. For 2 minutes, you and the chosen creatures have advantage on Intelligence, Wisdom, and Charisma saving throws.</description>
+		</sheet>
+		<rules>
+			<stat name="watchers will:creatures" value="1" bonus="base" />
+			<stat name="watchers will:creatures" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Abjure the Extraplanar" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_ABJURE_THE_EXTRAPLANAR">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to castigate unworldly beings. As an action, you present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom saving throw. On a failed save, the creature is turned for 1 minute or until it takes damage.&lt;/p&gt;
+&lt;p class="indent"&gt;A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can take the Dodge action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Abjure the Extraplanar" action="Action" usage="Channel Divinity">
+			<description>You present your holy symbol and each aberration, celestial, elemental, fey, or fiend within 30 feet of you that can hear you must make a Wisdom save. On a failed save, the creature is turned for 1 minute or until it takes damage. 
+			A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly end its move in a space within 30 feet of you. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can take the Dodge action.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Inspiring Smite" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_INSPIRING_SMITE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;Immediately after you deal damage to a creature with your Divine Smite feature, you can use your Channel Divinity as a bonus action and distribute temporary hit points to creatures of your choice within 30 feet of you, which can include you. The total number of temporary hit points equals 2d8 + your level in this class, divided among the chosen creatures however you like.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Inspiring Smite" action="Bonus Action" usage="Channel Divinity">
+			<description>Immediately after you deal damage to a creature with your Divine Smite feature, you can distribute 2d8 + {{level:paladin}} temporary hp however you like to creatures of your choice within 30 feet of you, which can include you.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Peerless Athlete" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_PEERLESS_ATHLETE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As a bonus action, you can use your Channel Divinity to augment your athleticism. For the next 10 minutes, you have advantage on Strength (Athletics) and Dexterity (Acrobatics) checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Peerless Athlete" action="Bonus Action" usage="Channel Divinity">
+			<description>For the next 10 minutes, you have advantage on Athletics and Acrobatics checks; you can carry, push, drag, and lift twice as much weight as normal; and the distance of your long and high jumps increases by 10 feet (this extra distance costs movement as normal).</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Champion Challenge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_CHAMPION_CHALLENGE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As a bonus action, you issue a challenge that compels other creatures to do battle with you. Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is more than 30 feet away from you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Champion Challenge" action="Bonus Action" usage="Channel Divinity">
+			<description>Each creature of your choice that you can see within 30 feet of you must make a Wisdom saving throw. On a failed save, a creature can't willingly move more than 30 feet away from you. This effect ends on the creature if you are incapacitated or die or if the creature is more than 30 feet away from you.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Emissary of Peace" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_EMISSARY_OF_PEACE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to augment your presence with divine power. As a bonus action, you grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Emissary of Peace" action="Bonus Action" usage="Channel Divinity">
+			<description>You grant yourself a +5 bonus to Charisma (Persuasion) checks for the next 10 minutes.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity: Turn the Tide" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_TURN_THE_TIDE">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;As a bonus action, you can bolster injured creatures with your Channel Divinity. Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + your Charisma modifier (minimum of 1) if it has no more than half of its hit points.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Turn the Tide" action="Bonus Action" usage="Channel Divinity">
+			<description>Each creature of your choice that can hear you within 30 feet of you regains hit points equal to 1d6 + {{cd:turn the tide:hp}} if it has no more than half of its hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="cd:turn the tide:hp" value="1" bonus="turn the tide" />
+			<stat name="cd:turn the tide:hp" value="charisma:modifier" bonus="turn the tide" />
+		</rules>
+	</element>
+	<element name="Channel Divinity: Rebuke the Violent" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CHANNEL_DIVINITY_REBUKE_THE_VIOLENT">
+		<supports>Custom Class Channel Divinity</supports>
+		<description>
+			<html>&lt;p&gt;You can use your Channel Divinity to rebuke those who use violence. Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can use your reaction to force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rebuke the Violent" action="Reaction" usage="Channel Divinity">
+			<description>Immediately after an attacker within 30 feet of you deals damage with an attack against a creature other than you, you can force the attacker to make a Wisdom saving throw. On a failed save, the attacker takes radiant damage equal to the damage it just dealt. On a successful save, it takes half as much damage.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Aura of Warding" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_WARDING">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 7th level, ancient magic lies so heavily upon you that it forms an eldritch ward. You and friendly creatures within 10 feet of you have resistance to damage from spells.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of Warding">
+			<description level="7">You and friendly creatures within {{aura of warding:range}} feet of you have resistance to damage from spells.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of warding:range" value="10" />
+			<stat name="aura of warding:range" value="30" level="18" />
+		</rules>
+	</element>
+	<element name=".7th Level Aura of the Guardian" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_THE_GUARDIAN">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, you can shield others from harm at the cost of your own health. When a creature within 10 feet of you takes damage, you can use your reaction to magically take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of the Guardian" action="Reaction">
+			<description level="7">When a creature within {{aura of the guardian:aura}} feet of you takes damage, you can take that damage, instead of that creature taking it. This feature doesn't transfer any other effects that might accompany the damage, and this damage can't be reduced in any way.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of the guardian:aura" value="10" bonus="aura of the guardian" />
+			<stat name="aura of the guardian:aura" value="30" bonus="aura of the guardian" level="18" />
+		</rules>
+	</element>
+	<element name=".7th Level Aura of Devotion" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_DEVOTION">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, you and friendly creatures within 10 feet of you can’t be charmed while you are conscious.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of Devotion">
+			<description level="7">You and friendly creatures within {{aura of devotion:range}} feet of you can’t be charmed while you are conscious.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of devotion:range" value="10" />
+			<stat name="aura of devotion:range" value="30" level="18" />
+		</rules>
+	</element>
+	<element name=".7th Level Aura of the Sentinel" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_THE_SENTINEL">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;7th-level Oath of the Watchers feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You emit an aura of alertness while you aren’t incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a bonus to initiative equal to your proficiency bonus.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of the Sentinel">
+			<description level="7">You emit an aura of alertness while you aren’t incapacitated. When you and any creatures of your choice within 10 feet of you roll initiative, you all gain a +{{aura of the sentinel:initiative}} bonus to initiative.</description>
+			<description level="18">You emit an aura of alertness while you aren’t incapacitated. When you and any creatures of your choice within 30 feet of you roll initiative, you all gain a +{{aura of the sentinel:initiative}} bonus to initiative.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of the sentinel:initiative" value="proficiency" />
+		</rules>
+	</element>
+	<element name=".7th Level Aura of Alacrity" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_ALACRITY">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;7th- and 18th-level Oath of Glory feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your walking speed increases by 10 feet. In addition, if you aren’t incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reach 18th level in this class, the range of the aura increases to 10 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of Alacrity">
+			<description level="7">If you aren't incapacitated, the walking speed of any ally who starts their turn within 5 feet of you increases by 10 feet until the end of that turn.</description>
+			<description level="18">If you aren't incapacitated, the walking speed of any ally who starts their turn within 10 feet of you increases by 10 feet until the end of that turn.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:misc" value="10" level="7" />
+		</rules>
+	</element>
+	<element name=".7th Level Aura of Hate" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_HATE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, the paladin, as well any fiends and undead within 10 feet of the paladin, gains a bonus to melee weapon damage rolls equal to the paladin's Charisma modifier (minimum of +1). A creature can benefit from this feature from only one paladin at a time.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of Hate">
+			<description level="7">You as well any fiends and undead within {{aura of hate:range}} feet of the paladin, gains a +{{aura of hate:damage}} bonus to melee weapon damage rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of hate:range" value="10" />
+			<stat name="aura of hate:range" value="30" level="18" />
+			<stat name="aura of hate:damage" value="1" bonus="base" />
+			<stat name="aura of hate:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name=".7th Level Divine Allegiance" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_DIVINE_ALLEGIANCE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, when a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Divine Allegiance" action="Reaction">
+			<description level="7">When a creature within 5 feet of you takes damage, you can use your reaction to magically substitute your own health for that of the target creature, causing that creature not to take the damage. Instead, you take the damage. This damage to you can't be reduced or prevented in any way.</description>
+		</sheet>
+	</element>
+	<element name=".7th Level Aura of Conquest" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_AURA_OF_CONQUEST">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, you constantly emanate a menacing aura while you’re not incapacitated. The aura extends 10 feet from you in every direction, but not through total cover.&lt;/p&gt;
+&lt;p class="indent"&gt;If a creature is frightened of you, its speed is reduced to 0 while in the aura, and that creature takes psychic damage equal to half your paladin level if it starts its turn there.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aura of Conquest">
+			<description level="7">When a creature within {{aura of conquest:aura}} feet is frightened of you, its speed is reduced to 0 while inside the aura, and takes {{level:paladin:half}} psychic damage if it start its turn there.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of conquest:aura" value="10" bonus="aura of the guardian" />
+			<stat name="aura of conquest:aura" value="30" bonus="aura of the guardian" level="18" />
+		</rules>
+	</element>
+	<element name=".7th Level Relentless Avenger" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_7TH_LEVEL_RELENTLESS_AVENGER">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;By 7th level, your supernatural focus helps you close off a foe’s retreat. When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn’t provoke opportunity attacks.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Relentless Avenger">
+			<description level="7">When you hit a creature with an opportunity attack, you can move up to half your speed immediately after the attack and as part of the same reaction. This movement doesn’t provoke opportunity attacks.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Undying Sentinel" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_UNDYING_SENTINEL">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, when you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead. Once you use this ability, you can’t use it again until you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, you suffer none of the drawbacks of old age, and you can’t be aged magically.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Undying Sentinel" usage="1/Long Rest">
+			<description level="15">When you are reduced to 0 hit points and are not killed outright, you can choose to drop to 1 hit point instead.
+			You suffer none of the drawbacks of old age, and you can’t be aged magically.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Supernatural Resistance" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_SUPERNATURAL_RESISTANCE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 15th level, the paladin gains resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Supernatural Resistance">
+			<description level="15">You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Soul of Vengeance" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_SOUL_OF_VENGEANCE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, the authority with which you speak your Vow of Enmity gives you greater power over your foe. When a creature under the effect of your Vow of Enmity makes an attack, you can use your reaction to make a melee weapon attack against that creature if it is within range.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Soul of Vengeance" action="Reaction">
+			<description level="15">When a creature under the effect of your Vow of Enmity makes an attack, you can make a melee weapon attack against that creature if it is within range.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Purity of Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_PURITY_OF_SPIRIT">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 15th level, you are always under the effects of a &lt;em&gt;protection from evil and good&lt;/em&gt; spell.&lt;/p&gt;
+&lt;div class="reference"&gt;
+&lt;div element="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" /&gt;
+&lt;/div&gt;</html>
+		</description>
+		<sheet alt="Purity of Spirit">
+			<description level="15">You are always under the effects of a protection from evil and good spell.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Scornful Rebuke" type="Archetype Feature" source="Custom Class" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_OATH_OF_CONQUEST_SCORNFUL_REBUKE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, those who dare to strike you are psychically punished for their audacity. Whenever a creature hits you with an attack, that creature takes psychic damage equal to your Charisma modifier (minimum of 1) if you’re not incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Scornful Rebuke">
+			<description level="15">Whenever a creature hits you with an attack, you deal {{scornful rebuke:damage}} psychic damage if you’re not incapacitated.</description>
+		</sheet>
+		<rules>
+			<stat name="scornful rebuke:damage" value="1" bonus="base" />
+			<stat name="scornful rebuke:damage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="15th Level Vigilant Rebuke" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_VIGILANT_REBUKE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Oath of the Watchers feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You’ve learned how to chastise anyone who dares wield beguilements against you and your wards. Whenever a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma saving throw, you can use your reaction to deal 2d8 + your Charisma modifier force damage to the creature that forced the saving throw.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Vigilant Rebuke" action="Reaction">
+			<description level="15">Whenever a creature you can see within 30 feet of you succeeds on an Intelligence, a Wisdom, or a Charisma save, you can deal 2d8 + {{charisma:modifier}} force damage to the creature that forced the save.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Glorious Defense" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_GLORIOUS_DEFENSE">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Oath of Glory feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can turn defense into a sudden strike. When you or another creature you can see within 10 feet of you is hit by an attack roll, you can use your reaction to grant a bonus to the target’s AC against that attack, potentially causing it to miss. The bonus equals your Charisma modifier (minimum of +1). If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon’s range.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Glorious Defense" action="Reaction" usage="{{glorious defense:usage}}/Long Rest">
+			<description level="15">When you or another creature you can see within 10 feet of you is hit by an attack roll, you can grant a +{{glorious defense:ac}} bonus to the target's AC against that attack, potentially causing it to miss. If the attack misses, you can make one weapon attack against the attacker as part of this reaction, provided the attacker is within your weapon's range.</description>
+		</sheet>
+		<rules>
+			<stat name="glorious defense:ac" value="1" bonus="base" />
+			<stat name="glorious defense:ac" value="charisma:modifier" bonus="base" />
+			<stat name="glorious defense:usage" value="1" bonus="base" />
+			<stat name="glorious defense:usage" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="15th Level Unyielding Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_UNYIELDING_SPIRIT">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, you have advantage on saving throws to avoid becoming paralyzed or stunned.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unyielding Spirit">
+			<description level="15">You have advantage on saving throws to avoid becoming paralyzed or stunned.</description>
+		</sheet>
+	</element>
+	<element name="15th Level Protective Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_15TH_LEVEL_PROTECTIVE_SPIRIT">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, a holy presence mends your wounds in battle. You regain hit points equal to 1d6 + half your paladin level if you end your turn in combat with fewer than half of your hit points remaining and you aren't incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Protective Spirit">
+			<description level="15">You regain 1d6+{{level:paladin:half}} hit points if you end your turn in combat with fewer than half of your hit points remaining and you aren't incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Exalted Champion" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_EXALTED_CHAMPION">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, your presence on the field of battle is an inspiration to those dedicated to your cause. You can use your action to gain the following benefits for 1 hour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons.&lt;/li&gt;
+&lt;li&gt;Your allies have advantage on death saving throws while within 30 feet of you.&lt;/li&gt;
+&lt;li&gt;You have advantage on Wisdom saving throws, as do your allies within 30 feet of you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This effect ends early if you are incapacitated or die. Once you use this feature, you can't use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Exalted Champion" action="Action" usage="1/Long Rest">
+			<description level="20">Gain the following benefits for 1 hour: 
+			Resistance to bludgeoning, piercing, and slashing damage from nonmagical weapons. 
+			Allies have advantage on death saving throws while within 30 feet of you. 
+			Advantage on Wisdom saving throws, as do your allies within 30 feet of you. </description>
+		</sheet>
+	</element>
+	<element name="20th Level Holy Nimbus" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_HOLY_NIMBUS">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, as an action, you can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Holy Nimbus" action="Action" usage="1/Long Rest">
+			<description level="20">You can emanate an aura of sunlight. For 1 minute, bright light shines from you in a 30-foot radius, and dim light shines 30 feet beyond that. Whenever an enemy creature starts its turn in the bright light, the creature takes 10 radiant damage. In addition, for the duration, you have advantage on saving throws against spells cast by fiends or undead.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Avenging Angel" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_AVENGING_ANGEL">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you can assume the form of an angelic avenger. Using your action, you undergo a transformation. For 1 hour, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wings sprout from your back and grant you a flying speed of 60 feet.&lt;/li&gt;
+&lt;li&gt;You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Avenging Angel" action="Action" usage="1/Long Rest">
+			<description level="20">For 1 hour, you gain the following benefits:
+			Wings sprout from your back and grant you a flying speed of 60 feet.
+			You emanate an aura of menace in a 30-foot radius. The first time any enemy creature enters the aura or starts its turn there during a battle, the creature must succeed on a Wisdom saving throw or become frightened of you for 1 minute or until it takes any damage. Attack rolls against the frightened creature have advantage.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Dread Lord" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_DREAD_LORD">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th-level, the paladin can, as an action, surround himself or herself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is frightened by the paladin starts its turn in the aura, it takes 4d10 psychic damage. Additionally, the paladin and creatures he or she chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow.&lt;/p&gt;
+&lt;p class="indent"&gt;While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to 3d10 + the paladin's Charisma modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;After activating the aura, the paladin can't do so again until he or she finishes a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Dread Lord" action="Action" usage="1/Long Rest">
+			<description level="20">You surround yourself with an aura of gloom that lasts for 1 minute. The aura reduces any bright light in a 30-foot radius around the paladin to dim light. Whenever an enemy that is frightened by the paladin starts its turn in the aura, it takes 4d10 psychic damage. Additionally, the paladin and creatures he or she chooses in the aura are draped in deeper shadow. Creatures that rely on sight have disadvantage on attack rolls against creatures draped in this shadow.
+			While the aura lasts, the paladin can use a bonus action on his or her turn to cause the shadows in the aura to attack one creature. The paladin makes a melee spell attack against the target. If the attack hits, the target takes necrotic damage equal to 3d10+{{charisma:modifier}}.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Mortal Bulwark" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_MORTAL_BULWARK">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;20th-level Oath of the Watchers feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You manifest a spark of divine power in defense of the mortal realms. As a bonus action, you gain the following benefits for 1 minute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain truesight with a range of 120 feet.&lt;/li&gt;
+&lt;li&gt;You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends.&lt;/li&gt;
+&lt;li&gt;When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma saving throw against your spell save DC. On a failed save, the creature is magically banished to its native plane of existence if it’s currently not there. On a successful save, the creature can’t be banished by this feature for 24 hours.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you use this bonus action, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Mortal Bulwark" action="Bonus Action" usage="1/Long Rest">
+			<description level="20">You gain the following benefits for 1 minute: 
+
+			• You gain truesight with a range of 120 feet. 
+
+			• You have advantage on attack rolls against aberrations, celestials, elementals, fey, and fiends. 
+
+			• When you hit a creature with an attack roll and deal damage to it, you can also force it to make a Charisma save (DC {{paladin:spellcasting:dc}}). On a failed save, the creature is magically banished to its native plane of existence if it’s currently not there. On a successful save, the creature can’t be banished by this feature for 24 hours. 
+			You can expend a 5th-level spell slot to use this feature again.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" level="20" />
+			<stat name="truesight:range" value="120" bonus="base" level="20" />
+		</rules>
+	</element>
+	<element name="20th Level Invincible Conqueror" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_INVINCIBLE_CONQUEROR">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you gain the ability to harness extraordinary martial prowess. As an action, you can magically become an avatar of conquest, gaining the following benefits for 1 minute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).&lt;/li&gt;
+&lt;li&gt;When you take the Attack action on your turn, you can make one additional attack as part of that action.&lt;/li&gt;
+&lt;li&gt;Your melee weapon attacks score a critical hit on a roll of 19 or 20 on the d20.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Invincible Conqueror" action="Action" usage="1/Long Rest">
+			<description level="20">You become an avatar of conquest and gain following benefits: You have resistance to all damage dealt by other creatures. You can make an additional attack when you take the Attack action. Your melee weapon attacks score a critical hit on a 19 or a 20.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Living Legend" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_LIVING_LEGEND">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;20th-level Oath of Glory feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a bonus action, you gain the following benefits for 1 minute:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You are blessed with an otherworldly presence, gaining advantage on all Charisma checks.&lt;/li&gt;
+&lt;li&gt;Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead.&lt;/li&gt;
+&lt;li&gt;If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Once you use this bonus action, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Living Legend" action="Bonus Action" usage="1/Long Rest">
+			<description level="20">You gain the following benefits for 1 minute: 
+
+			• You are blessed with an otherworldly presence, gaining advantage on all Charisma checks. 
+
+			• Once on each of your turns when you make a weapon attack and miss, you can cause that attack to hit instead. 
+
+			• If you fail a saving throw, you can use your reaction to reroll it. You must use this new roll.
+			You can expend a 5th-level spell slot to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Elder Champion" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_ELDER_CHAMPION">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you can assume the form of an ancient force of nature, taking on an appearance you choose. For example, your skin might turn green or take on a bark-like texture, your hair might become leafy or mosslike, or you might sprout antlers or a lion-like mane. Using your action, you undergo a transformation. For 1 minute, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At the start of each of your turns, you regain 10 hit points.&lt;/li&gt;
+&lt;li&gt;Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.&lt;/li&gt;
+&lt;li&gt;Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Elder Champion" usage="1/Long Rest">
+			<description level="20">For 1 minute you gain the following benefits:
+			At the start of each of your turns, you regain 10 hp
+			Whenever you cast a paladin spell that has a casting time of 1 action, you can cast it using a bonus action instead.
+			Enemy creatures within 10 feet of you have disadvantage on saving throws against your paladin spells and Channel Divinity options.</description>
+		</sheet>
+	</element>
+	<element name="20th Level Emissary of Redemption" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_20TH_LEVEL_EMISSARY_OF_REDEMPTION">
+		<supports>Custom Class Sacred Oath</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you become an avatar of peace, which gives you two benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have resistance to all damage dealt by other creatures (their attacks, spells, and other effects).&lt;/li&gt;
+&lt;li&gt;Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description level="20">You have resistance to all damage dealt by other creatures. Whenever a creature hits you with an attack, it takes radiant damage equal to half the damage you take from the attack. If you attack a creature, cast a spell on it, or deal damage to it by any means but this feature, neither benefit works against that creature until you finish a long rest.</description>
+		</sheet>
+	</element>
+</elements>

@@ -1,0 +1,1852 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Custom Class d6</name>
+		<update version="0.1.0">
+			<file name="Custom-Class-d6.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d6.xml" />
+		</update>
+	</info>
+	<element name="Custom Class Light" type="Class" source="Custom Class" id="ID_CUCL_CLASS_CUSTOM_CLASS_LIGHT">
+		<description>
+			<html>&lt;p&gt;A camp of bandits sits at their makeshift fire on the side of the path, late at night. Suddenly, a figure appears behind one of the bandits with a purple haze in the air and stabs him through heart while covering his mouth before warping out of existence.&lt;/p&gt;
+&lt;p class="indent"&gt;Now on alert, the bandits stand, but before they can make any further moves, the figure appears in the center of the camp and unleashes a series of precise blows, seeming to teleport from one enemy to the next. In a few blinks of the eye, the bandits are dead with a single blow to each of their bodies, the battle ended.&lt;/p&gt;
+&lt;p class="indent"&gt;And not a soul moves within the makeshift camp, the figure that killed the bandits already long gone only leaving a purple haze and bodies in its wake.&lt;/p&gt;
+
+&lt;h5&gt;HIT POINTS&lt;/h5&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Hit Dice:&lt;/strong&gt; 1d6 per level&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hit Points at 1st Level:&lt;/strong&gt; 6 + your Constitution modifier&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hit Points at Higher Levels:&lt;/strong&gt; 1d6 + your Constitution modifier per level after 1st&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 class="caption"&gt;Custom Class&lt;/h5&gt;
+&lt;table class="class-features"&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td class="col-5"&gt;Level&lt;/td&gt;&lt;td class="col-15"&gt;Number of Features choices&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt; 1st&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 2nd&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 3rd&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 4th&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 5th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 6th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 7th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 8th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 9th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;10th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;11th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;12th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;13th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;14th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;15th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;16th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;17th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;18th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;19th&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;20th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="short">A true custom class, who knows what your destiny awaits</set>
+			<set name="hd">d6</set>
+		</setters>
+		<sheet display="false">
+			<description>A master of teleporting combat, skilled with warping around the battlefield.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Custom Class)" supports="Skill||Tool" level="1" number="4" />
+			<select type="Proficiency" name="Saving Throw Proficiency (Custom Class)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" level="1" number="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 1" level="1" number="3" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 2" level="2" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 3" level="3" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 4" level="4" number="3" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 5" level="5" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 6" level="6" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 7" level="7" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 8" level="8" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 9" level="9" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 10" level="10" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 11" level="11" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 12" level="12" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 13" level="13" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 14" level="14" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 15" level="15" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 16" level="16" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 17" level="17" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 18" level="18" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 19" level="19" number="2" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 20" level="20" />
+		</rules>
+	</element>
+	<element name="Rage" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_RAGE">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren’t wearing heavy armor:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You have advantage on Strength checks and Strength saving throws.&lt;/li&gt;
+&lt;li&gt;When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table.&lt;/li&gt;
+&lt;li&gt;You have resistance to bludgeoning, piercing, and slashing damage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you are able to cast spells, you can’t cast them or concentrate on them while raging.&lt;/p&gt;
+&lt;p class="indent"&gt;Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven’t attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action">
+			<description usage="{{barbarian rage:count}}/Long Rest">Advantage on Strength checks and Strength Saves. 
+			A +{{barbarian rage:damage}} to damage rolls with strength melee weapon attacks. 
+			You have resistance to bludgeoning, piercing, and slashing damage. </description>
+			<description usage="Unlimited" level="20">Advantage on Strength checks and Strength Saves. 
+			A +{{barbarian rage:damage}} to damage rolls with strength melee weapon attacks. 
+			You have resistance to bludgeoning, piercing, and slashing damage.</description>
+		</sheet>
+		<rules>
+			<stat name="barbarian rage:count" value="2" level="1" />
+			<stat name="barbarian rage:count" value="1" level="3" />
+			<stat name="barbarian rage:count" value="1" level="6" />
+			<stat name="barbarian rage:count" value="1" level="12" />
+			<stat name="barbarian rage:count" value="1" level="17" />
+			<stat name="barbarian rage:count" value="93" level="20" />
+			<stat name="barbarian rage:damage" value="2" level="1" />
+			<stat name="barbarian rage:damage" value="1" level="9" />
+			<stat name="barbarian rage:damage" value="1" level="16" />
+		</rules>
+	</element>
+	<element name="Unarmored Defense" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_UNARMORED_DEFENCE">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>While you aren’t wearing armor, your AC equals {{ac:unarmored defense barbarian}}. You can use a shield and still gain this benefit.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:unarmored defense barbarian:base" value="10" />
+			<stat name="ac:unarmored defense barbarian:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense barbarian:constitution" value="constitution:modifier" />
+			<stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:base" />
+			<stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:dexterity" />
+			<stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:constitution" />
+			<stat name="ac:calculation" value="ac:unarmored defense barbarian" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Barbarian)" />
+		</rules>
+	</element>
+	<element name="Reckless Attack" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_RECKLESS_ATTACK">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, you can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Danger Sense" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_DANGER_SENSE">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 2nd level, you gain an uncanny sense of when things nearby aren’t as they should be, giving you an edge when you dodge away from danger.&lt;/p&gt;
+&lt;p class="indent"&gt;You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells. To gain this benefit, you can’t be blinded, deafened, or incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Feral Instinct" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_FERAL_INSTINCT">
+		<supports>Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;By 7th level, your instincts are so honed that you have advantage on initiative rolls.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, if you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You have advantage on initiative rolls. 
+			If you are surprised at the beginning of combat and aren’t incapacitated, you can act normally on your first turn, but only if you enter your rage before doing anything else on that turn.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE" />
+		</rules>
+	</element>
+	<element name="Brutal Critical" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_BRUTAL_CRITICAL">
+		<supports>Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 9th level, you can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.&lt;/p&gt;
+&lt;p class="indent"&gt;This increases to two additional dice at 13th level and three additional dice at 17th level.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>One additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+			<description level="13">Two additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+			<description level="17">Three additional weapon damage die when determining the extra damage for a critical hit with a melee attack.</description>
+		</sheet>
+	</element>
+	<element name="Relentless Rage" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_RELENTLESS_RAGE">
+		<supports>Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_BARBARIAN_RAGE</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 11th level, your rage can keep you fighting despite grievous wounds. If you drop to 0 hit points while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hit point instead.&lt;/p&gt;
+&lt;p class="indent"&gt;Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>If you drop to 0 hp while you’re raging and don’t die outright, you can make a DC 10 Constitution saving throw. If you succeed, you drop to 1 hp instead. Each time you use this feature after the first, the DC increases by 5. When you finish a short or long rest, the DC resets to 10.</description>
+		</sheet>
+	</element>
+	<element name="Persistant Rage" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_PERSISTANT_RAGE">
+		<supports>Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_BARBARIAN_RAGE</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning at 15th level, your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your rage is so fierce that it ends early only if you fall unconscious or if you choose to end it.</description>
+		</sheet>
+	</element>
+	<element name="Indomitable Might" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_INDOMITABLE_MIGHT">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 18th level, if your total for a Strength check is less than your Strength score, you can use that score in place of the total.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>If your total for a Strength check is less than {{strength:score}}, you can use {{strength:score}} place of the total.</description>
+		</sheet>
+	</element>
+	<element name="Primal Champion" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARBARIAN_PRIMAL_CHAMPION">
+		<supports>Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You embody the power of the wilds. Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24.</description>
+		</sheet>
+		<rules>
+			<stat name="strength" value="4" />
+			<stat name="constitution" value="4" />
+			<stat name="strength:max" value="4" />
+			<stat name="constitution:max" value="4" />
+		</rules>
+	</element>
+	<element name="Bardic Inspiration" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_BARDIC_INSPIRATION">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6.&lt;/p&gt;
+&lt;p class="indent"&gt;Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the GM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;Your Bardic Inspiration die changes when you reach certain levels in this class. The die becomes a d8 at 5th level, a d10 at 10th level, and a d12 at 15th level.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="{{bardic-inspiration:count}}/Long Rest">
+			<description>Inspire one creature other than yourself within 60 feet of you who can hear you. It gains one Bardic Inspiration die, a d{{bardic-inspiration:dice}}.
+		Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes.</description>
+		</sheet>
+		<rules>
+			<stat name="bardic-inspiration:count" value="1" bonus="bardic inspiration" />
+			<stat name="bardic-inspiration:count" value="charisma:modifier" bonus="bardic inspiration" />
+			<stat name="bardic-inspiration:dice" value="6" bonus="bardic inspiration" />
+			<stat name="bardic-inspiration:dice" value="8" bonus="bardic inspiration" level="5" />
+			<stat name="bardic-inspiration:dice" value="10" bonus="bardic inspiration" level="10" />
+			<stat name="bardic-inspiration:dice" value="12" bonus="bardic inspiration" level="15" />
+		</rules>
+	</element>
+	<element name="Jack of All Trades" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, you can add half your proficiency bonus, rounded down, to any ability check you make that doesn’t already include your proficiency bonus.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You can add half your proficiency bonus ({{proficiency:half}}), rounded down, to any ability check you make that doesn’t already include your proficiency bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="initiative" value="proficiency:half" bonus="proficiency" requirements="!ID_INTERNAL_GRANT_JACK_OF_ALL_TRADES_DISABLE" />
+			<stat name="acrobatics:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<stat name="animal handling:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<stat name="arcana:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_ARCANA" />
+			<stat name="athletics:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<stat name="deception:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_DECEPTION" />
+			<stat name="history:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_HISTORY" />
+			<stat name="insight:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_INSIGHT" />
+			<stat name="intimidation:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<stat name="investigation:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_INVESTIGATION" />
+			<stat name="medicine:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_MEDICINE" />
+			<stat name="nature:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_NATURE" />
+			<stat name="perception:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<stat name="performance:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<stat name="persuasion:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_PERSUASION" />
+			<stat name="religion:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_RELIGION" />
+			<stat name="sleight of hand:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<stat name="stealth:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_STEALTH" />
+			<stat name="survival:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SKILL_SURVIVAL" />
+		</rules>
+	</element>
+	<element name="Song of Rest" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_SONG_OF_REST">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 2nd level, you can use soothing music or oration to help revitalize your wounded allies during a short rest. If you or any friendly creatures who can hear your performance regain hit points at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d6 hit points.&lt;/p&gt;
+&lt;p class="indent"&gt;The extra hit points increase when you reach certain levels in this class: to 1d8 at 9th level, to 1d10 at 13th level, and to 1d12 at 17th level.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You or any friendly creatures who can hear your performance regain hp at the end of the short rest by spending one or more Hit Dice, each of those creatures regains an extra 1d{{song-of-rest:dice:size}} hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="song-of-rest:dice:size" value="6" bonus="song-of-rest" />
+			<stat name="song-of-rest:dice:size" value="8" bonus="song-of-rest" level="9" />
+			<stat name="song-of-rest:dice:size" value="10" bonus="song-of-rest" level="13" />
+			<stat name="song-of-rest:dice:size" value="12" bonus="song-of-rest" level="17" />
+		</rules>
+	</element>
+	<element name="Font of Inspiration" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_FONT_OF_INSPIRATION">
+		<supports>Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_BARD_BARDIC_INSPIRATION</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning when you reach 5th level, you regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You regain all of your expended uses of Bardic Inspiration when you finish a short or long rest.</description>
+		</sheet>
+	</element>
+	<element name="Countercharm" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_COUNTERCHARM">
+		<supports>Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain the ability to use musical notes or words of power to disrupt mind-influencing effects. As an action, you can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed. A creature must be able to hear you to gain this benefit. The performance ends early if you are incapacitated or silenced or if you voluntarily end it (no action required).&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action">
+			<description>You can start a performance that lasts until the end of your next turn. During that time, you and any friendly creatures within 30 feet of you have advantage on saving throws against being frightened or charmed.</description>
+		</sheet>
+	</element>
+	<element name="Magical Secrets" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_MAGICAL_SECRETS">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;By 10th level, you have plundered magical knowledge from a wide spectrum of disciplines. Choose two spells from any classes, including this one. A spell you choose must be of a level you can cast, as shown on the Bard table, or a cantrip.&lt;/p&gt;
+&lt;p class="indent"&gt;The chosen spells count as bard spells for you and are included in the number in the Spells Known column of the Bard table.&lt;/p&gt;
+&lt;p class="indent"&gt;You learn two additional spells from any classes at 14th level and again at 18th level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You have plundered magical knowledge from a wide spectrum of disciplines.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="10" number="2" spellcasting="Bard" />
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="14" number="2" spellcasting="Bard" />
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="18" number="2" spellcasting="Bard" />
+		</rules>
+	</element>
+	<element name="Superior Inspiration" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
+		<supports>Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_BARD_BARDIC_INSPIRATION</requirements>
+		<description>
+			<html>&lt;p&gt;At 20th level, when you roll initiative and have no uses of Bardic Inspiration left, you regain one use.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you roll initiative and have no uses of Bardic Inspiration left, you regain one use.</description>
+		</sheet>
+	</element>
+	<element name="Channel Divinity" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.&lt;/p&gt;
+&lt;p class="indent"&gt;Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.&lt;/p&gt;
+&lt;p class="indent"&gt;Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.&lt;/p&gt;
+&lt;div element="ID_CUCL_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" /&gt;</html>
+		</description>
+		<sheet usage="{{channel divinity:count}}/Short Rest" />
+		<rules>
+			<stat name="channel divinity:count" value="1" bonus="base" />
+			<stat name="channel divinity:count" value="2" bonus="base" level="6" />
+			<stat name="channel divinity:count" value="3" bonus="base" level="18" />
+			<select type="Archetype Feature" name="Channel Divinity" supports="Custom Class Channel Divinity" level="2" number="2" />
+		</rules>
+	</element>
+	<element name="Destroy Undead" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_CLERIC_DESTROYUNDEAD">
+		<supports>Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 5th level, when an undead fails its saving throw against your Turn Undead feature, the creature is instantly destroyed if its challenge rating is at or below a certain threshold, as shown in the Destroy Undead table.&lt;/p&gt;
+&lt;h5 class="caption"&gt;DESTROY UNDEAD&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td&gt;Cleric Level&lt;/td&gt;&lt;td&gt;Destroys Undead of CR ...&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;5th&lt;/td&gt;&lt;td&gt;1/2 or lower&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;8th&lt;/td&gt;&lt;td&gt;1 or lower&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;11th&lt;/td&gt;&lt;td&gt;2 or lower&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;14th&lt;/td&gt;&lt;td&gt;3 or lower&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;17th&lt;/td&gt;&lt;td&gt;4 or lower&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<sheet>
+			<description>When an undead of CR 1/2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+			<description level="8">When an undead of CR 1 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+			<description level="11">When an undead of CR 2 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+			<description level="14">When an undead of CR 3 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+			<description level="17">When an undead of CR 4 or lower fails its saving throw against your Turn Undead feature, the creature is instantly destroyed.</description>
+		</sheet>
+	</element>
+	<element name="Divine Intervention" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_CLERIC_DIVINEINTERVENTION">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 10th level, you can call on your deity to intervene on your behalf when your need is great.&lt;/p&gt;
+&lt;p class="indent"&gt;Imploring your deity’s aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate.&lt;/p&gt;
+&lt;p class="indent"&gt;If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;At 20th level, your call for intervention succeeds automatically, no roll required.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action">
+			<description>Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
+			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.</description>
+			<description level="20">Describe the assistance you seek and your deity intervenes.
+			You can’t use this feature again for 7 days.</description>
+		</sheet>
+	</element>
+	<element name="Druidic" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_DRUIDIC">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Wisdom (Perception) check but can’t decipher it without magic.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message’s presence with a successful DC 15 Perception check but can’t decipher it without magic.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+		</rules>
+	</element>
+	<element name="Wild Shape" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_WILDSHAPE">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.&lt;/p&gt;
+&lt;h3 class="caption"&gt;Beast Shapes&lt;/h3&gt;
+&lt;table class="class-features"&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td class="col-5"&gt;Level&lt;/td&gt;&lt;td&gt;Max. CR&lt;/td&gt;&lt;td class="left"&gt;Limitations&lt;/td&gt;&lt;td class="left"&gt;Example&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt; 2nd&lt;/td&gt;&lt;td&gt;1/4&lt;/td&gt;&lt;td class="left"&gt;No flying or swimming speed&lt;/td&gt;&lt;td class="left"&gt;Wolf&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 4th&lt;/td&gt;&lt;td&gt;1/2&lt;/td&gt;&lt;td class="left"&gt;No flying speed&lt;/td&gt;&lt;td class="left"&gt;Crocodile&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt; 8th&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td class="left"&gt;—&lt;/td&gt;&lt;td class="left"&gt;Giant eagle&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="indent"&gt;You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.&lt;/p&gt;
+&lt;p class="indent"&gt;While you are transformed, the following rules apply:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.&lt;/li&gt;
+&lt;li&gt;When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.&lt;/li&gt;
+&lt;li&gt;You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.&lt;/li&gt;
+&lt;li&gt;You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.&lt;/li&gt;
+&lt;li&gt;You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description level="2">You can magically assume the shape of a beast that you have seen before.
+			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+			<description level="20">You can magically assume the shape of a beast that you have seen before.
+			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+		</sheet>
+		<rules>
+			<stat name="druid wildshape:hours" value="level:druid:half" />
+		</rules>
+	</element>
+	<element name="Timeless Body" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_TIMELESS_BODY">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 18th level, the primal magic that you wield causes you to age more slowly. For every 10 years that pass, your body ages only 1 year.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>For every 10 years that pass, your body ages only 1 year.</description>
+		</sheet>
+	</element>
+	<element name="Beast Spells" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_BEAST_SPELLS">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_DRUID_WILDSHAPE</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning at 18th level, you can cast many of your druid spells in any shape you assume using Wild Shape. You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can cast many of your druid spells in any shape you assume using Wild Shape.
+			You can perform the somatic and verbal components of a druid spell while in a beast shape, but you aren’t able to provide material components.</description>
+		</sheet>
+	</element>
+	<element name="Archdruid" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_ARCHDRUID">
+		<supports>Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_DRUID_WILDSHAPE</requirements>
+		<description>
+			<html>&lt;p&gt;At 20th level, you can use your Wild Shape an unlimited number of times.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can use your Wild Shape an unlimited number of times.</description>
+		</sheet>
+	</element>
+	<element name="Second Wind" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SECONDWIND">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you must finish a short or long rest before you can use it again.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You regain 1d10+{{level:fighter}} hp.</description>
+		</sheet>
+	</element>
+	<element name="Action Surge" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ACTIONSURGE">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, you can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you must finish a short or long rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>On your turn, you can take one additional action on top of your regular action.</description>
+			<description usage="2/Short Rest" level="17">On your turn, you can take one additional action on top of your regular action.</description>
+		</sheet>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_EXTRAATTACK">
+		<supports>Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 5th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.&lt;/p&gt;
+&lt;p class="indent"&gt;The number of attacks increases to three when you reach 11th level in this class and to four when you reach 20th level in this class.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description level="5">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="11">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="20">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" bonus="extra attack" level="5" />
+			<stat name="extra attack:count" value="3" bonus="extra attack" level="11" />
+			<stat name="extra attack:count" value="4" bonus="extra attack" level="20" />
+		</rules>
+	</element>
+	<element name="Indomitable" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INDOMITABLE">
+		<supports>Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 9th level, you can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can’t use this feature again until you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature twice between long rests starting at 13th level and three times between long rests starting at 17th level.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="{{indomitable:usage}}/Long Rest">
+			<description>You can reroll a saving throw that you fail. If you do so, you must use the new roll.</description>
+		</sheet>
+		<rules>
+			<stat name="indomitable:usage" value="1" level="9" />
+			<stat name="indomitable:usage" value="1" level="13" />
+			<stat name="indomitable:usage" value="1" level="17" />
+		</rules>
+	</element>
+	<element name="Martial Arts" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_MARTIAL_ARTS">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don’t have the two-handed or heavy property.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain the following benefits while you are unarmed or wielding only monk weapons and you aren’t wearing armor or wielding a shield:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons.&lt;/li&gt;
+&lt;li&gt;You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.&lt;/li&gt;
+&lt;li&gt;When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your unarmed strike does 1d{{martial arts:dice}}+{{martial arts:damage}} damage. You can use Strength or Dexterity for these attacks.
+			When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven’t already taken a bonus action this turn.</description>
+		</sheet>
+		<rules>
+			<stat name="martial arts:attack" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="strength:modifier" bonus="martial arts" />
+			<stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts" />
+			<stat name="martial arts:dice" value="4" bonus="martial arts" />
+			<stat name="martial arts:dice" value="6" bonus="martial arts" level="5" />
+			<stat name="martial arts:dice" value="8" bonus="martial arts" level="11" />
+			<stat name="martial arts:dice" value="10" bonus="martial arts" level="17" />
+		</rules>
+	</element>
+	<element name="Ki" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_KI">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, your training allows you to harness the mystic energy of ki. Your access to this energy is represented by a number of ki points. Your monk level determines the number of points you have, as shown in the Ki Points column of the Monk table.&lt;/p&gt;
+&lt;p class="indent"&gt;You can spend these points to fuel various ki features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind. You learn more ki features as you gain levels in this class.&lt;/p&gt;
+&lt;p class="indent"&gt;When you spend a ki point, it is unavailable until you finish a short or long rest, at the end of which you draw all of your expended ki back into yourself. You must spend at least 30 minutes of the rest meditating to regain your ki points.&lt;/p&gt;
+&lt;p class="indent"&gt;Some of your ki features require your target to make a saving throw to resist the feature’s effects. The saving throw DC is calculated as follows:&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Ki save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Wisdom modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h6&gt;FLURRY OF BLOWS&lt;/h6&gt;
+&lt;p&gt;Immediately after you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action.&lt;/p&gt;
+&lt;h6&gt;PATIENT DEFENSE&lt;/h6&gt;
+&lt;p&gt;You can spend 1 ki point to take the Dodge action as a bonus action on your turn.&lt;/p&gt;
+&lt;h6&gt;STEP OF THE WIND&lt;/h6&gt;
+&lt;p&gt;You can spend 1 ki point to take the Disengage or Dash action as a bonus action on your turn, and your jump distance is doubled for the turn.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You have {{ki:points}} Ki Points and your Ki DC is {{ki:dc}}</description>
+		</sheet>
+		<rules>
+			<stat name="ki:points" value="level:monk" />
+			<stat name="ki:dc" value="8" />
+			<stat name="ki:dc" value="proficiency" />
+			<stat name="ki:dc" value="wisdom:modifier" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_FLURRY_OF_BLOWS" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE" />
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND" />
+		</rules>
+	</element>
+	<element name="Unarmored Movement" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, your speed increases by 10 feet while you are not wearing armor or wielding a shield. This bonus increases when you reach certain levels, as shown in the Monk table.&lt;/p&gt;
+&lt;p class="indent"&gt;At 9th level, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your speed increases by {{monk:unarmored movement}} feet while you are not wearing armor or wielding a shield.</description>
+			<description level="9">Your speed increases by {{monk:unarmored movement}} feet while you are not wearing armor or wielding a shield. You gain the ability to move along vertical surfaces and across liquids on your turn without falling during the move.</description>
+		</sheet>
+		<rules>
+			<stat name="monk:unarmored movement" value="10" bonus="unarmored movement" level="2" />
+			<stat name="monk:unarmored movement" value="15" bonus="unarmored movement" level="6" />
+			<stat name="monk:unarmored movement" value="20" bonus="unarmored movement" level="10" />
+			<stat name="monk:unarmored movement" value="25" bonus="unarmored movement" level="14" />
+			<stat name="monk:unarmored movement" value="30" bonus="unarmored movement" level="18" />
+			<stat name="innate speed:misc" value="monk:unarmored movement" bonus="unarmored movement" requirements="[innate speed:1]" equipped="[armor:none],[shield:none]" />
+			<stat name="innate speed:climb:misc" value="monk:unarmored movement" bonus="unarmored movement" requirements="[innate speed:climb:1]" equipped="[armor:none],[shield:none]" />
+			<stat name="innate speed:fly:misc" value="monk:unarmored movement" bonus="unarmored movement" requirements="[innate speed:fly:1]" equipped="[armor:none],[shield:none]" />
+			<stat name="innate speed:swim:misc" value="monk:unarmored movement" bonus="unarmored movement" requirements="[innate speed:swim:1]" equipped="[armor:none],[shield:none]" />
+			<stat name="innate speed:burrow:misc" value="monk:unarmored movement" bonus="unarmored movement" requirements="[innate speed:burrow:1]" equipped="[armor:none],[shield:none]" />
+		</rules>
+	</element>
+	<element name="Deflect Missiles" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_DEFLECT_MISSILES">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier + your level. &lt;/p&gt;
+&lt;p class="indent"&gt;If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction">
+			<description>You can deflect or catch the missile when you are hit by a ranged weapon attack. When you do so, the damage you take from the attack is reduced by 1d10+{{monk:deflect missiles bonus}}.
+			If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free. If you catch a missile in this way, you can spend 1 ki point to make a ranged attack with the weapon or piece of ammunition you just caught, as part of the same reaction. You make this attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack.</description>
+		</sheet>
+		<rules>
+			<stat name="monk:deflect missiles bonus" value="dexterity:modifier" />
+			<stat name="monk:deflect missiles bonus" value="level:monk" />
+		</rules>
+	</element>
+	<element name="Slow Fall" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_SLOW_FALL">
+		<supports>Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 4th level, you can use your reaction when you fall to reduce any falling damage you take by an amount equal to five times your level.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="Reaction">
+			<description>Reduce any falling damage you take by {{monk:slowfall}}.</description>
+		</sheet>
+		<rules>
+			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="monk:slowfall" value="level:monk" />
+		</rules>
+	</element>
+	<element name="Stunning Strike" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_STUNNING_STRIKE">
+		<supports>Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 5th level, you can interfere with the flow of ki in an opponent’s body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="Ki">
+			<description>When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be stunned until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="Ki-Empowered Strikes" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES">
+		<supports>Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your unarmed strikes count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
+		</sheet>
+	</element>
+	<element name="Evasion" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_EVASION">
+		<supports>Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 7th level, you can nimbly dodge out of the way of certain area effects, such as a red dragon’s fiery breath or an ice storm spell. When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
+		</sheet>
+	</element>
+	<element name="Stillness of Mind" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_STILLNESS_OF_MIND">
+		<supports>Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 7th level, you can use your action to end one effect on yourself that is causing you to be charmed or frightened.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action">
+			<description>You can end one effect on yourself that is causing you to be charmed or frightened.</description>
+		</sheet>
+	</element>
+	<element name="Purity of Body" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_PURITY_OF_BODY">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;At 10th level, your mastery of the ki flowing through you makes you immune to disease and poison.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your mastery of the ki flowing through you makes you immune to disease and poison.</description>
+		</sheet>
+	</element>
+	<element name="Tongue of the Sun and Moon" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">
+		<supports>Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Starting at 13th level, you learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You learn to touch the ki of other minds so that you understand all spoken languages. Moreover, any creature that can understand a language can understand what you say.</description>
+		</sheet>
+	</element>
+	<element name="Diamond Soul" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_DIAMOND_SOUL">
+		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning at 14th level, your mastery of ki grants you proficiency in all saving throws.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="Ki">
+			<description>Whenever you make a saving throw and fail, you can spend 1 ki point to reroll it and take the second result.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+		</rules>
+	</element>
+	<element name="Timeless Body" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK">
+		<supports>Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;At 15th level, your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically. You can still die of old age, however. In addition, you no longer need food or water.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Your ki sustains you so that you suffer none of the frailty of old age, and you can’t be aged magically.
+			You no longer need food or water.</description>
+		</sheet>
+	</element>
+	<element name="Empty Body" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_EMPTY_BODY">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning at 18th level, you can use your action to spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, you can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.&lt;/p&gt;
+&lt;div class="reference"&gt;
+&lt;div element="ID_PHB_SPELL_ASTRAL_PROJECTION" /&gt;
+&lt;/div&gt;</html>
+		</description>
+		<sheet action="Action" usage="Ki">
+			<description>You can spend 4 ki points to become invisible for 1 minute. During that time, you also have resistance to all damage but force damage.
+			You can spend 8 ki points to cast the astral projection spell, without needing material components. When you do so, you can’t take any other creatures with you.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ASTRAL_PROJECTION" />
+		</rules>
+	</element>
+	<element name="Perfect Self" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_PERFECT_SELF">
+		<supports>Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MONK_KI</requirements>
+		<description>
+			<html>&lt;p&gt;At 20th level, when you roll for initiative and have no ki points remaining, you regain 4 ki points.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you roll for initiative and have no ki points remaining, you regain 4 ki points.</description>
+		</sheet>
+	</element>
+	<element name="Divine Sense" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the &lt;i&gt;hallow&lt;/i&gt; spell.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action" usage="{{divine sense:count}}/Long Rest">
+			<description>You can open your awareness to detect presence of strong evil. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type of any being whose presence you sense, but not its identity. Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated.</description>
+		</sheet>
+		<rules>
+			<stat name="divine sense:count" value="1" />
+			<stat name="divine sense:count" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Lay on Hands" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5.&lt;/p&gt;
+&lt;p class="indent"&gt;As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool.&lt;/p&gt;
+&lt;p class="indent"&gt;Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one.&lt;/p&gt;
+&lt;p class="indent"&gt;This feature has no effect on undead and constructs.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action" usage="{{lay on hands:hp pool}}/Long Rest">
+			<description>You can touch a creature and draw power from the pool to restore a number of hp to that creature, up to the maximum amount remaining in your pool. 
+			You can expend 5 hp from your pool of healing to cure the target of one disease or neutralize one poison affecting it.
+			This feature has no effect on undead and constructs.</description>
+		</sheet>
+		<rules>
+			<stat name="lay on hands:hp pool" value="level:paladin" />
+			<stat name="lay on hands:hp pool" value="level:paladin" />
+			<stat name="lay on hands:hp pool" value="level:paladin" />
+			<stat name="lay on hands:hp pool" value="level:paladin" />
+			<stat name="lay on hands:hp pool" value="level:paladin" />
+		</rules>
+	</element>
+	<element name="Divine Smite" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_DIVINE_SMITE">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, when you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you hit a creature with a melee weapon attack, you can expend one spell slot to deal radiant damage to the target, in addition to the weapon’s damage. The extra damage is 2d8 for a 1st-level spell slot, plus 1d8 for each spell level higher than 1st, to a maximum of 5d8. The damage increases by 1d8 if the target is an undead or a fiend, to a maximum of 6d8.</description>
+		</sheet>
+	</element>
+	<element name="Divine Health" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_DIVINE_HEALTH">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;By 3rd level, the divine magic flowing through you makes you immune to disease.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>The divine magic flowing through you makes you immune to disease.</description>
+		</sheet>
+	</element>
+	<element name="Aura of Protection" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
+		<supports>Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, whenever you or a friendly creature within 10 feet of you must make a saving throw, the creature gains a bonus to the saving throw equal to your Charisma modifier (with a minimum bonus of +1). You must be conscious to grant this bonus.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you or a friendly creature within {{aura of protection:range}} feet of you must make a saving throw, the creature gains a +{{aura of protection:save bonus}} bonus to the saving throw. You must be conscious to grant this bonus.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of protection:range" value="10" bonus="base" />
+			<stat name="aura of protection:range" value="30" bonus="base" level="18" />
+			<stat name="aura of protection:save bonus" value="1" bonus="base" />
+			<stat name="aura of protection:save bonus" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Aura of Courage" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, you and friendly creatures within 10 feet of you can’t be frightened while you are conscious.&lt;/p&gt;
+&lt;p class="indent"&gt;At 18th level, the range of this aura increases to 30 feet.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You and friendly creatures within {{aura of courage:range}} feet of you can’t be frightened while you are conscious.</description>
+		</sheet>
+		<rules>
+			<stat name="aura of courage:range" value="10" bonus="base" />
+			<stat name="aura of courage:range" value="30" bonus="base" level="18" />
+		</rules>
+	</element>
+	<element name="Improved Divine Smite" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE">
+		<supports>Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_PALADIN_DIVINE_SMITE</requirements>
+		<description>
+			<html>&lt;p&gt;By 11th level, you are so suffused with righteous might that all your melee weapon strikes carry divine power with them. Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you hit a creature with a melee weapon, the creature takes an extra 1d8 radiant damage.</description>
+		</sheet>
+	</element>
+	<element name="Cleansing Touch" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH">
+		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 14th level, you can use your action to end one spell on yourself or on one willing creature that you touch.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action" usage="{{cleansing touch:count}}/Long Rest">
+			<description>You can end one spell on yourself or on one willing creature that you touch.</description>
+		</sheet>
+		<rules>
+			<stat name="cleansing touch:count" value="1" bonus="base" />
+			<stat name="cleansing touch:count" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name="Favored Enemy" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.&lt;/p&gt;
+&lt;p class="indent"&gt;You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.&lt;/p&gt;
+&lt;p class="indent"&gt;When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.&lt;/p&gt;
+&lt;p class="indent"&gt;You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="1" />
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="6" />
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="14" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" level="1" requirements="ID_CUCL_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1" number="2" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" level="6" requirements="ID_CUCL_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2" number="2" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" level="14" requirements="ID_CUCL_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" number="2" />
+			<select type="Language" name="Language (Favored Enemy)" level="1" />
+			<select type="Language" name="Language (Favored Enemy)" level="6" />
+			<select type="Language" name="Language (Favored Enemy)" level="14" />
+		</rules>
+	</element>
+	<element name="Natural Explorer" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.&lt;/p&gt;
+&lt;p class="indent"&gt;While traveling for an hour or more in your favored terrain, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Difficult terrain doesn’t slow your group’s travel.&lt;/li&gt;
+&lt;li&gt;Your group can’t become lost except by magical means.&lt;/li&gt;
+&lt;li&gt;Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.&lt;/li&gt;
+&lt;li&gt;If you are traveling alone, you can move stealthily at a normal pace.&lt;/li&gt;
+&lt;li&gt;When you forage, you find twice as much food as you normally would.&lt;/li&gt;
+&lt;li&gt;While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You choose additional favored terrain types at 6th and 10th level.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in. While traveling for an hour or more in your favored terrain, you gain the following benefits:
+			Difficult terrain doesn’t slow your group’s travel.
+			Your group can’t become lost except by magical means.
+			Even when you are engaged in another activity while traveling, you remain alert to danger.
+			If you are traveling alone, you can move stealthily at a normal pace.
+			When you forage, you find twice as much food as you normally would.
+			While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="1" />
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="6" />
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="10" />
+		</rules>
+	</element>
+	<element name="Primeval Awareness" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Action">
+			<description>You can expend one ranger spell slot to focus your awareness on the region around you.
+			For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
+		</sheet>
+	</element>
+	<element name="Land’s Stride" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_LANDS_STRIDE">
+		<supports>Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 8th level, moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Moving through nonmagical difficult terrain costs you no extra movement. You can also pass through nonmagical plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+			You have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.</description>
+		</sheet>
+	</element>
+	<element name="Hide in Plain Sight" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
+			Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Stealth checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</description>
+		</sheet>
+	</element>
+	<element name="Vanish" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_VANISH">
+		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, you can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can use the Hide action as a bonus action on your turn. Also, you can’t be tracked by nonmagical means, unless you choose to leave a trail.</description>
+		</sheet>
+	</element>
+	<element name="Feral Senses" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_FERAL_SENSES">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 18th level, you gain preternatural senses that help you fight creatures you can’t see. When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it.&lt;/p&gt;
+&lt;p class="indent"&gt;You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>When you attack a creature you can’t see, your inability to see it doesn’t impose disadvantage on your attack rolls against it. 
+			You are also aware of the location of any invisible creature within 30 feet of you, provided that the creature isn’t hidden from you and you aren’t blinded or deafened.</description>
+		</sheet>
+	</element>
+	<element name="Foe Slayer" type="Class Feature" source="Custom Class" id="ID_WOTC_CLASSFEATURE_RANGER_FOE_SLAYER">
+		<supports>Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you become an unparalleled hunter of your enemies. Once on each of your turns, you can add your Wisdom modifier to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Once on each of your turns, you can add {{wisdom:modifier}} to the attack roll or the damage roll of an attack you make against one of your favored enemies. You can choose to use this feature before or after the roll, but before any effects of the roll are applied.</description>
+		</sheet>
+	</element>
+	<element name="Sneak Attack" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_SNEAKATTACK">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 1st level, you know how to strike subtly and exploit a foe’s distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.&lt;/p&gt;
+&lt;p class="indent"&gt;You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.&lt;/p&gt;
+&lt;p class="indent"&gt;The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Once per turn, you can deal an extra {{sneak-attack:count}}d{{sneak-attack:die}} damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon.
+			You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</description>
+		</sheet>
+		<rules>
+			<stat name="sneak-attack:count" value="1" level="1" />
+			<stat name="sneak-attack:count" value="1" level="3" />
+			<stat name="sneak-attack:count" value="1" level="5" />
+			<stat name="sneak-attack:count" value="1" level="7" />
+			<stat name="sneak-attack:count" value="1" level="9" />
+			<stat name="sneak-attack:count" value="1" level="11" />
+			<stat name="sneak-attack:count" value="1" level="13" />
+			<stat name="sneak-attack:count" value="1" level="15" />
+			<stat name="sneak-attack:count" value="1" level="17" />
+			<stat name="sneak-attack:count" value="1" level="19" />
+			<stat name="sneak-attack:die" value="6" bonus="die" />
+		</rules>
+	</element>
+	<element name="Thieves’ Cant" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_THIEVES_CANT">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.&lt;/p&gt;
+&lt;p&gt;In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>A secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+			In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</description>
+		</sheet>
+		<rules>
+			<grant type="Language" id="ID_CUCL_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+	<element name="Cunning Action" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_CUNNINGACTION">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</description>
+		</sheet>
+	</element>
+	<element name="Uncanny Dodge" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_UNCANNY_DODGE">
+		<supports>Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 5th level, when an attacker that you can see hits you with an attack, you can use your reaction to halve the attack’s damage against you.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Reaction">
+			<description>When an attacker that you can see hits you with an attack, you can halve the attack’s damage against you.</description>
+		</sheet>
+	</element>
+	<element name="Reliable Talent" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_RELIABLETALENT">
+		<supports>Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;By 11th level, you have refined your chosen skills until they approach perfection. Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Whenever you make an ability check that lets you add your proficiency bonus, you can treat a d20 roll of 9 or lower as a 10.</description>
+		</sheet>
+	</element>
+	<element name="Blindsense" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_BLINDSENSE">
+		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, if you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>If you are able to hear, you are aware of the location of any hidden or invisible creature within 10 feet of you.</description>
+		</sheet>
+	</element>
+	<element name="Slippery Mind" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_SLIPPERYMIND">
+		<supports>Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;By 15th level, you have acquired greater mental strength. You gain proficiency in Wisdom saving throws.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You have acquired greater mental strength. You gain proficiency in Wisdom saving throws.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+		</rules>
+	</element>
+	<element name="Elusive" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_ELUSIVE">
+		<requirements>Custom Class 18, Custom Class 19, Custom Class 20</requirements>
+		<description>
+			<html>&lt;p&gt;Beginning at 18th level, you are so evasive that attackers rarely gain the upper hand against you. No attack roll has advantage against you while you aren’t incapacitated.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>No attack roll has advantage against you while you aren’t incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Stroke of Luck" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_STROKEOFLUCK">
+		<supports>Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 20th level, you have an uncanny knack for succeeding when you need to. If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.&lt;/p&gt;
+&lt;p&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Short Rest">
+			<description>If your attack misses a target within range, you can turn the miss into a hit. Alternatively, if you fail an ability check, you can treat the d20 roll as a 20.</description>
+		</sheet>
+	</element>
+	<element name="Font of Magic" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_ARCHETYPE_SORCEROUS_ORIGIN</requirements>
+		<description>
+			<html>&lt;p&gt;At 2nd level, you tap into a deep wellspring of magic within yourself. This wellspring is represented by sorcery points, which allow you to create a variety of magical effects.&lt;/p&gt;
+&lt;h5&gt;SORCERY POINTS&lt;/h5&gt;
+&lt;p&gt;You have 2 sorcery points, and you gain more as you reach higher levels, as shown in the Sorcery Points column of the Sorcerer table. You can never have more sorcery points than shown on the table for your level. You regain all spent sorcery points when you finish a long rest.&lt;/p&gt;
+&lt;h5&gt;FLEXIBLE CASTING&lt;/h5&gt;
+&lt;p&gt;You can use your sorcery points to gain additional spell slots, or sacrifice spell slots to gain additional sorcery points. You learn other ways to use your sorcery points as you reach higher levels.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Creating Spell Slots.&lt;/em&gt;&lt;/strong&gt; You can transform unexpended sorcery points into one spell slot as a bonus action on your turn. The Creating Spell Slots table shows the cost of creating a spell slot of a given level. You can create spell slots no higher in level than 5th.&lt;/p&gt;
+&lt;p class="indent"&gt;Any spell slot you create with this feature vanishes when you finish a long rest.&lt;/p&gt;
+&lt;h5 class="caption"&gt;CREATING SPELLSLOTS&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td class="col-20"&gt;Spell Slot Level&lt;/td&gt;&lt;td&gt;Sorcery Point Cost&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;1st&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2nd&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3rd&lt;/td&gt;&lt;td&gt;5&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4th&lt;/td&gt;&lt;td&gt;6&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5th&lt;/td&gt;&lt;td&gt;7&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Converting a Spell Slot to Sorcery Points.&lt;/em&gt;&lt;/strong&gt; As a bonus action on your turn, you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.&lt;/p&gt;</html>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You have {{sorcery-points}} Sorcery Points. You can transform unexpended sorcery points into one spell slot (2 &gt; 1st, 3 &gt; 2nd, 5 &gt; 3rd, 6 &gt; 4th, 7 &gt; 5th) on your turn or you can expend one spell slot and gain a number of sorcery points equal to the slot’s level.</description>
+		</sheet>
+		<rules>
+			<stat name="sorcery-points" value="level:sorcerer" />
+		</rules>
+	</element>
+	<element name="Metamagic" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SORCERER_METAMAGIC">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you gain the ability to twist your spells to suit your needs. You gain two of the following Metamagic options of your choice. You gain another one at 10th and 17th level.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You can use only one Metamagic option on a spell when you cast it, unless otherwise noted.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="3" number="2" />
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="10" />
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" level="17" />
+		</rules>
+	</element>
+	<element name="Sorcerous Restoration" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION">
+		<supports>Custom Class 20</supports>
+		<requirements>ID_CUCL_ARCHETYPE_SORCEROUS_ORIGIN</requirements>
+		<description>
+			<html>&lt;p&gt;At 20th level, you regain 4 expended sorcery points whenever you finish a short rest.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>You regain 4 expended sorcery points whenever you finish a short rest.</description>
+		</sheet>
+	</element>
+	<element name="Pact Magic" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_ARCHETYPE_OTHERWORLDLY_PATRON</requirements>
+		<description>
+			<html>&lt;p&gt;Your arcane research and the magic bestowed on you by your patron have given you facility with spells.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;You know two cantrips of your choice from the warlock spell list. You learn additional warlock cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Warlock table.&lt;/p&gt;
+&lt;h5&gt;SPELL SLOTS&lt;/h5&gt;
+&lt;p&gt;The Warlock table shows how many spell slots you have to cast your warlock spells of 1st through 5th level. The table also shows what the level of those slots is; all of your spell slots are the same level. To cast one of your warlock spells of 1st level or higher, you must expend a spell slot. You regain all expended spell slots when you finish a short or long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, when you are 5th level, you have two 3rd-level spell slots. To cast the 1st-level spell witch bolt, you must spend one of those slots, and you cast it as a 3rd-level spell.&lt;/p&gt;
+&lt;h5&gt;SPELLS KNOWN OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know two 1st-level spells of your choice from the warlock spell list.&lt;/p&gt;
+&lt;p class="indent"&gt;The Spells Known column of the Warlock table shows when you learn more warlock spells of your choice of 1st level and higher. A spell you choose must be of a level no higher than what’s shown in the table's Slot Level column for your level. When you reach 6th level, for example, you learn a new warlock spell, which can be 1st, 2nd, or 3rd level.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you gain a level in this class, you can choose one of the warlock spells you know and replace it with another spell from the warlock spell list, which also must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Charisma is your spellcasting ability for your warlock spells, so you use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a warlock spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;p class="indent"&gt;
+&lt;b&gt;Spell save DC&lt;/b&gt; = 8 + your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;p class="indent"&gt;
+&lt;b&gt;Spell attack modifier&lt;/b&gt; = your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your warlock spells.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>Your arcane research and the magic bestowed on you by your patron have given you facility with spells. You have {{warlock:spellcasting:slots:count}} slots of level {{warlock:spellcasting:slot}}</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_SOLO" requirements="ID_INTERNAL_GRANT_MULTICLASS" />
+			<stat name="warlock:spellcasting:slots:count" value="1" level="1" />
+			<stat name="warlock:spellcasting:slots:count" value="1" level="2" />
+			<stat name="warlock:spellcasting:slots:count" value="1" level="11" />
+			<stat name="warlock:spellcasting:slots:count" value="1" level="17" />
+			<stat name="warlock:spellcasting:slot" value="1" level="1" />
+			<stat name="warlock:spellcasting:slot" value="1" level="3" />
+			<stat name="warlock:spellcasting:slot" value="1" level="5" />
+			<stat name="warlock:spellcasting:slot" value="1" level="7" />
+			<stat name="warlock:spellcasting:slot" value="1" level="9" />
+			<stat name="warlock:spellcasting:slots:1" value="warlock:spellcasting:slots:count" level="1" />
+			<stat name="warlock:spellcasting:slots:1" value="-warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:2" value="warlock:spellcasting:slots:count" level="3" />
+			<stat name="warlock:spellcasting:slots:2" value="-warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:3" value="warlock:spellcasting:slots:count" level="5" />
+			<stat name="warlock:spellcasting:slots:3" value="-warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:4" value="warlock:spellcasting:slots:count" level="7" />
+			<stat name="warlock:spellcasting:slots:4" value="-warlock:spellcasting:slots:count" level="9" />
+			<stat name="warlock:spellcasting:slots:5" value="warlock:spellcasting:slots:count" level="9" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="Warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="4" spellcasting="Warlock" />
+			<select type="Spell" name="Cantrip (Warlock)" supports="$(spellcasting:list),0" level="10" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Warlock" />
+			<select type="Spell" name="Spellcasting (Warlock)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Warlock" />
+		</rules>
+		<spellcasting name="Warlock" ability="Charisma" allowReplace="true">
+			<list>Warlock</list>
+		</spellcasting>
+	</element>
+	<element name="Eldritch Invocations" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WARLOCK_ELDRITCH_INVOCATIONS">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;In your study of occult lore, you have unearthed eldritch invocations, fragments of forbidden knowledge that imbue you with an abiding magical ability.&lt;/p&gt;
+&lt;p class="indent"&gt;At 2nd level, you gain two eldritch invocations of your choice. Your invocation options are detailed at the end of the class description. When you gain certain warlock levels, you gain additional invocations of your choice, as shown in the Invocations Known column of the Warlock table.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you gain a level in this class, you can choose one of the invocations you know and replace it with another invocation that you could learn at that level.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation (Level 2)" supports="Eldritch Invocation" level="2" number="2" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 5)" supports="Eldritch Invocation" level="5" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 7)" supports="Eldritch Invocation" level="7" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 9)" supports="Eldritch Invocation" level="9" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 12)" supports="Eldritch Invocation" level="12" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 15)" supports="Eldritch Invocation" level="15" />
+			<select type="Class Feature" name="Eldritch Invocation (Level 18)" supports="Eldritch Invocation" level="18" />
+		</rules>
+	</element>
+	<element name="Pact Boon" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WARLOCK_PACT_BOON">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<requirements>ID_CUCL_ARCHETYPE_OTHERWORLDLY_PATRON</requirements>
+		<description>
+			<html>&lt;p&gt;At 3rd level, your otherworldly patron bestows a gift upon you for your loyal service. You gain one of the following features of your choice.&lt;/p&gt;
+&lt;h5 class="caption"&gt;PACT OF THE CHAIN&lt;/h5&gt;
+&lt;p&gt;You learn the &lt;em&gt;find familiar&lt;/em&gt; spell and can cast it as a ritual. The spell doesn’t count against your number of spells known.&lt;/p&gt;
+&lt;p class="indent"&gt;When you cast the spell, you can choose one of the normal forms for your familiar or one of the following special forms: imp, pseudodragon, quasit, or sprite.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you take the Attack action, you can forgo one of your own attacks to allow your familiar to make one attack of its own.&lt;/p&gt;
+&lt;h5 class="caption"&gt;PACT OF THE TOME&lt;/h5&gt;
+&lt;p&gt;Your patron gives you a grimoire called a Book of Shadows. When you gain this feature, choose three cantrips from any class’s spell list. While the book is on your person, you can cast those cantrips at will. They don’t count against your number of cantrips known.&lt;/p&gt;
+&lt;p class="indent"&gt;If you lose your Book of Shadows, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous book. The book turns to ash when you die.&lt;/p&gt;
+&lt;h5 class="caption"&gt;PACT OF THE BLADE&lt;/h5&gt;
+&lt;p&gt;You can use your action to create a pact weapon in your empty hand. You can choose the form that this melee weapon takes each time you create it. You are proficient with it while you wield it. This weapon counts as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Your pact weapon disappears if it is more than 5 feet away from you for 1 minute or more. It also disappears if you use this feature again, if you dismiss the weapon (no action required), or if you die.&lt;/p&gt;
+&lt;p class="indent"&gt;You can transform one magic weapon into your pact weapon by performing a special ritual while you hold the weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. You can then dismiss the weapon, shunting it into an extradimensional space, and it appears whenever you create your pact weapon thereafter. You can’t affect an artifact or a sentient weapon in this way. The weapon ceases being your pact weapon if you die, if you perform the 1-hour ritual on a different weapon, or if you use a 1-hour ritual to break your bond to it. The weapon appears at your feet if it is in the extradimensional space when the bond breaks.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Pact Boon" supports="Pact Boon" level="3" />
+		</rules>
+	</element>
+	<element name="Mystic Arcanum" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WARLOCK_MYSTIC_ARCANUM">
+		<supports>Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 11th level, your patron bestows upon you a magical secret called an arcanum. Choose one 6th-level spell from the warlock spell list as this arcanum.&lt;/p&gt;
+&lt;p class="indent"&gt;You can cast your arcanum spell once without expending a spell slot. You must finish a long rest before you can do so again.&lt;/p&gt;
+&lt;p class="indent"&gt;At higher levels, you gain more warlock spells of your choice that can be cast in this way: one 7th-level spell at 13th level, one 8th-level spell at 15th level, and one 9th-level spell at 17th level. You regain all uses of your Mystic Arcanum when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can cast your arcanum spells once without expending a spell slot.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,6" level="11" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,7" level="13" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,8" level="15" spellcasting="Warlock" />
+			<select type="Spell" name="Arcanum Spell (Mystic Arcanum)" supports="Warlock,9" level="17" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="Eldritch Master" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WARLOCK_ELDRITCH_MASTER">
+		<supports>Custom Class 20</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC</requirements>
+		<description>
+			<html>&lt;p&gt;At 20th level, you can draw on your inner reserve of mystical power while entreating your patron to regain expended spell slots. You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature. Once you regain spell slots with this feature, you must finish a long rest before you can do so again.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>You can spend 1 minute entreating your patron for aid to regain all your expended spell slots from your Pact Magic feature.</description>
+		</sheet>
+	</element>
+	<element name="Arcane Recovery" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WIZARD_ARCANE_RECOVERY">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your wizard level (rounded up), and none of the slots can be 6th level or higher.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you’re a 4th-level wizard, you can recover up to two levels worth of spell slots. You can recover either a 2nd-level spell slot or two 1st-level spell slots.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Once per day when you finish a short rest, you can choose expended spell slots up to 5th level to recover. The spell slots can have a combined level that is equal to or less than {{level:wizard:half:up}}.</description>
+		</sheet>
+	</element>
+	<element name="Spell Mastery" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WIZARD_SPELL_MASTERY">
+		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;At 18th level, you have achieved such mastery over certain spells that you can cast them at will. Choose a 1st-level wizard spell and a 2nd-­level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.&lt;/p&gt;
+&lt;p&gt;By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.&lt;/p&gt;</html>
+		</description>
+		<sheet>
+			<description>Choose a 1st-level wizard spell and a 2nd-­level wizard spell that are in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared. If you want to cast either spell at a higher level, you must expend a spell slot as normal.
+			By spending 8 hours in study, you can exchange one or both of the spells you chose for different spells of the same levels.</description>
+		</sheet>
+	</element>
+	<element name="Signature Spells" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_WIZARD_SIGNATURE_SPELLS">
+		<supports>Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 20th level, you gain mastery over two powerful spells and can cast them with little effort. Choose two 3rd-­level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don’t count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot. When you do so, you can’t do so again until you finish a short or long rest.&lt;/p&gt;
+&lt;p&gt;If you want to cast either spell at a higher level, you must expend a spell slot as normal.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description>Choose two 3rd-­level wizard spells in your spellbook as your signature spells. You always have these spells prepared, they don’t count against the number of spells you have prepared, and you can cast each of them once at 3rd level without expending a spell slot.
+			If you want to cast either spell at a higher level, you must expend a spell slot as normal.</description>
+		</sheet>
+	</element>
+	<element name="Expertise" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ROGUE_EXPERTISE">
+		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt; At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves’ tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.&lt;/p&gt;
+&lt;p&gt; At 6th level, you can choose two more of your proficiencies (in skills or with thieves’ tools) to gain this benefit. &lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Expertise (Custom Class)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" level="3" number="2" />
+			<select type="Class Feature" name="Expertise (Custom Class)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" level="6" number="2" />
+			<select type="Class Feature" name="Expertise (Custom Class)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" level="10" number="2" />
+			<select type="Class Feature" name="Expertise (Custom Class)" supports="ID_INTERNAL_SUPPORT_EXPERTISE" level="15" number="2" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_FIGHTINGSTYLE">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+		<description>
+			<html>&lt;p&gt;You adopt a particular style of fighting as your specialty. Choose one of the following options. You can’t take a Fighting Style option more than once, even if you later get to choose again.&lt;/p&gt;
+&lt;h5 class="caption"&gt;ARCHERY&lt;/h5&gt;
+&lt;p&gt;You gain a +2 bonus to attack rolls you make with ranged weapons.&lt;/p&gt;
+&lt;h5 class="caption"&gt;DEFENSE&lt;/h5&gt;
+&lt;p&gt;While you are wearing armor, you gain a +1 bonus to AC.&lt;/p&gt;
+&lt;h5 class="caption"&gt;DUELING&lt;/h5&gt;
+&lt;p&gt;When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.&lt;/p&gt;
+&lt;h5 class="caption"&gt;GREAT WEAPON FIGHTING&lt;/h5&gt;
+&lt;p&gt;When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.&lt;/p&gt;
+&lt;h5 class="caption"&gt;PROTECTION&lt;/h5&gt;
+&lt;p&gt;When a creature you can see attacks a target other than you that is within 5 feet of you, you can use your reaction to impose disadvantage on the attack roll. You must be wielding a shield.&lt;/p&gt;
+&lt;h5 class="caption"&gt;TWO-WEAPON FIGHTING&lt;/h5&gt;
+&lt;p&gt;When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="1" number="2" />
+		</rules>
+	</element>
+	<element name="Innate Spellcasting (Charisma)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INNATE_SPELLCASTING_CHARISMA">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know four cantrips of your choice from the spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table.&lt;/p&gt;
+&lt;h5&gt;SPELL SLOTS&lt;/h5&gt;
+&lt;p&gt;The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.&lt;/p&gt;
+&lt;h5&gt;SPELLS KNOWN OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;You know two 1st-level spells of your choice from the spell list.&lt;/p&gt;
+&lt;p class="indent"&gt;The Spells Known column of the Sorcerer table shows when you learn more spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you gain a level in this class, you can choose one of the spells you know and replace it with another spell from the spell list, which also must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Charisma is your spellcasting ability for your spells, since the power of your magic relies on your ability to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You have the ability to cast spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Innate Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Innate Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="1" number="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="1" number="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="3" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="5" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="6" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="7" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="8" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="9" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="11" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="13" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="15" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="17" spellcasting="Innate Spellcaster" />
+		</rules>
+		<spellcasting name="Innate Spellcaster" ability="Charisma" allowReplace="true">
+			<list>Sorcerer||Ranger||Bard</list>
+		</spellcasting>
+	</element>
+	<element name="Innate Spellcasting (Intelligence )" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INNATE_SPELLCASTING_INTELLIGENCE">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know four cantrips of your choice from the spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table.&lt;/p&gt;
+&lt;h5&gt;SPELL SLOTS&lt;/h5&gt;
+&lt;p&gt;The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.&lt;/p&gt;
+&lt;h5&gt;SPELLS KNOWN OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;You know two 1st-level spells of your choice from the spell list.&lt;/p&gt;
+&lt;p class="indent"&gt;The Spells Known column of the Sorcerer table shows when you learn more spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you gain a level in this class, you can choose one of the spells you know and replace it with another spell from the spell list, which also must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Intelligence is your spellcasting ability for your spells, since the power of your magic relies on your ability to project your will into the world. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Intelligence modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Intelligence modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You have the ability to cast spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Innate Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Innate Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="1" number="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="1" number="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="3" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="5" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="6" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="7" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="8" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="9" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="11" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="13" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="15" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="17" spellcasting="Innate Spellcaster" />
+		</rules>
+		<spellcasting name="Innate Spellcaster" ability="Intelligence" allowReplace="true">
+			<list>Sorcerer||Ranger||Bard</list>
+		</spellcasting>
+	</element>
+	<element name="Innate Spellcasting (Wisdom)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INNATE_SPELLCASTING_WISDOM">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know four cantrips of your choice from the spell list. You learn additional sorcerer cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table.&lt;/p&gt;
+&lt;h5&gt;SPELL SLOTS&lt;/h5&gt;
+&lt;p&gt;The Sorcerer table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot available, you can cast burning hands using either slot.&lt;/p&gt;
+&lt;h5&gt;SPELLS KNOWN OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;You know two 1st-level spells of your choice from the spell list.&lt;/p&gt;
+&lt;p class="indent"&gt;The Spells Known column of the Sorcerer table shows when you learn more spells of your choice. Each of these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this class, you can learn one new spell of 1st or 2nd level.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you gain a level in this class, you can choose one of the spells you know and replace it with another spell from the spell list, which also must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Wisdom is your spellcasting ability for your spells, since the power of your magic relies on your ability to project your will into the world. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Wisdom modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Wisdom modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You have the ability to cast spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Innate Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Innate Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Innate Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Innate Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Innate Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Innate Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Innate Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Innate Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Innate Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="1" number="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Cantrip (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),0" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="1" number="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="2" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="3" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="4" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="5" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="6" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="7" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="8" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="9" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="10" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="11" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="13" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="15" spellcasting="Innate Spellcaster" />
+			<select type="Spell" name="Spell (Innate Spellcaster)" supports="(Sorcerer||Ranger||Bard),$(spellcasting:slots)" level="17" spellcasting="Innate Spellcaster" />
+		</rules>
+		<spellcasting name="Innate Spellcaster" ability="Wisdom" allowReplace="true">
+			<list>Sorcerer||Ranger||Bard</list>
+		</spellcasting>
+	</element>
+	<element name="Prepared Spellcaster (Intelligence)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PREPARED_SPELLCASTER_INTELLIGENCE">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know three cantrips of your choice from the spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the table.&lt;/p&gt;
+&lt;h5&gt;SPELLBOOK&lt;/h5&gt;
+&lt;p&gt;At 1st level, you have a spellbook containing six 1st-­level spells of your choice. Your spellbook is the repository of the spells you know, except your cantrips, which are fixed in your mind.&lt;/p&gt;
+&lt;h5&gt;PREPARING AND CASTING SPELLS&lt;/h5&gt;
+&lt;p&gt;The table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;You prepare the list of spells that are available for you to cast. To do so, choose a number of spells from your spellbook equal to your Intelligence modifier + your level (minimum of one spell). The spells must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you’re a 3rd-level, you have four 1st-level and two 2nd-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.&lt;/p&gt;
+&lt;p class="indent"&gt;You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Intelligence is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Intelligence modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Intelligence modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;RITUAL CASTING&lt;/h5&gt;
+&lt;p&gt;You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don’t need to have the spell prepared.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;
+&lt;h5&gt;LEARNING SPELLS OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;Each time you gain a level, you can add two spells of your choice to your spellbook for free. Each of these spells must be of a level for which you have spell slots, as shown on the table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{Custom Class:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast wizard spells as a ritual.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="level:Custom Class" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="1" number="3" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="4" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="10" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 1" level="1" number="6" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="2" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="3" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="4" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="5" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="6" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="7" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="8" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="9" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="10" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="11" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="12" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="13" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="14" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="15" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="16" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="17" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="18" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="19" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="20" number="2" spellcasting="Prepared Spellcaster" />
+		</rules>
+		<spellcasting name="Prepared Spellcaster" ability="Intelligence" prepare="true">
+			<list>Wizard||Paladin||Cleric||Druid</list>
+		</spellcasting>
+	</element>
+	<element name="Prepared Spellcaster (Charisma)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PREPARED_SPELLCASTER_CHARISMA">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know three cantrips of your choice from the spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the table.&lt;/p&gt;
+&lt;h5&gt;SPELLBOOK&lt;/h5&gt;
+&lt;p&gt;At 1st level, you have a spellbook containing six 1st-­level spells of your choice. Your spellbook is the repository of the spells you know, except your cantrips, which are fixed in your mind.&lt;/p&gt;
+&lt;h5&gt;PREPARING AND CASTING SPELLS&lt;/h5&gt;
+&lt;p&gt;The table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;You prepare the list of spells that are available for you to cast. To do so, choose a number of spells from your spellbook equal to your Intelligence modifier + your level (minimum of one spell). The spells must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you’re a 3rd-level, you have four 1st-level and two 2nd-level spell slots. With an Charisma of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.&lt;/p&gt;
+&lt;p class="indent"&gt;You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Charisma is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Charisma whenever a spell refers to your spellcasting ability. In addition, you use your Charisma modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Charisma modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;RITUAL CASTING&lt;/h5&gt;
+&lt;p&gt;You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don’t need to have the spell prepared.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;
+&lt;h5&gt;LEARNING SPELLS OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;Each time you gain a level, you can add two spells of your choice to your spellbook for free. Each of these spells must be of a level for which you have spell slots, as shown on the table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{Custom Class:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast wizard spells as a ritual.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="charisma:modifier" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="level:Custom Class" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="1" number="3" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="4" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="10" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 1" level="1" number="6" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="2" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="3" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="4" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="5" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="6" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="7" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="8" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="9" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="10" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="11" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="12" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="13" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="14" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="15" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="16" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="17" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="18" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="19" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="20" number="2" spellcasting="Prepared Spellcaster" />
+		</rules>
+		<spellcasting name="Prepared Spellcaster" ability="Charisma" prepare="true">
+			<list>Wizard||Paladin||Cleric||Druid</list>
+		</spellcasting>
+	</element>
+	<element name="Prepared Spellcaster (Wisdom)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PREPARED_SPELLCASTER_WISDOM">
+		<supports>Custom Class Spellcasting</supports>
+		<description>
+			<html>&lt;p&gt;As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.&lt;/p&gt;
+&lt;h5&gt;CANTRIPS&lt;/h5&gt;
+&lt;p&gt;At 1st level, you know three cantrips of your choice from the spell list. You learn additional cantrips of your choice at higher levels, as shown in the Cantrips Known column of the table.&lt;/p&gt;
+&lt;h5&gt;SPELLBOOK&lt;/h5&gt;
+&lt;p&gt;At 1st level, you have a spellbook containing six 1st-­level spells of your choice. Your spellbook is the repository of the spells you know, except your cantrips, which are fixed in your mind.&lt;/p&gt;
+&lt;h5&gt;PREPARING AND CASTING SPELLS&lt;/h5&gt;
+&lt;p&gt;The table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;You prepare the list of spells that are available for you to cast. To do so, choose a number of spells from your spellbook equal to your Intelligence modifier + your level (minimum of one spell). The spells must be of a level for which you have spell slots.&lt;/p&gt;
+&lt;p class="indent"&gt;For example, if you’re a 3rd-level, you have four 1st-level and two 2nd-level spell slots. With an Wisdom of 16, your list of prepared spells can include six spells of 1st or 2nd level, in any combination, chosen from your spellbook. If you prepare the 1st-level spell magic missile, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.&lt;/p&gt;
+&lt;p class="indent"&gt;You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level for each spell on your list.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING ABILITY&lt;/h5&gt;
+&lt;p&gt;Wisdom is your spellcasting ability for your spells, since you learn your spells through dedicated study and memorization. You use your Wisdom whenever a spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.&lt;/p&gt;
+&lt;center&gt;
+&lt;p&gt;&lt;strong&gt;Spell save DC&lt;/strong&gt; = 8 + your proficiency bonus + your Wisdom modifier&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Spell attack modifier&lt;/strong&gt; = your proficiency bonus + your Wisdom modifier&lt;/p&gt;
+&lt;/center&gt;
+&lt;h5&gt;RITUAL CASTING&lt;/h5&gt;
+&lt;p&gt;You can cast a spell as a ritual if that spell has the ritual tag and you have the spell in your spellbook. You don’t need to have the spell prepared.&lt;/p&gt;
+&lt;h5&gt;SPELLCASTING FOCUS&lt;/h5&gt;
+&lt;p&gt;You can use an arcane focus as a spellcasting focus for your spells.&lt;/p&gt;
+&lt;h5&gt;LEARNING SPELLS OF 1ST LEVEL AND HIGHER&lt;/h5&gt;
+&lt;p&gt;Each time you gain a level, you can add two spells of your choice to your spellbook for free. Each of these spells must be of a level for which you have spell slots, as shown on the table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar).&lt;/p&gt;</html>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{Custom Class:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells. and can also cast wizard spells as a ritual.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_HOLY_SYMBOL" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="2" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Prepared Spellcaster:spellcasting:slots:9" value="1" level="17" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="wisdom:modifier" />
+			<stat name="Prepared Spellcaster:spellcasting:prepare" value="level:Custom Class" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="1" number="3" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="4" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Cantrip (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 0" level="10" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), 1" level="1" number="6" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="2" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="3" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="4" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="5" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="6" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="7" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="8" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="9" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="10" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="11" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="12" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="13" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="14" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="15" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="16" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="17" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="18" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="19" number="2" spellcasting="Prepared Spellcaster" />
+			<select type="Spell" name="Spellbook (Prepared Spellcaster)" supports="(Wizard||Paladin||Cleric||Druid), $(spellcasting:slots)" level="20" number="2" spellcasting="Prepared Spellcaster" />
+		</rules>
+		<spellcasting name="Prepared Spellcaster" ability="Wisdom" prepare="true">
+			<list>Wizard||Paladin||Cleric||Druid</list>
+		</spellcasting>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SPELLCASTING">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5</supports>
+		<description>
+			<html>&lt;p&gt;You are able to use magic, Only pick this once&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Custom Class (Spellcasting)" supports="Custom Class Spellcasting" level="1" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement Level 4" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_LEVEL_4">
+		<compendium display="false" />
+		<supports>Custom Class 4</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Custom Class)" supports="Improvement Option,Custom Class,4" level="4" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement Level 8" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_LEVEL_8">
+		<compendium display="false" />
+		<supports>Custom Class 8</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Custom Class)" supports="Improvement Option,Custom Class,8" level="8" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement Level 12" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_LEVEL_12">
+		<compendium display="false" />
+		<supports>Custom Class 12</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Custom Class)" supports="Improvement Option,Custom Class,12" level="12" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement Level 16" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_LEVEL_16">
+		<compendium display="false" />
+		<supports>Custom Class 16</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Custom Class)" supports="Improvement Option,Custom Class,16" level="16" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement Level 19" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ABILITY_SCORE_IMPROVEMENT_LEVEL_19">
+		<compendium display="false" />
+		<supports>Custom Class 19</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Custom Class)" supports="Improvement Option,Custom Class,19" level="19" />
+		</rules>
+	</element>
+</elements>

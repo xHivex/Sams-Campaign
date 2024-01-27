@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Barbarian</name>
+		<update version="0.1.0">
+			<file name="barbarian.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/barbarian.xml" />
+		</update>
+	</info>
+	<element name=".3rd Level Frenzy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_FRENZY">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this path at 3rd level, you can go into a frenzy when you rage. If you do so, for the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion (as described in appendix A).&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Frenzy">
+			<description level="3">For the duration of your rage you can make a single melee weapon attack as a bonus action on each of your turns after this one. When your rage ends, you suffer one level of exhaustion.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Mindless Rage" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_MINDLESS_RAGE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 6th level, you can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Mindless Rage">
+			<description level="6">You can’t be charmed or frightened while raging. If you are charmed or frightened when you enter your rage, the effect is suspended for the duration of the rage.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Intimidating Presence" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_INTIMIDATING_PRESENCE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 10th level, you can use your action to frighten someone with your menacing presence. When you do so, choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Charisma modifier) or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.&lt;/p&gt;
+&lt;p class="indent"&gt;If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Intimidating Presence" action="Action">
+			<description level="10">Choose one creature that you can see within 30 feet of you. If the creature can see or hear you, it must succeed on a DC{{intimidating presence:dc}} Wisdom saving throw or be frightened of you until the end of your next turn. On subsequent turns, you can use your action to extend the duration of this effect on the frightened creature until the end of your next turn. This effect ends if the creature ends its turn out of line of sight or more than 60 feet away from you.
+			If the creature succeeds on its saving throw, you can't use this feature on that creature again for 24 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="intimidating presence:dc" value="8" />
+			<stat name="intimidating presence:dc" value="proficiency" />
+			<stat name="intimidating presence:dc" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="14th Level Retaliation" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_RETALIATION">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, when you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Retaliation" action="Reaction">
+			<description level="14">When you take damage from a creature that is within 5 feet of you, you can use your reaction to make a melee weapon attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Giant Power" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_GIANT_POWER">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Path of the Giant feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either druidcraft or thaumaturgy. Wisdom is your spellcasting ability for this spell.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Giant Power">
+			<description level="3">Wisdom is your spellcasting ability for the cantrip you learn from this feature.</description>
+		</sheet>
+		<rules>
+			<select type="Language" name="Language (Giant Power)" supports="Standard||Exotic" level="3" default="ID_LANGUAGE_GIANT" />
+			<select type="Spell" name="Cantrip (Giant Power)" supports="ID_PHB_SPELL_DRUIDCRAFT|ID_PHB_SPELL_THAUMATURGY" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Giant's Havoc" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_GIANTS_HAVOC">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Path of the Giant feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your rages pull strength from the primal might of giants, transforming you into a hulking force of destruction. While raging, you gain the following benefits:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;Crushing Throw.&lt;/strong&gt; When you make a successful ranged attack with a thrown weapon using Strength, you can add your Rage Damage bonus to the attack's damage roll.&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em; margin-bottom: 20px"&gt;&lt;strong&gt;Giant Stature.&lt;/strong&gt; Your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Giant's Havoc">
+			<description level="3">While raging, you gain the following benefits: You add {{barbarian rage:damage}} to damage rolls of your Strength-based ranged attacks, your reach increases by 5 feet, and if you are smaller than Large, you become Large, along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change.</description>
+			<description level="14">While raging, you gain the following benefits: You add {{barbarian rage:damage}} to damage rolls of your Strength-based ranged attacks, your reach increases by 10 feet, and if you are smaller than Large, you become Large or Huge (your choice), along with anything you are wearing. If there isn't enough room for you to increase your size, your size doesn't change.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Elemental Cleaver" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_ELEMENTAL_CLEAVER">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Path of the Giant feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your bond with the elemental might of giants grows, and you learn to infuse weapons with primordial energy.&lt;/p&gt;
+&lt;p class="indent"&gt;When you enter your rage, you can choose one weapon that you are holding and infuse it with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon's damage type changes to the chosen type, it deals an extra 1d6 damage of the chosen type when it hits, and it gains the thrown property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. The infused weapon's benefits are suppressed while a creature other than you wields it.&lt;/p&gt;
+&lt;p class="indent"&gt;While raging and holding the infused weapon, you can use a bonus action to change the infused weapon's current damage type to another one from the damage type options above.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Elemental Cleaver">
+			<description level="6">When you enter your rage, you can choose one weapon that you are holding and infuse it with one of the following damage types: acid, cold, fire, thunder, or lightning. While you wield the infused weapon during your rage, the weapon's damage type changes to the chosen type, it deals an extra {{elemental cleaver:dice}}d6 damage of the chosen type, and it gains the thrown property, with a normal range of 20 feet and a long range of 60 feet. If you throw the weapon, it reappears in your hand the instant after it hits or misses a target. 
+			While raging and holding the infused weapon, you can use a bonus action to change the infused weapon's current damage type to another one from the damage type options above.</description>
+		</sheet>
+		<rules>
+			<stat name="elemental cleaver:dice" value="1" bonus="base" />
+		</rules>
+	</element>
+	<element name="10th Level Mighty Impel" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_MIGHTY_IMPEL">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Path of the Giant feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your connection to giant strength allows you to hurl both allies and enemies on the battlefield. As a bonus action while raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw (DC equals 8 + your proficiency bonus + your Strength modifier) to avoid the effect.&lt;/p&gt;
+&lt;p class="indent"&gt;If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Mighty Impel" action="Bonus Action">
+			<description level="10">While raging, you can choose one Medium or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw DC{{mighty impel:dc}} to avoid the effect. 
+			If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone.</description>
+			<description level="14">While raging, you can choose one Large or smaller creature within your reach and move it to an unoccupied space you can see within 30 feet of yourself. An unwilling creature must succeed on a Strength saving throw DC{{mighty impel:dc}} to avoid the effect. 
+			If, at the end of this movement, the thrown creature isn't on a surface or liquid that can support it, the creature falls, taking damage as normal and landing prone.</description>
+		</sheet>
+		<rules>
+			<stat name="mighty impel:dc" value="8" />
+			<stat name="mighty impel:dc" value="proficiency" />
+			<stat name="mighty impel:dc" value="strength:modifier" />
+		</rules>
+	</element>
+	<element name="14th Level Demiurgic Colossus" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_DEMIURGIC_COLOSSUS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;14th-level Path of the Giant feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The primordial power of your rage intensifies. When you rage, your reach increases by 10 feet, your size can increase to Large or Huge (your choice), and you can use your Mighty Impel to move creatures that are Large or smaller.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, the extra damage dealt by your Elemental Cleaver feature increases to 2d6.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="elemental cleaver:dice" value="2" bonus="base" level="14" />
+		</rules>
+	</element>
+	<element name=".3rd Level Magic Awareness" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_MAGIC_AWARENESS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Path of Wild Magic feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As an action, you can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn’t behind total cover. When you sense a spell, you learn which school of magic it belongs to.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Magic Awareness" action="Action" usage="{{proficiency}}/Long Rest">
+			<description level="3">You can open your awareness to the presence of concentrated magic. Until the end of your next turn, you know the location of any spell or magic item within 60 feet of you that isn’t behind total cover. When you sense a spell, you learn which school of magic it belongs to.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Wild Surge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_WILD_SURGE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Path of Wild Magic feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The magical energy rolling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.&lt;/p&gt;
+&lt;p class="indent"&gt;If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Wild Surge">
+			<description level="3">When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.
+			If the effect requires a saving throw, the DC equals {{barbarian wild surge:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="barbarian wild surge:dc" value="8" />
+			<stat name="barbarian wild surge:dc" value="proficiency" />
+			<stat name="barbarian wild surge:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name=".6th Level Bolstering Magic" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_BOLSTERING_MAGIC">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Path of Wild Magic feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can harness your wild magic to bolster yourself or a companion. As an action, you can touch one creature (which can be yourself) and confer one of the following benefits of your choice to that creature:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll.&lt;/li&gt;
+&lt;li&gt;Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower (the creature’s choice). Once a creature receives this benefit, that creature can’t receive it again until after a long rest.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You can take this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Bolstering Magic" action="Action" usage="{{proficiency}}/Long Rest">
+			<description level="6">You can touch one creature and confer one of the following benefits of your choice to that creature: 
+
+			For 10 minutes, the creature can roll a d3 whenever making an attack roll or an ability check and add the number rolled to the d20 roll. 
+
+			Roll a d3. The creature regains one expended spell slot, the level of which equals the number rolled or lower. Once a creature receives this benefit, that creature can’t receive it again until after a long rest.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Unstable Backlash" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_UNSTABLE_BACKLASH">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Path of Wild Magic feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you are imperiled during your rage, the magic within you can lash out; immediately after you take damage or fail a saving throw while raging, you can use your reaction to roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unstable Backlash" action="Reaction">
+			<description level="10">Immediately after you take damage or fail a saving throw while raging, you can roll on the Wild Magic table and immediately produce the effect rolled. This effect replaces your current Wild Magic effect.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Controlled Surge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_CONTROLLED_SURGE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;14th-level Path of Wild Magic feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Controlled Surge">
+			<description level="14">Whenever you roll on the Wild Magic table, you can roll the die twice and choose which of the two effects to unleash. If you roll the same number on both dice, you can ignore the number and choose any effect on the table.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Form of the Beast" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_FORM_OF_THE_BEAST">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Path of the Beast feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier to the attack and damage rolls when you attack with it, as normal.&lt;/p&gt;
+&lt;p class="indent"&gt;You choose the weapon’s form each time you rage:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;&lt;em&gt;Bite.&lt;/em&gt;&lt;/strong&gt; Your mouth transforms into a bestial muzzle or great mandibles (your choice). It deals 1d8 piercing damage on a hit. Once on each of your turns when you damage a creature with this bite, you regain a number of hit points equal to your proficiency bonus, provided you have less than half your hit points when you hit.&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;&lt;em&gt;Claws.&lt;/em&gt;&lt;/strong&gt; Each of your hands transforms into a claw, which you can use as a weapon if it’s empty. It deals 1d6 slashing damage on a hit. Once on each of your turns when you attack with a claw using the Attack action, you can make one additional claw attack as part of the same action.&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;&lt;em&gt;Tail.&lt;/em&gt;&lt;/strong&gt; You grow a lashing, spiny tail, which deals 1d8 piercing damage on a hit and has the reach property. If a creature you can see within 10 feet of you hits you with an attack roll, you can use your reaction to swipe your tail and roll a d8, applying a bonus to your AC equal to the number rolled, potentially causing the attack to miss you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Form of the Beast">
+			<description level="3">When you enter your rage, you can transform, revealing the bestial power within you. Until the rage ends, you manifest a natural weapon. It counts as a simple melee weapon for you, and you add your Strength modifier ({{strength:modifier}}) to the attack and damage rolls when you attack with it, as normal.</description>
+		</sheet>
+		<rules>
+			<stat name="form of the beast:damage" value="strength:modifier" bonus="ability" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_BITE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_CLAWS" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_FORM_OF_THE_BEAST_TAIL" level="3" />
+		</rules>
+	</element>
+	<element name=".6th Level Bestial Soul" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_BESTIAL_SOUL">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Path of the Beast feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&lt;/p&gt;
+&lt;p class="indent"&gt;You can also alter your form to help you adapt to your surroundings. When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a swimming speed equal to your walking speed, and you can breathe underwater.&lt;/li&gt;
+&lt;li&gt;You gain a climbing speed equal to your walking speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.&lt;/li&gt;
+&lt;li&gt;When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Bestial Soul">
+			<description level="6">The natural weapons of your Form of the Beast to count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.
+			When you finish a short or long rest, choose one of the following benefits, which lasts until you finish a short or long rest: 
+
+			You gain a {{speed}}ft swimming speed, and you can breathe underwater. 
+
+			You gain a {{speed}}ft climbing speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. 
+
+			When you jump, you can make a Athletics check and extend your jump by a number of feet equal to the check’s total. You can make this special check only once per turn.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Infectious Fury" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_INFECTIOUS_FURY">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Path of the Beast feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a Wisdom saving throw (DC equal to 8 + your Constitution modifier + your proficiency bonus) or suffer one of the following effects (your choice):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The target must use its reaction to make a melee attack against another creature of your choice that you can see.&lt;/li&gt;
+&lt;li&gt;The target takes 2d12 psychic damage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Infectious Fury" usage="{{proficiency}}/Long Rest">
+			<description level="10">When you hit a creature with your natural weapons while you are raging, the beast within you can curse your target with rabid fury. The target must succeed on a DC {{infectious fury:dc}} Wisdom save or suffer one of the following effects: 
+
+			• The target must use its reaction to make a melee attack against another creature of your choice that you can see. 
+
+			• The target takes 2d12 psychic damage.</description>
+		</sheet>
+		<rules>
+			<stat name="infectious fury:dc" value="8" />
+			<stat name="infectious fury:dc" value="proficiency" />
+			<stat name="infectious fury:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name="14th Level Call the Hunt" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_CALL_THE_HUNT">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;14th-level Path of the Beast feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The beast within you grows so powerful that you can spread its ferocity to others and gain resilience from them joining your hunt. When you enter your rage, you can choose a number of other willing creatures you can see within 30 feet of you equal to your Constitution modifier (minimum of one creature).&lt;/p&gt;
+&lt;p class="indent"&gt;You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Call the Hunt" usage="{{proficiency}}/Long Rest">
+			<description level="14">When you enter your rage, you can choose {{call the hunt:creatures}} other willing creatures you can see within 30 feet of you.
+			You gain 5 temporary hit points for each creature that accepts this feature. Until the rage ends, the chosen creatures can use the following benefit once on each of their turns: when the creature hits a target with an attack roll and deals damage to it, the creature can roll a d6 and gain a bonus to the damage equal to the number rolled.</description>
+		</sheet>
+		<rules>
+			<stat name="call the hunt:creatures" value="1" bonus="base" />
+			<stat name="call the hunt:creatures" value="constitution:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name=".3rd Level Battlerager Armor" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_BATTLERAGER_ARMOR">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this path at 3rd level, you gain the ability to use spiked armor as a weapon.&lt;/p&gt;
+&lt;p class="indent"&gt;While you are wearing spiked armor and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes against a target within 5 feet of you. If the attack hits, the spikes deal 1d4 piercing damage. You use your Strength modifier for the attack and damage rolls.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, when you use the Attack action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Battlerager Armor">
+			<description level="3">While you are wearing spiked armor and are raging, you can use a bonus action to make one melee weapon attack with your armor spikes against a target within 5 feet of you. If the attack hits, the spikes deal 1d4 piercing damage. You use your Strength modifier (+{{strength:modifier}}) for the attack and damage rolls. Additionally, when you use the Attack action to grapple a creature, the target takes 3 piercing damage if your grapple check succeeds.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_SCAG_PROFICIENCY_ARMOR_PROFICIENCY_SPIKED_ARMOR" level="3" />
+		</rules>
+	</element>
+	<element name=".6th Level Reckless Abandon" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_RECKLESS_ABANDON">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 6th level, when you use Reckless Attack while raging, you also gain temporary hit points equal to your Constitution modifier (minimum of 1). They vanish if any of them are left when your rage ends.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Reckless Abandon">
+			<description level="6">When you use Reckless Attack while raging, you also gain {{reckless abandon:hp:temp}} temporary hp. They vanish if any of them are left when your rage ends.</description>
+		</sheet>
+		<rules>
+			<stat name="reckless abandon:hp:temp" value="1" bonus="reckless abandon" />
+			<stat name="reckless abandon:hp:temp" value="constitution:modifier" bonus="reckless abandon" />
+		</rules>
+	</element>
+	<element name="10th Level Battlerager Charge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_BATTLERAGER_CHARGE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 10th level, you can take the Dash action as a bonus action while you are raging.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Battlerager Charge" action="Bonus Action">
+			<description level="10">You can take the Dash action while you are raging.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Spiked Retribution" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_SPIKED_RETRIBUTION">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, when a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't incapacitated, and are wearing spiked armor.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Spiked Retribution">
+			<description level="14">When a creature within 5 feet of you hits you with a melee attack, the attacker takes 3 piercing damage if you are raging, aren't incapacitated, and are wearing spiked armor.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Divine Fury" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_DIVINE_FURY">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this path at 3rd level, you can channel divine fury into your weapon strikes. While you’re raging, the first creature you hit on each of your turns with a weapon attack takes extra damage equal to 1d6 + half your barbarian level. The extra damage is necrotic or radiant; you choose the type of damage when you gain this feature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Divine Fury">
+			<description level="3">While raging, the first creature you hit during your turn with a weapon attack takes an extra 1d6+{{level:barbarian:half}} necrotic or radiant damage (choose when taking this feature.)</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Warrior of the Gods" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_WARRIOR_OF_THE_GODS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, your soul is marked for endless battle. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Warrior of the Gods">
+			<description level="3">When a spell with the sole effect of restoring you to life (not undeath) is cast on you, the caster doesn't need material components.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Fanatical Focus" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_FANATICAL_FOCUS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, the divine power that fuels your rage can protect you. If you fail a saving throw while you’re raging, you can reroll it, and you must use the new roll. You can use this ability only once per rage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fanatical Focus" usage="1/Rage">
+			<description level="6">While raging, if you fail a saving throw, you can reroll it, and you must use the new roll.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Zealous Presence" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_ZEALOUS_PRESENCE">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you learn to channel divine power to inspire zealotry in others. As a bonus action, you unleash a battle cry infused with divine energy. Up to ten other creatures of your choice within 60 feet of you that can hear you gain advantage on attack rolls and saving throws until the start of your next turn. Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Zealous Presence" action="Bonus Action" usage="1/Long Rest">
+			<description level="10">Choose up to 10 other creatures within 60ft of you that can hear you, they gain advantage on attack rolls and saving throws until the start of your next turn.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Rage Beyond Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_RAGE_BEYOND_DEATH">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 14th level, the divine power that fuels your rage allows you to shrug off fatal blows. While you’re raging, having 0 hit points doesn’t knock you unconscious. You still must make death saving throws, and you suffer the normal effects of taking damage while at 0 hit points. However, if you would die due to failing death saving throws, you don't die until your rage ends, and you die then only if you still have 0 hit points.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Rage Beyond Death">
+			<description level="14">While raging, if you drop to 0HP, you don't fall unconscious. You do make death saves, and taking damage counts as a failed save, as normal. If you would die from failing saves, you instead die only if your rage ends and you have't gone above 0HP.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Storm Aura" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_STORM_AURA">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 3rd level, you emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.&lt;/p&gt;
+&lt;p class="indent"&gt;Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action. Choose desert, sea, or tundra. Your aura’s effect depends on that chosen environment, as detailed below. You can change your environment choice whenever you gain a level in this class.&lt;/p&gt;
+&lt;p class="indent"&gt;If your aura's effects require a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Desert. &lt;/i&gt;&lt;/b&gt;When this effect is activated, all other creatures in your aura take 2 fire damage each. The damage increases when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Sea. &lt;/i&gt;&lt;/b&gt;When this effect is activated, you can choose one other creature you can see in your aura. The target must make a Dexterity saving throw. The target takes 1d6 lightning damage on a failed save, or half as much damage on a successful one. The damage increases when you reach certain levels in this class, increasing to 2d6 at 10th level, 3d6 at 15th level, and 4d6 at 20th level.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Tundra. &lt;/i&gt;&lt;/b&gt;When this effect is activated, each creature of your choice in your aura gains 2 temporary hit points, as icy spirits inure it to suffering. The temporary hit points increase when you reach certain levels in this class, increasing to 3 at 5th level, 4 at 10th level, 5 at 15th level, and 6 at 20th level.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Storm Aura" action="Rage">
+			<description level="3">You create magical aura that extends 10 feet from you in every direction, but not through total cover. Your aura has an effect that activates when you enter your rage, and you can activate the effect again on each of your turns as a bonus action.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Storm Aura" supports="Storm Herald Storm Aura" level="3" />
+			<stat name="storm aura:dc" value="8" />
+			<stat name="storm aura:dc" value="proficiency" />
+			<stat name="storm aura:dc" value="constitution:modifier" />
+		</rules>
+	</element>
+	<element name=".6th Level Storm Soul" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_STORM_SOUL">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, the storm grants you benefits even when your aura isn’t active. The benefits are based on the environment you chose for your Storm Aura.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Desert. &lt;/i&gt;&lt;/b&gt;You gain resistance to fire damage, and you don’t suffer the effects of extreme heat, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch a flammable object that isn’t being worn or carried by anyone else and set it on fire.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Sea. &lt;/i&gt;&lt;/b&gt;You gain resistance to lightning damage, and you can breathe underwater. You also gain a swimming speed of 30 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Tundra. &lt;/i&gt;&lt;/b&gt;You gain resistance to cold damage, and you don’t suffer the effects of extreme cold, as described in the Dungeon Master’s Guide. Moreover, as an action, you can touch water and turn a 5-foot cube Of it into ice, which melts after 1 minute. This action fails if a creature is in the cube.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Storm Soul" display="false">
+			<description level="6">The storm grants you benefits even when your aura isn’t active. The benefits are based on the environment you chose for your Storm Aura.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_SOUL_DESERT" level="6" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_DESERT" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_SOUL_SEA" level="6" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_SEA" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_SOUL_TUNDRA" level="6" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_TUNDRA" />
+		</rules>
+	</element>
+	<element name="10th Level Shielding Storm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_SHIELDING_STORM">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you learn to use your mastery of the storm to protect others. Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shielding Storm">
+			<description level="10">Each creature of your choice has the damage resistance you gained from the Storm Soul feature while the creature is in your Storm Aura.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Raging Storm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_RAGING_STORM">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 14th level, the power of the storm you channel grows mightier, lashing out at your foes. The effect is based on the environment you chose for your Storm Aura.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Desert. &lt;/i&gt;&lt;/b&gt;Immediately after a creature in your aura hits you with an attack, you can use your reaction to force that creature to make a Dexterity saving throw. On a failed save, the creature takes fire damage equal to half your barbarian level.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Sea. &lt;/i&gt;&lt;/b&gt;When you hit a creature in your aura with an attack, you can use your reaction to force that creature to make a Strength saving throw. On a failed save, the creature is knocked prone, as if struck by a wave.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Tundra. &lt;/i&gt;&lt;/b&gt;Whenever the effect of your Storm Aura is activated, you can choose one creature you can see in the aura. That creature must succeed on a Strength saving throw, or its speed is reduced to 0 until the start of your next turn, as magical frost covers it.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Raging Storm" display="false">
+			<description level="14">The power of the storm you channel grows mightier, lashing out at your foes.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_RAGING_STORM_DESERT" level="14" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_DESERT" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_RAGING_STORM_SEA" level="14" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_SEA" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_RAGING_STORM_TUNDRA" level="14" requirements="ID_WOTC_XGTE_ARCHETYPE_FEATURE_STORM_HERALD_STORM_AURA_TUNDRA" />
+		</rules>
+	</element>
+	<element name=".3rd Level Ancestral Protectors" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_ANCESTRAL_PROTECTORS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this path at 3rd level, spectral warriors appear when you enter your rage. While you’re raging, the first creature you hit with an attack on your turn becomes the target of the warriors, which hinder its attacks. Until the start of your next turn, that target has disadvantage on any attack roll that isn’t against you, and when the target hits a creature other than you with an attack, that creature has resistance to the damage dealt by the attack. The effect on the target ends early if your rage ends.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Ancestral Protectors">
+			<description level="3">When raging, the first target you hit with an attack on your turn becomes the target of spectral warriors. Until the start of your next turn, target has disadvantage on attack rolls that isn't against you, and when it hits a creature other than you, that creature has resistance to the damage dealt by the attack.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Spirit Shield" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_SPIRIT_SHIELD">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 6th level, the guardian spirits that aid you can provide supernatural protection to those you defend. If you are raging and another creature you can see within 30 feet of you takes damage, you can use your reaction to reduce that damage by 2d6. When you reach certain levels in this class. you can reduce the damage by more: by 3d6 at 10th level and by 4d6 at 14th level.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Spirit Shield" action="Reaction">
+			<description level="6">When raging, if another creature within 30ft takes damage, you can reduce that damage by 2d6.</description>
+			<description level="10">When raging, if another creature within 30ft takes damage, you can reduce that damage by 3d6.</description>
+			<description level="14">When raging, if another creature within 30ft takes damage, you can reduce that damage by 4d6.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Consult the Spirits" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_CONSULT_THE_SPIRITS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you gain the ability to consult with your ancestral spirits. When you do so, you cast the &lt;i&gt;augury&lt;/i&gt; or &lt;i&gt;clairvoyance&lt;/i&gt; spell, without using a spell slot or material components. Rather than creating a spherical sensor, this use of &lt;i&gt;clairvoyance&lt;/i&gt; invisibly summons one of your ancestral spirits to the chosen location. Wisdom is your spellcasting ability for these spells. After you cast either spell in this way, you can’t use this feature again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Consult the Spirits" usage="1/Short Rest">
+			<description level="10">You can cast augury or clairvoyance without using a spell slot or material components, Wisdom is your spellcasting ability for these spells. Rather than creating a spherical sensor, this use of clairvoyance invisibly summons one of your ancestral spirits to the chosen location.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Vengeful Ancestors" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_VENGEFUL_ANCESTORS">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 14th level, your ancestral spirits grow powerful enough to retaliate. When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Vengeful Ancestors">
+			<description level="14">When you use your Spirit Shield to reduce the damage of an attack, the attacker takes an amount of force damage equal to the damage that your Spirit Shield prevents.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Spirit Seeker" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_SPIRIT_SEEKER">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;Yours is a path that seeks attunement with the natural world, giving you a kinship with beasts. At 3rd level when you adopt this path, you gain the ability to cast the beast sense and speak with animals spells, but only as rituals.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Spirit Seeker">
+			<description level="3">You can cast beast sense and speak with animals as rituals</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_BEAST_SENSE" level="3" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Totem Spirit" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_TOTEM_SPIRIT">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, when you adopt this path, you choose a totem spirit and gain its feature. You must make or acquire a physical totem object- an amulet or similar adornment—that incorporates fur or feathers, claws, teeth, or bones of the totem animal. At your option, you also gain minor physical attributes that are reminiscent of your totem spirit. For example, if you have a bear totem spirit, you might be unusually hairy and thickskinned, or if your totem is the eagle, your eyes turn bright yellow.&lt;/p&gt;
+&lt;p class="indent"&gt;Your totem animal might be an animal related to those listed here but more appropriate to your homeland. For example, you could choose a hawk or vulture in place of an eagle.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Totem Spirit" supports="Totem Spirit" level="3" />
+		</rules>
+	</element>
+	<element name=".6th Level Aspect of the Beast" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_ASPECT_OF_THE_BEAST">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain a magical benefit based on the totem animal of your choice. You can choose the same animal you selected at 3rd level or a different one.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Aspect of the Beast" supports="Aspect of the Beast" level="6" />
+		</rules>
+	</element>
+	<element name="10th Level Spirit Walker" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_10TH_LEVEL_SPIRIT_WALKER">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, you can cast the commune with nature spell, but only as a ritual. When you do so, a spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Spirit Walker">
+			<description level="10">You can cast the commune with nature spell, but only as a ritual. A spiritual version of one of the animals you chose for Totem Spirit or Aspect of the Beast appears to you to convey the information you seek.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" level="10" />
+		</rules>
+	</element>
+	<element name="14th Level Totemic Attunement" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_14TH_LEVEL_TOTEMIC_ATTUNEMENT">
+		<supports>Custom Class Primal Path</supports>
+		<description>
+			<html>&lt;p&gt;At 14th level, you gain a magical benefit based on a totem animal of your choice. You can choose the same animal you selected previously or a different one.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype Feature" name="Totemic Attunement" supports="Totemic Attunement" level="14" />
+		</rules>
+	</element>
+</elements>

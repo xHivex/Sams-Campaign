@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Warlock</name>
+		<update version="0.1.0">
+			<file name="warlock.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/warlock.xml" />
+		</update>
+	</info>
+	<element name=".1st Level Fey Presence" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_FEY_PRESENCE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fey Presence" action="Action" usage="1/Short Rest">
+			<description>You can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw. The creatures that fail their saving throws are all charmed or frightened by you until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name=".1st Level Form of Dread" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_FORM_OF_DREAD">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;1st-level Undead feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You manifest an aspect of your patron’s dreadful power. As a bonus action, you transform for 1 minute. You gain the following benefits while transformed:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain temporary hit points equal to 1d10 + your warlock level.&lt;/li&gt;
+&lt;li&gt;Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is frightened of you until the end of your next turn.&lt;/li&gt;
+&lt;li&gt;You are immune to the frightened condition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You can transform a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;The appearance of your Form of Dread reflects some aspect of your patron. For example, your form could be a shroud of shadows forming the crown and robes of your lich patron, or your body might glow with glyphs from ancient funerary rites and be surrounded by desert winds, suggesting your mummy patron.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Form of Dread" action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You transform for 1 minute. You gain the following benefits while transformed: 
+			• You gain 1d10 + {{level:warlock}} temporary hit points. 
+			• Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is frightened of you until the end of your next turn. 
+			• You are immune to the frightened condition.</description>
+			<description level="10">You transform for 1 minute. You gain the following benefits while transformed: 
+			• You gain 1d10 + {{level:warlock}} temporary hit points. 
+			• Once during each of your turns, when you hit a creature with an attack roll, you can force it to make a Wisdom saving throw, and if the saving throw fails, the target is frightened of you until the end of your next turn. 
+			• You are immune to the frightened condition. 
+			• You are immune to the necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name=".1st Level Dark One’s Blessing" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_DARK_ONES_BLESSING">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1).&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Dark One’s Blessing">
+			<description>When you reduce a hostile creature to 0 hit points, you gain {{dark ones blessing:temp hp}} temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="dark ones blessing:temp hp" value="charisma:modifier" />
+			<stat name="dark ones blessing:temp hp" value="level:warlock" />
+		</rules>
+	</element>
+	<element name=".1st Level Awakend Mind" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_AWAKEND_MIND">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Awakend Mind">
+			<description>You can communicate telepathically with any creature you can see within 30 feet of you. You don’t need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language.</description>
+		</sheet>
+	</element>
+	<element name=".1st Level Among the Dead" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_AMONG_THE_DEAD">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 1st level, you learn the spare the dying cantrip, which counts as a warlock cantrip for you. You also have advantage on saving throws against any disease.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, undead have difficulty harming you. If an undead targets you directly with an attack or a harmful spell, that creature must make a Wisdom saving throw against your spell save DC (an undead needn't make the save when it includes you in an area effect, such as the explosion of fireball). On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell. On a successful save, the creature is immune to this effect for 24 hours. An undead is also immune to this effect for 24 hours if you target it with an attack or a harmful spell.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Among the Dead">
+			<description>You have advantage on saving throws against any disease. If an undead targets you directly with an attack or a harmful spell, that creature must make a DC{{spellcasting:dc:cha}} Wisdom saving throw. On a failed save, the creature must choose a new target or forfeit targeting someone instead of you, potentially wasting the attack or spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name=".1st Level Bonus Cantrips" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_BONUS_CANTRIPS">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 1st level, you learn the &lt;i&gt;sacred flame&lt;/i&gt; and &lt;i&gt;light&lt;/i&gt; cantrips. They count as warlock cantrips for you, but they don’t count against your number of cantrips known.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SACRED_FLAME" spellcasting="Warlock" />
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name=".1st Level Gift of the Sea" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_GIFT_OF_THE_SEA">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;1st-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You gain a swimming speed of 40 feet, and you can breathe underwater.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Gift of the Sea">
+			<description>You can breathe underwater.</description>
+		</sheet>
+		<rules>
+			<stat name="speed:swim" value="40" bonus="base" />
+		</rules>
+	</element>
+	<element name=".1st Level Hex Warrior" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_HEX_WARRIOR">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 1st level, you acquire the training necessary to effectively arm yourself for battle. You gain proficiency with medium armor, shields, and martial weapons.&lt;/p&gt;
+&lt;p class="indent"&gt;The influence of your patron also allows you to mystically channel your will through a particular weapon. Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use your Charisma modifier, instead of Strength or Dexterity, for the attack and damage rolls. This benefit lasts until you finish a long rest. If you later gain the Pact of the Blade feature, this benefit extends to every pact weapon you conjure with that feature, no matter the weapon’s type. &lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hex Warrior">
+			<description>Whenever you finish a long rest, you can touch one weapon that you are proficient with and that lacks the two-handed property. When you attack with that weapon, you can use +{{hex warrior:attack}} for the attack and +{{charisma:modifier}} damage.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<stat name="hex warrior:attack" value="charisma:modifier" bonus="ability" />
+			<stat name="hex warrior:attack" value="proficiency" bonus="proficiency" />
+		</rules>
+	</element>
+	<element name=".1st Level Healing Light" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_HEALING_LIGHT">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 1st level, you gain the ability to channel celestial energy to heal wounds. You have a pool of d6s that you spend to fuel this healing. The number of dice in the pool equals 1 + your warlock level.&lt;/p&gt;
+&lt;p class="indent"&gt;As a bonus action, you can heal one creature you can see within 60 feet of you, spending dice from the pool. The maximum number of dice you can spend at once equals your Charisma modifier (minimum of one die). Roll the dice you spend, add them together, and restore a number of hit points equal to the total.&lt;/p&gt;
+&lt;p class="indent"&gt;Your pool regains all expended dice when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Healing Light" action="Bonus Action" usage="{{healing light:dice pool}}d6/Long Rest">
+			<description>You can use d6s from your pool to heal an ally you can see within 60 feet. The maximum number of dice you can use at once is {{healing light:max}}. Roll spent dice and restore a number of hit points equal to the total.</description>
+		</sheet>
+		<rules>
+			<stat name="healing light:dice pool" value="level:warlock" />
+			<stat name="healing light:dice pool" value="1" />
+			<stat name="healing light:max" value="1" bonus="base" />
+			<stat name="healing light:max" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name=".1st Level Hexblade’s Curse" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_HEXBLADES_CURSE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 1st level, you gain the ability to place a baleful curse on someone. As a bonus action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are incapacitated. Until the curse ends, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain a bonus to damage rolls against the cursed target. The bonus equals your proficiency bonus.&lt;/li&gt;
+&lt;li&gt;Any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.&lt;/li&gt;
+&lt;li&gt;If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You can’t use this feature again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hexblade’s Curse" action="Bonus Action" usage="1/Short Rest">
+			<description>Choose one creature you can see within 30ft. The target is cursed for 1 minute or until target dies, you die, or you are incapacitated. Until the curse ends, you gain a +{{proficiency}} bonus to damage rolls against the cursed target and any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20. If the cursed target dies, you regain {{hexblades curse:hp}}HP.</description>
+			<description level="14">Choose one creature you can see within 30ft. The target is cursed for 1 minute or until target dies, you die, or you are incapacitated. Until the curse ends, you gain a +{{proficiency}} bonus to damage rolls against the cursed target and any attack roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20. If the cursed target dies, you can either apply the curse to a different creature you can see within 30 feet of you or regain {{hexblades curse:hp}}HP.</description>
+		</sheet>
+		<rules>
+			<stat name="hexblades curse:hp:base" value="charisma:modifier" />
+			<stat name="hexblades curse:hp:base" value="level:warlock" />
+			<stat name="hexblades curse:hp:min" value="1" />
+			<stat name="hexblades curse:hp" value="hexblades curse:hp:min" bonus="base" />
+			<stat name="hexblades curse:hp" value="hexblades curse:hp:base" bonus="base" />
+		</rules>
+	</element>
+	<element name=".1st Level Tentacle of the Deeps" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_TENTACLE_OF_THE_DEEPS">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;1st-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can magically summon a spectral tentacle that strikes at your foes. As a bonus action, you create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.&lt;/p&gt;
+&lt;p class="indent"&gt;When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn. When you reach 10th level in this class, the damage increases to 2d8.&lt;/p&gt;
+&lt;p class="indent"&gt;As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.&lt;/p&gt;
+&lt;p class="indent"&gt;You can summon the tentacle a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Tentacle of the Deeps" action="Bonus Action" usage="{{proficiency}}/Long Rest">
+			<description>You create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.
+			When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes 1d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
+			As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.</description>
+			<description level="10">You create a 10-foot-long tentacle at a point you can see within 60 feet of you. The tentacle lasts for 1 minute or until you use this feature to create another tentacle.
+			When you create the tentacle, you can make a melee spell attack against one creature within 10 feet of it. On a hit, the target takes 2d8 cold damage, and its speed is reduced by 10 feet until the start of your next turn.
+			As a bonus action on your turn, you can move the tentacle up to 30 feet and repeat the attack.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Misty Escape" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_MISTY_ESCAPE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you can vanish in a puff of mist in response to harm. When you take damage, you can use your reaction to turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can't use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Misty Escape" action="Reaction" usage="1/Short Rest">
+			<description level="6">When you take damage, you can turn invisible and teleport up to 60 feet to an unoccupied space you can see. You remain invisible until the start of your next turn or until you attack or cast a spell.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Grave Touched" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_GRAVE_TOUCHED">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Undead feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your patron’s powers have a profound effect on your body and magic. You don’t need to eat, drink, or breathe.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, once during each of your turns, when you hit a creature with an attack roll and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Grave Touched">
+			<description level="6">Your patron’s powers have a profound effect on your body and magic. You don’t need to eat, drink, or breathe.
+			In addition, once during each of your turns, when you hit a creature with an attack roll and roll damage against the creature, you can replace the damage type with necrotic damage. While you are using your Form of Dread, you can roll one additional damage die when determining the necrotic damage the target takes.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Dark One’s Own Luck" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_DARK_ONES_OWN_LUCK">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you can call on your patron to alter fate in your favor. When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll. You can do so after seeing the initial roll but before any of the roll’s effects occur.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Dark One’s Own Luck" usage="1/Short Rest">
+			<description level="6">When you make an ability check or a saving throw, you can use this feature to add a d10 to your roll.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Entropic Ward" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_ENTROPIC_WARD">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you learn to magically ward yourself against attack and to turn an enemy’s failed strike into good luck for yourself. When a creature makes an attack roll against you, you can use your reaction to impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Entropic Ward" action="Reaction" usage="1/Short Rest">
+			<description level="6">When a creature makes an attack roll against you, you can impose disadvantage on that roll. If the attack misses you, your next attack roll against the creature has advantage if you make it before the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Defy Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_DEFY_DEATH">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you can give yourself vitality when you cheat death or when you help someone else cheat it. You can regain hit points equal to 1d8 + your Constitution modifier (minimum of 1 hit point) when you succeed on a death saving throw or when you stabilize a creature with spare the dying.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can't use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Defy Death" usage="1/Long Rest">
+			<description level="6">You can regain 1d8+{{defy death:modifier}} hp when you succeed on a death saving throw or when you stabilize a creature with spare the dying.</description>
+		</sheet>
+		<rules>
+			<stat name="defy death:modifier" value="1" bonus="defy death" />
+			<stat name="defy death:modifier" value="constitution:modifier" bonus="defy death" />
+		</rules>
+	</element>
+	<element name=".6th Level Accursed Specter" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_ACCURSED_SPECTER">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you can curse the soul of a person you slay, temporarily binding it to your service. When you slay a humanoid, you can cause its Spirit to rise from its corpse as a specter, the statistics for which are in the &lt;i&gt;Monster Manual&lt;/i&gt;. When the specter appears, it gains temporary hit points equal to half your warlock level. Roll initiative for the specter, which has its own turns. It obeys your verbal commands, and it gains a special bonus to its attack rolls equal to your Charisma modifier (minimum of +0). &lt;/p&gt;
+&lt;p class="indent"&gt;The specter remains in your service until the end of your next long rest, at which point it vanishes to the afterlife.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you bind a specter with this feature, you can’t use the feature again until you finish a long rest. &lt;/p&gt;</html>
+		</description>
+		<sheet alt="Accursed Specter" usage="1/Long Rest">
+			<description level="6">When you slay a humanoid, you can cause it to rise as a Specter until the end of your next long rest, it gains {{level:warlock:half}} temporary hp. You roll separate initiative for the specter. It obeys your verbal commands, and gains a +{{accursed specter:attack bonus}} bonus to attack rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="accursed specter:attack bonus" value="0" bonus="base" />
+			<stat name="accursed specter:attack bonus" value="charisma:modifier" bonus="base" />
+		</rules>
+	</element>
+	<element name=".6th Level Radiant Soul" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_RADIANT_SOUL">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, your link to the Celestial allows you to serve as a conduit for radiant energy. You have resistance to radiant damage, and when you cast a spell that deals radiant or fire damage, you can add your Charisma modifier to one radiant or fire damage roll of that spell against one of its targets. &lt;/p&gt;</html>
+		</description>
+		<sheet alt="Radiant Soul">
+			<description level="6">You can add +{{charisma:modifier}} to one radiant or fire damage roll against one target.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" level="6" />
+		</rules>
+	</element>
+	<element name=".6th Level Oceanic Soul" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_OCEANIC_SOUL">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You are now even more at home in the depths. You gain resistance to cold damage. In addition, when you are fully submerged, any creature that is also fully submerged can understand your speech, and you can understand theirs.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Oceanic Soul">
+			<description level="6">When you are fully submerged, any creature that is also fully submerged can understand your speech, and you can understand theirs.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" level="6" />
+		</rules>
+	</element>
+	<element name=".6th Level Guardian Coil" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_GUARDIAN_COIL">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your Tentacle of the Deeps can defend you and others, interposing itself between them and harm. When you or a creature you can see takes damage while within 10 feet of the tentacle, you can use your reaction to choose one of those creatures and reduce the damage to that creature by 1d8. When you reach 10th level in this class, the damage reduced by the tentacle increases to 2d8.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Guardian Coil" action="Reaction">
+			<description level="6">When you or a creature you can see takes damage while within 10 feet of the tentacle, you can choose one of those creatures and reduce the damage to that creature by 1d8.</description>
+			<description level="10">When you or a creature you can see takes damage while within 10 feet of the tentacle, you can choose one of those creatures and reduce the damage to that creature by 2d8.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Grasping Tentacles" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_GRASPING_TENTACLES">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You learn the spell &lt;i&gt;Evard’s black tentacles&lt;/i&gt;. It counts as a warlock spell for you, but it doesn’t count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you cast this spell, your patron’s magic bolsters you, granting you a number of temporary hit points equal to your warlock level. Moreover, damage can’t break your concentration on this spell.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Grasping Tentacles">
+			<description level="10">You can cast Evard’s black tentacles without a spell slot once after each long rest. Whenever you cast this spell, your patron’s magic bolsters you, granting you {{level:warlock}} temporary hp. Moreover, damage can’t break your concentration on this spell.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" level="10" spellcasting="Warlock" />
+		</rules>
+	</element>
+	<element name="10th Level Armor of Hexes" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_ARMOR_OF_HEXES">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 10th level, your hex grows more powerful. If the target cursed by your Hexblade’s Curse hits you with an attack roll, you can use your reaction to roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll. &lt;/p&gt;</html>
+		</description>
+		<sheet alt="Armor of Hexes" action="Reaction">
+			<description level="10">If the target cursed by your Hexblade’s Curse hits you with an attack roll, you can roll a d6. On a 4 or higher, the attack instead misses you, regardless of its roll.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Celestial Resilience" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CELESTIAL_RESILIENCE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, you gain temporary hit points whenever you finish a short or long rest. These temporary hit points equal your warlock level + your Charisma modifier. Additionally, choose up to five creatures you can see at the end of the rest. Those creatures each gain temporary hit points equal to half your warlock level + your Charisma modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Celestial Resilience">
+			<description level="10">After a short or long rest, you gain {{celestial resilience:temp hp}} temporary hit points and you can choose up to five creatures to receive {{celestial resilience:ally temp hp}} temporary hit points each.</description>
+		</sheet>
+		<rules>
+			<stat name="celestial resilience:temp hp" value="level:warlock" />
+			<stat name="celestial resilience:temp hp" value="charisma:modifier" />
+			<stat name="celestial resilience:ally temp hp" value="level:warlock:half" />
+			<stat name="celestial resilience:ally temp hp" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="10th Level Undying Nature" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_UNDYING_NATURE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 10th level, you can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Undying Nature">
+			<description level="10">You can hold your breath indefinitely, and you don't require food, water, or sleep, although you still require rest to reduce exhaustion and still benefit from finishing short and long rests. In addition, you age at a slower rate. For every 10 years that pass, your body ages only 1 year, and you are immune to being magically aged.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Necrotic Husk" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_NECROTIC_HUSK">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;10th-level Undead feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your connection to undeath and necrotic energy now saturates your body. You have resistance to necrotic damage. If you are transformed using your Form of Dread, you instead become immune to necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes necrotic damage equal to 2d10 + your warlock level. You then gain 1 level of exhaustion. Once you use this reaction, you can’t do so again until you finish 1d4 long rests.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Necrotic Husk" action="Reaction" usage="1/1d4 Long Rests">
+			<description level="10">When you would be reduced to 0 hit points, you can use your reaction to drop to 1 hit point instead and cause your body to erupt with deathly energy. Each creature of your choice that is within 30 feet of you takes 2d10 + {{level:warlock}} necrotic damage. You then gain 1 level of exhaustion.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" level="10" />
+		</rules>
+	</element>
+	<element name="10th Level Thought Shield" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_THOUGHT_SHIELD">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, your thoughts can’t be read by telepathy or other means unless you allow it. You also have resistance to psychic damage, and whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Thought Shield">
+			<description level="10">Whenever a creature deals psychic damage to you, that creature takes the same amount of damage that you do.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" level="10" />
+		</rules>
+	</element>
+	<element name="10th Level Beguiling Defenses" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_BEGUILING_DEFENSES">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 10th level, your patron teaches you how to turn the mind-affecting magic of your enemies against them. You are immune to being charmed, and when another creature attempts to charm you, you can use your reaction to attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw against your warlock spell save DC or be charmed by you for 1 minute or until the creature takes any damage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Beguiling Defenses" action="Reaction">
+			<description level="10">You are immune to being charmed, and when another creature attempts to charm you, you can attempt to turn the charm back on that creature. The creature must succeed on a Wisdom saving throw or be charmed by you for 1 minute or until the creature takes any damage.</description>
+		</sheet>
+	</element>
+	<element name="10th Level Fiendish Resilience" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_FIENDISH_RESILIENCE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 10th level, you can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fiendish Resilience">
+			<description level="10">You can choose one damage type when you finish a short or long rest. You gain resistance to that damage type until you choose a different one with this feature. Damage from magical weapons or silver weapons ignores this resistance.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Indestructable Life" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_INDESTRUCTABLE_LIFE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 14th level, you partake of some of the true secrets of the Undying. On your turn, you can use a bonus action to regain hit points equal to 1d8 + your warlock level. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can't use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Indestructable Life" usage="1/Short Rest">
+			<description level="14">On your turn, you can use a bonus action to regain 1d8+{{level:warlock}} hp. Additionally, if you put a severed body part of yours back in place when you use this feature, the part reattaches.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Spirit Projection" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_SPIRIT_PROJECTION">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;14th-level Undead feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your spirit can become untethered from your physical form. As an action, you can project your spirit from your body. The body you leave behind is unconscious and in a state of suspended animation.&lt;/p&gt;
+&lt;p class="indent"&gt;Your spirit resembles your mortal form in almost every way, replicating your game statistics but not your possessions. Any damage or other effects that apply to your spirit or physical body affects the other. Your spirit can remain outside your body for up to 1 hour or until your concentration is broken (as if concentrating on a spell). When your projection ends, your spirit returns to your body or your body magically teleports to your spirit’s space (your choice).&lt;/p&gt;
+&lt;p class="indent"&gt;While projecting your spirit, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Your spirit and body gain resistance to bludgeoning, piercing, and slashing damage.&lt;/li&gt;
+&lt;li&gt;When you cast a spell of the conjuration or necromancy school, the spell doesn’t require verbal or somatic components or material components that lack a gold cost.&lt;/li&gt;
+&lt;li&gt;You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object.&lt;/li&gt;
+&lt;li&gt;While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Spirit Projection" action="Action" usage="1/Long Rest">
+			<description level="20">YSou can project your spirit from your body. The body you leave behind is unconscious and in a state of suspended animation.
+ 
+			Your spirit resembles your mortal form in almost every way, replicating your game statistics but not your possessions. Any damage or other effects that apply to your spirit or physical body affects the other. Your spirit can remain outside your body for up to 1 hour or until your concentration is broken (as if concentrating on a spell). When your projection ends, your spirit returns to your body or your body magically teleports to your spirit’s space (your choice).
+			While projecting your spirit, you gain the following benefits:
+			• Your spirit and body gain resistance to bludgeoning, piercing, and slashing damage.
+			• When you cast a spell of the conjuration or necromancy school, the spell doesn’t require verbal or somatic components or material components that lack a gold cost.
+			• You have a flying speed equal to your walking speed and can hover. You can move through creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside a creature or an object.
+			• While you are using your Form of Dread, once during each of your turns when you deal necrotic damage to a creature, you regain hit points equal to half the amount of necrotic damage dealt.
+</description>
+		</sheet>
+	</element>
+	<element name="14th Level Master of Hexes" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_MASTER_OF_HEXES">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, you can spread your Hexblade’s Curse from a slain creature to another creature. When the creature cursed by your Hexblade’s Curse dies, you can apply the curse to a different creature you can see within 30 feet of you, provided you aren’t incapacitated. When you apply the curse in this way, you don’t regain hit points from the death of the previously cursed creature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Master of Hexes">
+			<description level="14">When the target of your Hexblade’s Curse dies, you can spread it to another creature you see within 30 ft., provided you aren’t incapacitated. When you apply the curse in this way, you don’t regain hit points from the death of the previously cursed creature.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Searing Vengeance" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_SEARING_VENGEANCE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, the radiant energy you channel allows you to resist death. When you have to make a death saving throw at the start of your turn, you can instead spring back to your feet with a burst of radiant energy. You regain hit points equal to half your hit point maximum, and then you stand up if you so choose. Each creature of your choice that is within 30 feet of you takes radiant damage equal to 2d8 + your Charisma modifier, and it is blinded until the end of the current turn. &lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Searing Vengeance" usage="1/Long Rest">
+			<description level="14">When you make a death saving throw at the start of your turn, you can instead regain half of your hit points maximum, stand to your feet if you so choose, and deal 2d8+{{charisma:modifier}} to each creature of your choice within 30 feet, blinding them until the end of your turn.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Dark Delirium" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_DARK_DELIRIUM">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, you can plunge a creature into an illusory realm. As an action, choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw against your warlock spell save DC. On a failed save, it is charmed or frightened by you (your choice) for 1 minute or until your concentration is broken (as if you are concentrating on a spell). This effect ends early if the creature takes any damage.&lt;/p&gt;
+&lt;p class="indent"&gt;Until this illusion ends, the creature thinks it is lost in a misty realm, the appearance of which you choose. The creature can see and hear only itself, you, and the illusion.&lt;/p&gt;
+&lt;p class="indent"&gt;You must finish a short or long rest before you can use this feature again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Dark Delirium" action="Action" usage="1/Short Rest">
+			<description level="14">Choose a creature that you can see within 60 feet of you. It must make a Wisdom saving throw. On a failed save, it is charmed or frightened by you for 1 minute or until your concentration is broken. This effect ends early if the creature takes any damage.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Create Thrall" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_CREATE_THRALL">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;At 14th level, you gain the ability to infect a humanoid’s mind with the alien magic of your patron. You can use your action to touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again.&lt;/p&gt;
+&lt;p class="indent"&gt;You can communicate telepathically with the charmed creature as long as the two of you are on the same plane of existence.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Create Thrall" action="Action">
+			<description level="14">You can touch an incapacitated humanoid. That creature is then charmed by you until a remove curse spell is cast on it, the charmed condition is removed from it, or you use this feature again. You can communicate telepathically with the charmed creature as long as the two of you are on the same plane of existence.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Fathomless Plunge" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_FATHOMLESS_PLUNGE">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;14th-level Fathomless feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can magically open temporary conduits to watery destinations. As an action, you can teleport yourself and up to five other willing creatures that you can see within 30 feet of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you’ve seen (pond size or larger) or within 30 feet of it, each of you appearing in an unoccupied space within 30 feet of the others.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a short or long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Fathomless Plunge" action="Action" usage="1/Short Rest">
+			<description level="14">You can teleport yourself and up to five other willing creatures that you can see within 30 feet of you. Amid a whirl of tentacles, you all vanish and then reappear up to 1 mile away in a body of water you’ve seen (pond size or larger) or within 30 feet of it, each of you appearing in an unoccupied space within 30 feet of the others.</description>
+		</sheet>
+	</element>
+	<element name="14th Level Hurl Through Hell" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_HURL_THROUGH_HELL">
+		<supports>Custom Class Otherworldly Patron</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 14th level, when you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears and hurtles through a nightmare landscape.&lt;/p&gt;
+&lt;p class="indent"&gt;At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage as it reels from its horrific experience.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet usage="1/Long Rest">
+			<description level="14">When you hit a creature with an attack, you can use this feature to instantly transport the target through the lower planes. The creature disappears.
+			At the end of your next turn, the target returns to the space it previously occupied, or the nearest unoccupied space. If the target is not a fiend, it takes 10d10 psychic damage.</description>
+		</sheet>
+	</element>
+</elements>

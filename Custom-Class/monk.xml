@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Monk</name>
+		<update version="0.1.0">
+			<file name="monk.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/monk.xml" />
+		</update>
+	</info>
+	<element name=".3rd Level Breath of the Dragon" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_BREATH_OF_THE_DRAGON">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-Level Way of the Ascendant Dragon Feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can channel destructive waves of energy, like those created by the dragons you emulate. When you take the Attack action on your turn, you can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 30-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in that area must make a Dexterity saving throw against your ki save DC, taking damage of the chosen type equal to two rolls of your Martial Arts die on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p class="indent"&gt;At 11th level, the damage of this feature increases to three rolls of your Martial Arts die.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest. While you have no uses available, you can spend 2 ki points to use this feature again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Breath of the Dragon" action="Attack" usage="{{proficiency}}/Long Rest">
+			<description level="3">You can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 30-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in that area must make a Dexterity saving throw DC{{ki:dc}}, taking damage of the chosen type equal to 2d{{martial arts:dice}} on a failed save, or half as much damage on a successful one. 
+			While you have no uses available, you can spend 2 ki points to use this feature again.</description>
+			<description level="11">You can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 30-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in that area must make a Dexterity saving throw DC{{ki:dc}}, taking damage of the chosen type equal to 3d{{martial arts:dice}} on a failed save, or half as much damage on a successful one. 
+			While you have no uses available, you can spend 2 ki points to use this feature again.</description>
+			<description level="17">You can replace one of the attacks with an exhalation of draconic energy in either a 20-foot cone or a 30-foot line that is 5 feet wide (your choice). Choose a damage type: acid, cold, fire, lightning, or poison. Each creature in that area must make a Dexterity saving throw DC{{ki:dc}}, taking damage of the chosen type equal to 3d{{martial arts:dice}} on a failed save, or half as much damage on a successful one. 
+			You can spend 1 ki point to increase the breath to a 60-foot cone or a 90-foot line that is 5 feet wide (your choice). Each creature in that area takes 4d{{martial arts:dice}} damage on a failed save, or half as much damage on a successful one. 
+			While you have no uses available, you can spend 2 ki points to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Open Hand Technique" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_OPEN_HAND_TECHNIQUE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this tradition at 3rd level, you can manipulate your enemy’s ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It must succeed on a Dexterity saving throw or be knocked prone.&lt;/li&gt;
+&lt;li&gt;It must make a Strength saving throw. If it fails, you can push it up to 15 feet away from you.&lt;/li&gt;
+&lt;li&gt;It can’t take reactions until the end of your next turn.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Open Hand Technique">
+			<description level="3">Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target: knock prone DEX Save, Push 15 feet STR Save, It can’t take reactions until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Draconic Disciple" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_DRACONIC_DISCIPLE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-Level Way of the Ascendant Dragon Feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can channel draconic power to magnify your presence and imbue your unarmed strikes with the essence of a dragon’s breath. You gain the following benefits:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Draconic Presence.&lt;/b&gt; If you fail a Charisma (Intimidation) or Charisma (Persuasion) check, you can use your reaction to reroll the check, as you tap into the mighty presence of dragons. Once this feature turns a failure into a success, you can’t use it again until you finish a long rest.&lt;/p&gt;
+&lt;p class="indent" style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Draconic Strike.&lt;/b&gt; When you damage a target with an unarmed strike, you can change the damage type to acid, cold, fire, lightning, or poison.&lt;/p&gt;
+&lt;p class="indent" style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Tongue of Dragons.&lt;/b&gt; You learn to speak, read, and write Draconic or one other language of your choice.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_DRACONIC_DISCIPLE_DRACONIC_PRESENCE" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_FTOD_ARCHETYPE_FEATURE_WAY_OF_THE_ASCENDANT_DRAGON_DRACONIC_DISCIPLE_DRACONIC_STRIKE" level="3" />
+			<select type="Language" name="Language (Tongue of Dragons)" supports="Standard||Exotic" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level ouch of Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_OUCH_OF_DEATH">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this tradition at 3rd level, your study of death allows you to extract vitality from a nother creature as it nears its demise. When you reduce a creature within 5 feet of you to 0 hit points, you gain temporary hit points equal to your Wisdom modifier + your monk level (minimum of 1 temporary hit point).&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Touch of Death">
+			<description level="3">When you reduce a creature within 5 feet of you to 0 hp, you gain {{touch of death:hp}} temporary hp.</description>
+		</sheet>
+		<rules>
+			<stat name="touch of death:hp" value="wisdom:modifier" level="3" />
+			<stat name="touch of death:hp" value="level:monk" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Hand of Healing" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_HAND_OF_HEALING">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Way of Mercy feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your mystical touch can mend wounds. As an action you can spend 1 ki point to touch a creature and restore a number of hit points equal to a roll of your Martial Arts die + your Wisdom modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hand of Healing" action="Action">
+			<description level="3">You can spend 1 ki point to touch a creature and restore 1d{{martial arts:dice}} + {{wisdom:modifier}} hp. 
+			When you use your Flurry of Blows, you can replace one of the unarmed strikes with a use of this feature without spending a ki point for the healing.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Hand of Harm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_HAND_OF_HARM">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Way of Mercy feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You use your ki to inflict wounds. When you hit a creature with an unarmed strike, you can spend 1 ki point to deal extra necrotic damage equal to one roll of your Martial Arts die + your Wisdom modifier. You can use this feature only once per turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hand of Harm" usage="1/Turn">
+			<description level="3">When you hit a creature with an unarmed strike, you can spend 1 ki point to deal 1d{{martial arts:dice}} + {{wisdom:modifier}} extra necrotic damage.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Arms of the Astral Self" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_ARMS_OF_THE_ASTRAL_SELF">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Way of the Astral Self feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your mastery of your ki allows you to summon a portion of your astral self. As a bonus action, you can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity saving throw or take force damage equal to two rolls of your Martial Arts die.&lt;/p&gt;
+&lt;p class="indent"&gt;For 10 minutes, these spectral arms hover near your shoulders or surround your arms (your choice). You determine the arms’ appearance, and they vanish early if you are incapacitated or die.&lt;/p&gt;
+&lt;p class="indent"&gt;While the spectral arms are present, you gain the following benefits:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws.&lt;/li&gt;
+&lt;li&gt;You can use the spectral arms to make unarmed strikes.&lt;/li&gt;
+&lt;li&gt;When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal.&lt;/li&gt;
+&lt;li&gt;The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Arms of the Astral Self" action="Bonus Action">
+			<description level="3">You can spend 1 ki point to summon the arms of your astral self. When you do so, each creature of your choice that you can see within 10 feet of you must succeed on a Dexterity save (DC {{ki:dc}}) or take 2d{{martial arts:dice}} force damage. 
+			For 10 minutes, these spectral arms hover near your shoulders or surround your arms. You determine the arms’ appearance, and they vanish early if you are incapacitated or die. 
+			While the spectral arms are present, you gain the following benefits: 
+
+			• You can use your Wisdom modifier in place of your Strength modifier when making Strength checks and Strength saving throws. 
+
+			• You can use the spectral arms to make unarmed strikes. 
+
+			• When you make an unarmed strike with the arms on your turn, your reach for it is 5 feet greater than normal. 
+
+			• The unarmed strikes you make with the arms can use your Wisdom modifier in place of your Strength or Dexterity modifier for the attack and damage rolls, and their damage type is force.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Radiant Sun Bolt" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_RADIANT_SUN_BOLT">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this tradition at 3rd level, you can hurl searing bolts of magical radiance.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain a new attack option that you can use with the Attack action. This special attack is a ranged spell attack with a range of 30 feet. You are proficient with it, and you add your Dexterity modifier to its attack and damage rolls. Its damage is radiant, and its damage die is a d4. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table.&lt;/p&gt;
+&lt;p class="indent"&gt;When you take the Attack action on your turn and use this special attack as part of it, you can spend 1 ki point to make the special attack twice as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;When you gain the Extra Attack feature, this special attack can be used for any of the attacks you make as part of the Attack action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Radiant Sun Bolt" action="Attack">
+			<description level="3">You gain a new ranged spell attack: +{{radiant sun bolt:attack}} to hit, range {{radiant sun bolt:range}}ft. Hit: {{radiant sun bolt:die:count}}d{{radiant sun bolt:die:size}}+{{dexterity:modifier}} radiant damage. When you use this attack, spend 1 ki point to make it twice as a bonus action.</description>
+		</sheet>
+		<rules>
+			<stat name="radiant sun bolt:attack" value="proficiency" bonus="proficiency" level="3" />
+			<stat name="radiant sun bolt:attack" value="dexterity:modifier" bonus="ability" level="3" />
+			<stat name="radiant sun bolt:range" value="30" level="3" />
+			<stat name="radiant sun bolt:die:count" value="1" level="3" />
+			<stat name="radiant sun bolt:die:size" value="martial arts:dice" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Path of the Kensei" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_PATH_OF_THE_KENSEI">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;When you choose this tradition at 3rd level, your special martial arts training leads you to master the use of certain weapons. This path also includes instruction in the deft strokes of calligraphy or painting. You gain the following benefits.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Kensei Weapons. &lt;/i&gt;&lt;/b&gt;Choose two types of weapons to be your kensei weapons: one melee weapon and one ranged weapon. Each of these weapons can be any simple or martial weapon that lacks the heavy and special properties. The longbow is also a valid choice. You gain proficiency with these weapons if you don’t already have it. Weapons of the chosen types are monk weapons for you. Many of this tradition’s features work only with your kensei weapons. When you reach 6th, 11th, and 17th level in this class, you can choose another type of weapon—either melee or ranged—to be a kensei weapon for you following the criteria above.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Agile Parry. &lt;/i&gt;&lt;/b&gt;If you make an unarmed strike as part of the Attack action on your turn and are holding a kensei weapon, you can use it to defend yourself if it is a melee weapon. You gain a +2 bonus to AC until the start of your next turn, while the weapon is in your hand and you aren't incapacitated.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Kensei’s Shot. &lt;/i&gt;&lt;/b&gt;You can use a bonus action on your turn to make your ranged attacks with a kensei weapon more deadly. When you do so, any target you hit with a ranged attack using a kensei weapon takes an extra 1d4 damage of the weapons type. You retain this benefit until the end of the current turn.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Way of the Brush. &lt;/i&gt;&lt;/b&gt;You gain proficiency with your choice of calligrapher's supplies or painter's supplies.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Way of the Brush (Kensei)" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES|ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" level="3" />
+			<select type="Archetype Feature" name="Kensei Weapon, Melee" supports="Kensei Weapon,Melee" level="3" />
+			<select type="Archetype Feature" name="Kensei Weapon, Ranged" supports="Kensei Weapon,Ranged" level="3" />
+			<select type="Archetype Feature" name="Kensei Weapon, 6" supports="Kensei Weapon,(Melee||Ranged)" level="6" />
+			<select type="Archetype Feature" name="Kensei Weapon, 11" supports="Kensei Weapon,(Melee||Ranged)" level="11" />
+			<select type="Archetype Feature" name="Kensei Weapon, 17" supports="Kensei Weapon,(Melee||Ranged)" level="17" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_KENSEI_PATH_OF_THE_KENSEI_AGILE_PARRY" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_KENSEI_PATH_OF_THE_KENSEI_KENSEIS_SHOT" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Drunken Technique" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_DRUNKEN_TECHNIQUE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you learn how to twist and turn quickly as part of your Flurry of Blows. Whenever you use Flurry of Blows, you gain the benefit of the Disengage action, and your walking speed increases by 10 feet until the end of the current turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Drunken Technique" action="Flurry of Blows">
+			<description level="3">You gain the benefit of Disengage, and your speed increases by 10ft until the end of the current turn.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Shadow Arts" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_SHADOW_ARTS">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting when you choose this tradition at 3rd level, you can use your ki to duplicate the effects of certain spells. As an action, you can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shadow Arts" action="Action" usage="Ki">
+			<description level="3">You can spend 2 ki points to cast darkness, darkvision, pass without trace, or silence, without providing material components. Additionally, you gain the minor illusion cantrip if you don’t already know it.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" level="3" />
+		</rules>
+	</element>
+	<element name=".6th Level Wholeness of Body" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_WHOLENESS_OF_BODY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain the ability to heal yourself. As an action, you can regain hit points equal to three times your monk level. You must finish a long rest before you can use this feature again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Wholeness of Body" action="Action" usage="1/Long Rest">
+			<description level="6">You can regain {{monk:wholeness of body}} hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="monk:wholeness of body" value="level:monk" level="6" />
+			<stat name="monk:wholeness of body" value="level:monk" level="6" />
+			<stat name="monk:wholeness of body" value="level:monk" level="6" />
+		</rules>
+	</element>
+	<element name=".6th Level Wings Unfurled" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_WINGS_UNFURLED">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-Level Way of the Ascendant Dragon Feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you use your Step of the Wind, you can unfurl spectral draconic wings from your back that vanish at the end of your turn. While the wings exist, you have a flying speed equal to your walking speed.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Wings Unfurled" action="Step of the Wind" usage="{{proficiency}}/Long Rest">
+			<description level="6">You can unfurl spectral draconic wings from your back that vanish at the end of your turn. While the wings exist, you have a flying speed of {{speed}} feet.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Hour of Reaping" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_HOUR_OF_REAPING">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain the ability to unsettle or terrify those around you as an action, for your soul has been touched by the shadow of death. When you take this action, each creature within 30 feet of you that can see you must succeed on a Wisdom saving throw or be frightened of you until the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hour of Reaping" action="Action">
+			<description level="6">Each creature within 30 feet of you that can see you must succeed on a DC {{ki:dc}} Wisdom saving throw or be frightened of you until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Physician’s Touch" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_PHYSICIANS_TOUCH">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Way of Mercy feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can administer even greater cures with a touch, and if you feel it’s necessary, you can use your knowledge to cause harm.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned.&lt;/p&gt;
+&lt;p class="indent"&gt;When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Physician’s Touch">
+			<description level="6">When you use Hand of Healing on a creature, you can also end one disease or one of the following conditions affecting the creature: blinded, deafened, paralyzed, poisoned, or stunned. 
+			When you use Hand of Harm on a creature, you can subject that creature to the poisoned condition until the end of your next turn.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Tipsy Sway" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_TIPSY_SWAY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 6th level, you can move in sudden, swaying ways. You gain the following benefits.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Leap to Your Feet.&lt;/i&gt;&lt;/b&gt; When you’re prone, you can stand up by spending 5 feet of movement, rather than half your speed.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Redirect Attack.&lt;/i&gt;&lt;/b&gt; When a creature misses you with a melee attack roll, you can spend 1 ki point as a reaction to cause that attack to hit one creature of your choice, other than the attacker, that you can see within 5 feet of you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Leap to Your Feet">
+			<description level="6">Standing up only costs 5ft of movement.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_DRUNKEN_MASTER_TIPSY_SWAY_REDIRECT_ATTACK" level="6" />
+		</rules>
+	</element>
+	<element name=".6th Level Visage of the Astral Self" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_VISAGE_OF_THE_ASTRAL_SELF">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;6th-level Way of the Astral Self feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can summon the visage of your astral self. As a bonus action, or as a part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage for 10 minutes. It vanishes early if you are incapacitated or die.&lt;/p&gt;
+&lt;p class="indent"&gt;The spectral visage covers your face like a helmet or mask. You determine its appearance.&lt;/p&gt;
+&lt;p class="indent"&gt;While the spectral visage is present, you gain the following benefits:&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Astral Sight.&lt;/em&gt;&lt;/strong&gt; You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Wisdom of the Spirit.&lt;/em&gt;&lt;/strong&gt; You have advantage on Wisdom (Insight) and Charisma (Intimidation) checks.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Word of the Spirit.&lt;/em&gt;&lt;/strong&gt; When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only the creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Visage of the Astral Self" action="Bonus Action">
+			<description level="6">As a bonus action, or as a part of the bonus action you take to activate Arms of the Astral Self, you can spend 1 ki point to summon this visage for 10 minutes. It vanishes early if you are incapacitated or die. While the spectral visage is present, you gain the following benefits: 
+
+			Astral Sight. You can see normally in darkness, both magical and nonmagical, to a distance of 120 feet. 
+
+			Wisdom of the Spirit. You have advantage on Insight and Intimidation checks. 
+
+			Word of the Spirit. When you speak, you can direct your words to a creature of your choice that you can see within 60 feet of you, making it so only the creature can hear you. Alternatively, you can amplify your voice so that all creatures within 600 feet can hear you.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level One with the Blade" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_ONE_WITH_THE_BLADE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you extend your ki into your kensei weapons, granting you the following benefits.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Magic Kensei Weapons.&lt;/i&gt;&lt;/b&gt; Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;b&gt;&lt;i&gt;Deft Strike.&lt;/i&gt;&lt;/b&gt; When you hit a target with a kensei weapon, you can spend 1 ki point to cause the weapon to deal extra damage to the target equal to your Martial Arts die. You can use this feature only once on each of your turns.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Magic Kensei Weapons">
+			<description level="6">Your attacks with your kensei weapons count as magical for the purpose of overcoming resistance and immunity.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_KENSEI_ONE_WITH_THE_BLADE_DEFT_STRIKE" level="6" />
+		</rules>
+	</element>
+	<element name=".6th Level Searing Arc Strike" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_SEARING_ARC_STRIKE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain the ability to channel your ki into searing waves of energy. Immediately after you take the Attack action on your turn, you can spend 2 ki points to cast the &lt;i&gt;burning hands&lt;/i&gt; spell as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;You can spend additional ki points to cast burning hands as a higher-level spell. Each additional ki point you spend increases the spell’s level by 1. The maximum number of ki points (2 plus any additional points) that you can spend on the spell equals half your monk level.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Searing Arc Strike" action="Bonus Action">
+			<description level="6">After an attack, spend 2 ki point to cast burning hands. Each additional ki point you spend increases the spell’s level by 1. You can spent on this spell a maximum of {{level:monk:half}} ki points.</description>
+		</sheet>
+	</element>
+	<element name=".6th Level Shadow Step" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_6TH_LEVEL_SHADOW_STEP">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Shadow Step" action="Bonus Action">
+			<description level="6">When you are in dim light or darkness, you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first melee attack you make before the end of the turn.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Mastery of Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_MASTERY_OF_DEATH">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 11th level, you use your familiarity with death to escape its grasp. When you are reduced to 0 hit points, you can expend 1 ki point (no action required) to have 1 hit point instead.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Mastery of Death" usage="Ki">
+			<description level="11">When you are reduced to 0 hp, you can expend 1 ki point to have 1 hp instead.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Tranquility" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_TRANQUILITY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 11th level, you can enter a special meditation that surrounds you with an aura of peace. At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals 8 + your Wisdom modifier + your proficiency bonus.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Tranquility">
+			<description level="11">At the end of a long rest, you gain the effect of a sanctuary spell that lasts until the start of your next long rest (the spell can end early as normal). The saving throw DC for the spell equals {{tranquility:dc}}.</description>
+		</sheet>
+		<rules>
+			<stat name="tranquility:dc" value="8" level="11" />
+			<stat name="tranquility:dc" value="proficiency" level="11" />
+			<stat name="tranquility:dc" value="wisdom:modifier" level="11" />
+		</rules>
+	</element>
+	<element name="11th Level Aspect of the Wyrm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_ASPECT_OF_THE_WYRM">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;11th-Level Way of the Ascendant Dragon Feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The power of your draconic spirit now radiates from you, warding your allies or inspiring fear in your enemies. As a bonus action, you can create an aura of draconic power that radiates 10 feet from you for 1 minute. For the duration, you gain one of the following effects of your choice:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Frightful Presence.&lt;/b&gt; When you create this aura, and as a bonus action on subsequent turns, you can choose a creature within the aura. The target must succeed on a Wisdom saving throw against your ki save DC or become frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save.&lt;/p&gt;
+&lt;p class="indent" style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Resistance.&lt;/b&gt; Choose a damage type when you activate this aura: acid, cold, fire, lightning, or poison. You and your allies within the aura have resistance to that damage.&lt;/p&gt;
+&lt;p&gt;Once you create this aura, you can’t create it again until you finish a long rest, unless you expend 3 ki points to create it again.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Aspect of the Wyrm" action="Bonus Action" usage="1/Long Rest">
+			<description level="11">You can create an aura of draconic power that radiates 10 feet from you for 1 minute. For the duration, you gain one of the following effects of your choice: 
+			• Frightful Presence. When you create this aura, and as a bonus action on subsequent turns, you can choose a creature within the aura. The target must succeed on a Wisdom saving throw against DC{{ki:dc}} or become frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. 
+			• Resistance. Choose a damage type when you activate this aura: acid, cold, fire, lightning, or poison. You and your allies within the aura have resistance to that damage. 
+			You can also expend 3 ki points to use this feature again.</description>
+			<description level="17">You can create an aura of draconic power that radiates 10 feet from you. When you do so choose any number of creatures you can see in your aura, each of those creatures must succeed on a Dexterity saving throw against your DC{{ki:dc}} or take 3d10 acid, cold, fire, lightning, or poison damage (your choice). For 1 minute, you gain one of the following effects of your choice: 
+			• Frightful Presence. When you create this aura, and as a bonus action on subsequent turns, you can choose a creature within the aura. The target must succeed on a Wisdom saving throw DC{{ki:dc}} or become frightened of you for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save. 
+			• Resistance. Choose a damage type when you activate this aura: acid, cold, fire, lightning, or poison. You and your allies within the aura have resistance to that damage. 
+			You can also expend 3 ki points to use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Searing Sunburst" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_SEARING_SUNBURST">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 11th level, you gain the ability to create an orb of light that erupts into a devastating explosion. As an action, you magically create an orb and hurl it at a point you choose within 150 feet, where it erupts into a sphere of radiant light for a brief but deadly instant.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature in that 20-foot-radius sphere must succeed on a Constitution saving throw or take 2d6 radiant damage. A creature doesn’t need to make the save if the creature is behind total cover that is opaque.&lt;/p&gt;
+&lt;p class="indent"&gt;You can increase the spheres damage by spending ki points. Each point you spend, to a maximum of 3, increases the damage by 2d6.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Searing Sunburst" action="Action">
+			<description level="11">Create an orb and hurl it up to 150ft, where it erupts into a 20ft radius sphere of radiant light. Each creature within it must succeed on a DC{{ki:dc}} Constitution saving throw or take 2d6 radiant damage. Spend up to 3 ki point to increase the damage by 2d6 per ki point spent.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Flurry of Healing and Harm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_FLURRY_OF_HEALING_AND_HARM">
+		<supports>Custom Class Monastic Tradition</supports>
+		<requirements>ID_CUCL_ARCHETYPE_FEATURE_3RD_LEVEL_HAND_OF_HEALING</requirements>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;11th-level Way of Mercy feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can now mete out a flurry of comfort and hurt. When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing without spending ki points for the healing.&lt;/p&gt;
+&lt;p class="indent"&gt;In addition, when you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Flurry of Healing and Harm">
+			<description level="11">When you use Flurry of Blows, you can now replace each of the unarmed strikes with a use of your Hand of Healing without spending ki points for the healing. 
+			When you make an unarmed strike with Flurry of Blows, you can use Hand of Harm with that strike without spending the ki point for Hand of Harm. You can still use Hand of Harm only once per turn.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Body of the Astral Self" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_BODY_OF_THE_ASTRAL_SELF">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;11th-level Way of the Astral Self feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;When you have both your astral arms and visage summoned, you can cause the body of your astral self to appear (no action required). This spectral body covers your physical form like a suit of armor, connecting with the arms and visage. You determine its appearance.&lt;/p&gt;
+&lt;p class="indent"&gt;While the spectral body is present, you gain the following benefits:&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Deflect Energy.&lt;/em&gt;&lt;/strong&gt; When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + your Wisdom modifier (minimum reduction of 1).&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Empowered Arms.&lt;/em&gt;&lt;/strong&gt; Once on each of your turns when you hit a target with the Arms of the Astral Self, you can deal extra damage to the target equal to your Martial Arts die.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Body of the Astral Self">
+			<description level="11">When you have both your astral arms and visage summoned, you can cause the body of your astral self to appear. This spectral body covers your physical form like a suit of armor, connecting with the arms and visage. You determine its appearance. 
+			While the spectral body is present, you gain the following benefits: 
+
+			Deflect Energy. When you take acid, cold, fire, force, lightning, or thunder damage, you can use your reaction to deflect it. When you do so, the damage you take is reduced by 1d10 + {{body of the astral self:deflect damage}}. 
+
+			Empowered Arms. Once on each of your turns when you hit a target with the Arms of the Astral Self, you can deal extra 1d{{martial arts:dice}} damage to the target.</description>
+		</sheet>
+		<rules>
+			<stat name="body of the astral self:deflect damage" value="1" bonus="base" level="11" />
+			<stat name="body of the astral self:deflect damage" value="wisdom:modifier" bonus="base" level="11" />
+		</rules>
+	</element>
+	<element name="11th Level Drunkard's Luck" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_DRUNKARDS_LUCK">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 11th level, you always seem to get a lucky bounce at the right moment. When you make an ability check, an attack roll, or a saving throw and have disadvantage on the roll, you can spend 2 ki points to cancel the disadvantage for that roll.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Drunkard's Luck" usage="Ki">
+			<description level="11">You can spend 2 ki point to cancel disadvantage for an ability check, attack roll, or saving throw that you make.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Sharpen the Blade" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_SHARPEN_THE_BLADE">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 11th level, you gain the ability to augment your weapons further with your ki. As a bonus action, you can expend up to 3 ki points to grant one kensei weapon you touch a bonus to attack and damage rolls when you attack with it. The bonus equals the number of ki points you spent. This bonus lasts for 1 minute or until you use this feature again. This feature has no effect on a magic weapon that already has a bonus to attack and damage rolls.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Sharpen the Blade" action="Bonus Action" usage="Ki">
+			<description level="11">Expend up to 3 ki point to grant one kensei weapon you touch a bonus to attack and damage, equal to the ki points spent, for 1 minute. This has no effect on a magic weapon that already has a bonus to attack and damage.</description>
+		</sheet>
+	</element>
+	<element name="11th Level Cloak of Shadows" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_11TH_LEVEL_CLOAK_OF_SHADOWS">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;By 11th level, you have learned to become one with the shadows. When you are in an area of dim light or darkness, you can use your action to become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Cloak of Shadows" action="Action">
+			<description level="11">When you are in an area of dim light or darkness, you can become invisible. You remain invisible until you make an attack, cast a spell, or are in an area of bright light.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Awakened Astral Self" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_AWAKENED_ASTRAL_SELF">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;17th-level Way of the Astral Self feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your connection to your astral self is complete, allowing you to unleash its full potential. As a bonus action, you can spend 5 ki points to summon the arms, visage, adn body of your astral self and awaken it for 10 minutes. This awakening ends early if you are incapacitated or die.&lt;/p&gt;
+&lt;p class="indent"&gt;While your astral self is awakened, you gain the following benefits:&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Armor of the Spirit.&lt;/em&gt;&lt;/strong&gt; You gain a +2 bonus to Armor Class.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Astral Barrage.&lt;/em&gt;&lt;/strong&gt; Whenever you use the Extra Attack feature to attack twice, you can instead attack three times if all the attacks are made with your astral arms.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Awakened Astral Self" action="Bonus Action">
+			<description level="17">You can spend 5 ki points to summon the arms, visage, adn body of your astral self and awaken it for 10 minutes. This awakening ends early if you are incapacitated or die. 
+			While your astral self is awakened, you gain the following benefits: 
+
+			Armor of the Spirit. You gain a +2 bonus to Armor Class. 
+
+			Astral Barrage. Whenever you use the Extra Attack feature to attack twice, you can instead attack three times if all the attacks are made with your astral arms.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Ascendant Aspect" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_ASCENDANT_ASPECT">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;17th-Level Way of the Ascendant Dragon Feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your draconic spirit reaches its peak. You gain the following benefits:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Augment Breath.&lt;/b&gt; When you use your Breath of the Dragon, you can spend 1 ki point to augment its shape and power. The exhalation of draconic energy becomes either a 60-foot cone or a 90-foot line that is 5 feet wide (your choice), and each creature in that area takes damage equal to four rolls of your Martial Arts die on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+&lt;p class="indent" style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Blindsight.&lt;/b&gt; You gain blindsight out to 10 feet. Within that range, you can effectively see anything that isn’t behind total cover, even if you’re blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.&lt;/p&gt;
+&lt;p class="indent" style="text-indent: -1em; margin-left: 1em"&gt;&lt;b&gt;Explosive Fury.&lt;/b&gt; When you activate your Aspect of the Wyrm, draconic fury explodes from you. Choose any number of creatures you can see in your aura. Each of those creatures must succeed on a Dexterity saving throw against your ki save DC or take 3d10 acid, cold, fire, lightning, or poison damage (your choice).&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" level="17" />
+			<stat name="blindsight:range" value="10" bonus="base" level="17" />
+		</rules>
+	</element>
+	<element name="17th Level Touch of the Long Death" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_TOUCH_OF_THE_LONG_DEATH">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 17th level, your touch can channel the energy of death into a creature. As an action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Touch of the Long Death" action="Action" usage="Ki">
+			<description level="17">You touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution saving throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Quivering Palm" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_QUIVERING_PALM">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you gain the ability to set up lethal vibrations in someone’s body. When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for a number of days equal to your monk level. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Quivering Palm">
+			<description level="17">When you hit a creature with an unarmed strike, you can spend 3 ki points to start these imperceptible vibrations, which last for {{level:monk}} days. The vibrations are harmless unless you use your action to end them. To do so, you and the target must be on the same plane of existence. When you use this action, the creature must make a Constitution saving throw. If it fails, it is reduced to 0 hit points. If it succeeds, it takes 10d10 necrotic damage.
+			You can have only one creature under the effect of this feature at a time. You can choose to end the vibrations harmlessly without using an action.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Hand of Ultimate Mercy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_HAND_OF_ULTIMATE_MERCY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;17th-level Way of Mercy feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your mastery of life energy opens the door to the ultimate mercy. As an action, you can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining a number of hit points equal to 4d10 + you Wisdom modifier. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you use this feature, you can’t use it again until you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Hand of Ultimate Mercy" action="Action" usage="1/Long Rest">
+			<description level="17">You can touch the corpse of a creature that died within the past 24 hours and expend 5 ki points. The creature then returns to life, regaining 4d10 + {{wisdom:modifier}} hp. If the creature died while subject to any of the following conditions, it revives with them removed: blinded, deafened, paralyzed, poisoned, and stunned.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Sun Shield" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_SUN_SHIELD">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you become wreathed in a luminous, magical aura. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action.&lt;/p&gt;
+&lt;p class="indent"&gt;If a creature hits you with a melee attack while this light shines, you can use your reaction to deal radiant damage to the creature. The radiant damage equals 5 + your Wisdom modifier.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Sun Shield">
+			<description level="17">You shed bright light in a 30-foot radius and dim light for an additional 30 feet. You can extinguish or restore the light as a bonus action. If a creature hits you with a melee attack while this light shines, you can use your reaction to deal {{sun shield:damage}} radiant damage to the creature.</description>
+		</sheet>
+		<rules>
+			<stat name="sun shield:damage" value="5" level="17" />
+			<stat name="sun shield:damage" value="wisdom:modifier" level="17" />
+		</rules>
+	</element>
+	<element name="17th Level Unerring Accuracy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_UNERRING_ACCURACY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, your mastery of weapons grants you extraordinary accuracy. If you miss with an attack roll using a monk weapon on your turn, you can reroll it. You can use this feature only once on each of your turns.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Unerring Accuracy" usage="1/Round">
+			<description level="17">One your turn, reroll if you miss with a monk weapon.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Opportunist" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_OPPORTUNIST">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you can exploit a creature’s momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make a melee attack against that creature.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Opportunist" action="Reaction">
+			<description level="17">Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can make a melee attack against that creature.</description>
+		</sheet>
+	</element>
+	<element name="17th Level Intoxicated Frenzy" type="Archetype Feature" source="Custom Class" id="ID_CUCL_ARCHETYPE_FEATURE_17TH_LEVEL_INTOXICATED_FRENZY">
+		<supports>Custom Class Monastic Tradition</supports>
+		<description>
+			<html>&lt;p&gt;At 17th level, you gain the ability to make an overwhelming number of attacks against a group of enemies. When you use your Flurry of Blows, you can make up to three additional attacks with it (up to a total of five Flurry of Blows attacks), provided that each Flurry of Blows attack targets a different creature this turn.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Intoxicated Frenzy" action="Flurry of Blows">
+			<description level="17">You can make up to 3 additional attacks (up to a five Flurry of Blows attacks), provided they each target a different creature.</description>
+		</sheet>
+	</element>
+</elements>
