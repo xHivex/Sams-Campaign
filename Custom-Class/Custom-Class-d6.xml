@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Custom Class d6</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Custom-Class-d6.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d6.xml" />
 		</update>
 	</info>
@@ -64,7 +64,7 @@
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 5" level="5" number="2" />
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 6" level="6" />
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 7" level="7" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 8" level="8" />
+			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 8" level="8" number="2" />
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 9" level="9" />
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 10" level="10" />
 			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 11" level="11" />
