@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Artificer</name>
+		<update version="0.1.0">
+			<file name="artificer.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/artificer.xml" />
+		</update>
+	</info>
+	<element name=".3rd Level Tools of the Trade" type="Archetype Feature" source="Custom Class" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_TOOLS_OF_THE_TRADE">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Armorer feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You also gain proficiency with smith’s tools. If you already have this tool proficiency, you gain proficiency with one other type of artisan’s tools of your choice.&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Tool Proficiency, Tools of the Trade" supports="Artisan tools" level="3" default="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+	<element name=".3rd Level Arcane Armor" type="Archetype Feature" source="Custom Class" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_ARCANE_ARMOR">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Armorer feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your metallurgical pursuits have led to you making armor a conduit for your magic. As an action, you can turn a suit of armor you are wearing into Arcane Armor, provided you have smith’s tools in hand.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain the following benefits while wearing this armor:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the armor normally has a Strength requirement, the arcane armor lacks this requirement for you.&lt;/li&gt;
+&lt;li&gt;You can use the arcane armor as a spellcasting focus for your artificer spells.&lt;/li&gt;
+&lt;li&gt;The armor attaches to you and can’t be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a limb it replaces.&lt;/li&gt;
+&lt;li&gt;You can doff or don the armor as an action.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;The armor continues to be Arcane Armor until you don another suit of armor or you die.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Arcane Armor" action="Action">
+			<description level="3">You can turn a suit of armor you are wearing into Arcane Armor, provided you have smith’s tools in hand. You gain the following benefits while wearing this armor:  
+
+			• If the armor normally has a Strength requirement, the arcane armor lacks this requirement for you. 
+
+			• You can use the arcane armor as a spellcasting focus for your artificer spells. 
+
+			• The armor attaches to you and can’t be removed against your will. It also expands to cover your entire body, although you can retract or deploy the helmet as a bonus action. The armor replaces any missing limbs, functioning identically to a limb it replaces. 
+
+			• You can doff or don the armor as an action.
+			The armor continues to be Arcane Armor until you don another suit of armor or you die.</description>
+		</sheet>
+		<rules>
+			<stat name="speed" value="0" bonus="armor" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Armor Model" type="Archetype Feature" source="Custom Class" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;3rd-level Armorer feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.&lt;/p&gt;
+&lt;p class="indent"&gt;Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls.&lt;/p&gt;
+&lt;p class="indent"&gt;You can change the armor’s model whenever you finish a short or long rest, provided you have smith’s tools in hand.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Guardian.&lt;/em&gt;&lt;/strong&gt; You design your armor to be in the front line of conflict. It has the following features:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;Thunder Gauntlets.&lt;/strong&gt; Each of the armor’s gauntlets counts as a simple melee weapon while you aren’t holding anything in it, and it deals 1d8 thunder damage on a hit. A creature hit by the gauntlet has disadvantage on attack rolls against targets other than you until the start of your next turn, as the armor magically emits a distracting pulse when the creature attacks someone else. &lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em; margin-bottom: 20px"&gt;&lt;strong&gt;Defensive Field.&lt;/strong&gt; As a bonus action, you can gain temporary hit points equal to your level in this class, replacing any temporary hit points you already have. You lose these temporary hit points if you doff the armor. You can use this bonus action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Infiltrator.&lt;/em&gt;&lt;/strong&gt; You can customize your armor for subtle undertakings. It has the following features:&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;Lightning Launcher.&lt;/strong&gt; A gemlike node appears on one of your armored fists or on the chest (your choice). It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;Powered Steps.&lt;/strong&gt; Your walking speed increases by 5 feet.&lt;/p&gt;
+&lt;p style="text-indent: -1em; margin-left: 1em"&gt;&lt;strong&gt;Dampening Field.&lt;/strong&gt; You have advantage on Dexterity (Stealth) checks. If the armor normally imposes disadvantage on such checks, the advantage and disadvantage cancel each other, as normal.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Armor Model">
+			<description level="3">You can customize your Arcane Armor. Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls. 
+			You can change the armor’s model whenever you finish a short or long rest, provided you have smith’s tools in hand.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Armor Model, Armorer" supports="Armor Model" level="3" optional="true" />
+		</rules>
+	</element>
+	<element name=".9th Level Armor Modifications" type="Archetype Feature" source="Custom Class" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODIFICATIONS">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;9th-level Armorer feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You learn how to use your artificer infusions to specially modify your Arcane Armor. That armor now counts as separate items for the purposes of your Infuse Items feature: armor (the chest piece), boots, helmet, and the armor’s special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor’s model with the Armor Model feature. In addition, the maximum number of items you can infuse at once increases by 2, but those extra items must be part of your Arcane Armor.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Armor Modifications">
+			<description level="9">That armor now counts as separate items for the purposes of your Infuse Items feature: armor, boots, helmet, and the armor’s special weapon. Each of those items can bear one of your infusions, and the infusions transfer over if you change your armor’s model with the Armor Model feature.</description>
+		</sheet>
+		<rules>
+			<stat name="item infusions:max" value="2" level="9" />
+		</rules>
+	</element>
+	<element name="15th Level Perfected Armor" type="Archetype Feature" source="Custom Class" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_PERFECTED_ARMOR">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;&lt;em&gt;15th-level Armorer feature&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Your Arcane Armor gains additional benefits based on its model, as shown below.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Guardian.&lt;/em&gt;&lt;/strong&gt; When a Huge or smaller creature you can see ends its turn within 30 feet of you, you can use your reaction to magically force it to make a Strength saving throw against your spell save DC. On a failed save, you pull the creature up to 25 feet directly to an unoccupied space. If you pull the target to a space within 5 feet of you, you can make a melee weapon attack against it as part of this reaction.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use this reaction a number of times equal to your proficiency bonus, and you regain all expended uses of it when you finish a long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Infiltrator.&lt;/em&gt;&lt;/strong&gt; Any creature that takes lightning damage from your Lightning Launcher glimmers with magical light until the start of your next turn. The glimmering creature sheds dim light in a 5-foot radius, and it has disadvantage on attack rolls against you, as the light jolts it if it attacks you. In addition, the next attack roll against it has advantage, and if that attack hits, the target takes an extra 1d6 lightning damage.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Perfected Armor">
+			<description level="15">Your Arcane Armor gains additional benefits based on its model.</description>
+		</sheet>
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_PERFECTED_ARMOR_GUARDIAN" level="15" requirements="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL_GUARDIAN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_PERFECTED_ARMOR_INFILTRATOR" level="15" requirements="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ARMORER_ARMOR_MODEL_INFILTRATOR" />
+		</rules>
+	</element>
+	<element name=".3rd Level Battle Ready" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_BATTLE_SMITH_BATTLE_READY">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;When you reach 3rd level, your combat training and your experiments with magic have paid off in two ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain proficiency with martial weapons.&lt;/li&gt;
+&lt;li&gt;When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Battle Ready">
+			<description level="3">When you attack with a magic weapon, you can use your Intelligence modifier, instead of Strength or Dexterity modifier, for the attack and damage rolls.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" level="3" />
+		</rules>
+	</element>
+	<element name=".3rd Level Steel Defender" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_BATTLE_SMITH_STEEL_DEFENDER">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;By 3rd level, your tinkering has borne you a faithful companion, a steel defender. It is friendly to you and your companions, and it obeys your commands. See this creature’s game statistics in the Steel Defender stat block, which uses your proficiency bonus (PB) in several places. You determine the creature’s appearance and whether it has two legs or four; your choice has no effect on its game statistics.&lt;/p&gt;
+&lt;p class="indent"&gt;In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, not just Dodge.&lt;/p&gt;
+&lt;p class="indent"&gt;If the &lt;i&gt;mending&lt;/i&gt; spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored.&lt;/p&gt;
+&lt;p class="indent"&gt;At the end of a long rest, you can create a new steel defender if you have your smith’s tools with you. If you already have a steel defender from this feature, the first one immediately perishes. The defender also perishes if you die.&lt;/p&gt;
+&lt;div class="reference"&gt;
+&lt;div element="ID_WOTC_ERLW_INFORMATION_STEEL_DEFENDER" /&gt;
+&lt;/div&gt;</html>
+		</description>
+		<sheet alt="Steel Defender">
+			<description level="3">In combat, the defender shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the defender can take any action of its choice, not just Dodge. 
+			If the mending spell is cast on it, it regains 2d6 hit points. If it has died within the last hour, you can use your smith’s tools as an action to revive it, provided you are within 5 feet of it and you expend a spell slot of 1st level or higher. The steel defender returns to life after 1 minute with all its hit points restored. 
+			At the end of a long rest, you can create a new steel defender if you have your smith’s tools with you.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Steel Defender" supports="Steel Defender" level="3" default="ID_WOTC_ERLW_COMPANION_ARTIFICER_STEEL_DEFENDER" />
+		</rules>
+	</element>
+	<element name=".9th Level Arcane Jolt" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_BATTLE_SMITH_ARCANE_JOLT">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;At 9th level, you learn new ways to channel arcane energy to harm or heal. When either you hit a target with a magic weapon attack or your steel defender hits a target, you can channel magical energy through the strike to create one of the following effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The target takes an extra 2d6 force damage.&lt;/li&gt;
+&lt;li&gt;Choose one creature or object you can see within 30 feet of the target. Healing energy flows into the chosen recipient, restoring 2d6 hit points to it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="indent"&gt;You can use this energy a number of times equal to your Intelligence modifier (minimum of once), but you can do so no more than once on a turn. You regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Arcane Jolt" usage="{{arcane jolt:usage}}/Long Rest">
+			<description level="9">Once per turn, when either you hit a target with a magic weapon attack or your steel defender hits a target, you can create one of the following effects: 
+			• The target takes an extra {{arcane jolt:dice:amount}}d6 force damage. 
+			• Choose one creature or object you can see within 30 feet of the target restoring {{arcane jolt:dice:amount}}d6 hit points to it.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt:dice:amount" value="2" bonus="base" level="9" />
+			<stat name="arcane jolt:usage" value="1" bonus="base" level="9" />
+			<stat name="arcane jolt:usage" value="intelligence:modifier" bonus="base" level="9" />
+		</rules>
+	</element>
+	<element name="15th Level Improved Defender" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_BATTLE_SMITH_IMPROVED_DEFENDER">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;At 15th level, your Arcane jolt and steel defender become more powerful:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The extra damage and the healing of your Arcane jolt both increase to 4d6.&lt;/li&gt;
+&lt;li&gt;Your steel defender gains a +2 bonus to Armor Class.&lt;/li&gt;
+&lt;li&gt;Whenever your steel defender uses its Deflect Attack, the attacker takes force damage equal to 1d4 + your Intelligence modifier.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Improved Defender">
+			<description level="15">Whenever your steel defender uses its Deflect Attack, the attacker takes 1d4+{{intelligence:modifier}} force damage.</description>
+		</sheet>
+		<rules>
+			<stat name="arcane jolt:dice:amount" value="4" bonus="base" level="15" />
+			<stat name="companion:ac" value="2" level="15" />
+		</rules>
+	</element>
+	<element name=".3rd Level Eldritch Cannon" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;At 3rd level, you learn how to create a magical cannon. Using woodcarver’s tools or smith’s tools, you can take an action to magically create a Small or Tiny eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. A Small eldritch cannon occupies its space, and a Tiny one can be held in one hand.&lt;/p&gt;
+&lt;p class="indent"&gt;Once you create a cannon, you can’t do so again until you finish a long rest or until you expend a spell slot to create one. You can have only one cannon at a time and can’t create one while your cannon is present.&lt;/p&gt;
+&lt;p class="indent"&gt;The cannon is a magical object. Regardless of size, the cannon has an AC of 18 and a number of hit points equal to five times your artificer level. It is immune to poison damage and psychic damage. If it is forced to make an ability check or a saving throw, treat all its ability scores as 10 (+0). If the &lt;i&gt;mending&lt;/i&gt; spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action.&lt;/p&gt;
+&lt;p class="indent"&gt;When you create the cannon, you determine its appearance and whether it has legs. You also decide which type it is, choosing from the options on the Eldritch Cannons table. On each of your turns, you can take a bonus action to cause the cannon to activate if you are within 60 feet of it. As part of the same bonus action, you can direct the cannon to walk or climb up to 15 feet to an unoccupied space, provided it has legs.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;ELDRITCH CANNONS&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td&gt;Cannon&lt;/td&gt;&lt;td&gt;Activation&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;Flamethrower&lt;/td&gt;&lt;td&gt;The cannon exhales fire in an adjacent 15-foot cone that you designate. Each creature in that area must make a Dexterity saving throw against your spell save DC, taking 2d8 fire damage on a failed save or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Force Ballista&lt;/td&gt;&lt;td&gt;Make a ranged spell attack, originating from the cannon, at one creature or object within 120 feet of it. On a hit, the target takes 2d8 force damage, and if the target is a creature, it is pushed up to 5 feet away from the cannon.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Protector&lt;/td&gt;&lt;td&gt;The cannon emits a burst of positive energy that grants itself and each creature of your choice with in 10 feet of it a number of temporary hit points equal to 1d8 + your Intelligence modifier (minimum of +1).&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<sheet alt="Eldritch Cannon" action="Action">
+			<description level="3">You can magically create an eldritch cannon in an unoccupied space on a horizontal surface within 5 feet of you. When you create the cannon, you determine its appearance and whether it has legs. 
+			The cannon is a magical object. The cannon has an AC of 18 and {{eldritch cannon:hp}} hit points. It is immune to poison damage and psychic damage. All of its ability scores are 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action. Once you create a cannon, you can’t do so again until you finish a long rest or until you expend a spell slot to create one. 
+			On your turn, you can take a bonus action to activate the cannon if you are within 60 feet of it. As part of this bonus action, the cannon can walk or climb up to 15 feet to an unoccupied space, provided it has legs.</description>
+			<description level="15">You can magically create two eldritch cannons in an unoccupied spaces on a horizontal surface within 5 feet of you. When you create the cannons, you determine their appearances and whether they have legs. 
+			The cannon is a magical object. The cannon has an AC of 18 and {{eldritch cannon:hp}} hit points. It is immune to poison damage and psychic damage. All of its ability scores are 10 (+0). If the mending spell is cast on it, it regains 2d6 hit points. It disappears if it is reduced to 0 hit points or after 1 hour. You can dismiss it early as an action. Once you use this feature, you can’t do so again until you finish a long rest, you can alternatively spend a spell slot to create one cannon. 
+			On your turn, you can take a bonus action to activate one or both cannons if you are within 60 feet of them. As part of this bonus action, the cannons can walk or climb up to 15 feet to an unoccupied space, provided they have legs.</description>
+		</sheet>
+		<rules>
+			<stat name="eldritch cannon:hp" value="level:artificer" level="3" />
+			<stat name="eldritch cannon:hp" value="level:artificer" level="3" />
+			<stat name="eldritch cannon:hp" value="level:artificer" level="3" />
+			<stat name="eldritch cannon:hp" value="level:artificer" level="3" />
+			<stat name="eldritch cannon:hp" value="level:artificer" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_FLAMETHROWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_FORCE_BALLISTA" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ELDRITCH_CANNON_PROTECTOR" level="3" />
+		</rules>
+	</element>
+	<element name=".5th Level Arcane Firearm" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_ARCANE_FIREARM">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;At 5th level, you know how to turn a wand, staff, or rod into an arcane firearm, a conduit for your destructive spells. When you finish a long rest, you can use woodcarver’s tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. The sigils otherwise last indefinitely.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use your arcane firearm as a spellcasting focus for your artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell’s damage rolls equal to the number rolled.&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Arcane Firearm">
+			<description level="5">When you finish a long rest, you can use woodcarver’s tools to carve special sigils into a wand, staff, or rod and thereby turn it into your arcane firearm. The sigils disappear from the object if you later carve them on a different item. 
+			You can use arcane firearm as a spellcasting focus for artificer spells. When you cast an artificer spell through the firearm, roll a d8, and you gain a bonus to one of the spell’s damage rolls equal to the number rolled.</description>
+		</sheet>
+	</element>
+	<element name=".9th Level Explosive Cannon" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_EXPLOSIVE_CANNON">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, every eldritch cannon you create is more destructive:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The cannon’s damage rolls all increase by 1d8.&lt;/li&gt;
+&lt;li&gt;As an action, you can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw against your spell save DC, taking 3d8 force damage on a failed save or half as much damage on a successful one.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Explosive Cannon" action="Action">
+			<description level="9">You can command the cannon to detonate if you are within 60 feet of it. Doing so destroys the cannon and forces each creature within 20 feet of it to make a Dexterity saving throw, taking 3d8 force damage on a failed save or half as much damage on a successful one.</description>
+		</sheet>
+		<rules>
+			<stat name="flamethrower cannon:dice:amount" value="3" bonus="base" level="9" />
+			<stat name="force ballista cannon:dice:amount" value="3" bonus="base" level="9" />
+			<stat name="protector cannon:dice:amount" value="2" bonus="base" level="9" />
+		</rules>
+	</element>
+	<element name="15th Level Fortified Position" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ARTILLERIST_FORTIFIED_POSITION">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 15th level, you’re a master at forming well-defended emplacements using Eldritch Cannon:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You and your allies have half cover while within 10 feet of a cannon you create with Eldritch Cannon, as a result of a shimmering field of magical protection that the cannon emits.&lt;/li&gt;
+&lt;li&gt;You can now have two cannons at the same time. You can create two with the same action (but not the same spell slot), and you can activate both of them with the same bonus action. You determine whether the cannons are identical to each other or different. You can’t create a third cannon while you have two.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Fortified Position">
+			<description level="15">You and your allies have half cover while within 10 feet of an Eldritch Cannon.</description>
+		</sheet>
+	</element>
+	<element name=".3rd Level Experimental Elixir" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_EXPERIMENTAL_ELIXIR">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;Beginning at 3rd level, whenever you finish a long rest, you can magically produce an &lt;i&gt;experimental elixir&lt;/i&gt; in an empty flask you touch. Roll on the Experimental Elixir table for the elixir’s effect, which is triggered when someone drinks the elixir. As an action, a creature can drink the elixir or administer it to an incapacitated creature.&lt;/p&gt;
+&lt;p class="indent"&gt;Creating an &lt;i&gt;experimental elixir&lt;/i&gt; requires you to have alchemist supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next long rest.&lt;/p&gt;
+&lt;p class="indent"&gt;When you reach certain levels in this class, you can make more elixirs at the end of a long rest: two at 6th level and three at 15th level. Roll for each elixir’s effect separately. Each elixir requires its own flask.&lt;/p&gt;
+&lt;p class="indent"&gt;You can create additional &lt;i&gt;experimental elixirs&lt;/i&gt; by expending a spell slot of 1st level or higher for each one. When you do so, you use your action to create the elixir in an empty flask you touch, and you choose the elixir’s effect from the Experimental Elixir table.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Experimental Elixir&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;td&gt;d6&lt;/td&gt;&lt;td&gt;Effect&lt;/td&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Healing.&lt;/strong&gt; The drinker regains a number of hit points equal to 2d4 + your Intelligence modifier.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Swiftness.&lt;/strong&gt; The drinker’s walking speed increases by 10 feet for 1 hour.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;3&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Resilience.&lt;/strong&gt; The drinker gains a +1 bonus to AC for 10 minutes.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Boldness.&lt;/strong&gt; The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;5&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Flight.&lt;/strong&gt; The drinker gains a flying speed of 10 feet for 10 minutes.&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;6&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Transformation.&lt;/strong&gt; The drinker’s body is transformed as if by the alter self spell. The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<sheet alt="Experimental Elixir">
+			<description level="3">Whenever you finish a long rest, you can magically produce up to {{experimental elixir:count}} elixirs, each in an empty flask you touch. 
+			Any elixir you create with this feature lasts until it is drunk or until the end of your next long rest. 
+			You can create additional experimental elixirs by expending a spell slot of 1st level or higher for each one.</description>
+		</sheet>
+		<rules>
+			<stat name="experimental elixir:count" value="1" level="3" />
+			<stat name="experimental elixir:count" value="1" level="6" />
+			<stat name="experimental elixir:count" value="1" level="15" />
+		</rules>
+	</element>
+	<element name=".5th Level Alchemical Savant" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_ALCHEMICAL_SAVANT">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;At 5th level, you develop masterful command of magical chemicals, enhancing the healing and damage you create through them. Whenever you cast a spell using your alchemist’s supplies as the spellcasting focus, you gain a bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage, and the bonus equals your Intelligence modifier (minimum of +1).&lt;/p&gt;</html>
+		</description>
+		<sheet alt="Alchemical Savant">
+			<description level="5">Whenever you cast a spell using your alchemist’s supplies, you gain a +{{alchemical savant:bonus}} bonus to one roll of the spell. That roll must restore hit points or be a damage roll that deals acid, fire, necrotic, or poison damage.</description>
+		</sheet>
+		<rules>
+			<stat name="alchemical savant:bonus" value="1" bonus="base" level="5" />
+			<stat name="alchemical savant:bonus" value="intelligence:modifier" bonus="base" level="5" />
+		</rules>
+	</element>
+	<element name=".9th Level Restorative Reagents" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_RESTORATIVE_REAGENTS">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;Starting at 9th level, you can incorporate restorative reagents into some of your works:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Whenever a creature drinks an &lt;i&gt;experimental elixir&lt;/i&gt; you created, the creature gains temporary hit points equal to 2d6 + your Intelligence modifier (minimum of 1 temporary hit point).&lt;/li&gt;
+&lt;li&gt;You can cast &lt;i&gt;lesser restoration&lt;/i&gt; without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus. You can do so a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Restorative Reagents">
+			<description level="9">Whenever a creature drinks an experimental elixir you created, the creature gains 2d6+{{intelligence:modifier}} temporary hp. 
+			You can cast lesser restoration {{restorative reagents:usage}} times per long rest without expending a spell slot and without preparing the spell, provided you use alchemist’s supplies as the spellcasting focus.</description>
+		</sheet>
+		<rules>
+			<stat name="restorative reagents:usage" value="1" bonus="base" level="9" />
+			<stat name="restorative reagents:usage" value="intelligence:modifier" bonus="base" level="9" />
+		</rules>
+	</element>
+	<element name="15th Level Chemical Mastery" type="Archetype Feature" source="Custom Class" id="ID_WOTC_ERLW_ARCHETYPE_FEATURE_ALCHEMIST_CHEMICAL_MASTERY">
+		<supports>Custom Class Artificer Specialist</supports>
+		<description>
+			<html>&lt;p&gt;By 15th level, you have been exposed to so many chemicals that they pose little risk to you, and you can use them to quickly end certain ailments:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You gain resistance to acid damage and poison damage, and you are immune to the poisoned condition.&lt;/li&gt;
+&lt;li&gt;You can cast &lt;i&gt;greater restoration&lt;/i&gt; and &lt;i&gt;heal&lt;/i&gt; without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus. Once you cast either spell with this feature, you can’t cast that spell with it again until you finish a long rest.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<sheet alt="Chemical Mastery">
+			<description level="15">You are immune to the poisoned condition. 
+			You can cast greater restoration and heal once per long rest without expending a spell slot, without preparing the spell, and without material components, provided you use alchemist’s supplies as the spellcasting focus.</description>
+		</sheet>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" level="15" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" level="15" />
+		</rules>
+	</element>
+</elements>
