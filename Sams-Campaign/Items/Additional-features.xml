@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Additional features</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Additional-features.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/Additional-features.xml" />
 		</update>
 	</info>
 	<element name="Expertise" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_EXPERTISE">
 		<description>
-			<html>Add expertise</html>
+			<html>Add Expertise</html>
 		</description>
 		<setters>
 			<set name="category">Additional Feature</set>
@@ -21,7 +21,7 @@
 	</element>
 	<element name="Proficiency" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_PROFICIENCY">
 		<description>
-			<html>Add expertise</html>
+			<html>Add Proficiency</html>
 		</description>
 		<setters>
 			<set name="category">Additional Feature</set>
