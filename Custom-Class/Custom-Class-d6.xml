@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Custom Class d6</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Custom-Class-d6.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d6.xml" />
 		</update>
 	</info>
@@ -317,9 +317,9 @@
 			<description>You have plundered magical knowledge from a wide spectrum of disciplines.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="10" number="2" spellcasting="Bard" />
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="14" number="2" spellcasting="Bard" />
-			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="18" number="2" spellcasting="Bard" />
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="10" number="2" />
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="14" number="2" />
+			<select type="Spell" name="Magical Secrets" supports="(0)||($(spellcasting:slots))" level="18" number="2" />
 		</rules>
 	</element>
 	<element name="Superior Inspiration" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_BARD_SUPERIOR_INSPIRATION">
@@ -431,7 +431,7 @@
 			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
 		</sheet>
 		<rules>
-			<stat name="druid wildshape:hours" value="level:druid:half" />
+			<stat name="druid wildshape:hours" value="level:half" />
 		</rules>
 	</element>
 	<element name="Timeless Body" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_DRUID_TIMELESS_BODY">
@@ -565,7 +565,7 @@
 			<description>You have {{ki:points}} Ki Points and your Ki DC is {{ki:dc}}</description>
 		</sheet>
 		<rules>
-			<stat name="ki:points" value="level:monk" />
+			<stat name="ki:points" value="level" />
 			<stat name="ki:dc" value="8" />
 			<stat name="ki:dc" value="proficiency" />
 			<stat name="ki:dc" value="wisdom:modifier" />
@@ -610,7 +610,7 @@
 		</sheet>
 		<rules>
 			<stat name="monk:deflect missiles bonus" value="dexterity:modifier" />
-			<stat name="monk:deflect missiles bonus" value="level:monk" />
+			<stat name="monk:deflect missiles bonus" value="level" />
 		</rules>
 	</element>
 	<element name="Slow Fall" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_SLOW_FALL">
@@ -622,11 +622,11 @@
 			<description>Reduce any falling damage you take by {{monk:slowfall}}.</description>
 		</sheet>
 		<rules>
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
-			<stat name="monk:slowfall" value="level:monk" />
+			<stat name="monk:slowfall" value="level" />
+			<stat name="monk:slowfall" value="level" />
+			<stat name="monk:slowfall" value="level" />
+			<stat name="monk:slowfall" value="level" />
+			<stat name="monk:slowfall" value="level" />
 		</rules>
 	</element>
 	<element name="Stunning Strike" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MONK_STUNNING_STRIKE">
@@ -773,11 +773,11 @@
 			This feature has no effect on undead and constructs.</description>
 		</sheet>
 		<rules>
-			<stat name="lay on hands:hp pool" value="level:paladin" />
-			<stat name="lay on hands:hp pool" value="level:paladin" />
-			<stat name="lay on hands:hp pool" value="level:paladin" />
-			<stat name="lay on hands:hp pool" value="level:paladin" />
-			<stat name="lay on hands:hp pool" value="level:paladin" />
+			<stat name="lay on hands:hp pool" value="level" />
+			<stat name="lay on hands:hp pool" value="level" />
+			<stat name="lay on hands:hp pool" value="level" />
+			<stat name="lay on hands:hp pool" value="level" />
+			<stat name="lay on hands:hp pool" value="level" />
 		</rules>
 	</element>
 	<element name="Divine Smite" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PALADIN_DIVINE_SMITE">
