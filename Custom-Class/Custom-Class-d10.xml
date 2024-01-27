@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Custom Class d10</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Custom-Class-d10.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d10.xml" />
 		</update>
 	</info>
@@ -526,6 +526,20 @@
 			<stat name="intelligence:save:misc" value="attunement:current" level="20" />
 			<stat name="wisdom:save:misc" value="attunement:current" level="20" />
 			<stat name="charisma:save:misc" value="attunement:current" level="20" />
+		</rules>
+	</element>
+	<element name="Subclass Feature Boost" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_PROFICIENCY_BOOST">
+		<description>
+			<html>&lt;html&gt;Adds bonus proficiency&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="slot">Epic Boon</set>
+			<set name="inventory-hidden">true</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<select type="Archetype Feature" name="Subclass Feature Boost" supports="Custom Class Otherworldly Patron|Custom Class Sacred Oath|Custom Class Primal Path|Custom Class Bard College|Custom Class Druid Circle|Custom Class Divine Domain|Custom Class Martial Archetype|Custom Class Monastic Tradition|Custom Class Ranger Archetype|Custom Class Roguish Archetype|Custom Class Sorcerous Origin|Custom Class Arcane Tradition" />
 		</rules>
 	</element>
 </elements>
