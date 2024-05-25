@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Enchantment-spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Enchantment-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Enchantment-spells.xml" />
 		</update>
 	</info>
@@ -1799,9 +1799,9 @@
 &lt;ul&gt;
 &lt;li&gt; Affected creatures gain advantage on all weapon attacks.&lt;/li&gt;
 &lt;li&gt; All attacks against affected creatures have advantage.&lt;/li&gt;
-&lt;li&gt; Whenever an afflicted creature reduces a newer creature to 0 hit points, they gain 5 temporary hit points.&lt;/li&gt;
+&lt;li&gt; Whenever an afflicted creature reduces a creature to 0 hit points, they gain 5 temporary hit points.&lt;/li&gt;
 &lt;li&gt; While an affected creature has more than half of its maximum hit point, it gains resistance to non-magical belogening, piercing, and slashing damage.&lt;/li&gt;
-&lt;li&gt; Afflicted creatures must use their action each turn to attack the nearest creature they can see. If no enemies are within their movement range, they must move towards the nearest enemy creature. If no enemies are within sight, they must repeat the initial saving throw. On a failure, afflicted creatures must use that action to attack the nearest creature within range.&lt;/li&gt;
+&lt;li&gt; Afflicted creatures must use their action each turn to attack the nearest enemy they can see. If no enemies are within their movement range, they must move towards the nearest enemy creature. If no enemies are within sight, they must repeat the initial saving throw. On a failure, afflicted creatures must use that action to attack the nearest creature within range.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Afflicted creatures may repeat the saving throw every 10 minutes for the duration. If they reduced another creature to 0 hit points since the start of the spell, they may make the saving throw with disadvented. A creature who succeeds the saving throw becomes immune to this effect for 24 hours.&lt;/p&gt;</html>
 		</description>
