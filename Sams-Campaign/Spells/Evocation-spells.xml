@@ -5967,7 +5967,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Creatures within 10 feet of you do not roll the saving through and take additional 100 fire damage&lt;/p&gt;
 &lt;p&gt;A creature that takes 200 damage or more from this spell is &lt;b&gt;Blinded&lt;/b&gt; and until a &lt;i&gt;Greater Restoration&lt;/i&gt; or &lt;i&gt;Heal&lt;/i&gt; spell is cast to restore its vision.&lt;/p&gt;
-&lt;p class="indent"&gt;Additionally a creature reduced to zero hip points by the spell is turned to ashes and may only be brought back by &lt;i&gt;Wish&lt;/i&gt; or &lt;i&gt;True Resurrection&lt;/i&gt; spell&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally a creature reduced to 0 HP points by the spell is turned to ashes and may only be brought back by &lt;i&gt;Wish&lt;/i&gt; or &lt;i&gt;True Resurrection&lt;/i&gt; spell&lt;/p&gt;
 &lt;p&gt;After the spell's effect takes place, your current and maximum level is permanently reduced by 1 and you may never again cast 9-level spells. This may be reversed with divine intervention. (At DM's discretion) &lt;/p&gt;</html>
 		</description>
 		<setters>
