@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Abjuration-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
 		</update>
 	</info>
@@ -2146,6 +2146,49 @@
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Chill of Clarity" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CHILL_OF_CLARITY">
+		<supports>Bard, Wizard, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You touch a willing creature and fill their mind with icy cold clarity. The target takes 2d4 cold damage. If the target is suffering from the frightened or Charmed condition, they can immediately make a saving throw with advantage to end the condition&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a sliver of clear quartz</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Geometric Guard" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_GEOMETRIC_GUARD">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;By evoking the principles of fractal expansion, you conjure a predictive barrier around yourself that deflects attacks through geometric precision.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain a +2 bonus to your AC for the duration. Additionally as part of casting this spell you may make an Arcana check to enhance the barriers complexity.&lt;/p&gt;
+&lt;p&gt;If your Arcana check result is 15 or higher, the bonus to your Armor Class is increased by 1. If the result is 20 or higher, the bonus is increased by 2. If the result is 25 or higher, the bonus is increased by 3. If the result is 30 or higher, the bonus is increased by 4.&lt;/p&gt;
+&lt;p&gt;If an attack manages to hit you, the barrier discharges as part of its energy, reducing the bonus by 1 until the spell ends or the bonus drops to 0.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a page of solved geometric proofs that the spell consumes</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
