@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -5985,7 +5985,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Prime Pulse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCREW_THAT_ONE_GUY_OVER_THERE_2">
+	<element name="Prime Pulse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PRIME_PULSE">
 		<supports>Wizard, Artificer</supports>
 		<description>
 			<html>&lt;p&gt;You channel a Focus pulse of energy Seeking out vulnerabilities in your foe. Make a melee spell attack against a target.&lt;/p&gt;
