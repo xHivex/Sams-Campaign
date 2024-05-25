@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Enchantment-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Enchantment-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Enchantment-spells.xml" />
 		</update>
 	</info>
@@ -1765,6 +1765,55 @@
 			<set name="range">Self (60-foot radius)</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Word Cringe" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POWER_WORD_CRINGE">
+		<supports>Warlock, Bard, Sorcerer</supports>
+		<description>
+			<html>&lt;p&gt;You speak a word loaded with acute embarrassment, forcing a creature within range to relive its most cringe-inducing memory. The target must succeed a Charisma saving throw or suffer 4d6 psychic damage as it reels from the discomfort. &lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the target takes half damage.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Carnage" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CARNAGE">
+		<supports>Bard, Warlock, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You invoke a dark enchantment that spreads a wave of bloodlust over a vast area. All biological creatures you can see within a one mile radius of yourself must succeed on a Charisma, Intelligence or Wisdom saving throw (whichever is higher). On a failed save they become Charmed and enter a frenzied state of violence for the duration, gaining the following effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Affected creatures gain advantage on all weapon attacks.&lt;/li&gt;
+&lt;li&gt; All attacks against affected creatures have advantage.&lt;/li&gt;
+&lt;li&gt; Whenever an afflicted creature reduces a newer creature to 0 hit points, they gain 5 temporary hit points.&lt;/li&gt;
+&lt;li&gt; While an affected creature has more than half of its maximum hit point, it gains resistance to non-magical belogening, piercing, and slashing damage.&lt;/li&gt;
+&lt;li&gt; Afflicted creatures must use their action each turn to attack the nearest creature they can see. If no enemies are within their movement range, they must move towards the nearest enemy creature. If no enemies are within sight, they must repeat the initial saving throw. On a failure, afflicted creatures must use that action to attack the nearest creature within range.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afflicted creatures may repeat the saving throw every 10 minutes for the duration. If they reduced another creature to 0 hit points since the start of the spell, they may make the saving throw with disadvented. A creature who succeeds the saving throw becomes immune to this effect for 24 hours.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 Minutes</set>
+			<set name="duration">1 Hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
