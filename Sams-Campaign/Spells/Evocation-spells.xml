@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -5945,6 +5945,62 @@
 			<set name="duration">Instantaneous</set>
 			<set name="range">420 feet</set>
 			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Ashes to Ashes" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ASHES_TO_ASHES">
+		<supports>Cleric, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You ignite yourself with an immense, fiery explosion that deals devastating damage to all creatures around you, including yourself.&lt;/p&gt;
+&lt;p class="indent"&gt;As you concentrate on this spell, you cannot take actions, or reactions, and you may not willingly interrupt your concentration on this spell. If you're concentration is broken the spell does not take effect but the spell slot is consumed.&lt;/p&gt;
+&lt;p class="indent"&gt;This spell's effect occurs at the start of your next turn if your concentration is not broken, causing you to take 200 fire damage. This spell ignores resistance to fire damage and treats immunity to fire damage as resistance.&lt;/p&gt;
+&lt;p&gt;Except creatures within 10 feet of you, all creatures within 150 feet must succeed on a Constitution saving throw taking 20d20 fire damage on a failed save, or half as much on its success. &lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, creatures take more damage the closer they are to you:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Within 90 feet and additional 25 fire damage&lt;/li&gt;
+&lt;li&gt; Within 45 feet and additional 50 fire damage&lt;/li&gt;
+&lt;li&gt; Within 20 feet and additional 75 fire damage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Creatures within 10 feet of you do not roll the saving through and take additional 100 fire damage&lt;/p&gt;
+&lt;p&gt;A creature that takes 200 damage or more from this spell is &lt;b&gt;Blinded&lt;/b&gt; and until a &lt;i&gt;Greater Restoration&lt;/i&gt; or &lt;i&gt;Heal&lt;/i&gt; spell is cast to restore its vision.&lt;/p&gt;
+&lt;p class="indent"&gt;Additionally a creature reduced to zero hip points by the spell is turned to ashes and may only be brought back by &lt;i&gt;Wish&lt;/i&gt; or &lt;i&gt;True Resurrection&lt;/i&gt; spell&lt;/p&gt;
+&lt;p&gt;After the spell's effect takes place, your current and maximum level is permanently reduced by 1 and you may never again cast 9-level spells. This may be reversed with divine intervention. (At DM's discretion) &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, until the start of your next turn</set>
+			<set name="range">Self (150 foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a phoenix heart which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Prime Pulse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCREW_THAT_ONE_GUY_OVER_THERE_2">
+		<supports>Wizard, Artificer</supports>
+		<description>
+			<html>&lt;p&gt;You channel a Focus pulse of energy Seeking out vulnerabilities in your foe. Make a melee spell attack against a target.&lt;/p&gt;
+&lt;p class="indent"&gt;Upon a hit, the target takes 1d8 force damage. Should the damage rolled be a prime number, the spell grants you a fleeting glimpse into its structural weakness.&lt;/p&gt;
+&lt;p class="indent"&gt;You gain a bonus equal to the damage dealt on your next attack roll against the target. This bonus must be utilized within the next minute, as the insight fades with time&lt;/p&gt;
+&lt;p&gt;This spell’s damage increases by 1d8 when you reach 5th level (2d8),11th level (3d8), and 17th level (4d8).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
