@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Weapons</name>
+		<update version="0.1.0">
+			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
+		</update>
+	</info>
+	<element name="Wolf's Fang" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_WOLFS_FANG">
+		<description>
+			<html>&lt;p&gt;On a hit, this +2 magical greatsword inflicts slashing damage equal to 2d12 + your Strength modifier&lt;/p&gt;
+&lt;p class="indent"&gt;The weapon itself is so large and heavy that few can wield it. In ancient tales, the blade is rumored to be made from the blood of thousands of dire wolves.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">Greatsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greatsword">Weapon</set>
+			<set name="attunement" addition="by a creature with 19 or higher Strength">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">2</set>
+			<set name="weapon">Large Greatsword</set>
+		</setters>
+	</element>
+	<element name="Large Greatsword" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_LARGE_GREATSWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<html>&lt;p&gt;&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">300</set>
+			<set name="weight" lb="20">20 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="slashing">2d12</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+		</setters>
+		<sheet display="false" />
+	</element>
+</elements>
