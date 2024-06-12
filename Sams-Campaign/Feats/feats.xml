@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -996,8 +996,10 @@ When reduced to 0 hit points, you can use your reaction and spend 1 hit die to b
 		</rules>
 	</element>
 	<element name="Strong Fighter" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_STRONG_FIGHTER">
+		<prerequisite>Strength 20 or higher</prerequisite>
+		<requirements>[str:20]</requirements>
 		<description>
-			<html>&lt;p class="flavor"&gt;Prerequisite: Dexterity 13 or higher&lt;/p&gt;
+			<html>&lt;p class="flavor"&gt;Prerequisite: Strength 20 or higher&lt;/p&gt;
 &lt;p&gt;You are war.... you are strength.... you are Death!!!&lt;/p&gt;
 &lt;p class="indent"&gt;You deal twice your Strength modifier per weapon attack that uses Strength, and you deal an amount of extra damage equal to your Strength modifier whenever you use Dexterity for your weapon attacks.&lt;/p&gt;</html>
 		</description>
