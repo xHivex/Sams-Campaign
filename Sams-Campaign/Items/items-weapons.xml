@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -19,13 +19,13 @@
 			<set name="attunement" addition="by a creature with 19 or higher Strength">true</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">2</set>
-			<set name="weapon">Large Greatsword</set>
+			<set name="weapon">Heavy Greatsword</set>
 		</setters>
 	</element>
-	<element name="Large Greatsword" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_LARGE_GREATSWORD">
+	<element name="Heavy Greatsword" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_HEAVY_GREATSWORD">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
 		<description>
-			<html>&lt;p&gt;&lt;/p&gt;</html>
+			<html>&lt;p&gt;&lt;i&gt;(requires attunement by a creature with 19 or higher Strength)&lt;/i&gt;&lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="category">Weapons</set>
@@ -34,6 +34,28 @@
 			<set name="slot">twohand</set>
 			<set name="damage" type="slashing">2d12</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+		</setters>
+		<sheet display="false" />
+	</element>
+	<element name="Special (Cane Sword)" type="Weapon Property" source="Sam's Campaign" id="ID_SACA_WEAPON_PROPERTY_SPECIAL_CANE_SWORD">
+		<description>
+			<html>&lt;p&gt;As a bonus action, you can sheathe or unsheathe this weapon. While sheathed, this weapon deals 1d4 bludgeoning damage&lt;/p&gt;</html>
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Cane Sword" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_CANE_SWORD">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_SACA_WEAPON_PROPERTY_SPECIAL_CANE_SWORD</supports>
+		<description>
+			<html>&lt;p&gt;A wooden cane that can have an intricate design. It conceals a blade similar to that of a rapier. &lt;/p&gt;
+&lt;div element="ID_SACA_WEAPON_PROPERTY_SPECIAL_CANE_SWORD" /&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">100</set>
+			<set name="weight" lb="5">5 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="slashing">2d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
 		</setters>
 		<sheet display="false" />
 	</element>
