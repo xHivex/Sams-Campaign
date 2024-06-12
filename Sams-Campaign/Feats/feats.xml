@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -546,10 +546,10 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 		</sheet>
 	</element>
 	<element name="Healing Factor" type="Feat" source="Sam's Campaign" id="ID_SACA_FEAT_HEALING_FACTOR">
-		<prerequisite>Constitution Score 14or higher</prerequisite>
+		<prerequisite>Constitution Score 14 or higher</prerequisite>
 		<requirements>[con:14]</requirements>
 		<description>
-			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution Score 15 or higher&lt;/p&gt;
+			<html>&lt;p class="flavor"&gt;Prerequisite: Constitution Score 14 or higher&lt;/p&gt;
 &lt;p&gt;Due to your extreme durability you can recuperate small amounts of health.&lt;/p&gt;
 &lt;p class="indent"&gt;On your turn, you can use a bonus action to regain hit points equal to 1d10 + 10. Once you use this feature, you may not do so again until you complete a short or long rest.&lt;/p&gt;</html>
 		</description>
