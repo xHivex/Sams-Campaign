@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -54,7 +54,7 @@
 			<set name="cost" currency="gp">100</set>
 			<set name="weight" lb="5">5 lb.</set>
 			<set name="slot">onehand</set>
-			<set name="damage" type="slashing">2d4</set>
+			<set name="damage" type="piercing">1d8</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
 		</setters>
 		<sheet display="false" />
