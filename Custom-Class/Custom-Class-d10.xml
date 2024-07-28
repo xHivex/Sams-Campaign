@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Custom Class d10</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Custom-Class-d10.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Custom-Class/Custom-Class-d10.xml" />
 		</update>
 	</info>
@@ -57,29 +57,30 @@
 			<select type="Proficiency" name="Skill Proficiency (Custom Class)" supports="Skill||Tool" level="1" number="4" />
 			<select type="Proficiency" name="Saving Throw Proficiency (Custom Class)" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" level="1" number="2" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 1" level="1" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 2" level="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 3" level="3" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 4" level="4" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 5" level="5" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 6" level="6" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 7" level="7" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 8" level="8" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 9" level="9" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 10" level="10" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 11" level="11" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 12" level="12" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 13" level="13" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 14" level="14" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 15" level="15" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 16" level="16" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 17" level="17" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 18" level="18" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 19" level="19" number="2" />
-			<select type="Class Feature" name="Custom Class Feature" supports="Custom Class 20" level="20" />
+			<select type="Archetype" name="Custom Class Subclass Specialisation " supports="Custom Class Subclass" level="1" />
+			<select type="Class Feature" name="Custom Class Feature Level 1" supports="Custom Class 1" level="1" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 2" supports="Custom Class 2" level="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 3" supports="Custom Class 3" level="3" />
+			<select type="Class Feature" name="Custom Class Feature Level 4" supports="Custom Class 4" level="4" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 5" supports="Custom Class 5" level="5" />
+			<select type="Class Feature" name="Custom Class Feature Level 6" supports="Custom Class 6" level="6" />
+			<select type="Class Feature" name="Custom Class Feature Level 7" supports="Custom Class 7" level="7" />
+			<select type="Class Feature" name="Custom Class Feature Level 8" supports="Custom Class 8" level="8" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 9" supports="Custom Class 9" level="9" />
+			<select type="Class Feature" name="Custom Class Feature Level 10" supports="Custom Class 10" level="10" />
+			<select type="Class Feature" name="Custom Class Feature Level 11" supports="Custom Class 11" level="11" />
+			<select type="Class Feature" name="Custom Class Feature Level 12" supports="Custom Class 12" level="12" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 13" supports="Custom Class 13" level="13" />
+			<select type="Class Feature" name="Custom Class Feature Level 14" supports="Custom Class 14" level="14" />
+			<select type="Class Feature" name="Custom Class Feature Level 15" supports="Custom Class 15" level="15" />
+			<select type="Class Feature" name="Custom Class Feature Level 16" supports="Custom Class 16" level="16" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 17" supports="Custom Class 17" level="17" />
+			<select type="Class Feature" name="Custom Class Feature Level 18" supports="Custom Class 18" level="18" />
+			<select type="Class Feature" name="Custom Class Feature Level 19" supports="Custom Class 19" level="19" number="2" />
+			<select type="Class Feature" name="Custom Class Feature Level 19" supports="Custom Class 20" level="20" />
 		</rules>
 	</element>
-	<element name="Health Boost" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_HEALTH_BOOST">
+	<element name="Health Boost (Level 1)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_HEALTH_BOOST">
 		<supports>Custom Class 1</supports>
 		<description>
 			<html>&lt;p&gt;Your hit points maximum increases by an amount equal to twice your level when you gain this feature. Whenever you gain a level thereafter, your hit points maximum increases by an additional 2 hit points.&lt;/p&gt;
@@ -92,7 +93,7 @@
 			<stat name="hp" value="Health_Boost:hp" />
 		</rules>
 	</element>
-	<element name="Proficiency Choice" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PROFICIENCY_CHOICE">
+	<element name="Proficiency Choice (Level 1)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_PROFICIENCY_CHOICE">
 		<supports>Custom Class 1</supports>
 		<description>
 			<html>&lt;p&gt;You learn 3 new armor and/or martial weapons proficiencies &lt;/p&gt;
@@ -101,16 +102,6 @@
 		<sheet display="false" />
 		<rules>
 			<select type="Proficiency" name="Proficiency Choice" supports="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR|ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS|ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_MELEE_WEAPONS|ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_RANGED_WEAPONS" number="3" />
-		</rules>
-	</element>
-	<element name="Subclass Specialisation" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SUBCLASS_SPECIALISATION">
-		<supports>Custom Class 1,Custom Class 2,Custom Class 3</supports>
-		<description>
-			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.&lt;/p&gt;</html>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Archetype" name="Custom Class Subclass" supports="Custom Class Subclass" level="1" />
 		</rules>
 	</element>
 	<element name="Otherworldly Patron" type="Archetype" source="Custom Class" id="ID_CUCL_ARCHETYPE_OTHERWORLDLY_PATRON">
@@ -308,9 +299,8 @@
 			<select type="Archetype Feature" name="Artificer Specialist" supports="Custom Class Artificer Specialist" level="15" />
 		</rules>
 	</element>
-	<element name="Secondary Subclass Specialisation" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SECONDARY_SUBCLASS_SPECIALISATION">
+	<element name="Secondary Subclass Specialisation (Level 4 to 8)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SECONDARY_SUBCLASS_SPECIALISATION">
 		<supports>Custom Class 4,Custom Class 5,Custom Class 6,Custom Class 7,Custom Class 8</supports>
-		<requirements>ID_CUCL_CLASS_FEATURE_SUBCLASS_SPECIALISATION</requirements>
 		<description>
 			<html>&lt;p&gt;At 3rd level, you choose an archetype that you strive to emulate in your combat styles and techniques. The Champion archetype is detailed at the end of the class description; see the Player’s Handbook for information on other martial archetypes. Your archetype grants you features at 3rd level and again at 7th, 10th, 15th, and 18th level.&lt;/p&gt;</html>
 		</description>
@@ -319,14 +309,14 @@
 			<select type="Archetype" name="Custom Class Secondary Subclass" supports="Custom Class Subclass" level="1" />
 		</rules>
 	</element>
-	<element name="Artificer" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ARTIFICER">
-		<supports>Custom Class 1, Custom Class 2, Custom Class 3 ,Custom Class 4, Custom Class 5</supports>
+	<element name="Artificer (Level 1 to 3)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_ARTIFICER">
+		<supports>Custom Class 1, Custom Class 2, Custom Class 3</supports>
 		<description>
 			<html>&lt;p&gt;Masters of unlocking magic in everyday objects, artificers are supreme inventors. They see magic as a complex system waiting to be decoded and controlled. Artificers use tools to channel arcane power, crafting magical objects. To cast a spell, an artificer could use alchemist’s supplies to create a potent elixir, calligrapher’s supplies to inscribe a sigil of power on an ally’s armor, or tinker’s tools to craft a temporary charm. The magic of artificers is tied to their tools and their talents.&lt;/p&gt;</html>
 		</description>
 		<sheet display="false" />
 	</element>
-	<element name="Magical Tinkering" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGICAL_TINKERING">
+	<element name="Magical Tinkering (Level 1 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGICAL_TINKERING">
 		<supports>Custom Class 1, Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
@@ -340,7 +330,7 @@
 &lt;p class="indent"&gt;The chosen property lasts indefinitely. As an action, you can touch the object and end the property early.&lt;/p&gt;
 &lt;p class="indent"&gt;You can bestow magic on multiple objects, touching one object each time you use this feature, though a single object can only bear one property at a time. The maximum number of objects you can affect with this feature at one time is equal to your Intelligence modifier (minimum of one object). If you try to exceed your maximum, the oldest property immediately ends, and then the new property applies.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Magical Tinkering">
 			<description>You must have thieves’ tools or artisan’s tools. You touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice:
 			The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet.
 			Whenever tapped by a creature, the object emits a recorded message (no more than 6 seconds long) that can be heard up to 10 feet away.
@@ -354,8 +344,8 @@
 			<stat name="magical tinkering:objects" value="intelligence:modifier" bonus="base" level="1" />
 		</rules>
 	</element>
-	<element name="Infuse Item" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INFUSE_ITEM">
-		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+	<element name="Infuse Item (Level 2 to 15)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_INFUSE_ITEM">
+		<supports>Custom Class 2, Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;At 2nd level, you gain the ability to imbue mundane items with certain magical infusions. The magic items you create with this feature are effectively prototypes of permanent items.&lt;/p&gt;
@@ -367,7 +357,7 @@
 &lt;p class="indent"&gt;Your infusion remains in an item indefinitely, but when you die, the infusion vanishes after a number of days have passed equal to your Intelligence modifier (minimum of 1 day). The infusion also vanishes if you give up your knowledge of the infusion for another one.&lt;/p&gt;
 &lt;p class="indent"&gt;You can infuse more than one nonmagical object at the end of a long rest; the maximum number of objects appears in the Infused Items column of the Artificer table. You must touch each of the objects, and each of your infusions can be in only one object at a time. Moreover, no object can bear more than one of your infusions at a time. If you try to exceed your maximum number of infusions, the oldest infusion immediately ends, and then the new infusion applies. If an infusion ends on an item that contains other things, like a bag of holding, its contents harmlessly appear in and around its space.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Infuse Item">
 			<description level="2">You must have thieves’ tools or artisan’s tools. You touch a Tiny nonmagical object as an action and give it one of the following magical properties of your choice: 
 			The object sheds bright light in a 5-foot radius and dim light for an additional 5 feet. 
 			Whenever tapped by a creature, the object emits a recorded message (no more than 6 seconds long) that can be heard up to 10 feet away. 
@@ -403,34 +393,34 @@
 			<stat name="item infusions:max" value="1" level="18" />
 		</rules>
 	</element>
-	<element name="The Right Tool for the Job" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_THE_RIGHT_TOOL_FOR_THE_JOB">
+	<element name="The Right Tool for the Job (Level 3 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_THE_RIGHT_TOOL_FOR_THE_JOB">
 		<supports>Custom Class 3, Custom Class 4, Custom Class 5, Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;At 3rd level, you learn how to produce exactly the tool you need: with with thieves’ tools or artisan’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work, which can coincide with a short or long rest. Though the product of magic, the tools are nonmagical, and they vanish when you use this feature again.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="The Right Tool for the Job ">
 			<description level="3">With thieves’ tools or artisan’s tools in hand, you can magically create one set of artisan’s tools in an unoccupied space within 5 feet of you. This creation requires 1 hour of uninterrupted work.</description>
 		</sheet>
 	</element>
-	<element name="Tool Expertise" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_TOOL_EXPERTISE">
+	<element name="Tool Expertise (Level 6 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_TOOL_EXPERTISE">
 		<supports>Custom Class 6, Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;Starting at 6th level, your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Tool Expertise">
 			<description level="6">Your proficiency bonus is doubled for any ability check you make that uses your proficiency with a tool.</description>
 		</sheet>
 	</element>
-	<element name="Flash of Genius" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_FLASH_OF_GENIUS">
+	<element name="Flash of Genius (Level 7 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_FLASH_OF_GENIUS">
 		<supports>Custom Class 7, Custom Class 8, Custom Class 9, Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;Starting at 7th level, you gain the ability to come up with solutions under pressure. When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.&lt;/p&gt;
 &lt;p class="indent"&gt;You can use this feature a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a long rest.&lt;/p&gt;</html>
 		</description>
-		<sheet action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
+		<sheet alt="Flash of Genius" action="Reaction" usage="{{flash of genius:usage}}/Long Rest">
 			<description level="7">When you or another creature you can see within 30 feet of you makes an ability check or a saving throw, you can add {{intelligence:modifier}} to the roll.</description>
 		</sheet>
 		<rules>
@@ -438,8 +428,8 @@
 			<stat name="flash of genius:usage" value="intelligence:modifier" bonus="base" level="7" />
 		</rules>
 	</element>
-	<element name="Magic Item Adept" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_ADEPT">
-		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
+	<element name="Magic Item Adept (Level 10 to 13)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_ADEPT">
+		<supports>Custom Class 10, Custom Class 11, Custom Class 12, Custom Class 13</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;When you reach 10th level, you achieve a profound understanding of how to use and make magic items:&lt;/p&gt;
@@ -448,7 +438,7 @@
 &lt;li&gt;If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Magic Item Adept">
 			<description level="10">You can attune to up to {{attunement:max}} items at once.
 			If you craft a magic item with a rarity of common or uncommon, it takes you a quarter of the normal time, and it costs you half as much of the usual gold.</description>
 		</sheet>
@@ -456,14 +446,14 @@
 			<stat name="attunement:max" value="4" bonus="base" level="10" />
 		</rules>
 	</element>
-	<element name="Spell-Storing Item" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SPELL_STORING_ITEM">
+	<element name="Spell-Storing Item (Level 11 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SPELL_STORING_ITEM">
 		<supports>Custom Class 11, Custom Class 12, Custom Class 13, Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
 			<html>&lt;p&gt;At 11th level, you learn how to store a spell in an object. Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus, and you store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast (you needn’t have it prepared).&lt;/p&gt;
 &lt;p class="indent"&gt;While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it’s been used a number of times equal to twice your Intelligence modifier (minimum of twice) or until you use this feature again to store a spell in an object.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Spell-Storing Item">
 			<description level="11">Whenever you finish a long rest, you can touch one simple or martial weapon or one item that you can use as a spellcasting focus to store a spell in it, choosing a 1st- or 2nd-level spell from the artificer spell list that requires 1 action to cast. 
 			While holding the object, a creature can take an action to produce the spell’s effect from it, using your spellcasting ability modifier. If the spell requires concentration, the creature must concentrate. The spell stays in the object until it’s been used {{spell storing item:charges}} times or until you use this feature again to store a spell in an object.</description>
 		</sheet>
@@ -474,9 +464,9 @@
 			<stat name="spell storing item:charges" value="spell storing item:modifier" bonus="base" level="11" />
 		</rules>
 	</element>
-	<element name="Magic Item Savant" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_SAVANT">
-		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17, Custom Class 18, Custom Class 19, Custom Class 20</supports>
-		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
+	<element name="Magic Item Savant (Level 14 to 17)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_SAVANT">
+		<supports>Custom Class 14, Custom Class 15, Custom Class 16, Custom Class 17</supports>
+		<requirements>ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_ADEPT</requirements>
 		<description>
 			<html>&lt;p&gt;At 14th level, your skill with magic items deepens more:&lt;/p&gt;
 &lt;ul&gt;
@@ -484,27 +474,27 @@
 &lt;li&gt;You ignore all class, race, spell, and level requirements on attuning to or using a magic item.&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Magic Item Savant">
 			<description level="14">You ignore all class, race, spell, and level requirements on attuning to or using a magic item.</description>
 		</sheet>
 		<rules>
 			<stat name="attunement:max" value="5" bonus="base" level="14" />
 		</rules>
 	</element>
-	<element name="Magic Item Master" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_MASTER">
+	<element name="Magic Item Master (Level 18 to 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_MASTER">
 		<supports>Custom Class 18, Custom Class 19, Custom Class 20</supports>
-		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
+		<requirements>ID_CUCL_CLASS_FEATURE_MAGIC_ITEM_SAVANT</requirements>
 		<description>
 			<html>&lt;p&gt;Starting at 18th level, you can attune to up to six magic items at once.&lt;/p&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Magic Item Master">
 			<description level="18">You can attune to up to six magic items at once.</description>
 		</sheet>
 		<rules>
 			<stat name="attunement:max" value="6" bonus="base" level="18" />
 		</rules>
 	</element>
-	<element name="Soul of Artifice" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SOUL_OF_ARTIFICE">
+	<element name="Soul of Artifice (Level 20)" type="Class Feature" source="Custom Class" id="ID_CUCL_CLASS_FEATURE_SOUL_OF_ARTIFICE">
 		<supports>Custom Class 20</supports>
 		<requirements>ID_CUCL_CLASS_FEATURE_ARTIFICER</requirements>
 		<description>
@@ -514,7 +504,7 @@
 &lt;li&gt;If you’re reduced to 0 hit points but not killed outright, you can use your reaction to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0.&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
-		<sheet>
+		<sheet alt="Soul of Artifice">
 			<description level="20">You gain a +1 bonus to all saving throws per magic item you are currently attuned to. 
 			If you’re reduced to 0 hit points but not killed outright, you can use your reaction to end one of your artificer infusions, causing you to drop to 1 hit point instead of 0.</description>
 		</sheet>
