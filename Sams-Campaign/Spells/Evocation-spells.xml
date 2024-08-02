@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -5759,7 +5759,7 @@
 			<set name="school">Evocation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
-			<set name="range">150 feet</set>
+			<set name="range">150 feet cone</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
