@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -58,5 +58,23 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
 		</setters>
 		<sheet display="false" />
+	</element>
+	<element name="Void Dragon Blade" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_VOID_DRAGON_BLADE">
+		<description>
+			<html>&lt;p&gt;This blade is created with the scales of a Void dragon by a Dragonborn master smith. It was once wielded by Dragonborn royalty that followed Bahamut. In addition to its regular damage, it deals 1d10+3 cold damage. &lt;/p&gt;
+&lt;p class="indent"&gt;While attuned to this blade and holding it, your speed is not affected by difficult terrain. &lt;/p&gt;
+&lt;p class="indent"&gt;While holding the blade, you can use your action to make a radiant blast travel in a 15-foot line, and is 5 feet wide. Each creature in that line must make a Dexterity saving throw, DC 20, or take 2d8 radiant damage on a failed save, or half as much damage on a successful one. &lt;/p&gt;
+&lt;p class="indent"&gt;In addition, you have advantage on saving throws against magic putting you to sleep. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">longsword</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Longsword">Weapon</set>
+			<set name="attunement" >true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Longsword</set>
+		</setters>
 	</element>
 </elements>
