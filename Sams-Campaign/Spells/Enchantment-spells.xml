@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Enchantment-spells</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Enchantment-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Enchantment-spells.xml" />
 		</update>
 	</info>
@@ -1814,6 +1814,320 @@
 			<set name="range">Self</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cruel Word Betrayal" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRUEL_WORD_BETRAYAL">
+		<supports>Cleric, Bard, Warlock, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You speak a word laced with the venom of betrayal, filling a creature's mind with overwhelming paranoia and doubt towards their allies. &lt;/p&gt;
+&lt;p class="indent"&gt;Choose one creature you can see within range that has allied within 30 feet of it to make a wisdom-saving throw on a failed saved. The creature becomes charmed by you for one minute.&lt;/p&gt;
+&lt;p class="indent"&gt;While Charmed in this way it views its allies as traitors and is not a willing target for any spell or effect it requires a willing target. In addition, while Charmed the target suffers one of the following conditions: (flip a coin)&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Blood and broken oaths&lt;/em&gt;&lt;/strong&gt; The target is consumed by fury at its supposed betrayers. On each of its turns, it must use its action to make a melee or ranged weapon attack against the nearest Ally within range; if there are no Allies within range, it must use its movement speed to approach one. The target has an advantage on attacks rolls it makes, and all attacks made against it have an advantage.&lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;&lt;em&gt;Hello Darkness My old friend&lt;/em&gt;&lt;/strong&gt; The target is consumed by sorrow, unable to accept the depth of the betrayal. It falls prone and becomes incapacitated&lt;/p&gt;
+&lt;p&gt;The target can repeat the saving throw whenever you or your allies deal damage to it and at the end of each of its terms, ending the effect on a success. If the target’s allies dealt damage to it, affecting it with a spell or inflicting condition on it during that turn, the target makes a savings throw with disadvantaged believing the actions as a proof of Betrayal&lt;/p&gt;
+&lt;p&gt;Regardless of success or failure the target that was Charmed by the spell suffers a -1 penalty to its attack rolls, ability checks and saving throws until it is finished a long rest. If one of the targets allies success on a persuasion check against your spell save DC this affected removed this attempt can be made once per character &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cruel Word Sever" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRUEL_WORD_SEVER">
+		<supports>Bard, Cleric, Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You unleash a word steeped in disdain, attempting to unravel a creature's mystical connection to its source of power. Choose one creature within range that is capable of casting spells. The target must make a saving throw using its spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the creature takes 7d6 psychic damage. On a failed save, the creature is cut off from its power source and is unable to cast spells using a spell slot of 4th level or higher for the duration.&lt;/p&gt;
+&lt;p&gt;Whenever the creature attempts to cast a spell of 1st level or higher, it must make another saving throw using its spellcasting ability modifier. On a failed save, the creature takes 1d10 force damage per level of the spell attempted, and the spell fails.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the spell is cast as normal. If the creature succeeds on this saving throw three times, this spell ends for that creature.&lt;/p&gt;
+&lt;p&gt;If Cruel Word: Sever lasts for the full duration or if the creature fails three saving throws while attempting to cast spells during the duration, the effect becomes permanent until removed.&lt;/p&gt;
+&lt;p class="indent"&gt;This effect can only be dispelled by remove curse spell cast at a level equal to or higher than the original casting level of Cruel Word: Sever. A remove curse cast at a lower level allows the creature to cast spells of that level and lower for a number of hours equal to the level of the spell slot used.
+&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">7</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Word Bless" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POWER_WORD_BLESS">
+		<supports>Bard, Cleric, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;In reaction to a creature within 60 feet of you sneezing, you can utter a quick blessing, a customary gesture in many cultures. &lt;/p&gt;
+&lt;p class="indent"&gt;For the next minute, the target can roll a d4 and add the number rolled to one stesgm attack roll or saving throw. A target can only be affected by this spell once per hour.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 reaction Which in response to a creature within sneezing</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Psychic Plunder" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PSYCHIC_PLUNDER">
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch an unconscious creature and establish a dark, invasive link, siphoning away its precious memories to enrich your own knowledge and skills. The target must make a Charisma, Intelligence, or Wisdom saving throw (whichever is higher) with disadvantage.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, you may plunder the following memories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Languages known by the target&lt;/li&gt;
+&lt;li&gt; Tool proficiencies&lt;/li&gt;
+&lt;li&gt; Skill proficiencies&lt;/li&gt;
+&lt;li&gt; Memories of the last 72 hours&lt;/li&gt;
+&lt;li&gt; Memories involving one other creature &lt;/li&gt;
+&lt;li&gt; Memories of one day in its life&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On a failed save, you may plunder the above memories, and additionally:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Spells (limited to those available to your class and spell slots)&lt;/li&gt;
+&lt;li&gt; Weapon proficiencies&lt;/li&gt;
+&lt;li&gt; Armor and shield proficiencies&lt;/li&gt;
+&lt;li&gt; Secrets known to the target&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can plunder a number of memories equal to your spellcasting ability modifier, and each of the above is considered a single memory. For each memory plundered, you take 1d4 psychic damage.&lt;/p&gt;
+&lt;p class="indent"&gt;While you retain these memories, they are absent from the target, but it knows its memories have been tampered with.&lt;/p&gt;
+&lt;p&gt;The memories return to the target after 24 hours, when you or the target die, if either you or the target are no longer on the same plane of existence, or when the target is affected by a remove curse or greater restoration spell.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 6th level or higher, you retain the memories up to 7 days (6th level), 30 days (7th level), 1 year (8th level), or permanently (9th level).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">24 hours</set>
+			<set name="range">Touch </set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Let Him Cook" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_LET_HIM_COOK">
+		<supports>Bard, Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You see the spark of potential in your ally's action, and you shout out an encouraging phrase that rekindles their focus and determination.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Attack. If the creature failed an attack it can reroll the failed die, adding your spellcasting modifier to the attack and damage roll. If the attack is successful weapon attack the target may immediately make a new attack as part of the same action retaining the bonuses granted.&lt;/li&gt;
+&lt;li&gt; Saving Throw. If the creature failed a saving throw, it can reroll the failed die and add your spellcasting modifier to the new new roll. On a success, the creature gains temporary hit points equal to twice your spellcasting ability modifier.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A creature may benefit from this spell only once per short rest.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 reaction, which you take when a creature you can see within 60 feet of you fails an attack roll or saving throw</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Traumaturgy" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_TRAUMATURGY">
+		<supports>Bard, Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You summon a haunting echo of trauma in the mind of one humanoid creature within range. The target must succeed on a Wisdom saving throw or take 1d6 psychic damage and gain disadvantage on the next saving throw associated with the type of trauma this spell evokes.&lt;/p&gt;
+&lt;p class="indent"&gt;Roll a d6 or choose the effect most appropriate to the creature's past.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;d6&lt;/td&gt; &lt;td&gt;Type of Trauma and Effect&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1&lt;/td&gt; &lt;td&gt;&lt;b&gt;Strength&lt;/b&gt; - A memory of helplessness weakens the creature's physical strength.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;2&lt;/td&gt; &lt;td&gt;&lt;b&gt;Dexterity&lt;/b&gt; - A memory of being frozen with fear disrupts the creature's reflexes.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3&lt;/td&gt; &lt;td&gt;&lt;b&gt;Constitution&lt;/b&gt; - A memory of past frailty drains the creature's endurance.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;4&lt;/td&gt; &lt;td&gt;&lt;b&gt;Intelligence&lt;/b&gt; - A memory of blunder clouds the creature's mental clarity.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;5&lt;/td&gt; &lt;td&gt;&lt;b&gt;Wisdom&lt;/b&gt; - A memory of poor judgment unsettles the creature.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;6&lt;/td&gt; &lt;td&gt;&lt;b&gt;Charisma&lt;/b&gt; - A memory of humiliation shakes the creature's confidence.&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Damnatio Memoriae" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_DAMNATIO_MEMORIAE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;With this spell, you condemn the memory of a creature to oblivion, erasing all recollection of their existence from themselves and the minds of all those who knew them.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must be unconscious or have died no more than 10 minutes ago for the spell to take effect. As part of casting the spell, you must touch the target.&lt;/p&gt;
+&lt;p&gt;Upon completion of the casting, the target's identity, appearance, actions, and any information pertaining to them are utterly wiped from the collective consciousness of all who have knowledge of them. Casting spells like Legend Lore or other forms of divination will also present the new reality.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Conditional Erasure.&lt;/em&gt;&lt;/strong&gt; If the erasure of the target would not create significant discrepancies in reality, the target is simply erased. For example, if there were four adventurers who saved a village and one of them is affected by this spell, all creatures will remember there being only three adventurers. &lt;/p&gt;
+&lt;p class="indent"&gt;Bard songs about them and the saving of the village will mention just three heroes, and the annual village festival in their honor will only have reenactments with three of them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Memory Replacement for Significant Figures.&lt;/em&gt;&lt;/strong&gt; If the erasure of the target's existence would create too many inconsistencies, such as for a king or emperor, people's perceptions and memories are instead altered to believe the target was always someone else. &lt;/p&gt;
+&lt;p class="indent"&gt;This new individual seamlessly fits into the target's role without creating any gaps or contradictions. For example, if a king is erased, a suitable replacement (such as the queen, a relative or a trusted advisor) takes their place in everyone's memories and records. &lt;/p&gt;
+&lt;p class="indent"&gt;Physical objects like writings, coins, statues, and paintings do not need to change physically. Instead, people's perceptions of these objects are altered. They see and remember these items as depicting or speaking of the new individual, even if the physical objects remain unchanged. &lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, those who had particularly strong emotional bonds with the target will have their memories and emotional attachments seamlessly redirected to the new individual, maintaining their mental and emotional stability.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Enchantment</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a coin depicting a famous king whose memory is lost to time, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Cruel Word Agony" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_CRUEL_WORD_AGONY">
+		<supports>Bard, Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You utter a word of pure anguish, condemning a creature within range to experience excruciating pain.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose one of the following effects when you cast this spell:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Torment the Flesh.&lt;/em&gt;&lt;/strong&gt; The target must make a Constitution saving throw. On a failed save, the target takes 12d6 necrotic damage, falls prone, and has its speed is reduced to 0. &lt;/p&gt;
+&lt;p class="indent"&gt;In addition, the target suffers a cumulative -1 penalty to Strength and Dexterity ability checks and saving throws rolls for each 6 rolled on the damage dice.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Torment the Mind.&lt;/em&gt;&lt;/strong&gt; The target must make a Wisdom saving throw. On a failed save, the target takes 12d6 psychic damage, falls prone, and has its speed is reduced to 0. &lt;/p&gt;
+&lt;p class="indent"&gt;In addition, the target suffers a cumulative -1 penalty to Intelligence and Charisma ability checks, saving throws, and concentration saving throws for each 6 rolled on the damage dice.&lt;/p&gt;
+&lt;p&gt;The effects of this spell last until the start of your next turn. On a successful save, the target takes half as much damage and suffers none of the spell's other effects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;A Taste of Suffering.&lt;/em&gt;&lt;/strong&gt; Whenever you roll a 6 on a damage die for this spell, you may re-roll one other damage die that is not a 6. If you ever roll a 6 on all 12 damage dice, the final damage dealt is multiplied by 6.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Voir Dire" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_VOIR_DIRE">
+		<supports>Bard, Cleric, Paladin, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You impose a magical compulsion on a creature you can see within range, forcing it to speak only the truth for the duration of this spell. The target must make a Charisma saving throw. &lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the creature becomes Charmed for the duration or until you or your allies deal damage to the target. While Charmed in this way, the creature is incapable of speaking any deliberate falsehoods, half-truths, or deceptions, whether spoken, written, or conveyed by any other means.&lt;/p&gt;
+&lt;p&gt;Additionally, as an action on each of your turns, you may compel the creature to answer one question of your choice. When you do so, the target can choose to attempt a new Charisma saving throw to resist the compulsion. On a successful save, the target does not have to answer the question. &lt;/p&gt;
+&lt;p class="indent"&gt;On a failed save, the target must answer truthfully and suffers a -1 penalty to all subsequent Charisma saving throws for the duration of the spell. You may compel the target to answer up to five questions.&lt;/p&gt;
+&lt;p&gt;If the spell lasts for 10 minutes and the target failed any saving throws to resist answering questions, you can force it to make one final Charisma saving throw. On a failure, the mirror used to cast the spell becomes magically linked to the target. &lt;/p&gt;
+&lt;p class="indent"&gt;The spell's effect becomes permanent until the mirror is shattered or the effect is dispelled. The mirror can't be used as a material component for any other spell while linked in this way. If the spell's effect is dispelled, the mirror shatters.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Concentration, up to 10 minutes</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a silver mirror worth at least 100 gold</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Anamnesis" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANAMNESIS">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You forge a visceral link to another creature, thrusting the essence of your experiences directly into their psyche. Select up to ten memories to transfer, choosing from two languages, two spells, two tool proficiencies, two skills, and memories involving two people known to you.&lt;/p&gt;
+&lt;p&gt;The target must make an Intelligence saving throw. On a failed save, the target takes 1d6 psychic damage for each memory transferred and gains those memories. On a successful save, the target takes half damage and gains half of the selected memories at random (rounded down).&lt;/p&gt;
+&lt;p class="indent"&gt;If the target takes more than 35 damage from this spell it is also stunned until the end of its next turn.&lt;/p&gt;
+&lt;p&gt;After 7 days, the memories fade from the target and return to you, restoring your full recollection of these memories. If the spell is dispelled, or if the target dies before the 7 days are up, the memories return to you immediately.&lt;/p&gt;
+&lt;p&gt;Against a willing target you may increase the casting duration of this spell to 10 minutes. If you do so, the spell does no damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you can select an additional memory for each slot level above 4th.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch </set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Power Word Cripple" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_POWER_WORD_CRIPPLE">
+		<supports>Bard, Cleric, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You speak an ancient word of power reserved for cripples and broken things carrying the weight of countless shattered minds and bodies. &lt;/p&gt;
+&lt;p class="indent"&gt;If the target has 100 hit points or fewer, it suffers a random crippling effect. Otherwise, the spell has no effect. Roll a d8 to determine the effect.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;d8&lt;/td&gt; &lt;td&gt;Type of Effect&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1&lt;/td&gt; &lt;td&gt;&lt;b&gt;Lamed.&lt;/b&gt; The target's speed is reduced to 0.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;2&lt;/td&gt; &lt;td&gt;&lt;b&gt;Blinded.&lt;/b&gt; The target becomes Blinded.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3&lt;/td&gt; &lt;td&gt;&lt;b&gt;Muzzled.&lt;/b&gt; The target becomes Deafened and can't speak.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;4&lt;/td&gt; &lt;td&gt;&lt;b&gt;Withered.&lt;/b&gt; The target's Strength score is reduced to 6. It has disadvantage on Strength checks and Strength saving throws.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;5&lt;/td&gt; &lt;td&gt;&lt;b&gt;Frail.&lt;/b&gt; The target's Constitution score is reduced to 10. It has disadvantage on saving throws against poison and disease, vulnerability to poison damage, and gains one permanent level of exhaustion.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;6&lt;/td&gt; &lt;td&gt;&lt;b&gt;Addled.&lt;/b&gt; The target's Intelligence score is reduced to 6. It has disadvantage on Intelligence checks, Intelligence saving throws, and Concentration saving throws.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;7&lt;/td&gt; &lt;td&gt;&lt;b&gt;Fumbling.&lt;/b&gt; The target's Dexterity score is reduced to 6. It has disadvantage on Dexterity checks and Dexterity saving throws.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;8&lt;/td&gt; &lt;td&gt;&lt;b&gt;Dampened.&lt;/b&gt; The target's connection to magic is crippled. It can only cast cantrips. If the target is not a spellcaster, roll again.&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;After one minute the creature can make a Wisdom or Charisma saving throw (their choice). On a success the spell ends. On a failure, the target may repeat this saving throw every 30 days. If the target fails this saving throw three times the effect becomes permanent until dispelled.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell can also be ended by greater restoration, heal, or wish.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At 9th Level.&lt;/i&gt;&lt;/b&gt; You've drunk deep from the well of mortal fragility, and now wield its bitter waters as your weapon. You can now choose which crippling effect to inflict upon the target instead of rolling for it.
+The sculptor's chisel knows that beauty lies in what is removed.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
 			<set name="isConcentration">false</set>
