@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Illusion-spells</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="Illusion-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Illusion-spells.xml" />
 		</update>
 	</info>
@@ -610,6 +610,66 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">1 ounce of stardust, powdered moon rock, or meteorite fragment</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Irisveil’s Invisible Item" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_IRISVEILS_INVISIBLE_ITEM">
+		<supports>Artificer, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You touch a Medium or smaller object weighing no more than 100 pounds which turns invisible for the duration. At the moment of casting this spell you can choose a number of creatures up to your spellcasting modifier (including yourself) which can perceive the object as a misty, translucent outline instead.&lt;/p&gt;
+&lt;p&gt;While the item is invisible, it is imperceptible to sight without the aid of magic or special senses such as the See Invisibility spell or Truesight perception. A creature that cannot perceive the item can see right through it as if it wasn't there.&lt;/p&gt;
+&lt;p&gt;If the invisible item is a container or contains other objects, those objects do not become invisible and can still be seen when taken out.&lt;/p&gt;
+&lt;p&gt;If the invisible item is a weapon, attacks made with it have advantage against creatures that cannot perceive it. A creature that has blindsight, tremorsense or truesight is immune to this effect.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">diamond dust worth 25 gp, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Illusion of Choice" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ILLUSION_OF_CHOICE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You weave a potent illusion, forcing a creature to decide between two unfavorable outcomes. When casting this spell, and as an action on your subsequent turns, choose a creature within range to make a Wisdom saving throw.&lt;/p&gt;
+&lt;p&gt;On a failed save, you present the target with two options from the list below. The target must choose one option, believing that not choosing will result in both effects occurring. The target is then affected by the chosen option until the end of its next turn. &lt;/p&gt;
+&lt;p class="indent"&gt;A target that is Incapacitated is unable to choose, but choosing an option costs no action. If the target is unable to choose, doesn't choose, or succeeds on the saving throw, it suffers no effect and becomes immune to being targeted by this spell for 24 hours.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;d10&lt;/td&gt; &lt;td&gt;Type of  Illusion&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Harm.&lt;/b&gt; The target takes 5d10 psychic damage.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;2&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Binding.&lt;/b&gt; The target's movement speed becomes 0. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Silence.&lt;/b&gt; The target cannot speak.&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;4&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Blindness.&lt;/b&gt; The target becomes blinded.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;5&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Fear.&lt;/b&gt; The target becomes frightened of you.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;6&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Charm.&lt;/b&gt; The target becomes charmed by you. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;7&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Panic.&lt;/b&gt; The target drops whatever it is holding. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;8&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Weakness.&lt;/b&gt; The target has disadvantage on Strength- based attack rolls, ability checks, and saving throws.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;9&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Fumbling.&lt;/b&gt; The target has disadvantage on Dexterity-based attack rolls and ability checks and saving throws.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;10&lt;/td&gt; &lt;td&gt;&lt;b&gt;Illusory Incompetence.&lt;/b&gt; The target has disadvantage on its next attack roll or saving throw.&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ancient coin engraved with two faces</set>
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
