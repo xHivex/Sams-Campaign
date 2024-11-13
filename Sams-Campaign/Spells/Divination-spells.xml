@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Divination-spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Divination-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Divination-spells.xml" />
 		</update>
 	</info>
@@ -1049,6 +1049,33 @@
 			<set name="materialComponent">A skull of a recently slain humanoid, consumed by the spell</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Schrödinger’s Surge" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SCHRDINGERS_SURGE">
+		<supports>Artificer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You reach into potential futures and collapse them into a single reality. Choose one d20 roll you make within the next minute (attack roll, saving throw, or ability check). Instead of rolling, you can declare any number as the result. You cannot benefit from this spell multiple times simultaneously.&lt;/p&gt;
+&lt;p&gt;However, this manipulation of fate has consequences. After the minute has passed, you must make a d20 roll. If the result is lower than the number you declared for Schrödinger's Surge, you take the difference as force damage and suffer a backlash based on the difference that lasts until you finish a long rest:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; 1-6. Temporal Stutter. You gain a -2 penalty to dexterity checks and saving throws as you occasionally lag behind the normal flow of time. &lt;/li&gt;
+&lt;li&gt; 7-12. Chronal Attrition. You gain a -2 penalty to Constitution saving throws and take 2d4 additional force damage whenever you receive force damage as the strain of manipulating time leaves you more vulnerable to such energies. &lt;/li&gt;
+&lt;li&gt; 13-18. Fate's Fatigue. You gain one level of Exhaustion and lose presentastesgm Hit Die as your body struggles to synchronize with this timeline.&lt;/li&gt;
+&lt;li&gt; 19. Time Scarred. The manipulation of time has left a visible mark on you. A portion of your skin or hair ages rapidly, turning gray and brittle. You gain three levels of Exhaustion. In addition you age 2d4 years and and permanently lose an equal number of maximum hit points.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">2</set>
+			<set name="school">Divination</set>
+			<set name="time">1 bonus action</set>
+			<set name="duration">1 minute</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small box containing a live cricket</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 </elements>
