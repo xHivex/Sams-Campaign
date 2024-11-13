@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Abjuration-spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
 		</update>
 	</info>
@@ -2189,6 +2189,56 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a page of solved geometric proofs that the spell consumes</set>
 			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Silent prayer" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SILENT_PRAYER">
+		<supports>Cleric, Paladin</supports>
+		<description>
+			<html>&lt;p&gt;With a quiet, unspoken prayer, you call upon divine power to influence the outcome of a creature's fate.&lt;/p&gt;
+&lt;p class="indent"&gt;When a creature within range succeed or fails on an attack roll, a saving throw, or an ability check, you can cause them to roll two d20s and use either the higher or lower roles, as follows:&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Divine Favor.&lt;/i&gt;&lt;/b&gt; If you wish to aid the creature, they use the higher of the two rolls.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Divine Hindrance.&lt;/i&gt;&lt;/b&gt; If you wish to Hinder the creature, they use the lower of the two rolls.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 reaction, When a creature within 60 feet of you succeeds or fails on attack roll, saving throw, or an ability check</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Infinite Void" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_INFINITE_VOID">
+		<supports>Cleric, Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You attempt to banish yourself and a creature to an endless demiplane. You touch a creture and the target must succeed on a Charisma saving throw or both you and the target are transferred to a realm of infinite emptiness removed from all other planes.&lt;/p&gt;
+&lt;p class="indent"&gt;A target that succeeds on this saving throw is permanently immune to your casting of this spell.&lt;/p&gt;
+&lt;p&gt;Within this realm, neither you or the creature age or need to breathe, eat, drink or sleep and are functionally immortal. If damage would reduce you or the target to 0 hit points, you or it instead drop to 1 hit point.&lt;/p&gt;
+&lt;p class="indent"&gt;Time flows as it does in your native plane, but escape through conventional magical means, including teleportation or planar travel, is impossible.&lt;/p&gt;
+&lt;p&gt;The spell can be ended by the caster as an action. Alternatively, the target of this spell may initiate a contested Intelligence check against the caster after 1 minute since arrival. On a success, the spell ends. &lt;/p&gt;
+&lt;p class="indent"&gt;On a failure nothing happens. Each failure increases the waiting period before another attempt can be made, from 1 minute to 1 hour, 1 day, 1 year, 1 decade, 1 century, and ultimately capping at 1 millennium. &lt;/p&gt;
+&lt;p class="indent"&gt;Upon the conclusion of the spell, bot you amastesgm the target are returned to your original locations or to the nearest unoccupied space.&lt;/p&gt;
+&lt;p&gt;A creature outside the void may end the spell only with the use of a Wish spell or Divine Intervention.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">8</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Special</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
