@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -6004,6 +6004,59 @@
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
 			<set name="materialComponent" />
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Resonance" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RESONANCE">
+		<supports>Bard</supports>
+		<description>
+			<html>&lt;p&gt;You play a powerful note, focusing the sound into a blast of reverberating energy that shoots toward a creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d8 thunder damage. &lt;/p&gt;
+&lt;p class="indent"&gt;If the target is currently concentrating on a spell, it has disadvantage on the Constitution saving throw it makes to maintain its concentration caused by this damage. &lt;/p&gt;
+&lt;p&gt;This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">0</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a musical instrument</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Random Ball" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_RANDOM_BALL">
+		<supports>Sorcerer, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a massive, chaotic sphere of swirling elemental energy and hurl it at a point within range. The sphere expands to a 20-foot radius, encompassing a large area in destructive power.&lt;/p&gt;
+&lt;p class="indent"&gt;The sphere is composed of different layers of elemental forces, each represented by a different die. Upon casting this spell, roll a d12, d10, d8, d6, and d4. Each die deals a
+different type of damage to all creatures within the area as follows:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; d12: Fire damage&lt;/li&gt;
+&lt;li&gt; d10: Cold damage&lt;/li&gt;
+&lt;li&gt; d8: Lightning damage&lt;/li&gt;
+&lt;li&gt; d6: Acid damage&lt;/li&gt;
+&lt;li&gt; d4: Poison damage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each creature within the 20-foot radius must make a Dexterity saving throw. On a failed save, the creature takes the full amount of damage rolled from all the dice. On a successful save, the creature takes half damage from each die.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; At Higher Levels: When you cast this spell using a spell slot of 4th level or higher, you can add an additional d12 of damage to any one of the damage types for each slot level above 3rd.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Evocation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small sphere made of glass</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
