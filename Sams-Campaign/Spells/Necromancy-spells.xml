@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Necromancy-spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Necromancy-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Necromancy-spells.xml" />
 		</update>
 	</info>
@@ -2952,6 +2952,87 @@
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a black gemstone worth at least 1,000 gp</set>
 			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="The Goal of All Life Is Death" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_THE_GOAL_OF_ALL_LIFE_IS_DEATH">
+		<supports>Cleric, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You utter a forbidden phrase that reveals the ultimate destiny of all living things. A spectral timepiece materializes behind you, its hands ticking with the finality of fate, marking all creatures of your choice within range for imminent demise. &lt;/p&gt;
+&lt;p class="indent"&gt;Each round, on initiative counts 20, 15, 10, and 5, the clock advances, accumulating a charge of Memento Mori.&lt;/p&gt;
+&lt;p&gt;When the clock reaches 12 charges or your concentration is broken, its energy erupts in a devastating necrotic wave. All creatures marked by this spell must make a Constitution saving throw.&lt;/p&gt;
+&lt;p&gt;On a failed save, a creature takes 12+ 1d12 necrotic damage per charge of Memento Mori, or half as much damage on a successful save. &lt;/p&gt;
+&lt;p class="indent"&gt;Additionally, creatures that fail the saving throw suffer additional effects based on the number of charges at the time of release, which last until cured by a greater restoration or wish spell.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; 3-5 Charges. Creatures gain disadvantage on Death Saving Throws and all healing they receive is halved.&lt;/li&gt;
+&lt;li&gt; 6-8 Charges. Creatures without resistance or immunity to necrotic damage gain vulnerability to necrotic damage.&lt;/li&gt;
+&lt;li&gt; 9-11 Charges. Creatures gain 3 levels of exhaustion.&lt;/li&gt;
+&lt;li&gt; 12 Charges. Creatures are reduced to 0 hit points and die instantly, unable to be resurrected by anything short of a wish spell.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After casting this spell, you must wait 100 hours before you can cast it again.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">9</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 4 rounds</set>
+			<set name="range">Self (120-foot radius)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an object that was made to be a phylactery, worth at least 5,000 gold, which the spell consumes</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Eye for an Eye" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EYE_FOR_AN_EYE">
+		<supports>Paladin, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;You lock eyes with your foe, invoking magic that transforms their gaze into a gateway of shared torment. The creature must make a Constitution saving throw. On a failed save, the creature suffers the same effect that triggered this spell. On a success, the spell ends.&lt;/p&gt;
+&lt;p class="indent"&gt;For the duration, you can use your reaction to make the creature suffer the same effects when it causes you to experience the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Damage. When you take damage from the creature, it immediately takes an equal amount of damage of the same type.&lt;/li&gt;
+&lt;li&gt; Spells. When the creature casts a spell that targets you, it also becomes a target of the same spell, provided the spell can legally target it. The spell's effects on the creature occur immediately after they apply to you.&lt;/li&gt;
+&lt;li&gt; Conditions. When the creature targets you with an effect that imposes a condition, it immediately becomes subject to the same condition for the same duration, provided it is not immune. If the effect requires a saving throw, the creature must succeed on the save to avoid the condition.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Reaction, which you take when a creature you can see within 30 feet that has eyes deals damage to you, targets you with a spell, or inflicts a condition upon you</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Soul Bind" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_SOUL_BIND">
+		<supports>Cleric, Wizard, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;As the target exhales its final breath, you reach out with dark magic, attempting to capture its fleeing soul and imprison it within the prepared gemstone. The target must succeed on a Charisma saving throw, or its soul becomes trapped within the gemstone, though the spell remains incomplete.&lt;/p&gt;
+&lt;p class="indent"&gt;The spell fails if the target is affected by protection from evil and good, standing within a magic circle, or on hallowed ground.&lt;/p&gt;
+&lt;p&gt;You must maintain concentration on the spell for a number of hours equal to the creature's total Hit Dice. If your concentration is broken before the required time has passed, the gemstone shatters, and the soul is freed. If you maintain concentration for the entire duration, the gemstone permanently becomes a Soul Gem, binding the soul within.&lt;/p&gt;
+&lt;p&gt;While you are concentrating on this spell, if another creature attempts to cast a spell to revive the bound soul, you must make a Constitution saving throw to maintain concentration, with a DC equal to 10+ twice the level of the spell being cast. On a failed save, the gemstone shatters, and the soul is freed. On a successful save, the reviving spell fails, and the soul remains bound&lt;/p&gt;
+&lt;p&gt;While you are alive, a creature whose soul you trapped inside a Soul Gem cannot be revived by any spell or effect short of true resurrection, wish, or divine intervention. If you die, the soul binding weakens, allowing the creature to be restored by any spell that normally would revive it.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">4</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Reaction, which you take when a humanoid you can see within 60 feet of you dies</set>
+			<set name="duration">Concentration, Special</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gemstone worth 100 gp per Hit Die of the humanoid</set>
+			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
