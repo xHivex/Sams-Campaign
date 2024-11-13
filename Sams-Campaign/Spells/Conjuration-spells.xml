@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Conjuration-spells</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Conjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Conjuration-spells.xml" />
 		</update>
 	</info>
@@ -1276,7 +1276,7 @@
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent"></set>
+			<set name="materialComponent" />
 			<set name="isConcentration">true</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -1944,12 +1944,12 @@
 			<set name="level">5</set>
 			<set name="school">Conjuration</set>
 			<set name="time">1 action</set>
-			<set name="duration">a platinum needle worth at least 5 gp</set>
+			<set name="duration">Instantaneous</set>
 			<set name="range">Self (30-foot cone)</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">false</set>
-			<set name="materialComponent" />
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a platinum needle worth at least 5 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
 		</setters>
@@ -2374,6 +2374,84 @@
 			<set name="materialComponent">a miniature set of mithral armor worth 5,000 gp</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Boogie Woogie" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BOOGIE_WOOGIE">
+		<supports>Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You clap your hands, creating a ripple in space that instantly swaps the positions of two creatures or objects within range. Casting this spell requires two free hands.&lt;/p&gt;
+&lt;p class="indent"&gt;Choose yourself and one other target or two targets within 30 feet of you that you can see. The targets instantly swap positions. You may target:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Uncommon or rarer magic items that aren't being worn or carried that you held for 1 minute during the last year.&lt;/li&gt;
+&lt;li&gt; Large or smaller creatures of CR 3 or higher. If one or both targets are unwilling, they must make a Constitution saving throw. On a failed save, they are swapped. If a single creature makes a successful save, they remain in their original positions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Unwilling creatures that are swapped are disoriented, granting them a penalty equal to your spellcasting ability modifier on their next attack roll before the end of their next turn.&lt;/p&gt;
+&lt;p class="indent"&gt;After your initial clap, while you maintain concentration, you carastesgm continue to use this ability once per round using an action a number of times equal to your spellcasting ability modifier.&lt;/p&gt;
+&lt;p class="indent"&gt;If you can speak, as part of the initial action to cast this spell you can use a bonus action to reveal how it works. On subsequent uses, if an unwilling target understood you, its penalty to the first attack instead becomes half your spellcasting ability modifier, reduced by 1 for each swap afterwards. However, you can double the number of uses for this spell, cast it as a bonus action instead of an action and its range is increased to 60 feet.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">5</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 minute</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent" />
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Bear Witness" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BEAR_WITNESS">
+		<supports>Paladin, Cleric, Bard, Warlock, Sorcerer, Wizard, Artificer, Druid, Ranger</supports>
+		<description>
+			<html>&lt;p&gt;You summon an enlightened bear from the ranks of the Ursine Archivists, a revered order dedicated to the preservation and recording of history. He appears in an unoccupied space within range, wearing a suit and carrying an ornate ledger.&lt;/p&gt;
+&lt;p&gt;Upon appearing, the Bear Witness observes and records a significant event unfolding within its sight. The details of this event are inscribed into the bear's ledger with perfect accuracy, later transferred to the eternal archives maintained by their order. Information recorded by the Ursine Archivists is preserved perfectly for all time.&lt;/p&gt;
+&lt;p&gt;The Bear Witness is immune to all damage and effects. Its only purpose is to witness the event transpiring and will then leave.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 5th level or higher, you may request the Bear Witness to recount a specific event that any of the Ursine Archivists have previously witnessed and recorded. The bear will relay the information in detail, providing insight or clarity into the chosen historical event. Those who hear this recounting innately understand that they are receiving an impartial and absolutely truthful account of the events described.
+&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a small piece of honeycomb, enchanted ink and a parchment worth 100 gold which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	<element name="Thirst Trap" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_THIRST_TRAP">
+		<supports>Artificer, Druid, Bard, Wizard</supports>
+		<description>
+			<html>&lt;p&gt;You conjure a floating basin of glistening, pristine water suspended above the ground in an unoccupied space within range. This basin of water shimmers with a hypnotic allure, drawing the attention of those around it.&lt;/p&gt;
+&lt;p&gt;Each Large or smaller creature within 30 feet that requires water to live and is not immune to being Charmed must succeed on a Wisdom saving throw or feel an overwhelming urge to approach and drink from the basin. On a failed save, a creature must use its reaction, to move towards the basin and drink from it. &lt;/p&gt;
+&lt;p class="indent"&gt;If a creature fails the save but cannot reach the basin to drink, it moves as close as possible to it if able and suffers 4d6 psychic damage as the thirst gnaws at its mind.&lt;/p&gt;
+&lt;p&gt;A creature that drinks from the basin must succeed on a Constitution saving throw or suffer intense dehydration. On a failed save, the creature takes 4d10 necrotic damage and gains a -2 penalty to attack rolls and Constitution saving throws for the spell's duration, as they feel drained and lethargic.&lt;/p&gt;
+&lt;p class="indent"&gt;On a successful save, the creature takes half as much necrotic damage and suffers no additional effects.&lt;/p&gt;
+&lt;p&gt;The basin holds 3 charges, representing three sips. Each time a creature drinks, one charge is expended. When all charges are consumed, the basin disappears and the spell ends.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; The psychic damage dealt increases by 1d6, the necrotic damage by 1d10 and the basin gains an additional charge (sip) for each spell slot level above 3.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">3</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">1 round</set>
+			<set name="range">60 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a vial of saltwater worth 1+ GP, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
 		</setters>
 	</element>
 </elements>
