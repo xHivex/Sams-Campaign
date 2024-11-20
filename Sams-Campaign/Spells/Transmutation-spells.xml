@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Transmutation-spells</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Transmutation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Transmutation-spells.xml" />
 		</update>
 	</info>
@@ -3902,33 +3902,6 @@ A creature restrained by the intense pressure can use its action to make a Stren
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">a strip of flesh from a mimic, which the spell consumes</set>
-			<set name="isConcentration">ture</set>
-			<set name="isRitual">false</set>
-		</setters>
-	</element>
-	<element name="Bestial Art Aspect of the Bear" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_BESTIAL_ART_ASPECT_OF_THE_BEAR">
-		<supports>Druid, Ranger</supports>
-		<description>
-			<html>&lt;p&gt;You channel the primal essence of the bear, standing tall and unshakable, your enemies trembling before your immense presence.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt; Thick Hide. You gain a +1 bonus to your AC and resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.&lt;/li&gt;
-&lt;li&gt; Primal Might. Your size becomes Large and your weight triples. In addition, you melee weapon attacks and unarmed strikes deal an additional 1d6 damage of their type, increased to 1d8 against grappled or prone targets. When you score a critical hit with a melee attack, you can use a bonus action to unleash a brutal roar, causing all enemies within 15 feet of you to make a Wisdom saving throw or become frightened of you until the end of your next turn.
-0&lt;/li&gt;
-&lt;li&gt; Unstoppable Charge. If you move at least 20 feet in a straight line on your turn, you can move an additional 20 feet as long as you maintain the same trajectory. While moving in this way, you can move ove through the space of any creature of Medium size or smaller. If you do so, the creature must succeed on a Strength saving throw or be pushed back 10 feet, knocked prone, and take bludgeoning damage equal to twice your spellcasting ability modifier (minimum of 1). A creature can only be affected by this effect once per turn.
-&lt;/li&gt;
-&lt;/ul&gt;</html>
-		</description>
-		<setters>
-			<set name="keywords" />
-			<set name="level">3</set>
-			<set name="school">Transmutation</set>
-			<set name="time">1 bonus action</set>
-			<set name="duration">Concentration, up to 10 minutes</set>
-			<set name="range">Self</set>
-			<set name="hasVerbalComponent">true</set>
-			<set name="hasSomaticComponent">true</set>
-			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent">a bear's tooth or claw</set>
 			<set name="isConcentration">ture</set>
 			<set name="isRitual">false</set>
 		</setters>
