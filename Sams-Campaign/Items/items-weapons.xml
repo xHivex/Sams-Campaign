@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -71,10 +71,28 @@
 			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="type" addition="Longsword">Weapon</set>
-			<set name="attunement" >true</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Legendary</set>
 			<set name="enhancement">3</set>
 			<set name="weapon">Longsword</set>
+		</setters>
+	</element>
+	<element name="Spellbinder " type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SPELLBINDER">
+		<description>
+			<html>&lt;p&gt;A weapon said to have once been used to keep unruly imprisoned wizards in line; it violently disrupts their ability to use magic, inflicting wild and unpredictable residual magical effects on those it strikes.&lt;/p&gt;
+&lt;p class="indent"&gt;You have a +3 to attack and damage rolls with this magic weapon. &lt;/p&gt;
+&lt;p class="indent"&gt;When you hit a creature with this weapon, that creature becomes spellbinded until the start of your next turn. Spellbinded targets must roll a d6 before casting a spell.&lt;/p&gt;
+&lt;p class="indent"&gt;On a 1, the spell fails and has no effect with the spell slot spend. On a 2-4, the spellcaster takes 2d10 force damage. On a 5-6, the spell is cast as normal, but the caster must roll on the Wild Magic Surge table prior to the casting the spell. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">whip</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Whip">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Whip</set>
 		</setters>
 	</element>
 </elements>
