@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Feats</name>
+		<update version="0.1.0">
+			<file name="Grand-Magic.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Grand-Magic.index" />
+		</update>
+	</info>
+	<files>
+		<file name="All-mage.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Grand-Magic/All-mage.xml" />
+		
+	</files>
+</index>
