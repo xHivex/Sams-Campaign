@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Items</name>
-		<update version="1.2.2">
+		<update version="1.2.3">
 			<file name="Items.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items.index" />
 		</update>
 	</info>
@@ -10,6 +10,6 @@
 		<file name="Additional-features.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/Additional-features.xml" />
 		<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
-
+		<file name="items-armor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-armor.xml" />
 	</files>
 </index>
