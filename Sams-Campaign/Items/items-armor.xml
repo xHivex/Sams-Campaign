@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Armor</name>
+		<update version="0.1.0">
+			<file name="items-armor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-armor.xml" />
+		</update>
+	</info>
+	<element name="Bursting Shield" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BURSTING_SHIELD">
+		<description>
+			<html>&lt;p&gt;Whenever a creature misses a melee attack against you when they are within 5 feet of you by the amount of AC your shield confers or less, the shield knocks them prone of its own accord, dealing 1d4 bludgeoning damage to the attacking creature. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">shield</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+</elements>
