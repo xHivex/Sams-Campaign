@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -33,5 +33,22 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
 		</setters>
+	</element>
+	<element name="Magic for Angel" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_MAGIC_FOR_ANGEL">
+		<description>
+			<html>Magic</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="Shadow Manipulator:spellcasting:attack" value="2" bonus="" />
+			<stat name="Shadow Manipulator:spellcasting:dc" value="2" bonus="" />
+		</rules>
 	</element>
 </elements>
