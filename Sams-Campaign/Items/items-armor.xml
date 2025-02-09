@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Armor</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-armor.xml" />
 		</update>
 	</info>
@@ -19,5 +19,26 @@
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 			<set name="attunement">true</set>
 		</setters>
+	</element>
+	<element name="Diamond Plated Mithral Armor" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_DIAMOND_PLATED_MITHRAL_ARMOR">
+		<description>
+			<html>&lt;p&gt;Mithral is a light, flexible metal. A mithral chain shirt or breastplate can be worn under normal clothes. If the armor normally imposes disadvantage on Dexterity (Stealth) checks or has a Strength requirement, the mithral version of the armor doesn't.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Diamond Reduction.&lt;/i&gt;&lt;/b&gt; When you are hit by an attack, as a reaction you may reduce the attack's damage by 4d10. This property may be used 4 times, and this armor regains all expended uses daily at dawn. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">plate, resistance</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="slot">body</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="cursed">true</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+		</rules>
 	</element>
 </elements>
