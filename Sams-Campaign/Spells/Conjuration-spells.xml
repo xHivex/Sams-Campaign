@@ -783,7 +783,7 @@
 			<set name="hasVerbalComponent">false</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
-			<set name="materialComponent" />
+			<set name="materialComponent">a wax seal, preferably blue</set>
 			<set name="isConcentration">false</set>
 			<set name="isRitual">true</set>
 		</setters>
