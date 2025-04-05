@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Conjuration-spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Conjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Conjuration-spells.xml" />
 		</update>
 	</info>
@@ -329,7 +329,7 @@
 			<set name="level">0</set>
 			<set name="school">Conjuration</set>
 			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
+			<set name="duration">1 Round</set>
 			<set name="range">40 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
