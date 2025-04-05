@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Feats</name>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="feats.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Feats/feats.xml" />
 		</update>
 	</info>
@@ -634,10 +634,12 @@ When you damage a creature that is concentrating, they have disadvantage on thei
 &lt;ul&gt;
 &lt;li&gt;Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.&lt;/li&gt;
 &lt;li&gt;Damage that doesn't knock you unconscius doesn't interrupt your concentration.&lt;/li&gt;
+&lt;li&gt;If you are incapacitated in any way then you make your concentration save with advantage&lt;/li&gt;
 &lt;/ul&gt;</html>
 		</description>
 		<sheet>
-			<description>Damage that doesn't knock you unconscius doesn't interrupt your concentration.</description>
+			<description>Damage that doesn't knock you unconscius doesn't interrupt your concentration.
+			If you are incapacitated in any way then you make your concentration save with advantage.</description>
 		</sheet>
 		<rules>
 			<select type="Feat Feature" name="Ability Score Increase(Imperturbable)" supports="Imperturbable-feat" />
