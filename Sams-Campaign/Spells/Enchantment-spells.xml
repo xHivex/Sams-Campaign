@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Enchantment-spells</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="Enchantment-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Enchantment-spells.xml" />
 		</update>
 	</info>
@@ -1189,7 +1189,6 @@
 		<supports>Cleric, Paladin, Bard</supports>
 		<description>
 			<html>&lt;p&gt;You cause motes of light to radiate from an ally, strengthening the resolve of allies. Choose a willing creature within range. Creatures you choose (as well as the target creature and yourself) within 30 feet of the target gain 5 temporary hit points for the duration.&lt;/p&gt;
-&lt;p class="indent"&gt;When&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 4th level or higher, the temporary hit points increase by 5 for each level of the spell slot above 3rd.&lt;/p&gt;</html>
 		</description>
 		<setters>
