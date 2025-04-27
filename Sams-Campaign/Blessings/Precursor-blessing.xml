@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>Precursor blessing</name>
+		<update version="0.0.2">
+			<file name="Precursor-blessing.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Precursor-blessing.xml" />
+		</update>
+	</info>
+	<element name="Precursor Blessing" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_PRECURSOR_BLESSING">
+		<description>
+			<html>&lt;p&gt;You have received the Precursor Blessing and as ancient power flows into you, your maximum attuned items increases by 3, you gain +2 to AC and saving thows, a +2 to intelligence, wisdom and charisma, you speed increases by 15ft, your HP increases by 75 and you gain a +1 to your proficiency&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="type">Epic Boon</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="attunement:max" value="3" />
+			<stat name="hp" value="75" />
+			<stat name="proficiency" value="1" />
+			<stat name="strength:save:misc" value="2" />
+			<stat name="dexterity:save:misc" value="2" />
+			<stat name="constitution:save:misc" value="2" />
+			<stat name="intelligence:save:misc" value="2" />
+			<stat name="wisdom:save:misc" value="2" />
+			<stat name="charisma:save:misc" value="2" />
+			<stat name="speed:misc" value="15" />
+			<stat name="ac:misc" value="2" />
+			<stat name="wisdom" value="2" />
+			<stat name="intelligence" value="2" />
+			<stat name="charisma" value="2" />
+		</rules>
+	</element>
+</elements>
