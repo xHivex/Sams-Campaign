@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Precursor blessing</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="Precursor-blessing.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Precursor-blessing.xml" />
 		</update>
 	</info>
