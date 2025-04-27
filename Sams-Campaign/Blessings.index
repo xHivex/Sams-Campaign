@@ -2,12 +2,13 @@
 <index>
 	<info>
 		<name>Blessings</name>
-		<update version="1.1.1">
+		<update version="1.1.2">
 			<file name="Blessings.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings.index" />
 		</update>
 	</info>
 	<files>
 		<file name="Proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Proficiency-boost.xml" />
 		<file name="Gift-of-the-precursor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Gift-of-the-precursor.xml" />
+		<file name="Precursor-blessing.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Precursor-blessing.xml" />
 	</files>
 </index>
