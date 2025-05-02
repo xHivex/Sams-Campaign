@@ -2,11 +2,11 @@
 <elements>
 	<info>
 		<name>Proficiency Boost</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Proficiency-boost.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Blessings/Proficiency-boost.xml" />
 		</update>
 	</info>
-	<element name="Proficiency Boost" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_PROFICIENCY_BOOST">
+	<element name="Proficiency Boost level 20" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_PROFICIENCY_BOOST_LEVEL_20">
 		<description>
 			<html>&lt;html&gt;Adds bonus proficiency&lt;/html&gt;</html>
 		</description>
@@ -18,12 +18,12 @@
 		</setters>
 		<rules>
 			<stat name="ac" value="proficiency:half" level="20" />
-			<stat name="strength:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
-			<stat name="dexterity:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
-			<stat name="constitution:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
-			<stat name="intelligence:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
-			<stat name="wisdom:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
-			<stat name="charisma:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+			<stat name="strength:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="dexterity:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<stat name="constitution:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<stat name="intelligence:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<stat name="wisdom:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<stat name="charisma:save:misc" value="proficiency:half" requirements="!ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
 			<stat name="proficiency" value="1" level="20" />
 			<stat name="proficiency" value="1" level="22" />
 			<stat name="proficiency" value="1" level="23" />
@@ -40,6 +40,42 @@
 			<stat name="proficiency" value="1" level="38" />
 			<stat name="proficiency" value="1" level="39" />
 			<stat name="proficiency" value="1" level="40" />
+		</rules>
+	</element>
+	<element name="Proficiency Boost level 1" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_PROFICIENCY_BOOST_LEVEL_1">
+		<description>
+			<html>&lt;html&gt;Adds bonus proficiency&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Supernatural Gifts</set>
+			<set name="slot">Epic Boon</set>
+			<set name="inventory-hidden">true</set>
+			<set name="slot">gift</set>
+		</setters>
+		<rules>
+			<stat name="ac" value="proficiency:half" level="1" />
+			<stat name="strength:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_STRENGTH" />
+			<stat name="dexterity:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<stat name="constitution:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<stat name="intelligence:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
+			<stat name="wisdom:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_WISDOM" />
+			<stat name="charisma:save:misc" value="proficiency:half" level="1" requirements="!ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<stat name="proficiency" value="1" level="1" />
+			<stat name="proficiency" value="1" level="2" />
+			<stat name="proficiency" value="1" level="3" />
+			<stat name="proficiency" value="1" level="4" />
+			<stat name="proficiency" value="1" level="6" />
+			<stat name="proficiency" value="1" level="7" />
+			<stat name="proficiency" value="1" level="8" />
+			<stat name="proficiency" value="1" level="10" />
+			<stat name="proficiency" value="1" level="11" />
+			<stat name="proficiency" value="1" level="12" />
+			<stat name="proficiency" value="1" level="14" />
+			<stat name="proficiency" value="1" level="15" />
+			<stat name="proficiency" value="1" level="16" />
+			<stat name="proficiency" value="1" level="18" />
+			<stat name="proficiency" value="1" level="19" />
+			<stat name="proficiency" value="1" level="20" />
 		</rules>
 	</element>
 </elements>
