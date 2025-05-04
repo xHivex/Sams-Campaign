@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>items-Mythic</name>
+		<update version="0.1.0">
+			<file name="items-Mythic.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-Mythic.xml" />
+		</update>
+	</info>
+	<element name="Amulet of Storms" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_AMULET_OF_STORMS">
+		<description>
+			<html>&lt;p&gt;&lt;b&gt;Eye of the Storm.&lt;/b&gt; When worn, attacks with melee weapons apply damage dealt to all enemies within 30ft of the attacker as lightning damage. Creatures must make a Dexterity save of DC 12 + Your Proficiency + Your Attack Modifier. On success, they take half damage. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Amulet of Storms.&lt;/b&gt; The Amulet can be destroyed by being submerged in the waters of the Eternal Plane of Water for one hour. &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Flash Powder" from it.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Penetrate Disguise" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Conjure Elemental" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;Other creatures can't take short or long rests while within 300 feet of you.&lt;/p&gt;
+&lt;p class="indent"&gt;For 80 hours after attuning to the artifact you feel compelled to repeat a specific activity over and over, such as washing hands, touching things, praying, or counting coins.&lt;/p&gt;
+&lt;p class="indent"&gt;You determine your alignment daily at dawn by rolling a d6 twice. On the first roll, a 1- 2 indicates lawful, 3-4 neutral, and 5-6 chaotic. On the second roll , a 1-2 indicates good, 3-4 neutral, and 5-6 evil.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">constitution</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">neck</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_SACA_SPELL_FLASH_POWDER" />
+			<grant type="Spell" id="ID_SACA_SPELL_PENETRATE_DISGUISE" />
+			<grant type="Spell" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_LIGHTNING" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_THUNDER" />
+		</rules>
+	</element>
+	<element name="Staff of the Arch Magus" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_STAFF_OF_THE_ARCH_MAGUS">
+		<description>
+			<html>&lt;p&gt;&lt;b&gt;Improved Intellect.&lt;/b&gt; A creature attuned to the staff has it's Intelligence increased by 5, to a maximum of 30. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Archmage's Mastery.&lt;/b&gt; This staff has 50 charges and regains 1d10+ (Casting modifier) charges at dawn. You may use these charges to cast spells that you have prepared. The amount of charges consumed is equal to the spell's level. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Spell Absorption.&lt;/b&gt; You may use your reaction to absorb a spell, regaining a number of charges equal to the 1/2 spell's level(rounded down). If this effect raises the total amount of charges in the staff above 50 it instead becomes 50. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Magic Weapon.&lt;/b&gt; This staff counts as a +5 quarterstaff and increases the user's spell save dc and spell attack by 10 each. Additionally, when a 20th level wizard uses the Spell Absorption feature, they gain their reaction back as soon as the spell is absorbed.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Staff of the archmagus.&lt;/b&gt; This staff can only be destroyed as a result of an Ultimate Sphere of Destruction spell. &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;This item erases magic scrolls within 10 feet of it, rendering them nonmagical.&lt;/b&gt; &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Identify" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You regain 1d6 hit points at the start of your turn if you have at least 1 hit point.&lt;/p&gt;
+&lt;p class="indent"&gt;You can't be blinded, deafened, petrified or stunned.&lt;/p&gt;
+&lt;p class="indent"&gt;Animals within 30 feet of you are hostile toward you.&lt;/p&gt;
+&lt;p class="indent"&gt;You can't smell.&lt;/p&gt;
+&lt;p class="indent"&gt;Other creatures can't take short or long rests while within 300 feet of you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">sorcerer, warlock, wizard</set>
+			<set name="category">Staffs</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="weapon">Quarterstaff</set>
+			<set name="type">Staff</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement">4</set>
+			<set name="charges">50</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="10" />
+			<stat name="spellcasting:dc" value="10" />
+			<stat name="intelligence" value="5" />
+			<stat name="strength" value="2" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+		</rules>
+	</element>
+	<element name="Ring of Solomon" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_SOLOMON">
+		<description>
+			<html>&lt;p&gt;This ring is a single band of pure black. It has inscriptions in a foreign language. A DC 22 Intelligence (Investigation) check reveals that the words mean "The weak were born to be enslaved, the mighty were born to enslave." When attuned to this ring, the ring will not come off the finger of its wearer without the wearer's permission.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Magic Item.&lt;/b&gt; This ring grants you a +4 bonus to AC. The Ring of Solomon also has the functions of a ring of mind shielding and a ring of x-ray vision along with the other properties listed on this page. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Vitality.&lt;/b&gt; While wearing and being attuned to the Ring of Solomon you do not age and cannot be aged or put to sleep by magical effects. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Enhanced Spell.&lt;/b&gt; When you cast a spell that consumes a spell slot, you may choose to cast the spell at a higher level while consuming a lower level spell slot. The spell is then cast at two levels higher, up to 9th level, than the spell slot the spell would consume. For example, when you cast the fireball spell using a 4th level spell slot, the spell acts as if you cast it at 6th level. This effect may be used 3 times, and this ring regains all expended uses at dusk. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Ring of Solomon.&lt;/b&gt; The Ring of Solomon can be destroyed if it is struck by a weapon wielded by a solar during a solar eclipse. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ring of mind shielding&lt;/b&gt; While wearing this ring, you are immune to magic that allows other creatures to read your thoughts, determine whether you are lying, know your alignment, or know your creature type. Creatures can telepathically communicate with you only if you allow it.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cause the ring to become invisible until you use another action to make it visible, until you remove the ring, or until you die.&lt;/p&gt;
+&lt;p class="indent"&gt;If you die while wearing the ring, your soul enters it, unless it already houses a soul. You can remain in the ring or depart for the afterlife. As long as your soul is in the ring, you can telepathically communicate with any creature wearing it. A wearer can't prevent this telepathic communication.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Ring of x-ray vision&lt;/b&gt; While wearing this ring, you can use an action to speak its command word. When you do so, you can see into and through solid matter for 1 minute. This vision has a radius of 30 feet. To you, solid objects within that radius appear transparent and don't prevent light from passing through them. The vision can penetrate 1 foot of stone, 1 inch of common metal, or up to 3 feet of wood or dirt. Thicker substances block the vision, as does a thin sheet of lead.&lt;/p&gt;
+&lt;p class="indent"&gt;Whenever you use the ring again before taking a long rest, you must succeed on a DC 15 Constitution saving throw or gain one level of exhaustion.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You gain a +1 bonus to Armor Class.&lt;/p&gt;
+&lt;p class="indent"&gt;You regain 1d6 hit points at the start of your turn if you have at least 1 hit point.&lt;/p&gt;
+&lt;p class="indent"&gt;You emit a sour stench noticeable from up to 10 feet away.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;You take 29 psychic damage when you become attuned to the artifact.&lt;/b&gt; &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+			<set name="enhancement ">4</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="4" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+		</rules>
+	</element>
+	<element name="Shield of the Dragon Hunter" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SHIELD_OF_THE_DRAGON_HUNTER">
+		<description>
+			<html>&lt;p&gt;The shield remains in pristine condition despite years of laying within the hoard of a great wyrm.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Magic Shield.&lt;/b&gt; The Shield of the Dragon Hunter is a magical shield that grants a +4 bonus to AC. A creature additionally gains 42 hit points while wielding the shield. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Elemental Bane.&lt;/b&gt; While wielding the shield, a creature gains immunity to cold and fire damage, and immunity to the effects of extreme heat and extreme cold. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bastion.&lt;/b&gt; Any creature wielding the shield gains advantage and proficiency on saving throws against being knocked prone, and gains immunity to any effect that would knock them over or otherwise forcefully move them.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Shield of the Dragon Hunter.&lt;/b&gt; The Shield of the Dragon Hunter will be destroyed only by being crushed under the jaws of the dragon that hoarded it for millenia. &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Peltskin" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Aura of Vitality" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Locate Creature" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can't be blinded, deafened, petrified or stunned.&lt;/p&gt;
+&lt;p class="indent"&gt;The first time you touch a gem or piece of jewelry while attuned to this artifact, the value of the gem or jewelry is reduced by half.&lt;/p&gt;
+&lt;p class="indent"&gt;You age 23 years. You must succeed on a DC 10 Constitution saving throw or die from the shock. If you die, you are instant ly transformed in to a wight (see the Monster Manual ) under the DM's control that is sworn to protect the artifact.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="rarity">Mythic</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">3</set>
+			<set name="type" addition="shield">Armor</set>
+		</setters>
+		<rules>
+			<stat name="ac:shield" value="4" bonus="shield" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+			<stat name="hp" value="42" />
+			<grant type="Spell" id="ID_SACA_SPELL_PELTSKIN" />
+			<grant type="Spell" id="ID_PHB_SPELL_AURA_OF_VITALITY" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+		</rules>
+	</element>
+	<element name="The Uno Cards" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_THE_UNO_CARDS">
+		<description>
+			<html>&lt;p&gt;A set of brightly colored, mass produced game cards have been imbued with magic to manifest their strength into the physical world. &lt;/p&gt;
+&lt;p class="indent"&gt;As an action, you may draw a card, rolling 1d6, rerolling on a roll of 6. This item has 6 charges, regaining 1d4 at dawn. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;1: Reverse Card.&lt;/b&gt; On the first instance that you take damage until the beginning of your next turn, the creature that dealt the damage takes it instead. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;2: Skip Card.&lt;/b&gt; One creature of your choice can not move or take actions or bonus actions until the beginning of your next turn.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;3: The Wild Draw Four.&lt;/b&gt; You may make 1 attack as part of this action, dealing an additional +4 damage, changing the type of that damage to one of your choosing, and causing them to become paralyzed until the end of your next turn on a hit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;4: Draw 2.&lt;/b&gt; You may make 1 attack as part of this action, dealing an additional +2 damage and stunning the target until the end of your next turn on a hit.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;5: The Wild Card.&lt;/b&gt; You may make 1 attack as part of this action, changing the type of that damage to one of your choosing.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You regain 1d6 hit points at the start of your turn if you have at least 1 hit point.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Thundering Whip" from it.&lt;/p&gt;
+&lt;p class="indent"&gt;You deal 1d6 necrotic damage to any plant you touch that isn't a creature.&lt;/p&gt;
+&lt;p class="indent"&gt;All holy water within 10 feet of you is destroyed &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Mythic</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+			<grant type="Spell" id="ID_SACA_SPELL_THUNDERING_WHIP" />
+		</rules>
+	</element>
+	<element name="Effigy of Averages" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_EFFIGY_OF_AVERAGES">
+		<description>
+			<html>&lt;p&gt;This item is an unassuming part of a gaming set. A glass dome over a metal baseplate, with three six-sided bone die contained within the dome. When the dome is pressed down upon and released, the steel baseplate is allowed to bend slightly and pop back up, jostling the dice and simulating a roll without the potential finesse of a rolling hand. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Law of Averages.&lt;/b&gt; While the Effigy of Averages is in your possession and attuned to you, any time a d20 test is called for, roll 3d6 instead. Apply modifiers as normal. As the lowest that can be rolled is a 3, and the highest is an 18, you can never critically succeed or critically fail a test rolled against in this manner. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Fairly Random&lt;/b&gt; The Effigy can be used for any gambling game in which a roll of three six-sided dice is called for. When used as a gaming kit, even those proficient with dice cannot add their proficiency to rolls made during the game.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Effigy of Averages.&lt;/b&gt; The item can be made powerless if its glass dome is shattered, which, bizarrely, requires a feat of extraordinary strength, represented by a DC 25 Strength (Athletics) check, made by an attuned user, which takes one minute.&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You can't be charmed or frightened.&lt;/p&gt;
+&lt;p class="indent"&gt;You are immune to disease.&lt;/p&gt;
+&lt;p class="indent"&gt;You must eat and drink six times the normal amount each day.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Locate Creature" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Sun Ward" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Mythic</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" />
+			<grant type="Spell" id="ID_SACA_SPELL_SUN_WARD" />
+		</rules>
+	</element>
+	<element name="Golden Warhammer" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_GOLDEN_WARHAMMER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_HAMMERS, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+		<description>
+			<html>&lt;p&gt;&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">twohand</set>
+			<set name="damage" type="bludgeoning">2d10</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER</set>
+		</setters>
+		<sheet display="false" />
+	</element>
+	<element name="Golden Warhammer of Ermut the Rich" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_GOLDEN_WARHAMMER_OF_ERMUT_THE_RICH">
+		<description>
+			<html>&lt;p&gt;You gain a +3 bonus to attack and damage rolls made with this magic weapon.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Worthiness:&lt;/i&gt;&lt;/b&gt; This weapon uses a worthiness score. Each player's worthiness score is 10, but it can increase or decrease at the DM's discretion, similarly to Inspiration. Performing worthy deeds (according to dm) will increase your score, while unworthy deeds will decrease it. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Whirlwind:&lt;/i&gt;&lt;/b&gt; When you attack with this weapon, you may attack any creatures within your reach, and add your worthiness modifier to each die. You may distribute the die however you wish to creatures within range, much like magic missile.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Perforated Liver&lt;/i&gt;&lt;/b&gt; When something with a liver is killed with this hammer, the final strike turns their liver into a 25gp liver shaped nugget. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Demonetize.&lt;/i&gt;&lt;/b&gt; Touching a gold object with the butt of the hammer reverts it to another material, depending on its shape. A golden chair would turn to wood, for example, and a golden liver would turn to the flesh of the being it dropped from, still a functioning liver. Handy on the black market, and for transplants!&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Capitalism&lt;/i&gt;&lt;/b&gt; You may use this feature a number of times equal to your wisdom score modifier. Regain all uses after a long rest spent cuddling with gold. You may expend 50 gp to double the damage die of this weapon. You may not activate this feature until after your roll has been made, but before it is determined whether or not it hits. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Taxes&lt;/i&gt;&lt;/b&gt; Once per day, you may make all gold within 30 feet of you conglomerate into a large mound at your feet, raising you into the air. Any enemy that would be hit by the moving gold is grappled by the mound. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Stock crash&lt;/i&gt;&lt;/b&gt; Once per day, you may cause everything within 500 feet of you to completely stop moving for 1 round, and take 1d6 cold damage. All affected creatures have reduced liver function for 2 hours. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Investment&lt;/i&gt;&lt;/b&gt; Once a day, you may select one creature. The liver of anything that creature kills will turn into a solid gold nugget. This effect wears off after 5 minutes. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">Golden Warhammer</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Golden Warhammer">Weapon</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Golden Warhammer</set>
+		</setters>
+	</element>
+	<element name="Sword of Mastery" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SWORD_OF_MASTERY">
+		<description>
+			<html>&lt;p&gt;&lt;b&gt;Magic Weapon.&lt;/b&gt; The Sword of Mastery is a magic weapon that grants +3 bonus to attack and damage rolls made with it. The sword also functions as a Belt of Storm Giant Strength. The sword ignores resistance to slashing damage, treating immunity as resistance, and deals an extra dice of slashing damage. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Master of the Sword.&lt;/b&gt; When you attune to the sword, you become proficient with it and can wield it regardless of your weapon restrictions and can add your proficiency bonus to it's damage. Additionally, this weapon lands a critical hit on a 19 or 20 and you gain a Extra Attack, which is the same as your class extra attack, even if it doesn't. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bonded.&lt;/b&gt; The sword can instantaneously be summoned to its owner's hand as a bonus action, unless they don't have a free hand. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Warrior Enhancement.&lt;/b&gt; You can add your Constitution modifier to your saving throws. Finally, your speed is increased by 10 ft.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Sword of Mastery.&lt;/b&gt; To destroy this sword you need to throw it into a star. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Lightning Strike" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;Your weight increases by 40 pounds.&lt;/p&gt;
+&lt;p class="indent"&gt;Goliaths are always hostile toward you.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Longsword Mastery">Weapon</set>
+			<set name="rarity">Mythic</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">4</set>
+			<set name="weapon">Longsword Mastery</set>
+		</setters>
+		<rules>
+			<stat name="innate speed:misc" value="10" />
+			<stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
+			<stat name="strength:score:set" value="29" bonus="base" />
+			<stat name="extra attack:count" value="1" />
+			<stat name="strength:save:misc" value="constitution:modifier" />
+			<stat name="dexterity:save:misc" value="constitution:modifier" />
+			<stat name="constitution:save:misc" value="constitution:modifier" />
+			<stat name="intelligence:save:misc" value="constitution:modifier" />
+			<stat name="wisdom:save:misc" value="constitution:modifier" />
+			<stat name="charisma:save:misc" value="constitution:modifier" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+			<grant type="Spell" id="ID_SACA_SPELL_LIGHTNING_STRIKE" />
+		</rules>
+	</element>
+	<element name="Longsword Mastery" type="Weapon" source="Sam's Campaign" id="ID_SACA_WEAPON_LONGSWORD_MASTERY">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+		<description>
+			<html>&lt;p&gt;&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">15</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="Slashing/Force/Radiant ">1d10/2d12/3d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+		</setters>
+		<sheet display="false" />
+	</element>
+</elements>
