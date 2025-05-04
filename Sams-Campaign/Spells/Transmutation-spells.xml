@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Transmutation-spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Transmutation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Transmutation-spells.xml" />
 		</update>
 	</info>
@@ -642,7 +642,7 @@ A non-instantaneous effect produced by this spell lasts for up to one hour.&lt;/
 		<supports>Bard, Warlock, Sorcerer, Wizard, Artificer</supports>
 		<description>
 			<html>&lt;p&gt;You make a single melee attack against a creature you can see within the spells range. If the attack hits, The contact point of the weapon injects a neurotoxin into the target, dealing extra damage to the target. Add 1d6 poison damage to the roll.&lt;/p&gt;
-&lt;p class="indent"&gt;The target must then make a constitution saving throw against your spell save DC. If failed, they move at half speed until the end of your next turn. If that roll a natural 1 they are knocked prone until the end of your turn.&lt;/p&gt;
+&lt;p class="indent"&gt;The target must then make a constitution saving throw against your spell save DC. If failed, they move at half speed until the end of your next turn. If that roll a natural 1 they are knocked prone until the end of your next turn.&lt;/p&gt;
 &lt;p class="indent"&gt;At 5th level the melee attack deals an additional 1d6 poison damage. The damage die increases by one again at 11th, and 17th level.&lt;/p&gt;</html>
 		</description>
 		<setters>
