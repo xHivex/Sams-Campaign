@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>items-Mythic</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-Mythic.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-Mythic.xml" />
 		</update>
 	</info>
@@ -292,5 +292,38 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
 		</setters>
 		<sheet display="false" />
+	</element>
+	<element name="Crown of Domination" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CROWN_OF_DOMINATION">
+		<description>
+			<html>&lt;p&gt;&lt;b&gt;Aura of Terror.&lt;/b&gt; At the start of your turn hostile creatures within 15 feet of you must succeed on a DC (8 + your level + your proficiency bonus) Wisdom saving throw or be frightened for 1 minute at the end of their turn they may reroll the save to end the condition. You add your Strength modifier to your intimidation rolls &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Presence.&lt;/b&gt; Your intelligence and charisma scores and maximum grow by +4. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Aura of Kingship.&lt;/b&gt; You can add your charisma modifier to your AC. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Under my Banner.&lt;/b&gt;  During a long rest creatures may swear fealty to you. Creatures who swear fealty add your proficiency bonus to all rolls. You can read the mind of any creature who has sworn fealty and are alerted whenever they plan to betray or scheme against you. You learn the exact details of the plot against you. You have advantage on rolls against those who've sworn fealty to you. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Destroying the Crown of Domination.&lt;/b&gt; The Crown can only be destroyed by extinguishing the fire within it. To do this, it must be taken to the Eclipse Sanctum, a hidden temple deep within the Obsidian Wastes, where no sunlight has touched for millennia. There, under a rare total eclipse, the crown must be submerged in the Void Well, a pool of primordial darkness that negates all divine energy. However, the crown does not surrender easily—before it is destroyed, the spirits of past rulers who once wore it will test the one attempting its destruction, forcing them to confront the burden of leadership and the cost of power. Should they falter, the crown will resist, binding itself to them and ensuring its legacy endures once more. &lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;While attuned to the artifact:&lt;/b&gt; &lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Dark Reach" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Pincushion" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;You can use an action to cast "Phoenix's Rebirth" from it. After you cast the spell, roll a d6. On a roll of 1 to 5, you can't cast it again until the next dawn.&lt;/p&gt;
+&lt;p class="indent"&gt;Your weight increases by 20 pounds.&lt;/p&gt;
+&lt;p class="indent"&gt;You regain 1d6 hit points at the start of your turn if you have at least 1 hit point.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="4" />
+			<stat name="charisma" value="4" />
+			<stat name="ac:misc" value="charisma:modifier" />
+			<grant type="Spell" id="ID_SACA_SPELL_DARK_REACH" />
+			<grant type="Spell" id="ID_SACA_SPELL_PINCUSHION" />
+			<grant type="Spell" id="ID_SACA_SPELL_PHOENIXS_REBIRTH" />
+		</rules>
 	</element>
 </elements>
