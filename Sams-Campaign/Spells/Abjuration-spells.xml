@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Abjuration-spells</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
 		</update>
 	</info>
@@ -1238,7 +1238,7 @@
 			<set name="isRitual">false</set>
 		</setters>
 	</element>
-	<element name="Pincushion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_AID_2">
+	<element name="Pincushion" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_PINCUSHION">
 		<supports>Cleric, Artificer, Druid, Ranger</supports>
 		<description>
 			<html>&lt;p&gt;You weave a magical barrier around yourself, specifically made to catch and return projectiles. When you are targeted by a ranged weapon attack, it automatically hits, but deals 5d6 less damage. If the damage would be reduced to 0, it is impaled upon the barrier, and stays there until the spell ends.&lt;/p&gt;
