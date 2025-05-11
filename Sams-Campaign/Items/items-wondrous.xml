@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -36,7 +36,7 @@
 	</element>
 	<element name="Magic for Angel" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_MAGIC_FOR_ANGEL">
 		<description>
-			<html>Magic</html>
+			<html>&lt;html&gt;Magic&lt;/html&gt;</html>
 		</description>
 		<setters>
 			<set name="category">Wondrous Items</set>
@@ -50,5 +50,117 @@
 			<stat name="Shadow Manipulator:spellcasting:attack" value="2" bonus="" />
 			<stat name="Shadow Manipulator:spellcasting:dc" value="2" bonus="" />
 		</rules>
+	</element>
+	<element name="Ankh of the Cat Lord" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ANKH_OF_THE_CAT_LORD">
+		<description>
+			<html>&lt;p&gt;This ankh-shaped charm contains a green feline eye made of glass. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Nine Lives.&lt;/b&gt; If you are reduced to 0 hit points or killed outright while the ankh is on your person, you return to life and consciousness with all hit points restored at the start of your next turn. Once a creature has used this property of the ankh 9 times, it no longer functions for that creature. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Attuned Properties.&lt;/b&gt; While attuned to the ankh, it has the following properties: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;  Your steps make no sound, regardless of the surface you are moving across. You also have advantage on Dexterity (Stealth) checks that rely on moving silently.&lt;/li&gt;
+&lt;li&gt; Your speed increases by 15 feet and you gain a climbing speed equal to your walking speed.&lt;/li&gt;
+&lt;li&gt; Cats, lions, tigers, and other feline creatures are always friendly to you unless you harm or provoke them.&lt;/li&gt;
+&lt;li&gt; You suffer none of the frailty of old age and cannot be aged magically. You can still die of old age, however.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;b&gt;Mark of the Cat Lord.&lt;/b&gt; The first time you attune to the ankh, roll twice on the Mark of the Cat Lord table. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;d6&lt;/td&gt; &lt;td&gt;Result&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1-2&lt;/td&gt; &lt;td&gt;Nothing&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3&lt;/td&gt; &lt;td&gt;You grow cat ears and a tail. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;4&lt;/td&gt; &lt;td&gt;You become covered in fur. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;5&lt;/td&gt; &lt;td&gt;You gain the following personality trait: "I am aloof and pretend to be disinterested in most things." &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;6&lt;/td&gt; &lt;td&gt;Your eyes become large and catlike. You now have a permanent 60 feet of darkvision. &lt;/td&gt; &lt;/tr&gt;
+
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" />
+			<stat name="innate speed:misc" value="15" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Bracelet of Time" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BRACELET_OF_TIME">
+		<description>
+			<html>&lt;p&gt;&lt;b&gt;Future gaze, defensive variant. roll a d6, 4-6 recharge.&lt;/b&gt; You can look into the future on your turn to successfully dodge an attack, range or melee and magical. You can also increase your AC by 5 for one turn, but this cannot stack. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Future gaze, offensive variant. roll a d6, 4-6 recharge.&lt;/b&gt; You look into the future, and your next attack will automatically hit, be a critical with an extra attack roll for damage. You can also either increase your next attack to instead deal an extra 4d12 magical force damage, this cannot stack. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Time heal.&lt;/b&gt; You use the use of time warping to heal 8d6 or heal another target 8d6. This action can only be done once per short rest. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Time warp.&lt;/b&gt; You gaze into the future to gain an advantage on all rolls except damage for the next 10 turns. This can only be done once per long rest. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="The Flask of Something" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BRACELET_OF_TIME_2">
+		<description>
+			<html>&lt;p&gt;A steel canteen that cannot be seen into through the lid, and has one of 100 liquids in it, determined by the DM rolling a D100. The player does not know what is in it until is has been poured at least a little. It is always exactly 1/4 pound, no matter what is in it. It is immune to damage from the inside by the liquids it contains, and has perfect thermal insulation. If something is put into it unnaturally, it will be instantly annihilated when the cap is replaced. it can only be refilled 5 times a day. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Bag of Bacon" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BAG_OF_BACON">
+		<description>
+			<html>&lt;p&gt;A wondrous creation by the wisest astral self monk to ever exist. This masterpiece was created by the modification of a bag of holding. When you reach into this bag you pull out 1d8 pieces of bacon every time.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Confused Binoculars" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CONFUSED_BINOCULARS">
+		<description>
+			<html>&lt;p&gt;The Confused Binoculars are, or at least appear to be, a regular pair of binoculars. However, upon closer inspection, the binoculars provide 1x magnification, as there is no magnification system inside. However, when using it to look at something, the magical power of the binoculars becomes obvious, as the item itself increases(or decreases, depending on the side you look through) in size. The user must concentrate on the object, or else it reverts to normal size. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Not How That Works.&lt;/b&gt; As an action, you can look through the binoculars at a target you can see. When doing so, they are affected by enlarge/reduce (DC 15) until the start of your next turn. If you look through the back, they are enlarged, and reduced if you look through the front. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Unstable Banana" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNSTABLE_BANANA">
+		<description>
+			<html>&lt;p&gt;Visibly, this looks like any other banana while the peel is on, upon touching however, it immediately becomes obvious this is no ordinary banana. To the touch, this banana has a soft vibration, and a small hum audible from 1 feet away. Once this banana has been peeled, there is a very visible distortion in the light around it, doubling up and refracting light around it, providing 5 feet of dim light. &lt;/p&gt;
+&lt;p&gt;If the banana is peeled and left uneaten or preserved magically, it will rot within 1 minute. &lt;/p&gt;
+&lt;p&gt;Upon eating this banana, the consumer is paralyzed until the end of their next turn. In this time, they take on the texture distortion and luminescent properties of the banana. After the paralysis, the consumer splits into two identical looking beings, the same size, weight and stats, as the original. The clone is unstable, both the original and clone are controlled by the player. The clone cannot cast spells, and at the end of each of it's turn, it rolls a d20, on a critical roll (1 or 20), it dies.&lt;/p&gt;
+&lt;p&gt;Upon death, it explodes, forcing all creatures in a 10 ft. radius to attempt a DC 17 Constitution saving throw, taking 4d6 force damage on a failure and half as much on a success. It also explodes after 1 minute. If the original dies while the clone is still alive, their soul is transferred to the clone and it loses the aforementioned effects. Once peeled, the banana cannot be resealed by any means except the wish spell or it's brought back in time. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
 	</element>
 </elements>
