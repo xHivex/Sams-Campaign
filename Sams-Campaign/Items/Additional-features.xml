@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Additional features</name>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="Additional-features.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/Additional-features.xml" />
 		</update>
 	</info>
