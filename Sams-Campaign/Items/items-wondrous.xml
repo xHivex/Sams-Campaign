@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -103,7 +103,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">legendary</set>
+			<set name="rarity">Legendary</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -117,7 +117,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 	<element name="Bag of Bacon" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BAG_OF_BACON">
@@ -130,7 +130,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 		</setters>
 	</element>
 	<element name="Confused Binoculars" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CONFUSED_BINOCULARS">
@@ -144,7 +144,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">uncommon</set>
+			<set name="rarity">Uncommon</set>
 		</setters>
 	</element>
 	<element name="Unstable Banana" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNSTABLE_BANANA">
@@ -173,7 +173,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 			<set name="slot">head</set>
 		</setters>
 		<rules>
@@ -191,7 +191,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 			<set name="slot">shoulders</set>
 		</setters>
 		<rules>
@@ -238,7 +238,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">uncommon </set>
+			<set name="rarity">Uncommon</set>
 			<set name="attunement">true</set>
 		</setters>
 		<rules>
@@ -256,7 +256,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">very rare</set>
+			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -270,7 +270,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">uncommon </set>
+			<set name="rarity">Uncommon</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -287,7 +287,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">very rare</set>
+			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -301,7 +301,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">very rare</set>
+			<set name="rarity">Very Rare</set>
 			<set name="attunement">true</set>
 		</setters>
 	</element>
@@ -357,7 +357,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="rarity">rare</set>
+			<set name="rarity">Rare</set>
 			<set name="attunement">true</set>
 		</setters>
 		<rules>
@@ -391,7 +391,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="attunement">true</set>
-			<set name="rarity"> Rare</set>
+			<set name="rarity">Rare</set>
 		</setters>
 		<rules>
 			<stat name="spellcasting:attack" value="2" bonus="" />
@@ -407,7 +407,7 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="attunement">true</set>
-			<set name="rarity"> Very Rare</set>
+			<set name="rarity">Very Rare</set>
 		</setters>
 		<rules>
 			<stat name="spellcasting:attack" value="3" bonus="" />
