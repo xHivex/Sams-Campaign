@@ -42,7 +42,7 @@
 			<set name="inventory-hidden">true</set>
 		</setters>
 		<rules>
-			<select type="Feat" name="(Additional Feat)" />
+			<select type="Feat" name="(Additional Feat)" number="1"/>
 		</rules>
 	</element>
 </elements>
