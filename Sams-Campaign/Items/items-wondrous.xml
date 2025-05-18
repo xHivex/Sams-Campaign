@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -107,7 +107,7 @@
 			<set name="attunement">true</set>
 		</setters>
 	</element>
-	<element name="The Flask of Something" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BRACELET_OF_TIME_2">
+	<element name="The Flask of Something" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_THE_FLASK_OF_SOMETHING">
 		<description>
 			<html>&lt;p&gt;A steel canteen that cannot be seen into through the lid, and has one of 100 liquids in it, determined by the DM rolling a D100. The player does not know what is in it until is has been poured at least a little. It is always exactly 1/4 pound, no matter what is in it. It is immune to damage from the inside by the liquids it contains, and has perfect thermal insulation. If something is put into it unnaturally, it will be instantly annihilated when the cap is replaced. it can only be refilled 5 times a day. &lt;/p&gt;</html>
 		</description>
@@ -162,5 +162,286 @@
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Rare</set>
 		</setters>
+	</element>
+	<element name="Really Cool Top Hat" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_REALLY_COOL_TOP_HAT">
+		<description>
+			<html>&lt;p&gt;This is a Top Hat that gives you a +1 to your Charisma score and AC&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Creatively Charismatic Cloak of Cordial Charisma" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CREATIVELY_CHARISMATIC_CLOAK_OF_CORDIAL_CHARISMA">
+		<description>
+			<html>&lt;p&gt;This is a Cloak that gives you a +1 to your Charisma score and AC&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" />
+			<stat name="ac:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Chankla" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CHANKLA">
+		<description>
+			<html>&lt;p&gt;This item, called "slipper" is, well, a slipper. It looks like someone's home slipper, from a modern time, if you're playing a generic ye olde fantasy world. Though it looks perfectly domestic, it packs a wallop and is used by high-ranking members of the Church of The Good House to discipline those they see as errant in their ways. The sheer simplicity of this item pretty much causes damage without being overly dangerous looking, as it hurts not only your body, but also your ego.  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Housekeeping.&lt;/b&gt; This slipper can be used as an improvised weapon. When it successfully hits, the target cannot speak to(unless spoken to!) or target the wielder of the chankla for 10 minutes.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Flute of Birds" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_FLUTE_OF_BIRDS">
+		<description>
+			<html>&lt;p&gt;This flute has a symbol of birds in a flock and what seems to be going someplace while musical symbols are in the distance and have wings on the right and left next to the mouth of the flute.  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Bird Summoner.&lt;/b&gt; As an action, you play the flute and all birds in a 100 mile radius flock around you and stay until the music stops playing. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ioun Pringle" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_IOUN_PRINGLE">
+		<description>
+			<html>&lt;p&gt;Your maximum hit points increases by 1 while this salt-sprinkled tan paraboloid orbits your head.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">uncommon </set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="1" />
+		</rules>
+	</element>
+	<element name="Mistresses' Mantreaders" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_MISTRESSES_MANTREADERS">
+		<description>
+			<html>&lt;p&gt;A pair of dark red pointed high heels designed for the cruelest of punishments.  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Cause Pain.&lt;/b&gt; The shoes have 5 charges. If you are within 5 feet of a prone male humanoid, you can expend a charge and use your action to inflict agonizing pain to that creature, with the effect of power word pain (save DC 19). The shoes regain 1d4 + 1 charges at midnight. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">very rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Robes of Ambiguity" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ROBES_OF_AMBIGUITY">
+		<description>
+			<html>&lt;p&gt;While you are wearing these hooded robes, your physical features including your gender, your height, build, &amp; weight (beyond your size category) and your race (beyond your basic anatomy &amp; configuration) are impossible to determine unless a creature who can see you uses magical means or uses the search action to successfully make a DC 15 Wisdom (Perception) check. To the consternation of many mages and scholars, the robes do not seem to actually be enchanted or possess any magical properties and it is not clear how they work so effectively. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">uncommon </set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Seven Hundred League Boot" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SEVEN_HUNDRED_LEAGUE_BOOT">
+		<description>
+			<html>&lt;p&gt;A seven hundred league boot is the result of a wizard who severely misinterpreted the instructions for crafting seven league boots. The resulting singular boot supposedly functions as intended, but no one who has ever put one on has ever lived the test to confirm this. &lt;/p&gt;
+&lt;p class="indent"&gt;Seven hundred league boots never come in pairs, and it is suspected that all of them are left-footed. &lt;/p&gt;
+&lt;p class="indent"&gt; A seven hundred league boot is literally impossible to mistake for a seven league boot. How this is the case is completely beyond human comprehension. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Seven Hundred Mile Step.&lt;/b&gt;The seven hundred league boot's effect activates when its wearer completes a step upon the foot wearing the boot. Upon doing so, the wearer is rapidly transported seven hundred leagues forward, stretching the creature to such unbearable proportions that it is very graphically torn to shreds, killing it instantly. The boot arrives at the destination unharmed, somehow. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">very rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Sneak-ers" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SNEAK_ERS">
+		<description>
+			<html>&lt;p&gt;Special shoes created to absorb noise created through movement. While worn, the Sneak-ers grant a bonus +3 to Dexterity (Stealth) checks. As a bonus action, the Sneak-ers can be activated, allowing the user to travel without detection, making you automatically succeed on Dexterity (Stealth) checks to remain hidden if the user was not previously detected. The effect lasts up to 1 minute, and once used cannot be used again until the next dawn.  &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">very rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Staff of Cats" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_STAFF_OF_CATS">
+		<description>
+			<html>&lt;p&gt;This long wood staff is covered in scratch marks and has a carving of a cat's head at the top.&lt;/p&gt;
+&lt;p&gt;This staff has 4 charges, and regains all expended charges at dawn. You may expend charges to produce the following effects: &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; As an action, by expending 1 charge, you can make the staff let out the sound of a cat meowing loudly.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 1 charge, you can point the staff at a creature you can see within 60 feet of you and try to turn it into a half cat(cat ears and tail). The creature must make a DC 12 Wisdom saving throw, turning into a half cat for 1 minute on a failure.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 2 charges, you can summon 2 cats into unoccupied spaces within 5 feet of you. The cats stay for 1 minute before disappearing, and act as normal for members of their species.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 4 charges, you can turn a creature you can see within 60 feet of you into a cat. The creature must make a DC 12 Wisdom saving throw, turning into a cat for 1 minute on a failure. While as a cat, the creature can still use its class features and cast spells, and its Intelligence, Wisdom, and Charisma scores remain the save. The creature can repeat the saving throw at the end of each of its turns or whenever it takes damage.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Staff of Ducks" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_STAFF_OF_DUCKS">
+		<description>
+			<html>&lt;p&gt;This long wood staff is covered in scratch marks and has a carving of a duck's head at the top.&lt;/p&gt;
+&lt;p&gt;This staff has 4 charges, and regains all expended charges at dawn. You may expend charges to produce the following effects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; As an action, by expending 1 charge, you can make the staff let out the sound of a duck quacking loudly.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 1 charge, you can point the staff at a creature you can see within 60 feet of you and try to turn it into a half duck(duck bill and tail). The creature must make a DC 12 Wisdom saving throw, turning into a half duck for 1 minute on a failure.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 2 charges, you can summon 2 ducks into unoccupied spaces within 5 feet of you. The ducks stay for 1 minute before disappearing, and act as normal for members of their species.&lt;/li&gt;
+&lt;li&gt; As an action, by expending 4 charges, you can turn a creature you can see within 60 feet of you into a duck. The creature must make a DC 12 Wisdom saving throw, turning into a duck for 1 minute on a failure. While as a duck, the creature can still use its class features and cast spells, and its Intelligence, Wisdom, and Charisma scores remain the same. The creature can repeat the saving throw at the end of each of its turns or whenever it takes damage.&lt;/li&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="The Fleece of Navidad" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_THE_FLEECE_OF_NAVIDAD">
+		<description>
+			<html>&lt;p&gt;A crimson red cloak of festive properties. The fleece of which the cloak is made of is incredibly soft, enveloping the wearer in a warm and cozy environment. Those that wear the Fleece of Navidad are also flooded with feelings of great joy and a need to give to others. Wearers of the cloak also have a strange tune loop in the back of their minds, which is either a blessing or a curse depending on who decides to wear it. &lt;/p&gt;
+&lt;p class="indent"&gt;While you are attuned to the Fleece of Navidad, you gain a +2 bonus to your AC and are resistant to cold damage. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Curse.&lt;/b&gt; However, such a cloak does have its drawbacks. While a creature wears the Fleece of Navidad, regardless if they are attuned or not, they will hear a Mariachi band in the back of their minds playing christmas-themed music on a constant loop until the creature removes the cloak. This curse cannot be removed from this item by the remove curse spell. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="2" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	<element name="Universal magic boost +1" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNIVERSAL_MAGIC_BOOST_1">
+		<description>
+			<html>&lt;html&gt;Universal magic boost&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" bonus="" />
+			<stat name="spellcasting:dc" value="1" bonus="" />
+		</rules>
+	</element>
+	<element name="Universal magic boost +2" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNIVERSAL_MAGIC_BOOST_2">
+		<description>
+			<html>&lt;html&gt;Universal magic boost&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity"> Rare</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" bonus="" />
+			<stat name="spellcasting:dc" value="2" bonus="" />
+		</rules>
+	</element>
+	<element name="Universal magic boost +3" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNIVERSAL_MAGIC_BOOST_3">
+		<description>
+			<html>&lt;html&gt;Universal magic boost&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity"> Very Rare</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="3" bonus="" />
+			<stat name="spellcasting:dc" value="3" bonus="" />
+		</rules>
+	</element>
+	<element name="Universal magic boost +4" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNIVERSAL_MAGIC_BOOST_4">
+		<description>
+			<html>&lt;html&gt;Universal magic boost&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Legendary</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="4" bonus="" />
+			<stat name="spellcasting:dc" value="4" bonus="" />
+		</rules>
+	</element>
+	<element name="Universal magic boost +5" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_UNIVERSAL_MAGIC_BOOST_5">
+		<description>
+			<html>&lt;html&gt;Universal magic boost&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Mythic</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="5" bonus="" />
+			<stat name="spellcasting:dc" value="5" bonus="" />
+		</rules>
 	</element>
 </elements>
