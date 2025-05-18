@@ -2,13 +2,13 @@
 <elements>
 	<info>
 		<name>Additional features</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="Additional-features.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/Additional-features.xml" />
 		</update>
 	</info>
 	<element name="Expertise" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_EXPERTISE">
 		<description>
-			<html>Add Expertise</html>
+			<html>&lt;html&gt;Add Expertise&lt;/html&gt;</html>
 		</description>
 		<setters>
 			<set name="category">Additional Feature</set>
@@ -21,7 +21,7 @@
 	</element>
 	<element name="Proficiency" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_PROFICIENCY">
 		<description>
-			<html>Add Proficiency</html>
+			<html>&lt;html&gt;Add Proficiency&lt;/html&gt;</html>
 		</description>
 		<setters>
 			<set name="category">Additional Feature</set>
@@ -30,6 +30,19 @@
 		</setters>
 		<rules>
 			<stat name="proficiency" value="1" />
+		</rules>
+	</element>
+	<element name="Additional Feat" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_ADDITIONAL_FEAT">
+		<description>
+			<html>&lt;html&gt;Add a feat&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Additional Feature</set>
+			<set name="slot">misc</set>
+			<set name="inventory-hidden">true</set>
+		</setters>
+		<rules>
+			<select type="Feat" name="(Additional Feat)" />
 		</rules>
 	</element>
 </elements>
