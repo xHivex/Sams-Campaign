@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -174,6 +174,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">rare</set>
+			<set name="slot">head</set>
 		</setters>
 		<rules>
 			<stat name="charisma" value="1" />
@@ -191,6 +192,7 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">rare</set>
+			<set name="slot">shoulders</set>
 		</setters>
 		<rules>
 			<stat name="charisma" value="1" />
@@ -277,7 +279,7 @@
 			<html>&lt;p&gt;A seven hundred league boot is the result of a wizard who severely misinterpreted the instructions for crafting seven league boots. The resulting singular boot supposedly functions as intended, but no one who has ever put one on has ever lived the test to confirm this. &lt;/p&gt;
 &lt;p class="indent"&gt;Seven hundred league boots never come in pairs, and it is suspected that all of them are left-footed. &lt;/p&gt;
 &lt;p class="indent"&gt; A seven hundred league boot is literally impossible to mistake for a seven league boot. How this is the case is completely beyond human comprehension. &lt;/p&gt;
-&lt;p&gt;&lt;b&gt;Seven Hundred Mile Step.&lt;/b&gt;The seven hundred league boot's effect activates when its wearer completes a step upon the foot wearing the boot. Upon doing so, the wearer is rapidly transported seven hundred leagues forward, stretching the creature to such unbearable proportions that it is very graphically torn to shreds, killing it instantly. The boot arrives at the destination unharmed, somehow. &lt;/p&gt;</html>
+&lt;p&gt;&lt;b&gt;Seven Hundred Mile Step.&lt;/b&gt; The seven hundred league boot's effect activates when its wearer completes a step upon the foot wearing the boot. Upon doing so, the wearer is rapidly transported seven hundred leagues forward, stretching the creature to such unbearable proportions that it is very graphically torn to shreds, killing it instantly. The boot arrives at the destination unharmed, somehow. &lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="keywords" />
