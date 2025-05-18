@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>rings</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-rings.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-rings.xml" />
 		</update>
 	</info>
@@ -11,7 +11,7 @@
 			<html>&lt;p&gt;The Gooey Gooey Chocolate Chip Cookie Ring is the best ring ever, because it can summon chocolate chip cookies. It looks exactly like a tiny chocolate chip cookie, but with a gold ring attached to the bottom, and is a long-sought ring by wizards and gluttons alike. It is truly fabulous and has a wide range of abilities. &lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;Summon Cookies:&lt;/i&gt;&lt;/b&gt; Up to twenty times a day, the GGCCC Ring can summon a gooey gooey chocolate chip cookie. Any gooey gooey chocolate chip cookie summoned by the GGCCC Ring is incredibly delicious and is nearly impossible to resist. If all of those cookies are eaten by one creature, that creature takes 1d6 poison damage.&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;Chocolate Strike:&lt;/i&gt;&lt;/b&gt; Up to three times a day, the wearer of the ring may summon a giant chocolate chip cookie disk and throw it at an enemy. On a hit, it deals 2d4 bludgeoning damage multiplied by the wearer's Strength modifier. &lt;/p&gt;
-&lt;p&gt;&lt;b&gt;&lt;i&gt;Levels.&lt;/i&gt;&lt;/b&gt; Every night, the wearer of the ring must make a DC 5 Constitution saving throw or take a tiny bite of the GGCCC Ring. After two bites, you can no longer use the Chocolate Strike feature After three bites, the GGCCC Ring is completely eaten, and the wearer takes 1d4 poison damage. Note that if you roll a 1, you take a bite of the ring anyway, regardless of whether or not any modifiers exceed that amount.&lt;/p&gt;</html>
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Delicious Curse:&lt;/i&gt;&lt;/b&gt; Every night, the wearer of the ring must make a DC 5 Constitution saving throw or take a tiny bite of the GGCCC Ring. After two bites, you can no longer use the Chocolate Strike feature After three bites, the GGCCC Ring is completely eaten, and the wearer takes 1d4 poison damage. Note that if you roll a 1, you take a bite of the ring anyway, regardless of whether or not any modifiers exceed that amount.&lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="category">Rings</set>
@@ -229,6 +229,7 @@
 			<set name="type">Ring</set>
 			<set name="slot">ring</set>
 			<set name="rarity">uncommon</set>
+			<set name="attunement">true</set>
 		</setters>
 	</element>
 	<element name="Ring of Misty Step " type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_MISTY_STEP">
