@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+	<info>
+		<name>rings</name>
+		<update version="0.1.0">
+			<file name="items-rings.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-rings.xml" />
+		</update>
+	</info>
+	<element name="Gooey Gooey Chocolate Chip Cookie Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_GOOEY_GOOEY_CHOCOLATE_CHIP_COOKIE_RING">
+		<description>
+			<html>&lt;p&gt;The Gooey Gooey Chocolate Chip Cookie Ring is the best ring ever, because it can summon chocolate chip cookies. It looks exactly like a tiny chocolate chip cookie, but with a gold ring attached to the bottom, and is a long-sought ring by wizards and gluttons alike. It is truly fabulous and has a wide range of abilities. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Summon Cookies:&lt;/i&gt;&lt;/b&gt; Up to twenty times a day, the GGCCC Ring can summon a gooey gooey chocolate chip cookie. Any gooey gooey chocolate chip cookie summoned by the GGCCC Ring is incredibly delicious and is nearly impossible to resist. If all of those cookies are eaten by one creature, that creature takes 1d6 poison damage.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Chocolate Strike:&lt;/i&gt;&lt;/b&gt; Up to three times a day, the wearer of the ring may summon a giant chocolate chip cookie disk and throw it at an enemy. On a hit, it deals 2d4 bludgeoning damage multiplied by the wearer's Strength modifier. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Levels.&lt;/i&gt;&lt;/b&gt; Every night, the wearer of the ring must make a DC 5 Constitution saving throw or take a tiny bite of the GGCCC Ring. After two bites, you can no longer use the Chocolate Strike feature After three bites, the GGCCC Ring is completely eaten, and the wearer takes 1d4 poison damage. Note that if you roll a 1, you take a bite of the ring anyway, regardless of whether or not any modifiers exceed that amount.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Attunement" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_ATTUNEMENT">
+		<description>
+			<html>&lt;p&gt;While you wear this ring, you can attune to an additional magic item. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">very rare</set>
+		</setters>
+		<rules>
+			<stat name="attunement:max" value="1" />
+		</rules>
+	</element>
+	<element name="Adamantine Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ADAMANTINE_RING">
+		<description>
+			<html>&lt;p&gt;This ring has been imbued with the very essence of Adamant. While you're wearing it, any critical hit against you becomes a normal hit, and you gain a +1 bonus to AC and saving throws. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">very Rare</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="1" />
+			<stat name="strength:save:misc" value="1" />
+			<stat name="dexterity:save:misc" value="1" />
+			<stat name="constitution:save:misc" value="1" />
+			<stat name="intelligence:save:misc" value="1" />
+			<stat name="wisdom:save:misc" value="1" />
+			<stat name="charisma:save:misc" value="1" />
+		</rules>
+	</element>
+	<element name="Apprentice Ring of Blasting" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_APPRENTICE_RING_OF_BLASTING">
+		<description>
+			<html>&lt;p&gt;A simple silver ring etched with bursting patterns worn by apprentice level spellcasters. While worn, once per turn when you hit a creature with a ranged spell attack roll using a cantrip, the magic explodes out from the target. Each creature within 5 feet of the hit target must succeed on a Dexterity saving throw against your spell save DC or also take the cantrip's damage. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Apprentice Ring of Distance" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_APPRENTICE_RING_OF_DISTANCE">
+		<description>
+			<html>&lt;p&gt;A simple silver ring etched with swirling patterns used by apprentice level spellcasters. When worn, the ring doubles the casting range of ranged, offensive cantrips you cast.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Arcane Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ARCANE_RING">
+		<description>
+			<html>&lt;p&gt;This ring has 3 charges. Whenever you cast a spell, you can expend one charge to use one of the following sorcerer Metamagic options on the spell: Careful Spell, Distant Spell, Empowered Spell, Extended Spell or Subtle Spell. In addition, you can use an action to expend one charge to cast the arcane eye spell from the ring. The ring regains 1d3 charges daily at dawn. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement" addition="by a spellcaster">true</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Bloodthirst Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BLOODTHIRST_RING">
+		<description>
+			<html>&lt;p&gt;This iron ring has spikes on the inside of it, which constantly ooze blood. While wearing this ring, your hit point maximum is increased by your Charisma modifier.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">rare</set>
+		</setters>
+		<rules>
+			<stat name="hp" value="charisma:modifier" />
+		</rules>
+	</element>
+	<element name="Covetous Gold Serpent Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_COVETOUS_GOLD_SERPENT_RING">
+		<description>
+			<html>&lt;p&gt;While attuned to this ring, you have advantage on any Intelligence (Investigation) or Wisdom (Perception) checks made searching for treasure. When searching corpses in the aftermath of a battle, if you find at least 1 gp on the corpses of the dead, you find an additional 1d10 gp. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">uncommon </set>
+		</setters>
+	</element>
+	<element name="Grand Merchantry Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_GRAND_MERCHANTRY_RING">
+		<description>
+			<html>&lt;p&gt;The ring of Merchants was crafted by a powerful sage with an inner greed for money, these rings were given to high buisnessman and powerful merchants to make quick money.  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Power of the Merchant:&lt;/i&gt;&lt;/b&gt; When worn, the wearer can summon any merchant and acquire any goods, but at a cost several times higher than the item's original price. Additionally, they can sell their own goods for even less of the original price. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Monkey Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_MONKEY_RING">
+		<description>
+			<html>&lt;p&gt;The ring of monkeys, there appears the be a carving of a banana on top with unintelligible writing on the inside.  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Power of the Monkey:&lt;/i&gt;&lt;/b&gt; When worn, the wearer gains a monkey tail, +1 to dexterity, and has a constant crave for bananas. The monkey tail acts as another arm and can carry a small light object, but cannot make attacks. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Murderer's Beloved" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_MURDERERS_BELOVED">
+		<description>
+			<html>&lt;p&gt;When you kill a creature, the first attack roll you make before the end of your next turn will be a critical hit if it hits.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">very rare</set>
+		</setters>
+	</element>
+	<element name="Surge Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SURGE_RING">
+		<description>
+			<html>&lt;p&gt;An iron ring bearing an emblem of crossed swords. As a bonus action, you can choose to take an additional action. Once you activate this ability, the ring is destroyed. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">very rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Accuracy" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_ACCURACY">
+		<description>
+			<html>&lt;p&gt;This iron ring is engraved with images of bows and clouds, and glows slightly when you nock an arrow or prepare to throw a dagger or similar weapon. When you wear this ring, you deal 2 additional damage with ranged weapon attacks. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">uncommon </set>
+		</setters>
+	</element>
+	<element name="Ring of Action Saving" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_ACTION_SAVING">
+		<description>
+			<html>&lt;p&gt;The ring appears as an old bronze ring with a band silver folded into its center. The ring gently hums with energy while not equipped. This ring has 4 charges. As a bonus action, you may spend 2 charges to cast the haste spell on yourself or you may spend 1 charge to free yourself from one effect that is causing you to be petrified, stunned, or paralyzed.  The ring regains 1d4 charges at the dawn. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">legendary </set>
+		</setters>
+	</element>
+	<element name="Ring of Awareness" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_AWARENESS">
+		<description>
+			<html>&lt;p&gt;A cobalt blue ring engraved with an open eye. This ring grants you advantage on Wisdom (Perception) and Wisdom (Insight) checks. In addition, you cannot be surprised while you are conscious and have +2 to initiative. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">rare </set>
+		</setters>
+		<rules>
+			<stat name="initiative" value="2" />
+		</rules>
+	</element>
+	<element name="Ring of Disrobing" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_DISROBING">
+		<description>
+			<html>&lt;p&gt;It is at first glance a simple but elegant ring, a tiny band of gold with a ruby placed in the front of it carved into an oval shape, at closer inspection moving energy can be seen in the ruby it will occasionally hold still, as if looking at the person holding it, though it quickly will break this "stare" upon being noticed. The exact origins of this are unknown but most believe it involved a very drunk wizard and some form of a rampant pervert pal  &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Disrobing:&lt;/i&gt;&lt;/b&gt; Upon placing the ring on your finger it suddenly feels a bit more drafty, shortly after you, or your party mates, will quickly realize the ring has stripped you of all your clothing and armor, you equipment has appeared somewhere within 5 feet of you, in a small neat little pile. If you were to try and put it back on, you'd have to remove the ring from your finger or you'd simply have them be removed almost immediately &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Misfortune" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_MISFORTUNE">
+		<description>
+			<html>&lt;p&gt;While attuned to and wearing this ring, when you force creatures to make a saving throw, +1 to the DC, and if they fail, they take psychic damage equal to the save DC minus their result. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of Misty Step " type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_MISTY_STEP">
+		<description>
+			<html>&lt;p&gt;The ring possesses 6 crystal stones holding some kind of magical shadowy substance inside. Each crystal stone provides one use of the misty step spell. Using a crystal stone allows you to cast the misty step spell, the magical shadowy substance inside disappears. You can use this effect up to the total number of powered crystal stones located on the ring. Every Midnight, 1d6 crystals are replenished.&lt;/p&gt;
+&lt;p&gt;Possessing this ring comes with a gamble. When you use a crystal stone to cast the misty step spell, you must roll a 1d20. Down below is the list of outcomes, depending on what is rolled. &lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;d20&lt;/td&gt; &lt;td&gt;Outcome&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1&lt;/td&gt; &lt;td&gt;You successfully cast misty step, but to a random location within 10ft decided by your DM. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;2&lt;/td&gt; &lt;td&gt;Nothing Happens, the spell does not work and the crystal stone depletes. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3-7&lt;/td&gt; &lt;td&gt;You successfully cast misty step, but as you reach your destination, you take 1d4 of Force damage. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;8-18&lt;/td&gt; &lt;td&gt;You successfully cast misty step, you reach your destination.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;19&lt;/td&gt; &lt;td&gt;You successfully cast misty step, as you reach your destination, heal 1d4 HP. (Add 1d4 to Temporary hit points if HP if at max) &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;20&lt;/td&gt; &lt;td&gt;You successfully cast misty step, as you reach your destination, a crystal stone does not deplenish. &lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">very rare </set>
+		</setters>
+		<rules>
+			<stat name="initiative" value="2" />
+		</rules>
+	</element>
+	<element name="Ring of the Barbarian" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_THE_BARBARIAN">
+		<description>
+			<html>&lt;p&gt;A rather large ring, seemingly whittled out of a huge tooth. Small, tribal-esc artwork is etched into the ring, telling stories of triumph over great beasts. While wearing the ring, you have a +3 bonus to Strength and Constitution saving throws, but a -3 to Wisdom saving throws.  &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">rare</set>
+		</setters>
+		<rules>
+			<stat name="strength:save:misc" value="3" />
+			<stat name="constitution:save:misc" value="3" />
+			<stat name="wisdom:save:misc" value="-3" />
+		</rules>
+	</element>
+	<element name="Ring of the Warrior" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_THE_WARRIOR">
+		<description>
+			<html>&lt;p&gt;Whenever you take the Attack action on your turn while wearing this ring, the number of attacks you can make increases by one.  &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">legendary </set>
+		</setters>
+		<rules>
+			<stat name="extra attack:count" value="1" />
+		</rules>
+	</element>
+	<element name="Ring of Tricks" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_TRICKS">
+		<description>
+			<html>&lt;p&gt;The ring of tricks is a four-band puzzle ring, each made of four different types of metal: red (wizard), yellow (cleric), green (druid), and purple (warlock). Each band represents one of the four spellcasting classes (cleric, druid, warlock, and wizard) "trick" spells. While you wear the ring, you can use an action to cast one of the following cantrips: druidcraft, eldritch legerdemain, prestidigitation, or thaumaturgy.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">rare</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+			<grant type="Spell" id="ID_SACA_SPELL_ELDRITCH_LEGERDEMAIN" />
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
+		</rules>
+	</element>
+</elements>
