@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -445,5 +445,42 @@
 			<stat name="spellcasting:attack" value="5" bonus="" />
 			<stat name="spellcasting:dc" value="5" bonus="" />
 		</rules>
+	</element>
+	<element name="Abraxonian Overseer's Helmet" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ABRAXONIAN_OVERSEERS_HELMET">
+		<description>
+			<html>&lt;p&gt;An ancient helmet made out of dark Abraxonian steel styled in an Imperial Roman fashion complete with a faceplate designed like a generic face with holes for the eyes and mouth. Forged specifically for an Abraxonian Overseer, this is the rarest non-unique Abraxonian helmet that can be found. Abraxonian Overseers are notorious individuals in charge of policing the Abraxonian military—thus their equipment is superior to regular Abraxonian artefacts. The helmet has a total of 4 charges and regains all 4 charges daily at noon. &lt;/p&gt;
+&lt;p&gt;While you wear this helmet, you gain you gain a +3 bonus to your AC and you have advantage on Wisdom (Perception) checks that rely on sight. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Foresight.&lt;/i&gt;&lt;/b&gt; As a bonus action, you can expend 2 charges to peer into the future. Until the end of your next turn, creatures have disadvantage on attack rolls made against you. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Hindsight.&lt;/i&gt;&lt;/b&gt; In response to being damaged by a creature you can see, you can expend 1 charge to focus on it. You have advantage on the next attack roll you make against that creature before the end of your next turn. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="slot">head</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:misc" value="3" />
+		</rules>
+	</element>
+	<element name="Amulet of Answering" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_AMULET_OF_ANSWERING">
+		<description>
+			<html>&lt;p&gt;The source of power for all 9 of the swords of answering, this amulet grants it's user the final word in battle. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;Final Word.&lt;/i&gt;&lt;/b&gt; While attuned to the amulet, if you are dealt damage, you can use your reaction to instantly teleport to the source of the damage and make an attack against it. You have advantage on the attack roll, and any damage dealt with this special attack ignores any damage immunity or resistance the target has. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="slot">neck</set>
+		</setters>
 	</element>
 </elements>
