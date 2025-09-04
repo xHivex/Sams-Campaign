@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Abjuration-spells</name>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="Abjuration-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Abjuration-spells.xml" />
 		</update>
 	</info>
@@ -1891,7 +1891,32 @@
 		</setters>
 	</element>
 	<element name="Antimagic Blast" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANTIMAGIC_BLAST">
-		<supports>Wizard</supports>
+		<supports>Wizard, Bard, Cleric, Sorcerer, Warlock</supports>
+		<description>
+			<html>&lt;p&gt;A blast of disruptive magic fires outward from you. All spells of 5th level or lower affecting each creature or object within a 30-foot cube originating from you end.&lt;/p&gt;
+&lt;p class="indent"&gt; For each spell of 6th level or higher, roll a d20 + the spell's level. If the result is less than your spell save DC, that spell ends. &lt;/p&gt;
+&lt;p class="indent"&gt; Any creature or object in the blast capable of casting spells or producing magical effects is rendered unable to do so until the end of your next turn, unless that object is an artifact or that creature is a deity.  &lt;/p&gt;
+				&lt;p&gt;If a creature concentrating on a spell is caught in the area, it must make a Constitution saving throw against your spell save DC to maintain concentration on the spell.&lt;/p&gt;
+&lt;p class="indent"&gt; If the creature fails the saving throw, they take 1d10 psychic damage per level of the spell they were concentrating on (minimum 1 damage for a cantrip) and and lose concentration on the spell. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a spell slot of 7th level or higher, the Antimagic Blast automatically ends the effects of spells on targets in the area if those spell's levels are equal to or less than one less than the level of the spell slot used.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="level">6</set>
+			<set name="school">Abjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self (30-foot cube)</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A mithral coin filings</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	<element name="Antimagic Curse" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_ANTIMAGIC_CURSE">
+		<supports>Wizard, Sorcerer, Warlock</supports>
 		<description>
 			<html>&lt;p&gt;You fire a bolt of antimagic at an enemy. Make a ranged spell attack against a creature within range. On a hit, that creature must make a saving throw of their spellcasting ability score, taking 3d10 psychic damage on a failed save,&lt;/p&gt;
 &lt;p class="indent"&gt; or half as much on a successful save (If they have multiple spellcasting ability scores they may choose one, if they have no spellcasting ability scores they automatically succeed their saving throw). &lt;/p&gt;
@@ -1903,7 +1928,7 @@
 			<set name="level">6</set>
 			<set name="school">Abjuration</set>
 			<set name="time">1 action</set>
-			<set name="duration">Instantaneous</set>
+			<set name="duration">1 Minute</set>
 			<set name="range">60 feet</set>
 			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
@@ -2012,7 +2037,7 @@
 			<html>&lt;p&gt;You create a shimmering emerald barrier that completely blocks extradimensional travel.&lt;/p&gt;
 &lt;p class="indent"&gt;Forms of movement barred include: astral projection, dimension door, etherealness, gate, maze, plane shift, teleport, and similar spells or spell-like abilities. Once dimensional lock is in place, extradimensional travel to or from the area is not possible.&lt;/p&gt;
 &lt;p&gt; This spell does not interfere with the movement of creatures already in ethereal or astral form when the spell is cast, nor does it block extradimensional perception or attacks.&lt;/p&gt;
-&lt;p class="indent"&gt;This spell also does not prevent summoned creatures from disappearing at the end of a summoning spell's duration.u &lt;/p&gt;
+&lt;p class="indent"&gt;This spell also does not prevent summoned creatures from disappearing at the end of a summoning spell's duration. &lt;/p&gt;
 &lt;p&gt;&lt;b&gt;&lt;i&gt;At Higher Levels.&lt;/i&gt;&lt;/b&gt; When you cast this spell using a 8th level spell slot, change the duration to 1 hour. When you cast this spell using a 9th level spell slot, change the duration to 8 hours.&lt;/p&gt;</html>
 		</description>
 		<setters>
@@ -2243,3 +2268,4 @@
 		</setters>
 	</element>
 </elements>
+
