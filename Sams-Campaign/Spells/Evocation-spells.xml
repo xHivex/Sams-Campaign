@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Evocation-spells</name>
-		<update version="0.2.0">
+		<update version="0.2.1">
 			<file name="Evocation-spells.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Spells/Evocation-spells.xml" />
 		</update>
 	</info>
@@ -1835,7 +1835,7 @@
 		</description>
 		<setters>
 			<set name="keywords" />
-			<set name="level">0</set>
+			<set name="level">1</set>
 			<set name="school">Evocation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
@@ -5046,7 +5046,7 @@
 	<element name="Earth Shatter" type="Spell" source="Sam's Campaign" id="ID_SACA_SPELL_EARTH_SHATTER">
 		<supports>Druid, Sorcerer, Warlock, Wizard</supports>
 		<description>
-			<html>&lt;p&gt;You summon a massive lightning bolt to empower your weapon before striking the ground at your feet. All creatures in a 50 cone from you must make a Strength saving throw or take 10d6 force and 5d6 thunder damage and be knocked prone. Objects and buildings take double damage from this spell.&lt;/p&gt;</html>
+			<html>&lt;p&gt;You summon a massive lightning bolt to empower your weapon before striking the ground at your feet. All creatures in a 60 cone from you must make a Strength saving throw or take 10d6 force and 5d6 thunder damage and be knocked prone. Objects and buildings take double damage from this spell.&lt;/p&gt;</html>
 		</description>
 		<setters>
 			<set name="keywords" />
@@ -5054,8 +5054,8 @@
 			<set name="school">Evocation</set>
 			<set name="time">1 action</set>
 			<set name="duration">Instantaneous</set>
-			<set name="range">Self (50-foot cone)</set>
-			<set name="hasVerbalComponent">false</set>
+			<set name="range">Self (60-foot cone)</set>
+			<set name="hasVerbalComponent">true</set>
 			<set name="hasSomaticComponent">true</set>
 			<set name="hasMaterialComponent">true</set>
 			<set name="materialComponent">Must be in Stormy conditions to cast</set>
@@ -6061,3 +6061,4 @@ different type of damage to all creatures within the area as follows:&lt;/p&gt;
 		</setters>
 	</element>
 </elements>
+
