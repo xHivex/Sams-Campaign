@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -133,4 +133,28 @@
 			<set name="weapon">Arcane Rifle</set>
 		</setters>
 	</element>
+	<element name="Golden Axe of the Monster" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_GOLDEN_AXE_OF_THE_MONSTER">
+		<description>
+			<html>&lt;p&gt;Golden Axe of the Monster is a weapon forged from the body of an Gold dragon, infused and binded with absorbing properties of gibbering mouther' flesh. The blade of this axe is purely gold and huge, cutting side is very jagged. The handle is slightly curved, made out of an ancient magical ent and is dark brown with some steel ornaments. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Magical Weapon&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;While wielding the Black Axe of the Monster you have a +3 to attack and damage rolls. The weapon ignores resistance to slashing damage. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Damage from Strength&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;To wield the weapon with both hands you must have a Strength score of at least 21. This weapon deals an additional damage on a hit equal to 4d12 slashing damage. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Mighty Slash&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;The magical power inside the axe releases its full potential. When damaging a creature with this weapon, you can spend a bonus action to forgo rolling and deal maximum possible damage instead. Once used, this property can't be used again until the next dawn. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Power from Magic&lt;/b&gt;&lt;/p&gt;
+&lt;p class="indent"&gt;If you succeed on a saving throw to take only half damage from a spell, you can use your reaction to infuse the weapon. If you choose to do so, your next succesfull attack with this weapon deal an additional 2d12 damage of the type you took when using this property. Axe can be infused only by one spell at a time. If the spell dealt multiple types of damage, you choose which to use. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords">Greataxe</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="Greataxe">Weapon</set>
+			<set name="attunement" addition="by a creature with 21 or higher Strength">true</set>
+			<set name="rarity">Legendary</set>
+			<set name="enhancement">3</set>
+			<set name="weapon">Greataxe</set>
+		</setters>
+	</element>
 </elements>
+
