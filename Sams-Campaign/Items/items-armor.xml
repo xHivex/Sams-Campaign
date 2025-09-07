@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Armor</name>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="items-armor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-armor.xml" />
 		</update>
 	</info>
@@ -41,4 +41,24 @@
 			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
 		</rules>
 	</element>
+	<element name="Artificed Plate" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ARTIFICED_PLATE">
+		<description>
+			<html>&lt;p&gt;Made with high quality magical materials, this armor provides as much protection as plate, but is much lighter, quieter, and easier to move in. It can only be made by master smiths out of expensive materials, so it can be difficult to procure. &lt;/p&gt;
+&lt;p class="indent"&gt;This armor has the same properties as plate armor, but it doesn't have Strength requirements or disadvantage on Dexterity (Stealth) checks. In addition, you can add your Dexterity modifier to your AC when using this armor. &lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="pp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="plate">Armor</set>
+			<set name="rarity">Legendary</set>
+			<set name="armor">Plate</set>
+		</setters>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_IGNORE_STEALTH_DISADVANTAGE" />
+			<grant type="Grants" id="ID_INTERNAL_GRANT_ARMOR_IGNORE_STRENGTH_REQUIREMENT" />
+			<stat name="ac:armored:misc" value="dexterity:modifier" />
+		</rules>
+	</element>
 </elements>
+
