@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>wondrous</name>
-		<update version="0.1.7">
+		<update version="0.1.8">
 			<file name="items-wondrous.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-wondrous.xml" />
 		</update>
 	</info>
@@ -483,4 +483,59 @@
 			<set name="slot">neck</set>
 		</setters>
 	</element>
+	<element name="Acorn of The Sleeping Grove" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_ACORN_OF_THE_SLEEPING_GROVE">
+		<description>
+			<html>&lt;p&gt;Dropped from an ancient Faywild Oak said to slumber for centuries, dreaming entire Worlds in its roots. Carriers say the Acorn lulls them into a safe, peaceful sleep, though some awaken muttering names they've never heard.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Effect:&lt;/b&gt; Once per long rest, whisper to the Acorn to cast sanctuary on yourself, if buried, it sprouts into a Sapling for 24 hours, shedding dim light for 5 ft.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Quirk:&lt;/b&gt; When you sleep with the Acorn near your dreams are always off vast forests&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Cricket's Timepiece" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_CRICKETS_TIMEPIECE">
+		<description>
+			<html>&lt;p&gt;This oddity was made by an Archfey who claimed to have trapped “a single Summer evening” inside a cricket heart. It doesn't tell time normally, it speeds or slows depending on the mood of its owner, echoing their sense of urgency.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Effect:&lt;/b&gt; Once per long rest, use the timepiece to either take one extra action (as if under haste for a single turn) or force the hostile creature to re-roll initiative (at -5).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Quirk:&lt;/b&gt; While carrying it, you occasionally hear distant cricket chirps, even in silence.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="keywords" />
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Bag of Infinite Coins" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BAG_OF_INFINITE_COINS">
+		<description>
+			<html>&lt;p&gt;A bag that produces unlimited coins........ made of chocolate.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	<element name="Boots of the double step" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_BOOTS_OF_THE_DOUBLE_STEP">
+		<description>
+			<html>&lt;html&gt;When you Dash, your next melee weapon attack deals +1d8 damage&lt;/html&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
 </elements>
+
