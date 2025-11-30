@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>rings</name>
-		<update version="0.1.3">
+		<update version="0.1.4">
 			<file name="items-rings.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-rings.xml" />
 		</update>
 	</info>
@@ -307,5 +307,137 @@
 			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
 			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" />
 		</rules>
+	</element>
+	<element name="Ring of Seasons" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_SEASONS">
+		<description>
+			<html>&lt;p&gt;You have resistance to one damage type while wearing this ring, indicated by which gem is presented in the outer ring. You may use your action to rotate the outer ring and change the presented gem, as well as the damage type you are resistant to:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Damage Type&lt;/td&gt; &lt;td&gt;Gem&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Cold&lt;/td&gt; &lt;td&gt;Tourmaline&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Fire&lt;/td&gt; &lt;td&gt;Ruby&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Lightning&lt;/td&gt; &lt;td&gt;Aquamarine&lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;Poison&lt;/td&gt; &lt;td&gt;Emerald&lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+	<element name="Stabilizer Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_STABILIZER_RING">
+		<description>
+			<html>&lt;p&gt;If you roll a 20 on a death save, you regain 1 HP instead of stabilizing.&lt;p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Spellcage Ring" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_SPELLCAGE_RING">
+		<description>
+			<html>&lt;p&gt;Absorb a 3rd level or lower spell once per day. Be the hero when fireballs start to fly&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="rarity">Very Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of the Moonveil" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_THE_MOONVEIL">
+		<description>
+			<html>&lt;p&gt;Once per long rest, you may cast Greater Invisibility for up to 1 minute&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Whispered Echors" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_WHISPERED_ECHORS">
+		<description>
+			<html>&lt;p&gt;Once per short rest, you can magically amplify your voice or whisper up to 60 feet.&lt;/p&gt;
+&lt;p class="indent"&gt;You also gain advantage on Charisma (Performance) checks involving speech.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of Iron Will" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_IRON_WILL">
+		<description>
+			<html>&lt;p&gt;You gain advantage on saving throws against being charmed or frightened.&lt;/p&gt;
+&lt;p class="indent"&gt;Once per day, when you fail a Wisdom save, you can reroll it.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
+	</element>
+	<element name="Ring of Whispers" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_WHISPERS">
+		<description>
+			<html>&lt;p&gt;While wearing this ring, you can communicate telepathically with any creature within 30 feet that you share a language with.&lt;/p&gt;
+&lt;p class="indent"&gt;Once per long rest, you may cast Detect Thoughts.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of the Gilded Tongue" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_THE_GILDED_TONGUE">
+		<description>
+			<html>&lt;p&gt;You gain advantage on Charisma (Persuasion) checks.&lt;/p&gt;
+&lt;p class="indent"&gt;Once per long rest, you may cast Charm Person (DC 13).&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of Silent Steps" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_SILENT_STEPS">
+		<description>
+			<html>&lt;p&gt;While wearing this ring, you have advantage on Dexterity (Stealth) checks made to move silently.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	<element name="Ring of the Flamebound Past" type="Magic Item" source="Sam's Campaign" id="ID_SACA_MAGIC_ITEM_RING_OF_THE_FLAMEBOUND_PAST">
+		<description>
+			<html>&lt;p&gt;Once per long rest, you may wreathe your weapon in flame for 1 minute.&lt;/p&gt;
+&lt;p class="indent"&gt;Your weapon deals an additional 2d6 fire damage on a hit.&lt;/p&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Rare</set>
+		</setters>
 	</element>
 </elements>
