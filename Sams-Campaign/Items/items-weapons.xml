@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Weapons</name>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="items-weapons.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-weapons.xml" />
 		</update>
 	</info>
@@ -156,5 +156,35 @@
 			<set name="weapon">Greataxe</set>
 		</setters>
 	</element>
+	<element name="Grenade, Wild Magic" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_GRENADE_WILD_MAGIC">
+		<description>
+			<html>&lt;p&gt;As an action, a character can throw a grenade at a point up to 30 feet + (your Strength modifier x 5) feet away.&lt;/p&gt;
+&lt;p class="indent"&gt;Each creature within 10 feet of an Wild Magic grenade must make a DC 15 Wisdom saving throw, on a failed save, roll on the Wild Magic Grenade table, or nothing happens on a successful one.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1d12&lt;/td&gt; &lt;td&gt;Wild Magic Grenade Effects&lt;/td&gt;  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tr&gt; &lt;td class="left"&gt;1&lt;/td&gt; &lt;td&gt;All creatures continuously sneeze for the next 1d4 hours. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;2&lt;/td&gt; &lt;td&gt;All creatures’ skin and hair color will randomly change for the next 2d4 hours. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;3&lt;/td&gt; &lt;td&gt;All creatures grow a long beard made of feathers that remains until they sneeze, at which point the feathers explode out from their faces. &lt;/td&gt;  &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;4&lt;/td&gt; &lt;td&gt;Creatures are surrounded by faint, ethereal music for the next minute. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;5&lt;/td&gt; &lt;td&gt;Creatures must make a Dexterity Saving Throw (DC is 15) and take 14d6 fire damage, or half as much on a success. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;6&lt;/td&gt; &lt;td&gt;All creatures are reduced by one size category for the next 1d4 hours. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;7&lt;/td&gt; &lt;td&gt;All creatures take 1d6 Necrotic damage and you regain hit points equal to half the damage dealt.&lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;8&lt;/td&gt; &lt;td&gt;Creatures are transported to the Astral Plane until the end of their next turn, after which time they return to the space they previously occupied or the nearest unoccupied space if that space is occupied. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;9&lt;/td&gt; &lt;td&gt;For the next minute, effected creatures regain 5 hit points at the start of each of their turns. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;10&lt;/td&gt; &lt;td&gt;An eye appears on the creatures’ foreheads for the next minute. During that time, they have advantage on Wisdom (Perception) checks that rely on sight and gain 30-foot darkvision. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;11&lt;/td&gt; &lt;td&gt;For the next minute, the creatures can teleport up to 20 feet as a bonus action on each of their turns. &lt;/td&gt; &lt;/tr&gt;
+&lt;tr&gt; &lt;td class="left"&gt;12&lt;/td&gt; &lt;td&gt;All creatures regain their lowest-level expended spell slot. &lt;/td&gt; &lt;/tr&gt;
+&lt;/table&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Explosives</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="1">1 lb.</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
 </elements>
+
 
