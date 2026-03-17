@@ -2,7 +2,7 @@
 <index>
 	<info>
 		<name>Items</name>
-		<update version="1.2.5">
+		<update version="1.2.6">
 			<file name="Items.index" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items.index" />
 		</update>
 	</info>
@@ -13,6 +13,6 @@
 		<file name="items-armor.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-armor.xml" />
 		<file name="items-Mythic.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-Mythic.xml" />
 		<file name="items-rings.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-rings.xml" />
+		<file name="items-firearms.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-firearms.xml" />
 	</files>
 </index>
-
