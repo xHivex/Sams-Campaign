@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Firearms</name>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="items-firearms.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Items/items-firearms.xml" />
 		</update>
 	</info>
@@ -87,6 +87,38 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0.3125">5 oz.</set>
 			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Brynhildr" type="Item" source="Sam's Campaign" id="ID_SACA_ITEM_BRYNHILDR">
+		<description>
+			<html>&lt;p style="margin-bottom:-5px"&gt;&lt;em&gt;Gargantuan vehicle (12000 lb.)&lt;/em&gt;&lt;/p&gt;
+&lt;h4 style="margin-top:5px" /&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Creature Capacity&lt;/strong&gt; 1 driver, 4 gunners. 12 Medium creatures.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cargo Capacity&lt;/strong&gt; 20 tons&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Armor Class&lt;/strong&gt; 16&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hit Points&lt;/strong&gt; 600 (damage threshold 22)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Speed&lt;/strong&gt; 60 ft. climb 25 ft.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;Damage Immunities&lt;/strong&gt; poison, psychic, fire, force, necrotic, damage from handheld weapons&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Condition Immunities&lt;/strong&gt; blinded, charmed, deafened, exhaustion, frightened, grappled, incapacitated, paralyzed, petrified, poisoned, prone, stunned, unconscious&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 style="margin-top:5px; margin-bottom:10px" /&gt;
+&lt;h4 style="margin-top:10px"&gt;Action Stations&lt;/h4&gt;
+&lt;ul class="unstyled"&gt;
+&lt;li&gt;&lt;strong&gt;&lt;em&gt;Helm (Requires 1 Crew).&lt;/em&gt;&lt;/strong&gt; Drive and steer the &lt;i&gt;Brynhildr&lt;/i&gt;.&lt;/li&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Howitzer:&lt;/b&gt; (Requires 4 Crew) Before it can be fired, the howitzer must be loaded and aimed. It takes three actions to load the weapon, two actions to aim it, and one action to fire it. &lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;Direct Fire:&lt;/strong&gt; &lt;em&gt;Ranged Weapon Attack:&lt;/em&gt; +12 to hit, range 8/16 miles, one target. Hit: 275 (50d10) piercing damage. Hit or miss, each creature within 120 feet of the target (including target) must make a DC 20 Dexterity saving throw, taking 134 (25d10) bludgeoning damage on a failed save, or half as much damage on a successful one. &lt;/p&gt;
+&lt;p class="indent"&gt;&lt;strong&gt;Indirect Fire:&lt;/strong&gt;&lt;em&gt; Ranged Weapon Attack:&lt;/em&gt; +9 to hit, range 16/26 miles, one target. Hit: 275 (50d10) piercing damage. Hit or miss, each creature within 120 feet of the target (including target) must make a DC 20 Dexterity saving throw, taking 88 (16d10) bludgeoning damage on a failed save, or half as much damage on a successful one. &lt;/p&gt;
+&lt;/ul&gt;</html>
+		</description>
+		<setters>
+			<set name="category">Mounts &amp; Vehicles</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="12000" excludeEncumbrance="true">12000 lb.</set>
+			<set name="type">Vehicle</set>
 		</setters>
 	</element>
 </elements>
