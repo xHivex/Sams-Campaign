@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>All-mage</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="All-mage.xml" url="https://raw.githubusercontent.com/xHivex/Sams-Campaign/master/Sams-Campaign/Grand-Magic/All-mage.xml" />
 		</update>
 	</info>
@@ -147,15 +147,15 @@
 			<description>You can cast all 1st level spells as cantrips</description>
 		</sheet>
 		<rules>
-			<stat name="Deaths Simp:spellcasting:slots:1" value="-4" />
-			<stat name="Deaths Simp:spellcasting:slots:2" value="3" />
-			<stat name="Deaths Simp:spellcasting:slots:3" value="3" />
-			<stat name="Deaths Simp:spellcasting:slots:4" value="3" />
-			<stat name="Deaths Simp:spellcasting:slots:5" value="3" />
-			<stat name="Deaths Simp:spellcasting:slots:6" value="2" />
-			<stat name="Deaths Simp:spellcasting:slots:7" value="2" />
-			<stat name="Deaths Simp:spellcasting:slots:8" value="1" />
-			<stat name="Deaths Simp:spellcasting:slots:9" value="1" />
+			<stat name="Death Monarch:spellcasting:slots:1" value="-4" />
+			<stat name="Death Monarch:spellcasting:slots:2" value="3" />
+			<stat name="Death Monarch:spellcasting:slots:3" value="3" />
+			<stat name="Death Monarch:spellcasting:slots:4" value="3" />
+			<stat name="Death Monarch:spellcasting:slots:5" value="3" />
+			<stat name="Death Monarch:spellcasting:slots:6" value="2" />
+			<stat name="Death Monarch:spellcasting:slots:7" value="2" />
+			<stat name="Death Monarch:spellcasting:slots:8" value="1" />
+			<stat name="Death Monarch:spellcasting:slots:9" value="1" />
 		</rules>
 	</element>
 	<element name="All Mage Angel" type="Feat Feature" source="Sam's Campaign" id="ID_SACA_FEAT_FEATURE_ALL_MAGE_ANGEL">
